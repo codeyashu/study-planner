@@ -1,0 +1,1489 @@
+- id: dsa-neetcode-roadmap
+  title: NeetCode roadmap
+  url: https://neetcode.io/roadmap
+  type: course
+  topics: &id001
+  - arrays-hashing
+  - two-pointers
+  - sliding-window
+  - stack
+  - binary-search
+  - linked-list
+  - trees
+  - tries
+  - heap
+  - backtracking
+  - graphs
+  - advanced-graphs
+  - dp-1d
+  - dp-2d
+  - greedy
+  - intervals
+  - math-bits
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: freemium
+  gem: false
+  why: Ordered pattern roadmap with a short video per problem; the backbone of this track's problem order.
+  last_checked: '2026-09-25'
+- id: dsa-neetcode-practice
+  title: NeetCode practice list
+  url: https://neetcode.io/practice
+  type: interactive
+  topics:
+  - problem-tracker
+  - arrays-hashing
+  - two-pointers
+  - sliding-window
+  - stack
+  - binary-search
+  - linked-list
+  - trees
+  - tries
+  - heap
+  - backtracking
+  - graphs
+  - advanced-graphs
+  - dp-1d
+  - dp-2d
+  - greedy
+  - intervals
+  - math-bits
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: freemium
+  gem: false
+  why: Filterable NC150/NC250 lists with solutions; free access to premium problem statements.
+  last_checked: '2026-09-25'
+- id: dsa-neetcode-courses
+  title: NeetCode courses
+  url: https://neetcode.io/courses
+  type: course
+  topics:
+  - approach-complexity
+  - problem-tracker
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: paid
+  gem: false
+  why: Structured paid courses if you want lectures beyond the free videos.
+  last_checked: '2026-09-25'
+- id: dsa-neetcode-yt
+  title: NeetCode YouTube channel
+  url: https://www.youtube.com/@NeetCode
+  type: video
+  topics: *id001
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: Clear whiteboard explanations, ideal for a 10-minute unstick after the time-box.
+  last_checked: '2026-09-25'
+- id: dsa-tih-techniques
+  title: 'Tech Interview Handbook: coding interview techniques'
+  url: https://www.techinterviewhandbook.org/coding-interview-techniques/
+  type: article
+  topics:
+  - approach-complexity
+  priority: P0
+  complexity: 1
+  level: intermediate
+  cost: free
+  gem: false
+  why: 'Best free description of what to do in the room: clarify, plan, test, communicate.'
+  last_checked: '2026-09-25'
+- id: dsa-tih-cheatsheet
+  title: 'Tech Interview Handbook: coding interview cheatsheet'
+  url: https://www.techinterviewhandbook.org/coding-interview-cheatsheet/
+  type: article
+  topics:
+  - approach-complexity
+  - problem-tracker
+  priority: P0
+  complexity: 1
+  level: intermediate
+  cost: free
+  gem: false
+  why: One-page before/during/after checklist worth printing.
+  last_checked: '2026-09-25'
+- id: dsa-tih-study
+  title: 'Tech Interview Handbook: algorithms study cheatsheet'
+  url: https://www.techinterviewhandbook.org/algorithms/study-cheatsheet/
+  type: article
+  topics:
+  - problem-tracker
+  - greedy
+  priority: P1
+  complexity: 1
+  level: intermediate
+  cost: free
+  gem: false
+  why: Study-plan view of which topics matter and in what order.
+  last_checked: '2026-09-25'
+- id: dsa-tih-grind75
+  title: 'Tech Interview Handbook: Grind 75'
+  url: https://www.techinterviewhandbook.org/grind75
+  type: interactive
+  topics:
+  - problem-tracker
+  priority: P2
+  complexity: 1
+  level: intermediate
+  cost: free
+  gem: false
+  why: Time-scheduled 75-problem list; a lighter alternative when short on time.
+  last_checked: '2026-09-25'
+- id: dsa-tih-array
+  title: 'Tech Interview Handbook: Array'
+  url: https://www.techinterviewhandbook.org/algorithms/array/
+  type: article
+  topics:
+  - arrays-hashing
+  - two-pointers
+  priority: P1
+  complexity: 1
+  level: intermediate
+  cost: free
+  gem: false
+  why: Concise corner-case and technique checklist for array problems.
+  last_checked: '2026-09-25'
+- id: dsa-tih-string
+  title: 'Tech Interview Handbook: String'
+  url: https://www.techinterviewhandbook.org/algorithms/string/
+  type: article
+  topics:
+  - sliding-window
+  - arrays-hashing
+  priority: P1
+  complexity: 1
+  level: intermediate
+  cost: free
+  gem: false
+  why: Concise corner-case and technique checklist for string problems.
+  last_checked: '2026-09-25'
+- id: dsa-tih-hash-table
+  title: 'Tech Interview Handbook: Hash table'
+  url: https://www.techinterviewhandbook.org/algorithms/hash-table/
+  type: article
+  topics:
+  - arrays-hashing
+  priority: P1
+  complexity: 1
+  level: intermediate
+  cost: free
+  gem: false
+  why: Concise corner-case and technique checklist for hash table problems.
+  last_checked: '2026-09-25'
+- id: dsa-tih-recursion
+  title: 'Tech Interview Handbook: Recursion'
+  url: https://www.techinterviewhandbook.org/algorithms/recursion/
+  type: article
+  topics:
+  - backtracking
+  - trees
+  priority: P1
+  complexity: 1
+  level: intermediate
+  cost: free
+  gem: false
+  why: Concise corner-case and technique checklist for recursion problems.
+  last_checked: '2026-09-25'
+- id: dsa-tih-sorting-searching
+  title: 'Tech Interview Handbook: Sorting & searching'
+  url: https://www.techinterviewhandbook.org/algorithms/sorting-searching/
+  type: article
+  topics:
+  - binary-search
+  priority: P1
+  complexity: 1
+  level: intermediate
+  cost: free
+  gem: false
+  why: Concise corner-case and technique checklist for sorting & searching problems.
+  last_checked: '2026-09-25'
+- id: dsa-tih-matrix
+  title: 'Tech Interview Handbook: Matrix'
+  url: https://www.techinterviewhandbook.org/algorithms/matrix/
+  type: article
+  topics:
+  - math-bits
+  priority: P1
+  complexity: 1
+  level: intermediate
+  cost: free
+  gem: false
+  why: Concise corner-case and technique checklist for matrix problems.
+  last_checked: '2026-09-25'
+- id: dsa-tih-linked-list
+  title: 'Tech Interview Handbook: Linked list'
+  url: https://www.techinterviewhandbook.org/algorithms/linked-list/
+  type: article
+  topics:
+  - linked-list
+  priority: P1
+  complexity: 1
+  level: intermediate
+  cost: free
+  gem: false
+  why: Concise corner-case and technique checklist for linked list problems.
+  last_checked: '2026-09-25'
+- id: dsa-tih-stack
+  title: 'Tech Interview Handbook: Stack'
+  url: https://www.techinterviewhandbook.org/algorithms/stack/
+  type: article
+  topics:
+  - stack
+  priority: P1
+  complexity: 1
+  level: intermediate
+  cost: free
+  gem: false
+  why: Concise corner-case and technique checklist for stack problems.
+  last_checked: '2026-09-25'
+- id: dsa-tih-tree
+  title: 'Tech Interview Handbook: Tree'
+  url: https://www.techinterviewhandbook.org/algorithms/tree/
+  type: article
+  topics:
+  - trees
+  priority: P1
+  complexity: 1
+  level: intermediate
+  cost: free
+  gem: false
+  why: Concise corner-case and technique checklist for tree problems.
+  last_checked: '2026-09-25'
+- id: dsa-tih-graph
+  title: 'Tech Interview Handbook: Graph'
+  url: https://www.techinterviewhandbook.org/algorithms/graph/
+  type: article
+  topics:
+  - graphs
+  priority: P1
+  complexity: 1
+  level: intermediate
+  cost: free
+  gem: false
+  why: Concise corner-case and technique checklist for graph problems.
+  last_checked: '2026-09-25'
+- id: dsa-tih-heap
+  title: 'Tech Interview Handbook: Heap'
+  url: https://www.techinterviewhandbook.org/algorithms/heap/
+  type: article
+  topics:
+  - heap
+  priority: P1
+  complexity: 1
+  level: intermediate
+  cost: free
+  gem: false
+  why: Concise corner-case and technique checklist for heap problems.
+  last_checked: '2026-09-25'
+- id: dsa-tih-trie
+  title: 'Tech Interview Handbook: Trie'
+  url: https://www.techinterviewhandbook.org/algorithms/trie/
+  type: article
+  topics:
+  - tries
+  priority: P1
+  complexity: 1
+  level: intermediate
+  cost: free
+  gem: false
+  why: Concise corner-case and technique checklist for trie problems.
+  last_checked: '2026-09-25'
+- id: dsa-tih-interval
+  title: 'Tech Interview Handbook: Interval'
+  url: https://www.techinterviewhandbook.org/algorithms/interval/
+  type: article
+  topics:
+  - intervals
+  priority: P1
+  complexity: 1
+  level: intermediate
+  cost: free
+  gem: false
+  why: Concise corner-case and technique checklist for interval problems.
+  last_checked: '2026-09-25'
+- id: dsa-tih-dynamic-programming
+  title: 'Tech Interview Handbook: Dynamic programming'
+  url: https://www.techinterviewhandbook.org/algorithms/dynamic-programming/
+  type: article
+  topics:
+  - dp-1d
+  - dp-2d
+  priority: P1
+  complexity: 1
+  level: intermediate
+  cost: free
+  gem: false
+  why: Concise corner-case and technique checklist for dynamic programming problems.
+  last_checked: '2026-09-25'
+- id: dsa-tih-binary
+  title: 'Tech Interview Handbook: Binary / bit manipulation'
+  url: https://www.techinterviewhandbook.org/algorithms/binary/
+  type: article
+  topics:
+  - math-bits
+  priority: P1
+  complexity: 1
+  level: intermediate
+  cost: free
+  gem: false
+  why: Concise corner-case and technique checklist for binary / bit manipulation problems.
+  last_checked: '2026-09-25'
+- id: dsa-tih-math
+  title: 'Tech Interview Handbook: Math'
+  url: https://www.techinterviewhandbook.org/algorithms/math/
+  type: article
+  topics:
+  - math-bits
+  priority: P1
+  complexity: 1
+  level: intermediate
+  cost: free
+  gem: false
+  why: Concise corner-case and technique checklist for math problems.
+  last_checked: '2026-09-25'
+- id: dsa-tih-queue
+  title: 'Tech Interview Handbook: Queue'
+  url: https://www.techinterviewhandbook.org/algorithms/queue/
+  type: article
+  topics:
+  - stack
+  - graphs
+  priority: P1
+  complexity: 1
+  level: intermediate
+  cost: free
+  gem: false
+  why: Concise corner-case and technique checklist for queue problems.
+  last_checked: '2026-09-25'
+- id: dsa-bigo
+  title: Big-O Cheat Sheet
+  url: https://www.bigocheatsheet.com/
+  type: docs
+  topics:
+  - approach-complexity
+  priority: P1
+  complexity: 1
+  level: intermediate
+  cost: free
+  gem: false
+  why: One-page complexity table for common structures and sorts.
+  last_checked: '2026-09-25'
+- id: dsa-pytime
+  title: Python TimeComplexity wiki
+  url: https://wiki.python.org/moin/TimeComplexity
+  type: docs
+  topics:
+  - approach-complexity
+  - python-idioms
+  priority: P0
+  complexity: 1
+  level: intermediate
+  cost: free
+  gem: false
+  why: Actual CPython costs of list, dict, set and deque operations.
+  last_checked: '2026-09-25'
+- id: dsa-erickson
+  title: 'Jeff Erickson: Algorithms (free book)'
+  url: https://jeffe.cs.illinois.edu/teaching/algorithms/
+  type: book
+  topics:
+  - approach-complexity
+  - backtracking
+  - dp-1d
+  - dp-2d
+  - greedy
+  - graphs
+  - advanced-graphs
+  priority: P1
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: Rigorous but readable; teaches recursion, DP and greedy proofs better than most interview material.
+  last_checked: '2026-09-25'
+- id: dsa-erickson-recursion
+  title: 'Erickson Algorithms: ch. 1 Recursion'
+  url: https://jeffe.cs.illinois.edu/teaching/algorithms/book/01-recursion.pdf
+  type: book
+  topics:
+  - approach-complexity
+  - trees
+  priority: P1
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: 'Free PDF chapter: ch. 1 recursion with proofs and worked examples.'
+  last_checked: '2026-09-25'
+- id: dsa-erickson-backtracking
+  title: 'Erickson Algorithms: ch. 2 Backtracking'
+  url: https://jeffe.cs.illinois.edu/teaching/algorithms/book/02-backtracking.pdf
+  type: book
+  topics:
+  - backtracking
+  priority: P1
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: 'Free PDF chapter: ch. 2 backtracking with proofs and worked examples.'
+  last_checked: '2026-09-25'
+- id: dsa-erickson-dynprog
+  title: 'Erickson Algorithms: ch. 3 Dynamic programming'
+  url: https://jeffe.cs.illinois.edu/teaching/algorithms/book/03-dynprog.pdf
+  type: book
+  topics:
+  - dp-1d
+  - dp-2d
+  priority: P1
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: 'Free PDF chapter: ch. 3 dynamic programming with proofs and worked examples.'
+  last_checked: '2026-09-25'
+- id: dsa-erickson-greedy
+  title: 'Erickson Algorithms: ch. 4 Greedy'
+  url: https://jeffe.cs.illinois.edu/teaching/algorithms/book/04-greedy.pdf
+  type: book
+  topics:
+  - greedy
+  - intervals
+  priority: P1
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: 'Free PDF chapter: ch. 4 greedy with proofs and worked examples.'
+  last_checked: '2026-09-25'
+- id: dsa-erickson-graphs
+  title: 'Erickson Algorithms: ch. 5 Graph traversal'
+  url: https://jeffe.cs.illinois.edu/teaching/algorithms/book/05-graphs.pdf
+  type: book
+  topics:
+  - graphs
+  priority: P1
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: 'Free PDF chapter: ch. 5 graph traversal with proofs and worked examples.'
+  last_checked: '2026-09-25'
+- id: dsa-erickson-sssp
+  title: 'Erickson Algorithms: ch. 8 Shortest paths'
+  url: https://jeffe.cs.illinois.edu/teaching/algorithms/book/08-sssp.pdf
+  type: book
+  topics:
+  - advanced-graphs
+  priority: P1
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: 'Free PDF chapter: ch. 8 shortest paths with proofs and worked examples.'
+  last_checked: '2026-09-25'
+- id: dsa-cpalgo
+  title: cp-algorithms
+  url: https://cp-algorithms.com/
+  type: docs
+  topics:
+  - advanced-graphs
+  - binary-search
+  - math-bits
+  - graphs
+  priority: P1
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: Competitive-programming grade explanations with proofs and variants.
+  last_checked: '2026-09-25'
+- id: dsa-cp-dijkstra
+  title: 'cp-algorithms: Dijkstra'
+  url: https://cp-algorithms.com/graph/dijkstra.html
+  type: article
+  topics:
+  - advanced-graphs
+  priority: P2
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: Proof-level reference for dijkstra.
+  last_checked: '2026-09-25'
+- id: dsa-cp-bellman-ford
+  title: 'cp-algorithms: Bellman-Ford'
+  url: https://cp-algorithms.com/graph/bellman_ford.html
+  type: article
+  topics:
+  - advanced-graphs
+  priority: P2
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: Proof-level reference for bellman-ford.
+  last_checked: '2026-09-25'
+- id: dsa-cp-mst-kruskal
+  title: 'cp-algorithms: Kruskal MST'
+  url: https://cp-algorithms.com/graph/mst_kruskal.html
+  type: article
+  topics:
+  - advanced-graphs
+  priority: P2
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: Proof-level reference for kruskal mst.
+  last_checked: '2026-09-25'
+- id: dsa-cp-mst-prim
+  title: 'cp-algorithms: Prim MST'
+  url: https://cp-algorithms.com/graph/mst_prim.html
+  type: article
+  topics:
+  - advanced-graphs
+  priority: P2
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: Proof-level reference for prim mst.
+  last_checked: '2026-09-25'
+- id: dsa-cp-01-bfs
+  title: 'cp-algorithms: 0-1 BFS'
+  url: https://cp-algorithms.com/graph/01_bfs.html
+  type: article
+  topics:
+  - advanced-graphs
+  priority: P2
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: Proof-level reference for 0-1 bfs.
+  last_checked: '2026-09-25'
+- id: dsa-cp-disjoint-set-union
+  title: 'cp-algorithms: Disjoint Set Union'
+  url: https://cp-algorithms.com/data_structures/disjoint_set_union.html
+  type: article
+  topics:
+  - graphs
+  priority: P2
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: Proof-level reference for disjoint set union.
+  last_checked: '2026-09-25'
+- id: dsa-cp-topological-sort
+  title: 'cp-algorithms: Topological sort'
+  url: https://cp-algorithms.com/graph/topological-sort.html
+  type: article
+  topics:
+  - graphs
+  priority: P2
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: Proof-level reference for topological sort.
+  last_checked: '2026-09-25'
+- id: dsa-cp-binary-search
+  title: 'cp-algorithms: Binary search'
+  url: https://cp-algorithms.com/num_methods/binary_search.html
+  type: article
+  topics:
+  - binary-search
+  priority: P2
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: Proof-level reference for binary search.
+  last_checked: '2026-09-25'
+- id: dsa-cp-bit-manipulation
+  title: 'cp-algorithms: Bit manipulation'
+  url: https://cp-algorithms.com/algebra/bit-manipulation.html
+  type: article
+  topics:
+  - math-bits
+  priority: P2
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: Proof-level reference for bit manipulation.
+  last_checked: '2026-09-25'
+- id: dsa-cp-aho-corasick
+  title: 'cp-algorithms: Aho-Corasick'
+  url: https://cp-algorithms.com/string/aho_corasick.html
+  type: article
+  topics:
+  - tries
+  priority: P2
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: Proof-level reference for aho-corasick.
+  last_checked: '2026-09-25'
+- id: dsa-cp-stack-queue-modification
+  title: 'cp-algorithms: Min stack / queue modification'
+  url: https://cp-algorithms.com/data_structures/stack_queue_modification.html
+  type: article
+  topics:
+  - stack
+  - sliding-window
+  priority: P2
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: Proof-level reference for min stack / queue modification.
+  last_checked: '2026-09-25'
+- id: dsa-cp-tortoise-and-hare
+  title: 'cp-algorithms: Floyd cycle finding'
+  url: https://cp-algorithms.com/others/tortoise_and_hare.html
+  type: article
+  topics:
+  - linked-list
+  priority: P2
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: Proof-level reference for floyd cycle finding.
+  last_checked: '2026-09-25'
+- id: dsa-cp-knapsack
+  title: 'cp-algorithms: Knapsack'
+  url: https://cp-algorithms.com/dynamic_programming/knapsack.html
+  type: article
+  topics:
+  - dp-1d
+  - dp-2d
+  priority: P2
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: Proof-level reference for knapsack.
+  last_checked: '2026-09-25'
+- id: dsa-cp-longest-increasing-subsequence
+  title: 'cp-algorithms: Longest increasing subsequence'
+  url: https://cp-algorithms.com/sequences/longest_increasing_subsequence.html
+  type: article
+  topics:
+  - dp-1d
+  priority: P2
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: Proof-level reference for longest increasing subsequence.
+  last_checked: '2026-09-25'
+- id: dsa-cp-euler-path
+  title: 'cp-algorithms: Euler path'
+  url: https://cp-algorithms.com/graph/euler_path.html
+  type: article
+  topics:
+  - advanced-graphs
+  priority: P2
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: Proof-level reference for euler path.
+  last_checked: '2026-09-25'
+- id: dsa-cp-bridge-searching
+  title: 'cp-algorithms: Bridge searching'
+  url: https://cp-algorithms.com/graph/bridge-searching.html
+  type: article
+  topics:
+  - advanced-graphs
+  priority: P2
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: Proof-level reference for bridge searching.
+  last_checked: '2026-09-25'
+- id: dsa-cp-binary-exp
+  title: 'cp-algorithms: Binary exponentiation'
+  url: https://cp-algorithms.com/algebra/binary-exp.html
+  type: article
+  topics:
+  - math-bits
+  priority: P2
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: Proof-level reference for binary exponentiation.
+  last_checked: '2026-09-25'
+- id: dsa-cp-euclid-algorithm
+  title: 'cp-algorithms: Euclidean algorithm'
+  url: https://cp-algorithms.com/algebra/euclid-algorithm.html
+  type: article
+  topics:
+  - math-bits
+  priority: P2
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: Proof-level reference for euclidean algorithm.
+  last_checked: '2026-09-25'
+- id: dsa-visualgo
+  title: VisuAlgo
+  url: https://visualgo.net/en
+  type: interactive
+  topics:
+  - trees
+  - heap
+  - graphs
+  - advanced-graphs
+  - linked-list
+  priority: P1
+  complexity: 1
+  level: intermediate
+  cost: free
+  gem: false
+  why: Step-through animations of core structures and algorithms.
+  last_checked: '2026-09-25'
+- id: dsa-usfca
+  title: USFCA data structure visualizations
+  url: https://www.cs.usfca.edu/~galles/visualization/Algorithms.html
+  type: interactive
+  topics:
+  - trees
+  - tries
+  - heap
+  priority: P2
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: true
+  why: Animations for red-black trees, B-trees, tries and radix trees.
+  last_checked: '2026-09-25'
+- id: dsa-astar
+  title: 'Red Blob Games: Introduction to A*'
+  url: https://www.redblobgames.com/pathfinding/a-star/introduction.html
+  type: interactive
+  topics:
+  - graphs
+  - advanced-graphs
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: true
+  why: Interactive path from BFS to Dijkstra to A*, best intuition builder for weighted search.
+  last_checked: '2026-09-25'
+- id: dsa-atcoder-dp
+  title: AtCoder Educational DP Contest
+  url: https://atcoder.jp/contests/dp
+  type: interactive
+  topics:
+  - dp-1d
+  - dp-2d
+  priority: P1
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: 26 graded DP problems with editorials; the best free DP drill.
+  last_checked: '2026-09-25'
+- id: dsa-cses
+  title: CSES Problem Set
+  url: https://cses.fi/problemset/
+  type: interactive
+  topics:
+  - greedy
+  - dp-1d
+  - dp-2d
+  - graphs
+  priority: P2
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: Curated classic algorithm problems with tests, beyond interview style.
+  last_checked: '2026-09-25'
+- id: dsa-cses-book
+  title: Competitive Programmer's Handbook (CSES)
+  url: https://cses.fi/book/book.pdf
+  type: book
+  topics:
+  - approach-complexity
+  - graphs
+  - dp-1d
+  priority: P2
+  complexity: 3
+  level: advanced
+  cost: free
+  gem: true
+  why: Compact free book with clean treatments of complexity, sorting, graphs and DP.
+  last_checked: '2026-09-25'
+- id: dsa-usaco
+  title: USACO Guide
+  url: https://usaco.guide/
+  type: course
+  topics:
+  - graphs
+  - dp-1d
+  - binary-search
+  priority: P2
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: Structured, free topic guides with graded problems.
+  last_checked: '2026-09-25'
+- id: dsa-cip
+  title: Coding Interview Patterns (ByteByteGo)
+  url: https://bytebytego.com/courses/coding-patterns
+  type: book
+  topics: *id001
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: paid
+  gem: false
+  why: Pattern-first book with clear diagrams; strong for hashing, windows, graphs and DP.
+  last_checked: '2026-09-25'
+- id: dsa-algomonster
+  title: AlgoMonster
+  url: https://algo.monster/
+  type: course
+  topics: *id001
+  priority: P2
+  complexity: 2
+  level: intermediate
+  cost: paid
+  gem: false
+  why: Template-driven decision-flow course; useful as a second explanation source.
+  last_checked: '2026-09-25'
+- id: dsa-hello-code
+  title: 'Hello Interview: coding interview prep'
+  url: https://www.hellointerview.com/learn/code
+  type: interactive
+  topics:
+  - two-pointers
+  - sliding-window
+  - stack
+  - binary-search
+  - heap
+  - graphs
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: freemium
+  gem: true
+  why: Animated pattern explainers focused on why the invariant works.
+  last_checked: '2026-09-25'
+- id: dsa-seanprashad
+  title: Sean Prashad's LeetCode Patterns
+  url: https://seanprashad.com/leetcode-patterns/
+  type: interactive
+  topics:
+  - problem-tracker
+  - arrays-hashing
+  - two-pointers
+  - sliding-window
+  - stack
+  - binary-search
+  - linked-list
+  - trees
+  - tries
+  - heap
+  - backtracking
+  - graphs
+  - advanced-graphs
+  - dp-1d
+  - dp-2d
+  - greedy
+  - intervals
+  - math-bits
+  priority: P2
+  complexity: 1
+  level: intermediate
+  cost: free
+  gem: true
+  why: Pattern-tagged, company-filterable list to extend practice beyond NC250.
+  last_checked: '2026-09-25'
+- id: dsa-labuladong
+  title: labuladong's algorithm notes (English)
+  url: https://labuladong.online/algo/en/
+  type: article
+  topics:
+  - backtracking
+  - dp-1d
+  - dp-2d
+  - sliding-window
+  - binary-search
+  priority: P2
+  complexity: 3
+  level: intermediate
+  cost: freemium
+  gem: true
+  why: 'Framework-style thinking: one skeleton per pattern family.'
+  last_checked: '2026-09-25'
+- id: dsa-beyond-ctci
+  title: Beyond Cracking the Coding Interview
+  url: https://www.beyondctci.com/
+  type: book
+  topics:
+  - approach-complexity
+  - problem-tracker
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: paid
+  gem: false
+  why: Modern interview process and the 'boosters' to use when stuck.
+  last_checked: '2026-09-25'
+- id: dsa-cracking
+  title: Cracking the Coding Interview
+  url: https://www.crackingthecodinginterview.com/
+  type: book
+  topics:
+  - approach-complexity
+  priority: P2
+  complexity: 2
+  level: intermediate
+  cost: paid
+  gem: false
+  why: Classic reference for behavioural and process advice; problems skew easier than current loops.
+  last_checked: '2026-09-25'
+- id: dsa-epi
+  title: Elements of Programming Interviews
+  url: https://elementsofprogramminginterviews.com/
+  type: book
+  topics:
+  - approach-complexity
+  - arrays-hashing
+  - two-pointers
+  - sliding-window
+  - stack
+  - binary-search
+  - linked-list
+  - trees
+  - tries
+  - heap
+  - backtracking
+  - graphs
+  - advanced-graphs
+  - dp-1d
+  - dp-2d
+  - greedy
+  - intervals
+  - math-bits
+  priority: P2
+  complexity: 4
+  level: advanced
+  cost: paid
+  gem: false
+  why: Denser, harder problem set; good for Staff-level stretch practice (Python edition exists).
+  last_checked: '2026-09-25'
+- id: dsa-grokking-algorithms
+  title: Grokking Algorithms (2nd ed.)
+  url: https://www.manning.com/books/grokking-algorithms-second-edition
+  type: book
+  topics:
+  - approach-complexity
+  - graphs
+  priority: P2
+  complexity: 1
+  level: beginner
+  cost: paid
+  gem: false
+  why: Illustrated refresher if a fundamentals gap appears; skip otherwise.
+  last_checked: '2026-09-25'
+- id: dsa-algs4
+  title: Algorithms 4th ed. (Sedgewick and Wayne) companion site
+  url: https://algs4.cs.princeton.edu/home/
+  type: book
+  topics:
+  - trees
+  - heap
+  - tries
+  - graphs
+  - advanced-graphs
+  priority: P2
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: false
+  why: Rigorous BSTs, heaps, tries, graphs with reference implementations.
+  last_checked: '2026-09-25'
+- id: dsa-mit-6006
+  title: MIT 6.006 Introduction to Algorithms (OCW, Spring 2020)
+  url: https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/
+  type: course
+  topics:
+  - approach-complexity
+  - greedy
+  - dp-1d
+  - graphs
+  priority: P2
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: false
+  why: Full lecture set with problem sets; deep theory if you have time.
+  last_checked: '2026-09-25'
+- id: dsa-princeton-coursera
+  title: Algorithms, Part I (Princeton, Coursera)
+  url: https://www.coursera.org/learn/algorithms-part1
+  type: course
+  topics:
+  - trees
+  - heap
+  - approach-complexity
+  priority: P2
+  complexity: 3
+  level: intermediate
+  cost: freemium
+  gem: false
+  why: Lectures with programming assignments; audit for free.
+  last_checked: '2026-09-25'
+- id: dsa-williamfiset
+  title: 'William Fiset: Algorithms repo'
+  url: https://github.com/williamfiset/Algorithms
+  type: repo
+  topics:
+  - graphs
+  - advanced-graphs
+  - trees
+  priority: P2
+  complexity: 3
+  level: advanced
+  cost: free
+  gem: true
+  why: Clean reference implementations of graph and tree algorithms with diagrams in the videos.
+  last_checked: '2026-09-25'
+- id: dsa-williamfiset-yt
+  title: William Fiset YouTube
+  url: https://www.youtube.com/@WilliamFiset-videos
+  type: video
+  topics:
+  - graphs
+  - advanced-graphs
+  - trees
+  priority: P2
+  complexity: 3
+  level: advanced
+  cost: free
+  gem: true
+  why: Best free visual explanations of Tarjan, network flow, and advanced graph topics.
+  last_checked: '2026-09-25'
+- id: dsa-errichto
+  title: Errichto YouTube
+  url: https://www.youtube.com/@Errichto
+  type: video
+  topics:
+  - approach-complexity
+  - advanced-graphs
+  - dp-1d
+  priority: P2
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: Competitive-programming teaching with sharp intuition on complexity and proofs.
+  last_checked: '2026-09-25'
+- id: dsa-abdulbari
+  title: Abdul Bari YouTube
+  url: https://www.youtube.com/@abdul_bari
+  type: video
+  topics:
+  - approach-complexity
+  - dp-1d
+  - graphs
+  priority: P2
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: Patient classic explanations of sorting, recurrences, DP and graphs.
+  last_checked: '2026-09-25'
+- id: dsa-interviewing-io
+  title: interviewing.io
+  url: https://interviewing.io/
+  type: interactive
+  topics:
+  - approach-complexity
+  - problem-tracker
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: freemium
+  gem: true
+  why: Anonymous mock interviews with engineers from top companies; realistic pressure.
+  last_checked: '2026-09-25'
+- id: dsa-interviewing-io-guides
+  title: interviewing.io hiring process guides
+  url: https://interviewing.io/guides/hiring-process
+  type: article
+  topics:
+  - approach-complexity
+  priority: P2
+  complexity: 1
+  level: intermediate
+  cost: free
+  gem: true
+  why: Data-backed view of how FAANG loops are structured and scored.
+  last_checked: '2026-09-25'
+- id: dsa-doocs
+  title: doocs/leetcode solutions
+  url: https://github.com/doocs/leetcode
+  type: repo
+  topics:
+  - problem-tracker
+  - arrays-hashing
+  - two-pointers
+  - sliding-window
+  - stack
+  - binary-search
+  - linked-list
+  - trees
+  - tries
+  - heap
+  - backtracking
+  - graphs
+  - advanced-graphs
+  - dp-1d
+  - dp-2d
+  - greedy
+  - intervals
+  - math-bits
+  priority: P2
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: Multi-language reference solutions (including Python) for nearly every problem.
+  last_checked: '2026-09-25'
+- id: dsa-py-heapq
+  title: Python heapq docs
+  url: https://docs.python.org/3/library/heapq.html
+  type: docs
+  topics:
+  - heap
+  - python-idioms
+  - advanced-graphs
+  priority: P0
+  complexity: 1
+  level: intermediate
+  cost: free
+  gem: false
+  why: Priority queue recipes including lazy deletion and tie-breaks.
+  last_checked: '2026-09-25'
+- id: dsa-py-bisect
+  title: Python bisect docs
+  url: https://docs.python.org/3/library/bisect.html
+  type: docs
+  topics:
+  - binary-search
+  - python-idioms
+  - intervals
+  priority: P0
+  complexity: 1
+  level: intermediate
+  cost: free
+  gem: false
+  why: Sorted list search recipes and the key= parameter.
+  last_checked: '2026-09-25'
+- id: dsa-py-collections
+  title: Python collections docs
+  url: https://docs.python.org/3/library/collections.html
+  type: docs
+  topics:
+  - python-idioms
+  - arrays-hashing
+  - linked-list
+  priority: P0
+  complexity: 1
+  level: intermediate
+  cost: free
+  gem: false
+  why: deque, Counter, defaultdict and OrderedDict semantics.
+  last_checked: '2026-09-25'
+- id: dsa-py-functools
+  title: Python functools docs
+  url: https://docs.python.org/3/library/functools.html
+  type: docs
+  topics:
+  - python-idioms
+  - dp-1d
+  - dp-2d
+  priority: P0
+  complexity: 1
+  level: intermediate
+  cost: free
+  gem: false
+  why: cache, lru_cache and cmp_to_key.
+  last_checked: '2026-09-25'
+- id: dsa-py-itertools
+  title: Python itertools docs
+  url: https://docs.python.org/3/library/itertools.html
+  type: docs
+  topics:
+  - python-idioms
+  - backtracking
+  priority: P1
+  complexity: 1
+  level: intermediate
+  cost: free
+  gem: false
+  why: Combinatoric generators as reference answers.
+  last_checked: '2026-09-25'
+- id: dsa-py-sorting
+  title: Python Sorting HOWTO
+  url: https://docs.python.org/3/howto/sorting.html
+  type: docs
+  topics:
+  - python-idioms
+  - intervals
+  priority: P1
+  complexity: 1
+  level: intermediate
+  cost: free
+  gem: false
+  why: Key functions, stability and multi-key sorts.
+  last_checked: '2026-09-25'
+- id: dsa-sortedcontainers
+  title: sortedcontainers documentation
+  url: https://grantjenks.com/docs/sortedcontainers/
+  type: docs
+  topics:
+  - python-idioms
+  - intervals
+  - heap
+  priority: P1
+  complexity: 2
+  level: advanced
+  cost: free
+  gem: true
+  why: 'SortedList/SortedDict: the missing balanced BST for Python.'
+  last_checked: '2026-09-25'
+- id: dsa-py-threading
+  title: Python threading docs
+  url: https://docs.python.org/3/library/threading.html
+  type: docs
+  topics:
+  - concurrency-lld
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: Lock, RLock, Condition, Semaphore, Event and Barrier semantics.
+  last_checked: '2026-09-25'
+- id: dsa-py-queue
+  title: Python queue docs
+  url: https://docs.python.org/3/library/queue.html
+  type: docs
+  topics:
+  - concurrency-lld
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: Thread-safe bounded queues and task tracking.
+  last_checked: '2026-09-25'
+- id: dsa-py-asyncio-sync
+  title: Python asyncio synchronization primitives
+  url: https://docs.python.org/3/library/asyncio-sync.html
+  type: docs
+  topics:
+  - concurrency-lld
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: Coroutine Lock, Semaphore, Event and Condition.
+  last_checked: '2026-09-25'
+- id: dsa-py-futures
+  title: Python concurrent.futures docs
+  url: https://docs.python.org/3/library/concurrent.futures.html
+  type: docs
+  topics:
+  - concurrency-lld
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: Thread and process pool executors and futures.
+  last_checked: '2026-09-25'
+- id: dsa-free-threading
+  title: Python free-threading guide
+  url: https://py-free-threading.github.io/
+  type: docs
+  topics:
+  - concurrency-lld
+  priority: P1
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: What changes without the GIL (3.14t) and how to write thread-safe extensions and code.
+  last_checked: '2026-09-25'
+- id: dsa-superfastpython
+  title: Super Fast Python
+  url: https://superfastpython.com/
+  type: article
+  topics:
+  - concurrency-lld
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: freemium
+  gem: true
+  why: Practical, benchmarked threading, asyncio and multiprocessing recipes.
+  last_checked: '2026-09-25'
+- id: dsa-semaphores
+  title: The Little Book of Semaphores
+  url: https://greenteapress.com/wp/semaphores/
+  type: book
+  topics:
+  - concurrency-lld
+  priority: P1
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: Classic synchronization puzzles with worked solutions.
+  last_checked: '2026-09-25'
+- id: dsa-asyncio-book
+  title: Python Concurrency with asyncio (Fowler)
+  url: https://www.manning.com/books/python-concurrency-with-asyncio
+  type: book
+  topics:
+  - concurrency-lld
+  priority: P2
+  complexity: 4
+  level: advanced
+  cost: paid
+  gem: false
+  why: Deep treatment of the asyncio model.
+  last_checked: '2026-09-25'
+- id: dsa-awesome-lld
+  title: awesome-low-level-design
+  url: https://github.com/ashishps1/awesome-low-level-design
+  type: repo
+  topics:
+  - concurrency-lld
+  priority: P0
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: true
+  why: Curated LLD problems with class diagrams and code (parking lot, elevator, LRU, rate limiter).
+  last_checked: '2026-09-25'
+- id: dsa-refactoring-guru
+  title: 'Refactoring Guru: design patterns'
+  url: https://refactoring.guru/design-patterns
+  type: article
+  topics:
+  - concurrency-lld
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: Clear Strategy, State and Observer explanations for OOD rounds.
+  last_checked: '2026-09-25'
+- id: dsa-dabeaz
+  title: David Beazley
+  url: https://www.dabeaz.com/
+  type: article
+  topics:
+  - concurrency-lld
+  - python-idioms
+  priority: P2
+  complexity: 5
+  level: advanced
+  cost: freemium
+  gem: true
+  why: Deep understanding of the GIL, generators and concurrency in Python.
+  last_checked: '2026-09-25'
+- id: dsa-fluent-python
+  title: Fluent Python, 2nd edition
+  url: https://www.fluentpython.com/
+  type: book
+  topics:
+  - python-idioms
+  priority: P1
+  complexity: 3
+  level: advanced
+  cost: paid
+  gem: false
+  why: Data model depth that explains the costs behind Python idioms.
+  last_checked: '2026-09-25'
+- id: dsa-pythontutor
+  title: Python Tutor
+  url: https://pythontutor.com/
+  type: interactive
+  topics:
+  - linked-list
+  - trees
+  - python-idioms
+  priority: P2
+  complexity: 1
+  level: intermediate
+  cost: free
+  gem: true
+  why: Visualise pointer and object structure while your code runs.
+  last_checked: '2026-09-25'
+- id: dsa-bithacks
+  title: Bit Twiddling Hacks
+  url: https://graphics.stanford.edu/~seander/bithacks.html
+  type: article
+  topics:
+  - math-bits
+  priority: P1
+  complexity: 3
+  level: advanced
+  cost: free
+  gem: true
+  why: Canonical catalogue of bit tricks with explanations.
+  last_checked: '2026-09-25'
+- id: dsa-master-theorem
+  title: Master theorem (Wikipedia)
+  url: https://en.wikipedia.org/wiki/Master_theorem_(analysis_of_algorithms)
+  type: article
+  topics:
+  - approach-complexity
+  priority: P2
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: Quick reference for divide and conquer recurrences.
+  last_checked: '2026-09-25'
+- id: dsa-sdprimer
+  title: System Design Primer
+  url: https://github.com/donnemartin/system-design-primer
+  type: repo
+  topics:
+  - concurrency-lld
+  priority: P2
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: Cross-track link for scaling follow-ups (rate limiters, caches, queues).
+  last_checked: '2026-09-25'

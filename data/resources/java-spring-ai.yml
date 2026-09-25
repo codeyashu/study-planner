@@ -1,0 +1,843 @@
+# Resources for track java-spring-ai. Schema: id, title, url, type, topics, priority, complexity, level, cost, gem, why, last_checked
+
+resources:
+  - id: java-jdk25
+    title: "JDK 25 project page"
+    url: https://openjdk.org/projects/jdk/25/
+    type: docs
+    topics: [modern-java]
+    priority: P1
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Authoritative list of JEPs in the current LTS with status."
+    last_checked: 2026-09-25
+  - id: java-almanac
+    title: "javaalmanac.io"
+    url: https://javaalmanac.io/
+    type: interactive
+    topics: [modern-java, jvm-performance]
+    priority: P1
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: true
+    why: "Version-by-version API diffs and runnable snippets; answers since-which-JDK questions fast."
+    last_checked: 2026-09-25
+  - id: java-devjava
+    title: "dev.java Learn"
+    url: https://dev.java/learn/
+    type: docs
+    topics: [modern-java]
+    priority: P1
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Oracle DevRel tutorials on records, sealed classes and pattern matching."
+    last_checked: 2026-09-25
+  - id: java-jepcafe
+    title: "Java YouTube channel (JEP Cafe, Newscasts)"
+    url: https://www.youtube.com/@java
+    type: video
+    topics: [modern-java, virtual-threads-structured-concurrency]
+    priority: P1
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: true
+    why: "JEP Cafe by Jose Paumard and Nicolai Parlog's Newscasts explain each feature with the why."
+    last_checked: 2026-09-25
+  - id: java-nipafx
+    title: "nipafx.dev (Nicolai Parlog)"
+    url: https://nipafx.dev/
+    type: article
+    topics: [modern-java]
+    priority: P1
+    complexity: 3
+    level: advanced
+    cost: free
+    gem: true
+    why: "Deep dives on data-oriented programming and new Java features."
+    last_checked: 2026-09-25
+  - id: java-insidejava
+    title: "inside.java"
+    url: https://inside.java/
+    type: article
+    topics: [modern-java, virtual-threads-structured-concurrency, jvm-performance]
+    priority: P1
+    complexity: 3
+    level: advanced
+    cost: free
+    gem: false
+    why: "Official JDK team blog: design rationale for patterns, Loom, GC and Leyden."
+    last_checked: 2026-09-25
+  - id: java-jep485
+    title: "JEP 485: Stream Gatherers"
+    url: https://openjdk.org/jeps/485
+    type: docs
+    topics: [modern-java]
+    priority: P1
+    complexity: 3
+    level: advanced
+    cost: free
+    gem: false
+    why: "Motivation and API for custom intermediate stream operations."
+    last_checked: 2026-09-25
+  - id: java-jep512
+    title: "JEP 512: Compact Source Files and Instance Main Methods"
+    url: https://openjdk.org/jeps/512
+    type: docs
+    topics: [modern-java]
+    priority: P1
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Exact semantics of instance main and implicit imports in JDK 25."
+    last_checked: 2026-09-25
+  - id: java-jep444
+    title: "JEP 444: Virtual Threads"
+    url: https://openjdk.org/jeps/444
+    type: docs
+    topics: [virtual-threads-structured-concurrency]
+    priority: P0
+    complexity: 3
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Design document; includes the do-not-pool guidance."
+    last_checked: 2026-09-25
+  - id: java-jep491
+    title: "JEP 491: Synchronize Virtual Threads without Pinning"
+    url: https://openjdk.org/jeps/491
+    type: docs
+    topics: [virtual-threads-structured-concurrency]
+    priority: P0
+    complexity: 4
+    level: advanced
+    cost: free
+    gem: false
+    why: "What changed in JDK 24 for pinning and what still pins."
+    last_checked: 2026-09-25
+  - id: java-jep505
+    title: "JEP 505: Structured Concurrency (Fifth Preview)"
+    url: https://openjdk.org/jeps/505
+    type: docs
+    topics: [virtual-threads-structured-concurrency, spring-ai-agents]
+    priority: P0
+    complexity: 4
+    level: advanced
+    cost: free
+    gem: false
+    why: "Current open()/Joiner API as shipped in JDK 25."
+    last_checked: 2026-09-25
+  - id: java-jep506
+    title: "JEP 506: Scoped Values"
+    url: https://openjdk.org/jeps/506
+    type: docs
+    topics: [virtual-threads-structured-concurrency]
+    priority: P0
+    complexity: 3
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Final API and the comparison with ThreadLocal."
+    last_checked: 2026-09-25
+  - id: java-netflixpin
+    title: "Netflix: Java 21 Virtual Threads - Dude, Where's My Lock?"
+    url: https://netflixtechblog.com/java-21-virtual-threads-dude-wheres-my-lock-3052540e231d
+    type: article
+    topics: [virtual-threads-structured-concurrency]
+    priority: P0
+    complexity: 4
+    level: advanced
+    cost: free
+    gem: true
+    why: "Production pinning deadlock narrative; excellent debugging story (site may block scripted fetches)."
+    last_checked: 2026-09-25
+  - id: java-springresil
+    title: "Spring Framework: Resilience features"
+    url: https://docs.spring.io/spring-framework/reference/core/resilience.html
+    type: docs
+    topics: [spring-boot-4, virtual-threads-structured-concurrency]
+    priority: P0
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Exact semantics of @Retryable, @ConcurrencyLimit and RetryTemplate."
+    last_checked: 2026-09-25
+  - id: java-boot4rn
+    title: "Spring Boot 4.0 Release Notes"
+    url: https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-4.0-Release-Notes
+    type: docs
+    topics: [spring-boot-4]
+    priority: P0
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Migration checklist: modules, Jackson 3, new starters."
+    last_checked: 2026-09-25
+  - id: java-fw7rn
+    title: "Spring Framework 7.0 Release Notes"
+    url: https://github.com/spring-projects/spring-framework/wiki/Spring-Framework-7.0-Release-Notes
+    type: docs
+    topics: [spring-boot-4]
+    priority: P0
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Versioning, resilience, JSpecify and HTTP service clients."
+    last_checked: 2026-09-25
+  - id: java-boot4ga
+    title: "Spring Boot 4.0.0 available now"
+    url: https://spring.io/blog/2025/11/20/spring-boot-4-0-0-available-now
+    type: article
+    topics: [spring-boot-4]
+    priority: P0
+    complexity: 1
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Official summary of headline Boot 4 features."
+    last_checked: 2026-09-25
+  - id: java-mvcver
+    title: "Spring MVC API versioning"
+    url: https://docs.spring.io/spring-framework/reference/web/webmvc-versioning.html
+    type: docs
+    topics: [spring-boot-4]
+    priority: P1
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Resolution strategies and deprecation headers."
+    last_checked: 2026-09-25
+  - id: java-danvega
+    title: "Dan Vega"
+    url: https://www.danvega.dev/
+    type: article
+    topics: [spring-boot-4, spring-ai-fundamentals]
+    priority: P0
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: true
+    why: "Practical Boot and Spring AI walkthroughs that track releases closely."
+    last_checked: 2026-09-25
+  - id: java-joslong
+    title: "Josh Long - Spring Tips (Spring Developer channel)"
+    url: https://www.youtube.com/@SpringSourceDev
+    type: video
+    topics: [spring-boot-4, spring-ai-rag]
+    priority: P0
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: true
+    why: "Live-coded tours of new Spring features including Spring AI."
+    last_checked: 2026-09-25
+  - id: java-joshlongsite
+    title: "Josh Long"
+    url: https://joshlong.com/
+    type: article
+    topics: [spring-boot-4, spring-ai-fundamentals]
+    priority: P1
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: true
+    why: "Talks and links from a long-time Spring advocate; good pointers to current material."
+    last_checked: 2026-09-25
+  - id: java-jspecify
+    title: "JSpecify"
+    url: https://jspecify.dev/
+    type: docs
+    topics: [spring-boot-4]
+    priority: P2
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Meaning and tooling of the null-safety annotations used across Spring."
+    last_checked: 2026-09-25
+  - id: java-saiga
+    title: "Spring AI 2.0.0 GA announcement"
+    url: https://spring.io/blog/2026/06/12/spring-ai-2-0-0-GA-available-now/
+    type: article
+    topics: [spring-ai-fundamentals, spring-ai-tools-mcp, polyglot-ai-architecture]
+    priority: P0
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: false
+    why: "What changed in 2.0: MCP annotations in core, ToolCallingAdvisor, Streamable HTTP default."
+    last_checked: 2026-09-25
+  - id: java-saistart
+    title: "Spring AI reference: Getting started"
+    url: https://docs.spring.io/spring-ai/reference/getting-started.html
+    type: docs
+    topics: [spring-ai-fundamentals]
+    priority: P0
+    complexity: 1
+    level: intermediate
+    cost: free
+    gem: false
+    why: "BOM coordinates, starters naming, supported Boot versions."
+    last_checked: 2026-09-25
+  - id: java-saichat
+    title: "Spring AI reference: ChatClient"
+    url: https://docs.spring.io/spring-ai/reference/api/chatclient.html
+    type: docs
+    topics: [spring-ai-fundamentals]
+    priority: P0
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Canonical ChatClient API including memory params and templates."
+    last_checked: 2026-09-25
+  - id: java-saiadv
+    title: "Spring AI reference: Advisors"
+    url: https://docs.spring.io/spring-ai/reference/api/advisors.html
+    type: docs
+    topics: [spring-ai-fundamentals, spring-ai-agents]
+    priority: P0
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Advisor interfaces, ordering semantics and built-ins."
+    last_checked: 2026-09-25
+  - id: java-saiso
+    title: "Spring AI reference: Structured output"
+    url: https://docs.spring.io/spring-ai/reference/api/structured-output-converter.html
+    type: docs
+    topics: [spring-ai-fundamentals]
+    priority: P0
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Converters, native mode and provider caveats."
+    last_checked: 2026-09-25
+  - id: java-saimem
+    title: "Spring AI reference: Chat memory"
+    url: https://docs.spring.io/spring-ai/reference/api/chat-memory.html
+    type: docs
+    topics: [spring-ai-fundamentals]
+    priority: P0
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Memory types, repositories and advisor integration."
+    last_checked: 2026-09-25
+  - id: java-saiupg
+    title: "Spring AI upgrade notes"
+    url: https://docs.spring.io/spring-ai/reference/upgrade-notes.html
+    type: docs
+    topics: [spring-boot-4, spring-ai-fundamentals]
+    priority: P0
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Breaking changes from 1.x such as property keys and options builders."
+    last_checked: 2026-09-25
+  - id: java-awesomesai
+    title: "awesome-spring-ai"
+    url: https://github.com/spring-ai-community/awesome-spring-ai
+    type: article
+    topics: [spring-ai-fundamentals, spring-ai-rag, spring-ai-tools-mcp, spring-ai-agents, polyglot-ai-architecture]
+    priority: P0
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: true
+    why: "Curated community projects, examples and talks around Spring AI."
+    last_checked: 2026-09-25
+  - id: java-saiexamples
+    title: "spring-ai-examples"
+    url: https://github.com/spring-projects/spring-ai-examples
+    type: code
+    topics: [spring-ai-rag, spring-ai-agents]
+    priority: P1
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Official runnable samples including RAG and agentic patterns."
+    last_checked: 2026-09-25
+  - id: java-saibook
+    title: "Spring AI in Action (Craig Walls)"
+    url: https://www.manning.com/books/spring-ai-in-action
+    type: book
+    topics: [spring-ai-fundamentals]
+    priority: P1
+    complexity: 2
+    level: intermediate
+    cost: paid
+    gem: false
+    why: "Book-length treatment; written against 1.x, concepts carry over."
+    last_checked: 2026-09-25
+  - id: java-sairag
+    title: "Spring AI reference: Retrieval Augmented Generation"
+    url: https://docs.spring.io/spring-ai/reference/api/retrieval-augmented-generation.html
+    type: docs
+    topics: [spring-ai-rag]
+    priority: P0
+    complexity: 3
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Modular RAG components and advisor semantics."
+    last_checked: 2026-09-25
+  - id: java-saipgv
+    title: "Spring AI reference: PGvector"
+    url: https://docs.spring.io/spring-ai/reference/api/vectordbs/pgvector.html
+    type: docs
+    topics: [spring-ai-rag]
+    priority: P0
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Properties, index types, filter examples."
+    last_checked: 2026-09-25
+  - id: java-saietl
+    title: "Spring AI reference: ETL pipeline"
+    url: https://docs.spring.io/spring-ai/reference/api/etl-pipeline.html
+    type: docs
+    topics: [spring-ai-rag]
+    priority: P0
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Document readers, transformers and writers."
+    last_checked: 2026-09-25
+  - id: java-pgvector
+    title: "pgvector"
+    url: https://github.com/pgvector/pgvector
+    type: docs
+    topics: [spring-ai-rag]
+    priority: P0
+    complexity: 3
+    level: advanced
+    cost: free
+    gem: false
+    why: "Authoritative on HNSW/IVFFlat parameters and iterative index scans."
+    last_checked: 2026-09-25
+  - id: java-pinerank
+    title: "Pinecone: Rerankers and two-stage retrieval"
+    url: https://www.pinecone.io/learn/series/rag/rerankers/
+    type: article
+    topics: [spring-ai-rag]
+    priority: P1
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Clear explanation of two-stage retrieval and cross-encoders."
+    last_checked: 2026-09-25
+  - id: java-hamelevals
+    title: "Hamel Husain: Evals FAQ"
+    url: https://hamel.dev/blog/posts/evals-faq/
+    type: article
+    topics: [spring-ai-rag, observability-testing]
+    priority: P0
+    complexity: 3
+    level: advanced
+    cost: free
+    gem: false
+    why: "Practical eval philosophy: error analysis before metrics."
+    last_checked: 2026-09-25
+  - id: java-saitools
+    title: "Spring AI reference: Tool calling"
+    url: https://docs.spring.io/spring-ai/reference/api/tools.html
+    type: docs
+    topics: [spring-ai-tools-mcp]
+    priority: P0
+    complexity: 3
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Tool loop, ToolContext, limits and user-controlled execution."
+    last_checked: 2026-09-25
+  - id: java-saimcp
+    title: "Spring AI reference: MCP overview"
+    url: https://docs.spring.io/spring-ai/reference/api/mcp/mcp-overview.html
+    type: docs
+    topics: [spring-ai-tools-mcp, polyglot-ai-architecture]
+    priority: P0
+    complexity: 3
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Server/client starters, transports and annotation map."
+    last_checked: 2026-09-25
+  - id: java-saimcpsrv
+    title: "Spring AI reference: MCP server boot starters"
+    url: https://docs.spring.io/spring-ai/reference/api/mcp/mcp-server-boot-starter-docs.html
+    type: docs
+    topics: [spring-ai-tools-mcp]
+    priority: P0
+    complexity: 3
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Exact starter artifact ids and protocol property values."
+    last_checked: 2026-09-25
+  - id: java-saimcpcli
+    title: "Spring AI reference: MCP client boot starters"
+    url: https://docs.spring.io/spring-ai/reference/api/mcp/mcp-client-boot-starter-docs.html
+    type: docs
+    topics: [spring-ai-tools-mcp]
+    priority: P0
+    complexity: 3
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Client connection configuration and tool callback provider."
+    last_checked: 2026-09-25
+  - id: java-mcpspec
+    title: "MCP specification 2026-07-28"
+    url: https://modelcontextprotocol.io/specification/2026-07-28
+    type: docs
+    topics: [spring-ai-tools-mcp, polyglot-ai-architecture]
+    priority: P0
+    complexity: 4
+    level: advanced
+    cost: free
+    gem: false
+    why: "Stateless core, auth hardening and extensions (release candidate as of July 2026)."
+    last_checked: 2026-09-25
+  - id: java-mcpjava
+    title: "MCP Java SDK"
+    url: https://github.com/modelcontextprotocol/java-sdk
+    type: code
+    topics: [spring-ai-tools-mcp]
+    priority: P2
+    complexity: 4
+    level: advanced
+    cost: free
+    gem: false
+    why: "The SDK Spring AI builds on; transport internals."
+    last_checked: 2026-09-25
+  - id: java-lcmcp
+    title: "langchain-mcp-adapters"
+    url: https://github.com/langchain-ai/langchain-mcp-adapters
+    type: code
+    topics: [spring-ai-tools-mcp, polyglot-ai-architecture]
+    priority: P0
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Python-side client used to consume the Java MCP server from LangGraph."
+    last_checked: 2026-09-25
+  - id: java-lethal
+    title: "Simon Willison: The lethal trifecta"
+    url: https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/
+    type: article
+    topics: [spring-ai-tools-mcp]
+    priority: P0
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Clearest framing of tool-combination and prompt-injection risk."
+    last_checked: 2026-09-25
+  - id: java-effagents
+    title: "Anthropic: Building effective agents"
+    url: https://www.anthropic.com/engineering/building-effective-agents
+    type: article
+    topics: [spring-ai-agents, polyglot-ai-architecture]
+    priority: P0
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Workflow and agent taxonomy that the five patterns come from."
+    last_checked: 2026-09-25
+  - id: java-saiagentpat
+    title: "Spring AI: Building effective agents (agentic patterns)"
+    url: https://spring.io/blog/2025/01/21/spring-ai-agentic-patterns
+    type: article
+    topics: [spring-ai-agents]
+    priority: P1
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Spring team implementation of each pattern (written for 1.x; structure still holds)."
+    last_checked: 2026-09-25
+  - id: java-embabel
+    title: "Embabel agent framework"
+    url: https://github.com/embabel/embabel-agent
+    type: code
+    topics: [spring-ai-agents]
+    priority: P2
+    complexity: 4
+    level: advanced
+    cost: free
+    gem: true
+    why: "JVM agent framework with goal-oriented planning on Spring."
+    last_checked: 2026-09-25
+  - id: java-adkjava
+    title: "Google ADK for Java"
+    url: https://github.com/google/adk-java
+    type: code
+    topics: [spring-ai-agents]
+    priority: P2
+    complexity: 3
+    level: advanced
+    cost: free
+    gem: false
+    why: "Multi-agent framework with JVM support for comparison."
+    last_checked: 2026-09-25
+  - id: java-langchain4j
+    title: "LangChain4j documentation"
+    url: https://docs.langchain4j.dev/
+    type: docs
+    topics: [spring-ai-agents]
+    priority: P2
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Main alternative JVM LLM library."
+    last_checked: 2026-09-25
+  - id: java-langgraph
+    title: "LangGraph repository"
+    url: https://github.com/langchain-ai/langgraph
+    type: code
+    topics: [spring-ai-agents]
+    priority: P1
+    complexity: 3
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Durable-runtime counterpart to compare against Spring AI workflows."
+    last_checked: 2026-09-25
+  - id: java-saiobs
+    title: "Spring AI reference: Observability"
+    url: https://docs.spring.io/spring-ai/reference/observability/index.html
+    type: docs
+    topics: [observability-testing]
+    priority: P1
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Observation names, prompt logging flags and tool observations."
+    last_checked: 2026-09-25
+  - id: java-saitest
+    title: "Spring AI reference: Testing and evaluation"
+    url: https://docs.spring.io/spring-ai/reference/api/testing.html
+    type: docs
+    topics: [observability-testing]
+    priority: P1
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Evaluator interfaces and RAG evaluation examples."
+    last_checked: 2026-09-25
+  - id: java-bootstc
+    title: "Spring Boot: Testcontainers support"
+    url: https://docs.spring.io/spring-boot/reference/testing/testcontainers.html
+    type: docs
+    topics: [observability-testing]
+    priority: P1
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: false
+    why: "@ServiceConnection and dynamic properties."
+    last_checked: 2026-09-25
+  - id: java-tcjava
+    title: "Testcontainers for Java"
+    url: https://java.testcontainers.org/
+    type: docs
+    topics: [observability-testing]
+    priority: P1
+    complexity: 1
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Container modules including Postgres."
+    last_checked: 2026-09-25
+  - id: java-micrometer
+    title: "Micrometer reference"
+    url: https://docs.micrometer.io/micrometer/reference/
+    type: docs
+    topics: [observability-testing]
+    priority: P1
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Observation API and cardinality guidance."
+    last_checked: 2026-09-25
+  - id: java-langfuse
+    title: "Langfuse documentation"
+    url: https://langfuse.com/docs
+    type: docs
+    topics: [observability-testing]
+    priority: P1
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: false
+    why: "OTLP ingestion, datasets and eval UI."
+    last_checked: 2026-09-25
+  - id: java-phoenix
+    title: "Arize Phoenix documentation"
+    url: https://arize.com/docs/phoenix
+    type: docs
+    topics: [observability-testing]
+    priority: P1
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: false
+    why: "OSS OTel-native trace UI and evals."
+    last_checked: 2026-09-25
+  - id: java-otelgenai
+    title: "OpenTelemetry GenAI semantic conventions"
+    url: https://github.com/open-telemetry/semantic-conventions-genai
+    type: docs
+    topics: [observability-testing]
+    priority: P2
+    complexity: 3
+    level: advanced
+    cost: free
+    gem: true
+    why: "Where GenAI attribute names are defined; still in Development status as of mid-2026."
+    last_checked: 2026-09-25
+  - id: java-bootefficient
+    title: "Spring Boot: Efficient deployments"
+    url: https://docs.spring.io/spring-boot/reference/packaging/efficient.html
+    type: docs
+    topics: [jvm-performance]
+    priority: P2
+    complexity: 3
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Layered jars, extracted layout and container tips."
+    last_checked: 2026-09-25
+  - id: java-bootaot
+    title: "Spring Boot: AOT cache"
+    url: https://docs.spring.io/spring-boot/reference/packaging/aot-cache.html
+    type: docs
+    topics: [jvm-performance]
+    priority: P2
+    complexity: 3
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Supported workflow for the JDK AOT cache with Boot."
+    last_checked: 2026-09-25
+  - id: java-leyden
+    title: "Project Leyden"
+    url: https://openjdk.org/projects/leyden/
+    type: docs
+    topics: [jvm-performance]
+    priority: P2
+    complexity: 4
+    level: advanced
+    cost: free
+    gem: false
+    why: "Roadmap and rationale for AOT class loading and profiling."
+    last_checked: 2026-09-25
+  - id: java-jep483
+    title: "JEP 483: Ahead-of-Time Class Loading and Linking"
+    url: https://openjdk.org/jeps/483
+    type: docs
+    topics: [jvm-performance]
+    priority: P2
+    complexity: 4
+    level: advanced
+    cost: free
+    gem: false
+    why: "Foundation of the AOT cache."
+    last_checked: 2026-09-25
+  - id: java-jep515
+    title: "JEP 515: Ahead-of-Time Method Profiling"
+    url: https://openjdk.org/jeps/515
+    type: docs
+    topics: [jvm-performance]
+    priority: P2
+    complexity: 4
+    level: advanced
+    cost: free
+    gem: false
+    why: "Why warm-up improves in JDK 25."
+    last_checked: 2026-09-25
+  - id: java-jep519
+    title: "JEP 519: Compact Object Headers"
+    url: https://openjdk.org/jeps/519
+    type: docs
+    topics: [jvm-performance]
+    priority: P2
+    complexity: 4
+    level: advanced
+    cost: free
+    gem: false
+    why: "Footprint gains and caveats of 8-byte headers."
+    last_checked: 2026-09-25
+  - id: java-asyncprof
+    title: "async-profiler"
+    url: https://github.com/async-profiler/async-profiler
+    type: code
+    topics: [jvm-performance]
+    priority: P2
+    complexity: 4
+    level: advanced
+    cost: free
+    gem: true
+    why: "Low-overhead flame graphs including allocation and lock profiling."
+    last_checked: 2026-09-25
+  - id: java-shipilev
+    title: "Aleksey Shipilev"
+    url: https://shipilev.net/
+    type: article
+    topics: [jvm-performance]
+    priority: P2
+    complexity: 5
+    level: advanced
+    cost: free
+    gem: true
+    why: "Honest, deep JVM performance and GC writing."
+    last_checked: 2026-09-25
+  - id: java-teamtop
+    title: "Team Topologies"
+    url: https://teamtopologies.com
+    type: article
+    topics: [polyglot-ai-architecture]
+    priority: P2
+    complexity: 2
+    level: intermediate
+    cost: freemium
+    gem: false
+    why: "Team-boundary thinking that should drive service boundaries."
+    last_checked: 2026-09-25
+  - id: java-adrs
+    title: "Architectural Decision Records"
+    url: https://adr.github.io
+    type: docs
+    topics: [polyglot-ai-architecture]
+    priority: P1
+    complexity: 1
+    level: beginner
+    cost: free
+    gem: false
+    why: "Templates and practice for recording the polyglot decision."
+    last_checked: 2026-09-25

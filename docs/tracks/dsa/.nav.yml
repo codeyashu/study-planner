@@ -1,0 +1,24 @@
+nav:
+- index.md
+- approach-complexity.md
+- python-idioms.md
+- arrays-hashing.md
+- two-pointers.md
+- sliding-window.md
+- stack.md
+- binary-search.md
+- linked-list.md
+- trees.md
+- tries.md
+- heap.md
+- backtracking.md
+- graphs.md
+- advanced-graphs.md
+- dp-1d.md
+- dp-2d.md
+- greedy.md
+- intervals.md
+- math-bits.md
+- concurrency-lld.md
+- problem-tracker.md
+- Question bank: questions.md

@@ -1,0 +1,22 @@
+nav:
+- index.md
+- architect-role-tradeoffs.md
+- architecture-styles.md
+- ddd-strategic.md
+- ddd-tactical.md
+- hexagonal-clean.md
+- cqrs-event-sourcing.md
+- sagas-outbox.md
+- integration-patterns.md
+- coupling-modularity.md
+- design-patterns.md
+- solid-refactoring.md
+- documenting-architecture.md
+- adrs.md
+- evolutionary-architecture.md
+- legacy-modernization.md
+- team-topologies.md
+- api-contracts-versioning.md
+- data-architecture.md
+- ai-native-architecture.md
+- Question bank: questions.md

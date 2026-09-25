@@ -1,0 +1,104 @@
+/* Study planner dashboard — uses Material's CSS variables so light/dark themes work automatically. */
+
+.sp-kpis {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+  gap: 0.8rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.sp-kpi {
+  display: flex;
+  flex-direction: column;
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.4rem;
+  background: var(--md-code-bg-color);
+}
+
+.sp-kpi__value {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--md-primary-fg-color);
+  font-variant-numeric: tabular-nums;
+}
+
+[data-md-color-scheme="slate"] .sp-kpi__value {
+  color: var(--md-accent-fg-color);
+}
+
+.sp-kpi__label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--md-default-fg-color--light);
+}
+
+/* Heatmap: 7 rows (Mon..Sun) x N weeks */
+.sp-heatmap {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(7, 0.8rem);
+  gap: 3px;
+  overflow-x: auto;
+  padding: 0.5rem 0;
+}
+
+.sp-heatmap__cell {
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 2px;
+  background: var(--md-default-fg-color--lightest);
+}
+
+.sp-heatmap__cell[data-level="1"] { background: color-mix(in srgb, var(--md-primary-fg-color) 35%, transparent); }
+.sp-heatmap__cell[data-level="2"] { background: color-mix(in srgb, var(--md-primary-fg-color) 60%, transparent); }
+.sp-heatmap__cell[data-level="3"] { background: var(--md-primary-fg-color); }
+.sp-heatmap__cell[data-today="true"] { outline: 2px solid var(--md-accent-fg-color); outline-offset: 1px; }
+
+[data-md-color-scheme="slate"] .sp-heatmap__cell[data-level="1"] { background: color-mix(in srgb, var(--md-accent-fg-color) 35%, transparent); }
+[data-md-color-scheme="slate"] .sp-heatmap__cell[data-level="2"] { background: color-mix(in srgb, var(--md-accent-fg-color) 65%, transparent); }
+[data-md-color-scheme="slate"] .sp-heatmap__cell[data-level="3"] { background: var(--md-accent-fg-color); }
+
+/* Per-track progress bars */
+.sp-tracks {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 0.4rem 1.5rem;
+  margin: 1rem 0;
+}
+
+.sp-track__row {
+  display: grid;
+  grid-template-columns: 7.5rem 1fr 3.5rem;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+}
+
+.sp-track__bar {
+  height: 0.45rem;
+  border-radius: 1rem;
+  background: var(--md-default-fg-color--lightest);
+  overflow: hidden;
+}
+
+.sp-track__fill {
+  height: 100%;
+  background: var(--md-primary-fg-color);
+}
+
+[data-md-color-scheme="slate"] .sp-track__fill { background: var(--md-accent-fg-color); }
+
+.sp-track__num {
+  text-align: right;
+  color: var(--md-default-fg-color--light);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Tighter task lists on generated pages */
+.md-typeset .task-list-item small code {
+  font-size: 0.65em;
+  opacity: 0.6;
+}

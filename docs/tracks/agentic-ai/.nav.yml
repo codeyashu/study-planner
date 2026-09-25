@@ -1,0 +1,32 @@
+nav:
+- index.md
+- llm-fundamentals.md
+- prompting-structured-outputs.md
+- context-engineering.md
+- agent-patterns.md
+- tool-calling.md
+- rag-fundamentals.md
+- hybrid-search-reranking.md
+- vector-databases.md
+- advanced-rag.md
+- evals-error-analysis.md
+- eval-tooling.md
+- llm-observability.md
+- langgraph.md
+- durable-execution-hitl.md
+- pydantic-ai.md
+- dspy.md
+- vendor-agent-sdks.md
+- mcp.md
+- a2a-ag-ui.md
+- memory-systems.md
+- multi-agent-systems.md
+- guardrails-security.md
+- cost-latency-optimization.md
+- model-routing-gateways.md
+- inference-serving.md
+- fine-tuning.md
+- managed-agent-platforms.md
+- ai-assisted-development.md
+- production-checklist.md
+- Question bank: questions.md

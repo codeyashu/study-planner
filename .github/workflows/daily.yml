@@ -1,0 +1,57 @@
+name: Daily plan
+
+# 00:30 UTC = 06:00 IST. Generates Today page + RSS feed, opens the "Day N" issue, redeploys.
+on:
+  schedule:
+    - cron: "30 0 * * *"
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Override date (YYYY-MM-DD), for testing"
+        required: false
+
+permissions:
+  contents: write
+  issues: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: repo-writer
+  cancel-in-progress: false
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v5
+      - uses: astral-sh/setup-uv@v6
+      - run: uv sync --frozen
+      - name: Generate today, feed, stats
+        run: |
+          DATE_ARG=""
+          if [ -n "${{ inputs.date }}" ]; then DATE_ARG="--date ${{ inputs.date }}"; fi
+          uv run python scripts/gen_today.py $DATE_ARG
+          uv run python scripts/build_feeds.py
+          uv run python scripts/stats.py $DATE_ARG
+      - name: Open daily issue
+        run: |
+          TITLE="$(cat build/issue_title.txt)"
+          if [ -z "$TITLE" ]; then echo "No tasks today"; exit 0; fi
+          gh label create daily --color 5319e7 --description "Daily study checklist" 2>/dev/null || true
+          if gh issue list --label daily --state all --search "\"$TITLE\" in:title" --json number --jq '.[0].number' | grep -q .; then
+            echo "Issue already exists"; exit 0
+          fi
+          gh issue create --title "$TITLE" --body-file build/issue_body.md --label daily
+      - name: Commit
+        run: |
+          git config user.name "study-bot"
+          git config user.email "study-bot@users.noreply.github.com"
+          git add docs/today.md docs/reading/feed.md docs/assets/stats.json includes/today-snippet.md
+          git diff --cached --quiet || git commit -m "daily: $(date -u +%F) today + feed"
+          git push
+  deploy:
+    needs: plan
+    uses: ./.github/workflows/deploy.yml

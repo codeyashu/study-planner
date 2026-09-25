@@ -1,0 +1,1377 @@
+resources:
+- id: aib-dspy-docs
+  title: DSPy documentation
+  url: https://dspy.ai/
+  type: docs
+  topics:
+  - dspy
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: Official signatures, modules, optimizers, tutorials.
+  last_checked: '2026-09-25'
+- id: aib-dspy-gepa-api
+  title: DSPy GEPA optimizer API
+  url: https://dspy.ai/current/api/optimizers/GEPA/overview/
+  type: docs
+  topics:
+  - dspy
+  priority: P1
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: false
+  why: Exact constructor, metric-with-feedback signature, budget knobs.
+  last_checked: '2026-09-25'
+- id: aib-gepa-paper
+  title: 'GEPA: Reflective Prompt Evolution Can Outperform RL'
+  url: https://arxiv.org/abs/2507.19457
+  type: article
+  topics:
+  - dspy
+  - fine-tuning
+  priority: P1
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: false
+  why: Mechanism and results of reflective Pareto prompt evolution.
+  last_checked: '2026-09-25'
+- id: aib-dspy-paper
+  title: 'DSPy: Compiling declarative LM calls (paper)'
+  url: https://arxiv.org/abs/2310.03714
+  type: article
+  topics:
+  - dspy
+  priority: P1
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: false
+  why: Original argument for compiling LM pipelines against metrics.
+  last_checked: '2026-09-25'
+- id: aib-dspy-hf-gepa
+  title: 'HF cookbook: DSPy with GEPA'
+  url: https://huggingface.co/learn/cookbook/dspy_gepa
+  type: interactive
+  topics:
+  - dspy
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: true
+  why: Runnable end-to-end GEPA optimization notebook.
+  last_checked: '2026-09-25'
+- id: aib-dspy-dataquarry
+  title: 'The Data Quarry: Learning DSPy 3, optimizers'
+  url: https://thedataquarry.com/blog/learning-dspy-3-working-with-optimizers/
+  type: article
+  topics:
+  - dspy
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: true
+  why: Clear practitioner walkthrough of optimizers and pitfalls.
+  last_checked: '2026-09-25'
+- id: aib-dspy-dlai
+  title: 'DeepLearning.AI: DSPy build and optimize agentic apps'
+  url: https://www.deeplearning.ai/short-courses/dspy-build-optimize-agentic-apps/
+  type: course
+  topics:
+  - dspy
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: Short guided course on the DSPy mental model.
+  last_checked: '2026-09-25'
+- id: aib-gepa-repo
+  title: gepa-ai/gepa standalone GEPA
+  url: https://github.com/gepa-ai/gepa
+  type: docs
+  topics:
+  - dspy
+  priority: P1
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: Optimize arbitrary text artifacts outside DSPy.
+  last_checked: '2026-09-25'
+- id: aib-claude-sdk-overview
+  title: Claude Agent SDK overview
+  url: https://code.claude.com/docs/en/agent-sdk/overview
+  type: docs
+  topics:
+  - vendor-agent-sdks
+  - ai-assisted-development
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: 'Harness concepts: permissions, hooks, sessions, subagents.'
+  last_checked: '2026-09-25'
+- id: aib-claude-sdk-python
+  title: Claude Agent SDK Python reference
+  url: https://code.claude.com/docs/en/agent-sdk/python
+  type: docs
+  topics:
+  - vendor-agent-sdks
+  priority: P1
+  complexity: 3
+  level: advanced
+  cost: free
+  gem: false
+  why: Exact query, ClaudeAgentOptions, tool and client APIs.
+  last_checked: '2026-09-25'
+- id: aib-claude-sdk-subagents
+  title: 'Claude Agent SDK: subagents'
+  url: https://code.claude.com/docs/en/agent-sdk/subagents
+  type: docs
+  topics:
+  - vendor-agent-sdks
+  - multi-agent-systems
+  priority: P1
+  complexity: 3
+  level: advanced
+  cost: free
+  gem: true
+  why: Context isolation, tool limits, depth/concurrency/spend caps.
+  last_checked: '2026-09-25'
+- id: aib-openai-agents
+  title: OpenAI Agents SDK docs
+  url: https://openai.github.io/openai-agents-python/
+  type: docs
+  topics:
+  - vendor-agent-sdks
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: Agents, handoffs, guardrails, sessions, tracing.
+  last_checked: '2026-09-25'
+- id: aib-openai-agents-guardrails
+  title: OpenAI Agents SDK guardrails
+  url: https://openai.github.io/openai-agents-python/guardrails/
+  type: docs
+  topics:
+  - vendor-agent-sdks
+  - guardrails-security
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: Tripwire guardrail model running parallel to agents.
+  last_checked: '2026-09-25'
+- id: aib-adk-docs
+  title: Google Agent Development Kit
+  url: https://adk.dev/
+  type: docs
+  topics:
+  - vendor-agent-sdks
+  - managed-agent-platforms
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: Multi-language ADK, workflows, deployment.
+  last_checked: '2026-09-25'
+- id: aib-msaf-overview
+  title: Microsoft Agent Framework overview
+  url: https://learn.microsoft.com/en-us/agent-framework/overview/
+  type: docs
+  topics:
+  - vendor-agent-sdks
+  - managed-agent-platforms
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: Agents, workflows, harness agent; successor to AutoGen and SK.
+  last_checked: '2026-09-25'
+- id: aib-bea
+  title: 'Anthropic: Building effective agents'
+  url: https://www.anthropic.com/engineering/building-effective-agents
+  type: article
+  topics:
+  - vendor-agent-sdks
+  - multi-agent-systems
+  - production-checklist
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: Framework-agnostic pattern ladder; start simple.
+  last_checked: '2026-09-25'
+- id: aib-huyen-agents
+  title: 'Chip Huyen: Agents'
+  url: https://huyenchip.com/2025/01/07/agents.html
+  type: article
+  topics:
+  - vendor-agent-sdks
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: true
+  why: Vendor-neutral mental model of planning, tools, failure modes.
+  last_checked: '2026-09-25'
+- id: aib-mcp-spec
+  title: MCP specification 2026-07-28
+  url: https://modelcontextprotocol.io/specification/2026-07-28
+  type: docs
+  topics:
+  - mcp
+  priority: P0
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: false
+  why: Authoritative protocol spec.
+  last_checked: '2026-09-25'
+- id: aib-mcp-changelog
+  title: MCP 2026-07-28 key changes
+  url: https://modelcontextprotocol.io/specification/2026-07-28/changelog
+  type: docs
+  topics:
+  - mcp
+  priority: P0
+  complexity: 3
+  level: advanced
+  cost: free
+  gem: true
+  why: Every breaking change in one page; read before upgrading.
+  last_checked: '2026-09-25'
+- id: aib-mcp-pysdk
+  title: MCP Python SDK v2 docs
+  url: https://py.sdk.modelcontextprotocol.io/
+  type: docs
+  topics:
+  - mcp
+  priority: P0
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: MCPServer, transports, auth, Client API.
+  last_checked: '2026-09-25'
+- id: aib-mcp-inspector
+  title: MCP Inspector
+  url: https://github.com/modelcontextprotocol/inspector
+  type: docs
+  topics:
+  - mcp
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: Interactive server debugging.
+  last_checked: '2026-09-25'
+- id: aib-mcp-hf-course
+  title: Hugging Face MCP course
+  url: https://huggingface.co/learn/mcp-course
+  type: course
+  topics:
+  - mcp
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: Free hands-on building of MCP clients and servers.
+  last_checked: '2026-09-25'
+- id: aib-mcp-dlai
+  title: 'DeepLearning.AI: MCP build rich-context AI apps'
+  url: https://www.deeplearning.ai/courses/mcp-build-rich-context-ai-apps-with-anthropic
+  type: course
+  topics:
+  - mcp
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: Short guided course on hosts, clients, servers.
+  last_checked: '2026-09-25'
+- id: aib-writing-tools
+  title: 'Anthropic: Writing tools for agents'
+  url: https://www.anthropic.com/engineering/writing-tools-for-agents
+  type: article
+  topics:
+  - mcp
+  - cost-latency-optimization
+  priority: P0
+  complexity: 3
+  level: advanced
+  cost: free
+  gem: true
+  why: Best guide to tool design and evaluation.
+  last_checked: '2026-09-25'
+- id: aib-mcp-poisoning
+  title: 'Invariant Labs: MCP tool poisoning attacks'
+  url: https://invariantlabs.ai/blog/mcp-security-notification-tool-poisoning-attacks
+  type: article
+  topics:
+  - mcp
+  - guardrails-security
+  priority: P0
+  complexity: 3
+  level: advanced
+  cost: free
+  gem: true
+  why: Concrete MCP attack demonstrations.
+  last_checked: '2026-09-25'
+- id: aib-spring-ai-2
+  title: Spring AI 2.0 GA announcement
+  url: https://spring.io/blog/2026/06/12/spring-ai-2-0-0-GA-available-now/
+  type: article
+  topics:
+  - mcp
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: '@McpTool, MCP Java SDK 2.0, Streamable HTTP.'
+  last_checked: '2026-09-25'
+- id: aib-a2a-site
+  title: A2A protocol site
+  url: https://a2a-protocol.org/
+  type: docs
+  topics:
+  - a2a-ag-ui
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: Concepts, tutorials, v1.0 changes.
+  last_checked: '2026-09-25'
+- id: aib-a2a-spec
+  title: A2A specification
+  url: https://a2a-protocol.org/latest/specification/
+  type: docs
+  topics:
+  - a2a-ag-ui
+  priority: P1
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: false
+  why: Operations, task states, security, bindings.
+  last_checked: '2026-09-25'
+- id: aib-a2a-python
+  title: a2a-python SDK
+  url: https://github.com/a2aproject/a2a-python
+  type: docs
+  topics:
+  - a2a-ag-ui
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: Official Python SDK.
+  last_checked: '2026-09-25'
+- id: aib-agui-docs
+  title: AG-UI documentation
+  url: https://docs.ag-ui.com/introduction
+  type: docs
+  topics:
+  - a2a-ag-ui
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: Event types and protocol-stack positioning.
+  last_checked: '2026-09-25'
+- id: aib-agui-repo
+  title: AG-UI GitHub
+  url: https://github.com/ag-ui-protocol/ag-ui
+  type: docs
+  topics:
+  - a2a-ag-ui
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: true
+  why: SDKs and framework integrations with demos.
+  last_checked: '2026-09-25'
+- id: aib-mem0-docs
+  title: Mem0 documentation
+  url: https://docs.mem0.ai/
+  type: docs
+  topics:
+  - memory-systems
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: Quickstart and vector-store/LLM configs.
+  last_checked: '2026-09-25'
+- id: aib-mem0-paper
+  title: Mem0 paper
+  url: https://arxiv.org/abs/2504.19413
+  type: article
+  topics:
+  - memory-systems
+  priority: P1
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: false
+  why: Production long-term memory pipeline.
+  last_checked: '2026-09-25'
+- id: aib-letta-docs
+  title: Letta documentation
+  url: https://docs.letta.com/
+  type: docs
+  topics:
+  - memory-systems
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: Memory blocks and stateful agent server.
+  last_checked: '2026-09-25'
+- id: aib-memgpt
+  title: MemGPT paper
+  url: https://arxiv.org/abs/2310.08560
+  type: article
+  topics:
+  - memory-systems
+  priority: P1
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: OS-style virtual context management for LLMs.
+  last_checked: '2026-09-25'
+- id: aib-zep-paper
+  title: Zep temporal knowledge graph paper
+  url: https://arxiv.org/abs/2501.13956
+  type: article
+  topics:
+  - memory-systems
+  priority: P1
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: false
+  why: Temporal KG architecture for agent memory.
+  last_checked: '2026-09-25'
+- id: aib-graphiti
+  title: Graphiti (temporal KG engine)
+  url: https://github.com/getzep/graphiti
+  type: docs
+  topics:
+  - memory-systems
+  priority: P1
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: OSS engine to feel bi-temporal memory.
+  last_checked: '2026-09-25'
+- id: aib-ctx-eng
+  title: 'Anthropic: Effective context engineering for agents'
+  url: https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents
+  type: article
+  topics:
+  - memory-systems
+  - cost-latency-optimization
+  priority: P0
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: Compaction, memory, just-in-time retrieval.
+  last_checked: '2026-09-25'
+- id: aib-ma-research
+  title: 'Anthropic: multi-agent research system'
+  url: https://www.anthropic.com/engineering/multi-agent-research-system
+  type: article
+  topics:
+  - multi-agent-systems
+  priority: P0
+  complexity: 3
+  level: advanced
+  cost: free
+  gem: false
+  why: 'Production lessons: delegation, token costs, evals.'
+  last_checked: '2026-09-25'
+- id: aib-dont-multi
+  title: 'Cognition: Don''t build multi-agents'
+  url: https://cognition.ai/blog/dont-build-multi-agents
+  type: article
+  topics:
+  - multi-agent-systems
+  priority: P0
+  complexity: 3
+  level: advanced
+  cost: free
+  gem: true
+  why: 'The counter-argument: context fragmentation.'
+  last_checked: '2026-09-25'
+- id: aib-mast
+  title: Why do multi-agent LLM systems fail? (MAST)
+  url: https://arxiv.org/abs/2503.13657
+  type: article
+  topics:
+  - multi-agent-systems
+  priority: P0
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: false
+  why: Empirical failure taxonomy.
+  last_checked: '2026-09-25'
+- id: aib-lg-multi
+  title: LangGraph multi-agent concepts
+  url: https://langchain-ai.github.io/langgraph/concepts/multi_agent/
+  type: docs
+  topics:
+  - multi-agent-systems
+  priority: P0
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: Supervisor, hierarchical, handoff patterns.
+  last_checked: '2026-09-25'
+- id: aib-lc-howwhen
+  title: 'LangChain: how and when to build multi-agent systems'
+  url: https://blog.langchain.com/how-and-when-to-build-multi-agent-systems/
+  type: article
+  topics:
+  - multi-agent-systems
+  priority: P0
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: true
+  why: Reconciles Anthropic vs Cognition views.
+  last_checked: '2026-09-25'
+- id: aib-lethal
+  title: 'Simon Willison: the lethal trifecta'
+  url: https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/
+  type: article
+  topics:
+  - guardrails-security
+  - mcp
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: Most useful mental model for agent security.
+  last_checked: '2026-09-25'
+- id: aib-owasp-agentic
+  title: OWASP Top 10 for Agentic Applications 2026
+  url: https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/
+  type: docs
+  topics:
+  - guardrails-security
+  - multi-agent-systems
+  - production-checklist
+  priority: P0
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: ASI01-ASI10 with mitigations.
+  last_checked: '2026-09-25'
+- id: aib-owasp-llm
+  title: OWASP Top 10 for LLM Applications
+  url: https://genai.owasp.org/llm-top-10/
+  type: docs
+  topics:
+  - guardrails-security
+  - production-checklist
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: LLM01-LLM10 reference.
+  last_checked: '2026-09-25'
+- id: aib-sec-patterns
+  title: Design patterns for securing LLM agents against prompt injection
+  url: https://arxiv.org/abs/2506.08837
+  type: article
+  topics:
+  - guardrails-security
+  priority: P0
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: Six patterns with trade-offs.
+  last_checked: '2026-09-25'
+- id: aib-camel
+  title: 'CaMeL: Defeating prompt injections by design'
+  url: https://arxiv.org/abs/2503.18813
+  type: article
+  topics:
+  - guardrails-security
+  priority: P0
+  complexity: 5
+  level: advanced
+  cost: free
+  gem: false
+  why: Capability and provenance based defence.
+  last_checked: '2026-09-25'
+- id: aib-camel-sw
+  title: Simon Willison on CaMeL
+  url: https://simonwillison.net/2025/Apr/11/camel/
+  type: article
+  topics:
+  - guardrails-security
+  priority: P0
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: true
+  why: Clear explanation of CaMeL and dual-LLM lineage.
+  last_checked: '2026-09-25'
+- id: aib-ett
+  title: Embrace The Red
+  url: https://embracethered.com/blog/
+  type: article
+  topics:
+  - guardrails-security
+  priority: P0
+  complexity: 3
+  level: advanced
+  cost: free
+  gem: true
+  why: Real exploit write-ups against shipping agents.
+  last_checked: '2026-09-25'
+- id: aib-promptfoo-rt
+  title: promptfoo red-team docs
+  url: https://www.promptfoo.dev/docs/red-team/
+  type: docs
+  topics:
+  - guardrails-security
+  priority: P0
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: Automated red-teaming incl. OWASP agentic preset.
+  last_checked: '2026-09-25'
+- id: aib-pyrit
+  title: PyRIT
+  url: https://github.com/Azure/PyRIT
+  type: docs
+  topics:
+  - guardrails-security
+  priority: P1
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: false
+  why: Microsoft red-teaming framework.
+  last_checked: '2026-09-25'
+- id: aib-nemo-guardrails
+  title: NeMo Guardrails
+  url: https://github.com/NVIDIA/NeMo-Guardrails
+  type: docs
+  topics:
+  - guardrails-security
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: Programmable rails framework.
+  last_checked: '2026-09-25'
+- id: aib-nist-rmf
+  title: NIST AI Risk Management Framework
+  url: https://www.nist.gov/itl/ai-risk-management-framework
+  type: docs
+  topics:
+  - production-checklist
+  - guardrails-security
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: Governance vocabulary for risk reviews.
+  last_checked: '2026-09-25'
+- id: aib-claude-cache
+  title: Anthropic prompt caching docs
+  url: https://platform.claude.com/docs/en/build-with-claude/prompt-caching
+  type: docs
+  topics:
+  - cost-latency-optimization
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: Breakpoints, TTLs, pricing multipliers.
+  last_checked: '2026-09-25'
+- id: aib-openai-cache
+  title: OpenAI prompt caching guide
+  url: https://platform.openai.com/docs/guides/prompt-caching
+  type: docs
+  topics:
+  - cost-latency-optimization
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: Automatic prefix caching behaviour.
+  last_checked: '2026-09-25'
+- id: aib-anyscale-cb
+  title: 'Anyscale: continuous batching'
+  url: https://www.anyscale.com/blog/continuous-batching-llm-inference
+  type: article
+  topics:
+  - cost-latency-optimization
+  - inference-serving
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: true
+  why: Why batching dominates throughput economics.
+  last_checked: '2026-09-25'
+- id: aib-bentoml-handbook
+  title: BentoML LLM Inference Handbook
+  url: https://bentoml.com/llm/
+  type: article
+  topics:
+  - cost-latency-optimization
+  - inference-serving
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: true
+  why: TTFT/TPOT, batching, quantization explained clearly.
+  last_checked: '2026-09-25'
+- id: aib-applied-llms
+  title: applied-llms.org
+  url: https://applied-llms.org/
+  type: article
+  topics:
+  - cost-latency-optimization
+  - model-routing-gateways
+  - production-checklist
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: Practitioner lessons on shipping LLM products.
+  last_checked: '2026-09-25'
+- id: aib-litellm-docs
+  title: LiteLLM documentation
+  url: https://docs.litellm.ai/docs/
+  type: docs
+  topics:
+  - model-routing-gateways
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: Router, proxy, providers, callbacks.
+  last_checked: '2026-09-25'
+- id: aib-litellm-keys
+  title: LiteLLM virtual keys
+  url: https://docs.litellm.ai/docs/proxy/virtual_keys
+  type: docs
+  topics:
+  - model-routing-gateways
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: Budgets, limits, teams, key metadata.
+  last_checked: '2026-09-25'
+- id: aib-litellm-cache
+  title: LiteLLM caching
+  url: https://docs.litellm.ai/docs/proxy/caching
+  type: docs
+  topics:
+  - model-routing-gateways
+  - cost-latency-optimization
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: Exact and semantic caching at the gateway.
+  last_checked: '2026-09-25'
+- id: aib-litellm-repo
+  title: LiteLLM on GitHub
+  url: https://github.com/BerriAI/litellm
+  type: docs
+  topics:
+  - model-routing-gateways
+  priority: P0
+  complexity: 3
+  level: advanced
+  cost: free
+  gem: false
+  why: Source and security advisories to monitor.
+  last_checked: '2026-09-25'
+- id: aib-routellm
+  title: RouteLLM paper
+  url: https://arxiv.org/abs/2406.18665
+  type: article
+  topics:
+  - model-routing-gateways
+  - cost-latency-optimization
+  priority: P1
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: false
+  why: Learned routing at near quality parity.
+  last_checked: '2026-09-25'
+- id: aib-routellm-repo
+  title: RouteLLM repository
+  url: https://github.com/lm-sys/RouteLLM
+  type: docs
+  topics:
+  - model-routing-gateways
+  priority: P1
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: Runnable open-source router framework.
+  last_checked: '2026-09-25'
+- id: aib-vllm-docs
+  title: vLLM documentation
+  url: https://docs.vllm.ai/
+  type: docs
+  topics:
+  - inference-serving
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: Serving, quantization, benchmarking, metrics.
+  last_checked: '2026-09-25'
+- id: aib-vllm-quant
+  title: vLLM quantization docs
+  url: https://docs.vllm.ai/en/latest/features/quantization/
+  type: docs
+  topics:
+  - inference-serving
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: Supported formats and hardware matrix.
+  last_checked: '2026-09-25'
+- id: aib-pagedattn
+  title: PagedAttention paper
+  url: https://arxiv.org/abs/2309.06180
+  type: article
+  topics:
+  - inference-serving
+  priority: P1
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: false
+  why: Core idea behind vLLM memory efficiency.
+  last_checked: '2026-09-25'
+- id: aib-sglang-docs
+  title: SGLang documentation
+  url: https://docs.sglang.ai
+  type: docs
+  topics:
+  - inference-serving
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: RadixAttention, structured outputs, deployment.
+  last_checked: '2026-09-25'
+- id: aib-sglang-paper
+  title: SGLang paper
+  url: https://arxiv.org/abs/2312.07104
+  type: article
+  topics:
+  - inference-serving
+  priority: P1
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: false
+  why: Program-level optimisation and prefix caching.
+  last_checked: '2026-09-25'
+- id: aib-quant-visual
+  title: 'Maarten Grootendorst: visual guide to quantization'
+  url: https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-quantization
+  type: article
+  topics:
+  - inference-serving
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: true
+  why: Best visual intro to quantization schemes.
+  last_checked: '2026-09-25'
+- id: aib-llmd
+  title: llm-d
+  url: https://llm-d.ai
+  type: docs
+  topics:
+  - inference-serving
+  priority: P2
+  complexity: 5
+  level: advanced
+  cost: free
+  gem: false
+  why: Kubernetes-native distributed inference.
+  last_checked: '2026-09-25'
+- id: aib-llamacpp
+  title: llama.cpp
+  url: https://github.com/ggml-org/llama.cpp
+  type: docs
+  topics:
+  - inference-serving
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: GGUF and CPU/Metal inference internals.
+  last_checked: '2026-09-25'
+- id: aib-trl
+  title: TRL documentation
+  url: https://huggingface.co/docs/trl
+  type: docs
+  topics:
+  - fine-tuning
+  priority: P1
+  complexity: 4
+  level: intermediate
+  cost: free
+  gem: false
+  why: SFT, DPO, GRPO trainers and reward API.
+  last_checked: '2026-09-25'
+- id: aib-hf-llm-course
+  title: Hugging Face LLM course
+  url: https://huggingface.co/learn/llm-course
+  type: course
+  topics:
+  - fine-tuning
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: Fine-tuning fundamentals and hands-on.
+  last_checked: '2026-09-25'
+- id: aib-peft
+  title: PEFT documentation
+  url: https://huggingface.co/docs/peft
+  type: docs
+  topics:
+  - fine-tuning
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: LoRA config, merging, adapters.
+  last_checked: '2026-09-25'
+- id: aib-unsloth-rl
+  title: Unsloth RL guide
+  url: https://unsloth.ai/docs/get-started/reinforcement-learning-rl-guide
+  type: docs
+  topics:
+  - fine-tuning
+  priority: P1
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: Practical GRPO on modest GPUs.
+  last_checked: '2026-09-25'
+- id: aib-unsloth-repo
+  title: Unsloth
+  url: https://github.com/unslothai/unsloth
+  type: docs
+  topics:
+  - fine-tuning
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: Fast low-VRAM LoRA/QLoRA/RL notebooks.
+  last_checked: '2026-09-25'
+- id: aib-lora-paper
+  title: LoRA paper
+  url: https://arxiv.org/abs/2106.09685
+  type: article
+  topics:
+  - fine-tuning
+  priority: P1
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: false
+  why: Original low-rank adaptation argument.
+  last_checked: '2026-09-25'
+- id: aib-qlora-paper
+  title: QLoRA paper
+  url: https://arxiv.org/abs/2305.14314
+  type: article
+  topics:
+  - fine-tuning
+  priority: P1
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: false
+  why: NF4, double quantization, paged optimizers.
+  last_checked: '2026-09-25'
+- id: aib-dpo-paper
+  title: DPO paper
+  url: https://arxiv.org/abs/2305.18290
+  type: article
+  topics:
+  - fine-tuning
+  priority: P1
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: false
+  why: Preference optimisation without a reward model.
+  last_checked: '2026-09-25'
+- id: aib-grpo-paper
+  title: DeepSeekMath paper (GRPO)
+  url: https://arxiv.org/abs/2402.03300
+  type: article
+  topics:
+  - fine-tuning
+  priority: P1
+  complexity: 5
+  level: advanced
+  cost: free
+  gem: false
+  why: Origin of GRPO.
+  last_checked: '2026-09-25'
+- id: aib-lora-noregret
+  title: 'Thinking Machines: LoRA Without Regret'
+  url: https://thinkingmachines.ai/blog/lora/
+  type: article
+  topics:
+  - fine-tuning
+  priority: P1
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: When LoRA matches full fine-tuning; rank/LR guidance.
+  last_checked: '2026-09-25'
+- id: aib-foundry-overview
+  title: Foundry Agent Service overview
+  url: https://learn.microsoft.com/en-us/azure/foundry/agents/overview
+  type: docs
+  topics:
+  - managed-agent-platforms
+  - a2a-ag-ui
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: Agent types, toolboxes, identity, publishing, A2A.
+  last_checked: '2026-09-25'
+- id: aib-foundry-hosted
+  title: Foundry hosted agents
+  url: https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/hosted-agents
+  type: docs
+  topics:
+  - managed-agent-platforms
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: Container/zip hosting, identity, VNet, sessions.
+  last_checked: '2026-09-25'
+- id: aib-agentcore-what
+  title: 'Bedrock AgentCore: what is it'
+  url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/what-is-bedrock-agentcore.html
+  type: docs
+  topics:
+  - managed-agent-platforms
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: AgentCore service catalog.
+  last_checked: '2026-09-25'
+- id: aib-agentcore-cli
+  title: AgentCore CLI quickstart
+  url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-get-started-cli.html
+  type: docs
+  topics:
+  - managed-agent-platforms
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: create, dev, deploy, invoke workflow.
+  last_checked: '2026-09-25'
+- id: aib-agentcore-price
+  title: AgentCore pricing
+  url: https://aws.amazon.com/bedrock/agentcore/pricing/
+  type: docs
+  topics:
+  - managed-agent-platforms
+  priority: P2
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: Consumption dimensions for cost modelling.
+  last_checked: '2026-09-25'
+- id: aib-agentcore-samples
+  title: AgentCore samples
+  url: https://github.com/awslabs/amazon-bedrock-agentcore-samples
+  type: docs
+  topics:
+  - managed-agent-platforms
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: true
+  why: End-to-end examples across frameworks.
+  last_checked: '2026-09-25'
+- id: aib-agentsmd
+  title: AGENTS.md
+  url: https://agents.md/
+  type: docs
+  topics:
+  - ai-assisted-development
+  priority: P0
+  complexity: 1
+  level: intermediate
+  cost: free
+  gem: false
+  why: Cross-tool standard for agent context files.
+  last_checked: '2026-09-25'
+- id: aib-cc-overview
+  title: Claude Code overview
+  url: https://code.claude.com/docs/en/overview
+  type: docs
+  topics:
+  - ai-assisted-development
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: Memory files, hooks, subagents, skills, permissions.
+  last_checked: '2026-09-25'
+- id: aib-cc-best
+  title: 'Anthropic: Claude Code best practices'
+  url: https://www.anthropic.com/engineering/claude-code-best-practices
+  type: article
+  topics:
+  - ai-assisted-development
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: Plan, implement, verify workflows.
+  last_checked: '2026-09-25'
+- id: aib-skills-eng
+  title: 'Anthropic: equipping agents with Agent Skills'
+  url: https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills
+  type: article
+  topics:
+  - ai-assisted-development
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: Progressive disclosure design of skills.
+  last_checked: '2026-09-25'
+- id: aib-agentskills
+  title: Agent Skills format
+  url: https://agentskills.io
+  type: docs
+  topics:
+  - ai-assisted-development
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: true
+  why: Open spec for portable skills.
+  last_checked: '2026-09-25'
+- id: aib-codex-repo
+  title: OpenAI Codex CLI
+  url: https://github.com/openai/codex
+  type: docs
+  topics:
+  - ai-assisted-development
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: Open-source CLI agent that reads AGENTS.md.
+  last_checked: '2026-09-25'
+- id: aib-spec-kit
+  title: GitHub Spec Kit
+  url: https://github.com/github/spec-kit
+  type: docs
+  topics:
+  - ai-assisted-development
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: true
+  why: Spec-driven development toolkit for agents.
+  last_checked: '2026-09-25'
+- id: aib-metr
+  title: 'METR: early-2025 AI developer productivity study'
+  url: https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/
+  type: article
+  topics:
+  - ai-assisted-development
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: Measured result; perceived vs actual productivity.
+  last_checked: '2026-09-25'
+- id: aib-dora25
+  title: DORA 2025 report
+  url: https://dora.dev/research/2025/dora-report/
+  type: article
+  topics:
+  - ai-assisted-development
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: AI amplifies existing team strengths and weaknesses.
+  last_checked: '2026-09-25'
+- id: aib-fowler-genai
+  title: 'Martin Fowler: exploring generative AI'
+  url: https://martinfowler.com/articles/exploring-gen-ai.html
+  type: article
+  topics:
+  - ai-assisted-development
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: true
+  why: Practitioner notes on agents in engineering.
+  last_checked: '2026-09-25'
+- id: aib-hamel-evals
+  title: 'Hamel Husain: evals FAQ'
+  url: https://hamel.dev/blog/posts/evals-faq/
+  type: article
+  topics:
+  - production-checklist
+  - model-routing-gateways
+  priority: P0
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: Eval-driven development for shipping.
+  last_checked: '2026-09-25'
+- id: aib-eu-ai-act
+  title: EU AI Act explorer
+  url: https://artificialintelligenceact.eu
+  type: docs
+  topics:
+  - production-checklist
+  priority: P2
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: Obligations by risk tier.
+  last_checked: '2026-09-25'
+- id: aib-sre-workbook
+  title: Google SRE Workbook
+  url: https://sre.google/workbook/table-of-contents/
+  type: book
+  topics:
+  - production-checklist
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: SLOs, alerting, incident management.
+  last_checked: '2026-09-25'
+- id: aib-rules-of-ml
+  title: 'Google: Rules of Machine Learning'
+  url: https://developers.google.com/machine-learning/guides/rules-of-ml
+  type: article
+  topics:
+  - production-checklist
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: true
+  why: Timeless production ML lessons.
+  last_checked: '2026-09-25'
+- id: aib-aie-book
+  title: 'Chip Huyen: AI Engineering (book repo)'
+  url: https://github.com/chiphuyen/aie-book
+  type: book
+  topics:
+  - production-checklist
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: paid
+  gem: false
+  why: Systems view of evals, deployment, monitoring.
+  last_checked: '2026-09-25'

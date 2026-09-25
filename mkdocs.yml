@@ -1,0 +1,125 @@
+site_name: Rahul's Study Planner
+site_description: 24-week roadmap — Senior → Staff/Principal engineer, AI architect & agentic AI engineer
+site_url: https://codeyashu.github.io/study-planner/
+repo_url: https://github.com/codeyashu/study-planner
+repo_name: codeyashu/study-planner
+edit_uri: edit/main/docs/
+copyright: Personal learning system · content reviewed continuously by scheduled agents
+
+theme:
+  name: material
+  language: en
+  icon:
+    logo: material/school
+    repo: fontawesome/brands/github
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle: {icon: material/brightness-auto, name: Switch to light mode}
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: deep orange
+      toggle: {icon: material/weather-night, name: Switch to dark mode}
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: deep orange
+      toggle: {icon: material/brightness-auto, name: Switch to system preference}
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - navigation.path
+    - navigation.footer
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - content.tooltips
+    - content.action.edit
+
+plugins:
+  - search
+  - awesome-nav
+  - tags
+  - blog:
+      blog_dir: digest
+      blog_toc: true
+      post_date_format: medium
+      post_url_format: "{date}"
+      archive_date_format: MMMM yyyy
+      categories_allowed: [Daily, Weekly, Release]
+  - git-revision-date-localized:
+      enabled: !ENV [CI, false]
+      type: date
+      fallback_to_build_date: true
+      exclude:
+        - digest/*
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.keys
+  - pymdownx.smartsymbols
+  - pymdownx.inlinehilite
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.snippets:
+      base_path: [".", "includes"]
+      check_paths: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+      clickable_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra_css:
+  - assets/css/extra.css
+extra_javascript:
+  - assets/js/dashboard.js
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/codeyashu/study-planner
+
+validation:
+  nav:
+    omitted_files: info
+    not_found: warn
+  links:
+    not_found: warn
+    anchors: info
+    unrecognized_links: info

@@ -1,0 +1,19 @@
+nav:
+- index.md
+- modern-tooling.md
+- data-model.md
+- typing-advanced.md
+- pydantic-v2.md
+- asyncio-deep.md
+- concurrency-models.md
+- fastapi-production.md
+- testing-pytest.md
+- generators-context-managers.md
+- decorators-descriptors-metaclasses.md
+- architecture-patterns-python.md
+- packaging-project-structure.md
+- performance-profiling.md
+- cpython-internals.md
+- data-tooling.md
+- observability-python.md
+- Question bank: questions.md

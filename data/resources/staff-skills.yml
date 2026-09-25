@@ -1,0 +1,818 @@
+# Staff+ skills resources. Schema: id, title, url, type, topics, priority, complexity, level, cost, gem, why, last_checked
+resources:
+  - id: staff-archetypes
+    title: "StaffEng: Staff archetypes"
+    url: https://staffeng.com/guides/staff-archetypes/
+    type: article
+    topics: [staff-archetypes]
+    priority: P0
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Canonical archetype definitions, free."
+    last_checked: 2026-09-25
+  - id: staff-staffeng-book
+    title: "Staff Engineer: Leadership beyond the management track (Larson)"
+    url: https://staffeng.com/book
+    type: book
+    topics: [staff-archetypes, behavioral-interviews]
+    priority: P0
+    complexity: 2
+    level: intermediate
+    cost: paid
+    gem: false
+    why: "Archetypes plus real Staff stories; best what-is-the-job book."
+    last_checked: 2026-09-25
+  - id: staff-reilly-path
+    title: "The Staff Engineer's Path (Tanya Reilly)"
+    url: https://www.oreilly.com/library/view/the-staff-engineers/9781098118723/
+    type: book
+    topics: [staff-archetypes, technical-strategy, design-docs-rfcs, influence-without-authority, mentoring-sponsorship, communication-stakeholders]
+    priority: P0
+    complexity: 3
+    level: advanced
+    cost: paid
+    gem: false
+    why: "Best day-to-day guide: big picture, execution, levelling up. Publisher page may block bots; verify manually."
+    last_checked: 2026-09-25
+  - id: staff-noidea-resources
+    title: "noidea.dog: Staff Engineer's Path resources"
+    url: https://noidea.dog/staff-resources
+    type: article
+    topics: [staff-archetypes, behavioral-interviews]
+    priority: P1
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: true
+    why: "Reilly's curated companion links."
+    last_checked: 2026-09-25
+  - id: staff-being-glue
+    title: "Being Glue (Tanya Reilly)"
+    url: https://noidea.dog/glue
+    type: article
+    topics: [staff-archetypes, influence-without-authority, mentoring-sponsorship]
+    priority: P0
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: true
+    why: "Why invisible coordination work stalls careers and how to get credit."
+    last_checked: 2026-09-25
+  - id: staff-work-on-what-matters
+    title: "Work on what matters (Larson)"
+    url: https://lethain.com/work-on-what-matters/
+    type: article
+    topics: [staff-archetypes]
+    priority: P0
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: true
+    why: "Prioritisation filter for Staff work in ten minutes."
+    last_checked: 2026-09-25
+  - id: staff-keavy-thriving
+    title: "Thriving on the technical leadership path (Keavy McMinn)"
+    url: https://keavy.com/work/thriving-on-the-technical-leadership-path/
+    type: article
+    topics: [staff-archetypes]
+    priority: P1
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: true
+    why: "Humane essay on sustaining a Staff+ career."
+    last_checked: 2026-09-25
+  - id: staff-brag-docs
+    title: "Brag documents (Julia Evans)"
+    url: https://jvns.ca/blog/brag-documents/
+    type: article
+    topics: [staff-archetypes, mentoring-sponsorship, behavioral-interviews]
+    priority: P0
+    complexity: 1
+    level: intermediate
+    cost: free
+    gem: true
+    why: "Template for making impact visible; mine it for stories."
+    last_checked: 2026-09-25
+  - id: staff-eng-guidebook
+    title: "The Software Engineer's Guidebook (Orosz)"
+    url: https://www.engguidebook.com/
+    type: book
+    topics: [staff-archetypes]
+    priority: P1
+    complexity: 2
+    level: intermediate
+    cost: paid
+    gem: false
+    why: "Big-tech levelling expectations from Senior to Principal."
+    last_checked: 2026-09-25
+  - id: staff-ojstersek-newsletter
+    title: "Engineering Leadership (Gregor Ojstersek)"
+    url: https://newsletter.eng-leadership.com/
+    type: newsletter
+    topics: [staff-archetypes, influence-without-authority, communication-stakeholders, mentoring-sponsorship, behavioral-interviews]
+    priority: P1
+    complexity: 2
+    level: intermediate
+    cost: freemium
+    gem: true
+    why: "Weekly pragmatic Staff and EM leadership advice."
+    last_checked: 2026-09-25
+  - id: staff-refactoring-fm
+    title: "Refactoring (Luca Rossi)"
+    url: https://refactoring.fm/
+    type: newsletter
+    topics: [influence-without-authority, technical-debt, decision-making, behavioral-interviews]
+    priority: P1
+    complexity: 2
+    level: intermediate
+    cost: freemium
+    gem: true
+    why: "Clear, visual essays on engineering collaboration and decisions."
+    last_checked: 2026-09-25
+  - id: staff-larson-strategy
+    title: "Writing an engineering strategy (Larson)"
+    url: https://lethain.com/eng-strategies/
+    type: article
+    topics: [technical-strategy]
+    priority: P0
+    complexity: 4
+    level: advanced
+    cost: free
+    gem: false
+    why: "Most practical free guide to structure and examples."
+    last_checked: 2026-09-25
+  - id: staff-larson-five
+    title: "Write five, then synthesize: good engineering strategy is boring"
+    url: https://lethain.com/good-engineering-strategy-is-boring/
+    type: article
+    topics: [technical-strategy]
+    priority: P0
+    complexity: 4
+    level: advanced
+    cost: free
+    gem: true
+    why: "Bottom-up method that makes strategy credible."
+    last_checked: 2026-09-25
+  - id: staff-larson-crafting
+    title: "Crafting Engineering Strategy (Larson)"
+    url: https://lethain.com/crafting-engineering-strategy/
+    type: book
+    topics: [technical-strategy]
+    priority: P1
+    complexity: 4
+    level: advanced
+    cost: paid
+    gem: false
+    why: "Full framework with many worked strategies."
+    last_checked: 2026-09-25
+  - id: staff-larson-testing
+    title: "Strategy testing: iterative refinement (Larson)"
+    url: https://lethain.com/testing-strategy-iterative-refinement/
+    type: article
+    topics: [technical-strategy]
+    priority: P1
+    complexity: 4
+    level: advanced
+    cost: free
+    gem: true
+    why: "How to avoid waterfall strategy."
+    last_checked: 2026-09-25
+  - id: staff-larson-wardley
+    title: "Refining strategy with Wardley Mapping (Larson)"
+    url: https://lethain.com/wardley-mapping/
+    type: article
+    topics: [technical-strategy, decision-making]
+    priority: P2
+    complexity: 4
+    level: advanced
+    cost: free
+    gem: true
+    why: "Wardley maps applied to build-vs-buy style choices."
+    last_checked: 2026-09-25
+  - id: staff-staffeng-strategy
+    title: "StaffEng: Writing engineering strategy"
+    url: https://staffeng.com/guides/engineering-strategy/
+    type: article
+    topics: [technical-strategy]
+    priority: P0
+    complexity: 3
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Concise version tied to the Staff role."
+    last_checked: 2026-09-25
+  - id: staff-architect-elevator
+    title: "The Architect Elevator (Gregor Hohpe)"
+    url: https://architectelevator.com/
+    type: blog
+    topics: [technical-strategy, communication-stakeholders, architecture-reviews, decision-making]
+    priority: P1
+    complexity: 4
+    level: advanced
+    cost: freemium
+    gem: true
+    why: "Connecting engine room to penthouse; enterprise architecture communication."
+    last_checked: 2026-09-25
+  - id: staff-ubl-design-docs
+    title: "Design Docs at Google (Malte Ubl)"
+    url: https://www.industrialempathy.com/posts/design-docs-at-google/
+    type: article
+    topics: [design-docs-rfcs]
+    priority: P0
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: true
+    why: "Clearest description of lightweight, trade-off-focused design docs."
+    last_checked: 2026-09-25
+  - id: staff-pragmatic-rfcs
+    title: "Software engineering RFC and design doc examples (Pragmatic Engineer)"
+    url: https://blog.pragmaticengineer.com/rfcs-and-design-docs/
+    type: article
+    topics: [design-docs-rfcs]
+    priority: P0
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Real templates from many companies."
+    last_checked: 2026-09-25
+  - id: staff-oxide-rfd
+    title: "Oxide RFD 1: Requests for Discussion"
+    url: https://rfd.shared.oxide.computer/rfd/0001
+    type: docs
+    topics: [design-docs-rfcs]
+    priority: P1
+    complexity: 3
+    level: advanced
+    cost: free
+    gem: true
+    why: "Mature public RFC process with states and norms."
+    last_checked: 2026-09-25
+  - id: staff-adr
+    title: "Architecture Decision Records"
+    url: https://adr.github.io
+    type: docs
+    topics: [design-docs-rfcs, decision-making, architecture-reviews]
+    priority: P0
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: false
+    why: "ADR formats and tooling."
+    last_checked: 2026-09-25
+  - id: staff-c4
+    title: "C4 model"
+    url: https://c4model.com
+    type: docs
+    topics: [design-docs-rfcs, architecture-reviews]
+    priority: P1
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Shared diagram language that makes reviews faster."
+    last_checked: 2026-09-25
+  - id: staff-hbr-bluf
+    title: "How to write email with military precision (HBR)"
+    url: https://hbr.org/2016/11/how-to-write-email-with-military-precision
+    type: article
+    topics: [design-docs-rfcs, communication-stakeholders]
+    priority: P1
+    complexity: 1
+    level: intermediate
+    cost: free
+    gem: true
+    why: "BLUF discipline for TL;DRs and executive email."
+    last_checked: 2026-09-25
+  - id: staff-daci
+    title: "DACI decision framework (Atlassian)"
+    url: https://www.atlassian.com/team-playbook/plays/daci
+    type: docs
+    topics: [design-docs-rfcs, decision-making]
+    priority: P1
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Name driver, approver, contributors, informed."
+    last_checked: 2026-09-25
+  - id: staff-staffeng-aligned
+    title: "StaffEng: Staying aligned with authority"
+    url: https://staffeng.com/guides/staying-aligned-with-authority/
+    type: article
+    topics: [influence-without-authority]
+    priority: P0
+    complexity: 3
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Why alignment with your chain underpins Staff influence."
+    last_checked: 2026-09-25
+  - id: staff-staffeng-room
+    title: "StaffEng: Getting in the room"
+    url: https://staffeng.com/guides/getting-in-the-room/
+    type: article
+    topics: [influence-without-authority, communication-stakeholders]
+    priority: P0
+    complexity: 3
+    level: intermediate
+    cost: free
+    gem: false
+    why: "How to earn and keep a seat where decisions are made."
+    last_checked: 2026-09-25
+  - id: staff-resilient-mgmt
+    title: "Resilient Management (Lara Hogan)"
+    url: https://resilient-management.com/
+    type: book
+    topics: [influence-without-authority, mentoring-sponsorship]
+    priority: P1
+    complexity: 2
+    level: intermediate
+    cost: paid
+    gem: true
+    why: "Tools for hard conversations, coaching and sponsorship."
+    last_checked: 2026-09-25
+  - id: staff-staffeng-quality
+    title: "StaffEng: Manage technical quality"
+    url: https://staffeng.com/guides/manage-technical-quality/
+    type: article
+    topics: [technical-debt]
+    priority: P0
+    complexity: 3
+    level: advanced
+    cost: free
+    gem: false
+    why: "Larson's escalating ladder of quality interventions."
+    last_checked: 2026-09-25
+  - id: staff-larson-migrations
+    title: "Migrations: the sole scalable fix to tech debt (Larson)"
+    url: https://lethain.com/migrations/
+    type: article
+    topics: [technical-debt]
+    priority: P0
+    complexity: 3
+    level: advanced
+    cost: free
+    gem: true
+    why: "How to run migrations that actually finish."
+    last_checked: 2026-09-25
+  - id: staff-fowler-debt-quadrant
+    title: "Technical Debt Quadrant (Fowler)"
+    url: https://martinfowler.com/bliki/TechnicalDebtQuadrant.html
+    type: article
+    topics: [technical-debt]
+    priority: P0
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Vocabulary for deliberate vs reckless debt."
+    last_checked: 2026-09-25
+  - id: staff-fowler-quality
+    title: "Is High Quality Software Worth the Cost? (Fowler)"
+    url: https://martinfowler.com/articles/is-quality-worth-cost.html
+    type: article
+    topics: [technical-debt]
+    priority: P0
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: true
+    why: "Best argument to executives that quality speeds delivery."
+    last_checked: 2026-09-25
+  - id: staff-tidy-first
+    title: "Tidy First? (Kent Beck newsletter)"
+    url: https://tidyfirst.substack.com/
+    type: newsletter
+    topics: [technical-debt]
+    priority: P1
+    complexity: 2
+    level: intermediate
+    cost: freemium
+    gem: true
+    why: "Small structural changes and the economics of design."
+    last_checked: 2026-09-25
+  - id: staff-dora
+    title: "DORA"
+    url: https://dora.dev/
+    type: docs
+    topics: [technical-debt, ai-era-leadership]
+    priority: P0
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Outcome metrics for delivery speed and stability."
+    last_checked: 2026-09-25
+  - id: staff-hogan-sponsorship
+    title: "What does sponsorship look like? (Lara Hogan)"
+    url: https://larahogan.me/blog/what-sponsorship-looks-like/
+    type: article
+    topics: [mentoring-sponsorship]
+    priority: P0
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: true
+    why: "Concrete list of sponsorship actions."
+    last_checked: 2026-09-25
+  - id: staff-hogan-feedback
+    title: "The feedback equation (Lara Hogan)"
+    url: https://larahogan.me/blog/feedback-equation/
+    type: article
+    topics: [mentoring-sponsorship]
+    priority: P1
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: true
+    why: "Precise, low-drama feedback structure."
+    last_checked: 2026-09-25
+  - id: staff-radical-candor
+    title: "Radical Candor"
+    url: https://www.radicalcandor.com/
+    type: docs
+    topics: [mentoring-sponsorship]
+    priority: P2
+    complexity: 2
+    level: intermediate
+    cost: freemium
+    gem: false
+    why: "Care personally, challenge directly."
+    last_checked: 2026-09-25
+  - id: staff-sre-postmortem
+    title: "Postmortem Culture (Google SRE book)"
+    url: https://sre.google/sre-book/postmortem-culture/
+    type: book
+    topics: [incident-leadership]
+    priority: P0
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Canonical rationale for blameless postmortems."
+    last_checked: 2026-09-25
+  - id: staff-sre-incidents
+    title: "Managing Incidents (Google SRE book)"
+    url: https://sre.google/sre-book/managing-incidents/
+    type: book
+    topics: [incident-leadership]
+    priority: P0
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Roles and the incident command model."
+    last_checked: 2026-09-25
+  - id: staff-sre-workbook-ir
+    title: "Incident Response (SRE Workbook)"
+    url: https://sre.google/workbook/incident-response/
+    type: book
+    topics: [incident-leadership]
+    priority: P1
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Practical incident response case studies."
+    last_checked: 2026-09-25
+  - id: staff-pd-response
+    title: "PagerDuty Incident Response docs"
+    url: https://response.pagerduty.com/
+    type: docs
+    topics: [incident-leadership]
+    priority: P0
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: true
+    why: "Open IC, scribe and comms role guides."
+    last_checked: 2026-09-25
+  - id: staff-pd-postmortems
+    title: "PagerDuty Postmortem docs"
+    url: https://postmortems.pagerduty.com/
+    type: docs
+    topics: [incident-leadership]
+    priority: P1
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Templates and facilitation guidance."
+    last_checked: 2026-09-25
+  - id: staff-howie
+    title: "Howie: post-incident guide (Jeli / PagerDuty)"
+    url: https://www.jeli.io/howie/welcome
+    type: docs
+    topics: [incident-leadership]
+    priority: P1
+    complexity: 3
+    level: advanced
+    cost: free
+    gem: true
+    why: "Learning-focused incident analysis beyond root cause."
+    last_checked: 2026-09-25
+  - id: staff-incidentio-guide
+    title: "The practical guide to incident management (incident.io)"
+    url: https://incident.io/guide
+    type: docs
+    topics: [incident-leadership]
+    priority: P1
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: true
+    why: "Readable modern end-to-end incident guide."
+    last_checked: 2026-09-25
+  - id: staff-postmortem-templates
+    title: "Postmortem templates collection"
+    url: https://github.com/dastergon/postmortem-templates
+    type: repo
+    topics: [incident-leadership]
+    priority: P2
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Many real company templates to compare."
+    last_checked: 2026-09-25
+  - id: staff-staffeng-exec
+    title: "StaffEng: Present to executives"
+    url: https://staffeng.com/guides/present-to-executives/
+    type: article
+    topics: [communication-stakeholders]
+    priority: P0
+    complexity: 3
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Concise guide to exec communication for ICs."
+    last_checked: 2026-09-25
+  - id: staff-amazon-2016
+    title: "Amazon 2016 shareholder letter (Type 1/Type 2)"
+    url: https://www.aboutamazon.com/news/company-news/2016-letter-to-shareholders
+    type: article
+    topics: [decision-making]
+    priority: P0
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Source of one-way/two-way doors and disagree-and-commit."
+    last_checked: 2026-09-25
+  - id: staff-cynefin
+    title: "Cynefin framework"
+    url: https://www.cynefin.io/wiki/Cynefin
+    type: docs
+    topics: [decision-making]
+    priority: P1
+    complexity: 3
+    level: advanced
+    cost: free
+    gem: false
+    why: "Match decision approach to problem complexity."
+    last_checked: 2026-09-25
+  - id: staff-fs-mental-models
+    title: "Mental models (Farnam Street)"
+    url: https://fs.blog/mental-models/
+    type: article
+    topics: [decision-making]
+    priority: P2
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: true
+    why: "Inversion, second-order and probabilistic thinking."
+    last_checked: 2026-09-25
+  - id: staff-harmel-law
+    title: "Scaling the Practice of Architecture, Conversationally"
+    url: https://martinfowler.com/articles/scaling-architecture-conversationally.html
+    type: article
+    topics: [architecture-reviews]
+    priority: P0
+    complexity: 3
+    level: advanced
+    cost: free
+    gem: true
+    why: "The advice-process model; best alternative to gatekeeping ARBs."
+    last_checked: 2026-09-25
+  - id: staff-tw-radar
+    title: "Thoughtworks Technology Radar"
+    url: https://www.thoughtworks.com/radar
+    type: docs
+    topics: [architecture-reviews]
+    priority: P2
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Model for publishing adopt/trial/assess/hold guidance."
+    last_checked: 2026-09-25
+  - id: staff-aws-wa
+    title: "AWS Well-Architected"
+    url: https://aws.amazon.com/architecture/well-architected/
+    type: docs
+    topics: [architecture-reviews]
+    priority: P2
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Structured review pillars usable as a checklist source."
+    last_checked: 2026-09-25
+  - id: staff-google-eng-practices
+    title: "Google engineering practices (code review)"
+    url: https://google.github.io/eng-practices/
+    type: docs
+    topics: [architecture-reviews]
+    priority: P2
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Reviewer etiquette that generalises to design review."
+    last_checked: 2026-09-25
+  - id: staff-owasp-genai
+    title: "OWASP GenAI Security Project"
+    url: https://genai.owasp.org/
+    type: docs
+    topics: [architecture-reviews, ai-era-leadership]
+    priority: P0
+    complexity: 3
+    level: advanced
+    cost: free
+    gem: false
+    why: "LLM and agentic Top 10s for risk reviews."
+    last_checked: 2026-09-25
+  - id: staff-dora-2025
+    title: "State of AI-assisted Software Development 2025 (DORA)"
+    url: https://dora.dev/research/2025/dora-report/
+    type: report
+    topics: [ai-era-leadership, technical-debt, communication-stakeholders]
+    priority: P0
+    complexity: 3
+    level: advanced
+    cost: free
+    gem: false
+    why: "Largest research base on AI in software orgs; AI as amplifier."
+    last_checked: 2026-09-25
+  - id: staff-dora-ai-caps
+    title: "DORA AI Capabilities Model"
+    url: https://dora.dev/ai/capabilities-model/report/
+    type: report
+    topics: [ai-era-leadership]
+    priority: P0
+    complexity: 3
+    level: advanced
+    cost: free
+    gem: true
+    why: "Seven capabilities determining AI's impact."
+    last_checked: 2026-09-25
+  - id: staff-metr-rct
+    title: "METR: early-2025 AI and experienced open-source developers (RCT)"
+    url: https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/
+    type: study
+    topics: [ai-era-leadership]
+    priority: P0
+    complexity: 3
+    level: advanced
+    cost: free
+    gem: true
+    why: "Rigorous counterweight to perception-based productivity claims."
+    last_checked: 2026-09-25
+  - id: staff-nist-rmf
+    title: "NIST AI Risk Management Framework"
+    url: https://www.nist.gov/itl/ai-risk-management-framework
+    type: framework
+    topics: [ai-era-leadership]
+    priority: P1
+    complexity: 3
+    level: advanced
+    cost: free
+    gem: false
+    why: "Govern/map/measure/manage; common in enterprises."
+    last_checked: 2026-09-25
+  - id: staff-lethal-trifecta
+    title: "The lethal trifecta (Simon Willison)"
+    url: https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/
+    type: article
+    topics: [ai-era-leadership, architecture-reviews]
+    priority: P0
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: true
+    why: "Most useful single heuristic for agent risk."
+    last_checked: 2026-09-25
+  - id: staff-anthropic-claude-code-teams
+    title: "How Anthropic teams use Claude Code"
+    url: https://www.anthropic.com/news/how-anthropic-teams-use-claude-code
+    type: article
+    topics: [ai-era-leadership]
+    priority: P1
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Concrete coding-agent usage patterns across functions."
+    last_checked: 2026-09-25
+  - id: staff-claude-code-best-practices
+    title: "Claude Code best practices"
+    url: https://code.claude.com/docs/en/best-practices
+    type: docs
+    topics: [ai-era-leadership]
+    priority: P1
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Practical agent workflows: context files, planning, verification."
+    last_checked: 2026-09-25
+  - id: staff-dx-core4
+    title: "Measuring developer productivity with the DX Core 4"
+    url: https://getdx.com/research/measuring-developer-productivity-with-the-dx-core-4/
+    type: article
+    topics: [ai-era-leadership]
+    priority: P1
+    complexity: 3
+    level: advanced
+    cost: free
+    gem: false
+    why: "Balanced measurement framework to use with DORA."
+    last_checked: 2026-09-25
+  - id: staff-eu-ai-act
+    title: "EU AI Act explorer"
+    url: https://artificialintelligenceact.eu/
+    type: docs
+    topics: [ai-era-leadership]
+    priority: P2
+    complexity: 3
+    level: advanced
+    cost: free
+    gem: false
+    why: "Navigable text and timelines; check current obligations."
+    last_checked: 2026-09-25
+  - id: staff-tih-behavioral
+    title: "Behavioral interviews for Software Engineers (Tech Interview Handbook)"
+    url: https://www.techinterviewhandbook.org/behavioral-interview/
+    type: article
+    topics: [behavioral-interviews]
+    priority: P0
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Free overview, question lists and story prep."
+    last_checked: 2026-09-25
+  - id: staff-hello-behavioral
+    title: "Why the Behavioral Interview Matters (Hello Interview)"
+    url: https://www.hellointerview.com/learn/behavioral/overview/introduction
+    type: article
+    topics: [behavioral-interviews]
+    priority: P0
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Modern take including senior/staff levelling."
+    last_checked: 2026-09-25
+  - id: staff-amazon-lp
+    title: "Amazon Leadership Principles"
+    url: https://www.amazon.jobs/content/en/our-workplace/leadership-principles
+    type: docs
+    topics: [behavioral-interviews]
+    priority: P1
+    complexity: 1
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Principle-tagged stories are a common loop structure."
+    last_checked: 2026-09-25
+  - id: staff-staffeng-promo
+    title: "StaffEng: Promotion packets"
+    url: https://staffeng.com/guides/promo-packets/
+    type: article
+    topics: [behavioral-interviews, staff-archetypes]
+    priority: P1
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: true
+    why: "Same evidence structure as strong stories."
+    last_checked: 2026-09-25
+  - id: staff-staffeng-projects
+    title: "StaffEng: Staff projects"
+    url: https://staffeng.com/guides/staff-projects/
+    type: article
+    topics: [behavioral-interviews, staff-archetypes]
+    priority: P1
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: true
+    why: "What Staff-scope projects look like; source for stories."
+    last_checked: 2026-09-25

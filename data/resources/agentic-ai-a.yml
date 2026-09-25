@@ -1,0 +1,1142 @@
+# Curated resources - agentic-ai (topics 1-15). Generated schema per AGENTS.md; last_checked 2026-09-25.
+# NB: URLs returned HTTP 200 on 2026-09-25 except the Microsoft Research LazyGraphRAG blog (403 to curl, likely bot protection).
+- id: ai-karpathy-deep-dive
+  title: "Karpathy - Deep Dive into LLMs like ChatGPT"
+  url: https://www.youtube.com/watch?v=7xTGNNLPyMI
+  type: video
+  topics: [llm-fundamentals]
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "3.5h end-to-end mental model: tokenization, pretraining, post-training, RL, hallucination."
+  last_checked: 2026-09-25
+- id: ai-transformer-explainer
+  title: "Transformer Explainer (Polo Club)"
+  url: https://poloclub.github.io/transformer-explainer/
+  type: interactive
+  topics: [llm-fundamentals]
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: true
+  why: "Live GPT-2 in the browser; see attention and temperature reshape the distribution."
+  last_checked: 2026-09-25
+- id: ai-3b1b-nn
+  title: "3Blue1Brown - Neural networks series"
+  url: https://www.3blue1brown.com/topics/neural-networks
+  type: video
+  topics: [llm-fundamentals]
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Best visual intuition for attention and embeddings."
+  last_checked: 2026-09-25
+- id: ai-tiktokenizer
+  title: "Tiktokenizer"
+  url: https://tiktokenizer.vercel.app/
+  type: interactive
+  topics: [llm-fundamentals]
+  priority: P2
+  complexity: 1
+  level: intermediate
+  cost: free
+  gem: true
+  why: "Paste logs/JSON and see the tokenization tax first-hand."
+  last_checked: 2026-09-25
+- id: ai-vllm-paged-attention
+  title: "vLLM - PagedAttention blog"
+  url: https://blog.vllm.ai/2023/06/20/vllm.html
+  type: article
+  topics: [llm-fundamentals]
+  priority: P1
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: false
+  why: "Why KV cache memory is the serving bottleneck and how paging fixes it."
+  last_checked: 2026-09-25
+- id: ai-claude-prompt-caching
+  title: "Anthropic - Prompt caching docs"
+  url: https://platform.claude.com/docs/en/build-with-claude/prompt-caching
+  type: docs
+  topics: [llm-fundamentals]
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Exact prefix-caching mechanics, breakpoints, TTLs, pricing multipliers."
+  last_checked: 2026-09-25
+- id: ai-raschka-reasoning-llms
+  title: "Sebastian Raschka - Understanding Reasoning LLMs"
+  url: https://magazine.sebastianraschka.com/p/understanding-reasoning-llms
+  type: article
+  topics: [llm-fundamentals]
+  priority: P1
+  complexity: 3
+  level: advanced
+  cost: free
+  gem: true
+  why: "How reasoning models are trained and when they are worth the cost."
+  last_checked: 2026-09-25
+- id: ai-build-llm-from-scratch
+  title: "Build a Large Language Model (From Scratch)"
+  url: https://www.manning.com/books/build-a-large-language-model-from-scratch
+  type: book
+  topics: [llm-fundamentals]
+  priority: P2
+  complexity: 4
+  level: advanced
+  cost: paid
+  gem: false
+  why: "Implement attention and KV cache yourself in PyTorch."
+  last_checked: 2026-09-25
+- id: ai-cs336
+  title: "Stanford CS336: Language Modeling from Scratch"
+  url: https://stanford-cs336.github.io/
+  type: course
+  topics: [llm-fundamentals]
+  priority: P2
+  complexity: 5
+  level: advanced
+  cost: free
+  gem: false
+  why: "Systems-level view of tokenizers, kernels, scaling and inference."
+  last_checked: 2026-09-25
+- id: ai-claude-prompt-eng
+  title: "Anthropic - Prompt engineering overview"
+  url: https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview
+  type: docs
+  topics: [prompting-structured-outputs]
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Practical vendor guide: clarity, examples, XML tags, chaining."
+  last_checked: 2026-09-25
+- id: ai-claude-structured-outputs
+  title: "Anthropic - Structured outputs"
+  url: https://platform.claude.com/docs/en/build-with-claude/structured-outputs
+  type: docs
+  topics: [prompting-structured-outputs, tool-calling]
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "JSON outputs and strict tool use; supported schema subset."
+  last_checked: 2026-09-25
+- id: ai-openai-structured-outputs
+  title: "OpenAI - Structured Outputs guide"
+  url: https://developers.openai.com/api/docs/guides/structured-outputs
+  type: docs
+  topics: [prompting-structured-outputs]
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "responses.parse with Pydantic, refusals, schema limits."
+  last_checked: 2026-09-25
+- id: ai-weng-prompt-eng
+  title: "Lilian Weng - Prompt Engineering"
+  url: https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/
+  type: article
+  topics: [prompting-structured-outputs]
+  priority: P2
+  complexity: 3
+  level: advanced
+  cost: free
+  gem: true
+  why: "Research-grounded survey of why few-shot and CoT work."
+  last_checked: 2026-09-25
+- id: ai-pydantic-ai-output
+  title: "Pydantic AI - Output"
+  url: https://pydantic.dev/docs/ai/core-concepts/output/
+  type: docs
+  topics: [prompting-structured-outputs, pydantic-ai]
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Tool vs native vs prompted output, validators, union outputs."
+  last_checked: 2026-09-25
+- id: ai-eugeneyan-llm-patterns
+  title: "Eugene Yan - Patterns for building LLM-based systems"
+  url: https://eugeneyan.com/writing/llm-patterns/
+  type: article
+  topics: [prompting-structured-outputs, rag-fundamentals]
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: true
+  why: "Places prompting and RAG inside evals, guardrails, caching and defensive UX."
+  last_checked: 2026-09-25
+- id: ai-applied-llms
+  title: "Applied LLMs - What we learned from a year of building"
+  url: https://applied-llms.org/
+  type: article
+  topics: [prompting-structured-outputs, evals-error-analysis]
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Practitioner lessons on prompts, structured output and evals."
+  last_checked: 2026-09-25
+- id: ai-anthropic-context-eng
+  title: "Anthropic - Effective context engineering for AI agents"
+  url: https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents
+  type: article
+  topics: [context-engineering]
+  priority: P0
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Canonical framing: attention budget, compaction, note-taking, sub-agents."
+  last_checked: 2026-09-25
+- id: ai-manus-context-eng
+  title: "Manus - Context Engineering for AI Agents"
+  url: https://manus.im/blog/Context-Engineering-for-AI-Agents-Lessons-from-Building-Manus
+  type: article
+  topics: [context-engineering]
+  priority: P0
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: "Production tricks: KV-cache hit rate, recitation, keeping errors, files as memory."
+  last_checked: 2026-09-25
+- id: ai-langchain-context-eng
+  title: "LangChain - Context engineering for agents"
+  url: https://blog.langchain.com/context-engineering-for-agents/
+  type: article
+  topics: [context-engineering]
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Write/select/compress/isolate taxonomy with LangGraph examples."
+  last_checked: 2026-09-25
+- id: ai-breunig-long-contexts
+  title: "Drew Breunig - How Long Contexts Fail"
+  url: https://www.dbreunig.com/2025/06/22/how-contexts-fail-and-how-to-fix-them.html
+  type: article
+  topics: [context-engineering]
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: true
+  why: "Names poisoning, distraction, confusion, clash - great diagnostic vocabulary."
+  last_checked: 2026-09-25
+- id: ai-chroma-context-rot
+  title: "Chroma - Context Rot"
+  url: https://research.trychroma.com/context-rot
+  type: article
+  topics: [context-engineering]
+  priority: P1
+  complexity: 3
+  level: advanced
+  cost: free
+  gem: true
+  why: "Empirical evidence of degradation with input length and distractors."
+  last_checked: 2026-09-25
+- id: ai-lost-in-the-middle
+  title: "Lost in the Middle (Liu et al.)"
+  url: https://arxiv.org/abs/2307.03172
+  type: paper
+  topics: [context-engineering]
+  priority: P2
+  complexity: 3
+  level: advanced
+  cost: free
+  gem: false
+  why: "Classic positional-recall result for long contexts."
+  last_checked: 2026-09-25
+- id: ai-12-factor-agents
+  title: "12-Factor Agents (HumanLayer)"
+  url: https://github.com/humanlayer/12-factor-agents
+  type: article
+  topics: [context-engineering, agent-patterns, tool-calling, langgraph, durable-execution-hitl]
+  priority: P0
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: true
+  why: "Own your context window and control flow; pause/resume; humans as tool calls."
+  last_checked: 2026-09-25
+- id: ai-building-effective-agents
+  title: "Anthropic - Building effective agents"
+  url: https://www.anthropic.com/engineering/building-effective-agents
+  type: article
+  topics: [agent-patterns, durable-execution-hitl]
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Reference taxonomy of workflows vs agents with when-to-use guidance."
+  last_checked: 2026-09-25
+- id: ai-weng-agents
+  title: "Lilian Weng - LLM Powered Autonomous Agents"
+  url: https://lilianweng.github.io/posts/2023-06-23-agent/
+  type: article
+  topics: [agent-patterns]
+  priority: P2
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Planning, memory and tool-use foundations behind ReAct and reflection."
+  last_checked: 2026-09-25
+- id: ai-willison-agentic-loops
+  title: "Simon Willison - Designing agentic loops"
+  url: https://simonwillison.net/2025/Sep/30/designing-agentic-loops/
+  type: article
+  topics: [agent-patterns]
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: true
+  why: "Practical view of tools, sandboxes and goals for agent loops."
+  last_checked: 2026-09-25
+- id: ai-hf-agents-course
+  title: "Hugging Face - AI Agents Course"
+  url: https://huggingface.co/learn/agents-course
+  type: course
+  topics: [agent-patterns, langgraph]
+  priority: P1
+  complexity: 2
+  level: beginner
+  cost: free
+  gem: false
+  why: "Hands-on, framework-spanning implementations of agent patterns."
+  last_checked: 2026-09-25
+- id: ai-aie-book
+  title: "Chip Huyen - AI Engineering (book repo)"
+  url: https://github.com/chiphuyen/aie-book
+  type: book
+  topics: [agent-patterns, rag-fundamentals, vector-databases]
+  priority: P1
+  complexity: 3
+  level: advanced
+  cost: paid
+  gem: false
+  why: "Systems view of agents, RAG and retrieval infrastructure trade-offs."
+  last_checked: 2026-09-25
+- id: ai-anthropic-writing-tools
+  title: "Anthropic - Writing effective tools for agents"
+  url: https://www.anthropic.com/engineering/writing-tools-for-agents
+  type: article
+  topics: [tool-calling]
+  priority: P0
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Best guide to tool ergonomics, consolidation and eval-driven tool improvement."
+  last_checked: 2026-09-25
+- id: ai-claude-tool-use
+  title: "Anthropic - Tool use overview"
+  url: https://platform.claude.com/docs/en/agents-and-tools/tool-use/overview
+  type: docs
+  topics: [tool-calling]
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Message format, parallel calls, tool_choice, strict mode."
+  last_checked: 2026-09-25
+- id: ai-openai-function-calling
+  title: "OpenAI - Function calling guide"
+  url: https://platform.openai.com/docs/guides/function-calling
+  type: docs
+  topics: [tool-calling]
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Responses API tool format, strict schemas, parallel calls."
+  last_checked: 2026-09-25
+- id: ai-pydantic-ai-agent
+  title: "Pydantic AI - Agents"
+  url: https://pydantic.dev/docs/ai/core-concepts/agent/
+  type: docs
+  topics: [tool-calling, pydantic-ai]
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Constructor args, RunContext, tools, usage limits, retries."
+  last_checked: 2026-09-25
+- id: ai-bfcl
+  title: "Berkeley Function Calling Leaderboard"
+  url: https://gorilla.cs.berkeley.edu/leaderboard.html
+  type: interactive
+  topics: [tool-calling]
+  priority: P2
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: true
+  why: "Compare models on tool-call accuracy incl. multi-turn and irrelevance."
+  last_checked: 2026-09-25
+- id: ai-lethal-trifecta
+  title: "Simon Willison - The lethal trifecta"
+  url: https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/
+  type: article
+  topics: [tool-calling]
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: true
+  why: "Clearest framing of why tools plus untrusted data are dangerous."
+  last_checked: 2026-09-25
+- id: ai-contextual-retrieval
+  title: "Anthropic - Introducing Contextual Retrieval"
+  url: https://www.anthropic.com/news/contextual-retrieval
+  type: article
+  topics: [rag-fundamentals, hybrid-search-reranking, advanced-rag]
+  priority: P0
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Chunk-context loss and a measured fix: contextual embeddings + BM25 + reranking."
+  last_checked: 2026-09-25
+- id: ai-pgvector
+  title: "pgvector README"
+  url: https://github.com/pgvector/pgvector
+  type: docs
+  topics: [rag-fundamentals, vector-databases]
+  priority: P0
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Authoritative types, HNSW/IVFFlat params, iterative scans, filtering."
+  last_checked: 2026-09-25
+- id: ai-mteb
+  title: "MTEB leaderboard"
+  url: https://huggingface.co/spaces/mteb/leaderboard
+  type: interactive
+  topics: [rag-fundamentals]
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Compare embedding models by task and language."
+  last_checked: 2026-09-25
+- id: ai-jxnl-writing
+  title: "Jason Liu - writing"
+  url: https://jxnl.co/writing/
+  type: article
+  topics: [rag-fundamentals, advanced-rag]
+  priority: P1
+  complexity: 3
+  level: advanced
+  cost: free
+  gem: true
+  why: "Treat RAG as a search product: measure recall, segment queries."
+  last_checked: 2026-09-25
+- id: ai-hf-llm-course
+  title: "Hugging Face - LLM course"
+  url: https://huggingface.co/learn/llm-course
+  type: course
+  topics: [rag-fundamentals]
+  priority: P2
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Embeddings and semantic search chapters with notebooks."
+  last_checked: 2026-09-25
+- id: ai-supabase-hybrid
+  title: "Supabase - Hybrid search"
+  url: https://supabase.com/docs/guides/ai/hybrid-search
+  type: docs
+  topics: [hybrid-search-reranking, rag-fundamentals, vector-databases]
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: true
+  why: "Copy-pasteable Postgres FTS + pgvector + RRF SQL."
+  last_checked: 2026-09-25
+- id: ai-pinecone-rerankers
+  title: "Pinecone - Rerankers and two-stage retrieval"
+  url: https://www.pinecone.io/learn/series/rag/rerankers/
+  type: article
+  topics: [hybrid-search-reranking]
+  priority: P0
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Clearest bi- vs cross-encoder explanation and why two-stage retrieval works."
+  last_checked: 2026-09-25
+- id: ai-sbert-cross-encoders
+  title: "Sentence Transformers - Cross-Encoders"
+  url: https://www.sbert.net/examples/cross_encoder/applications/README.html
+  type: docs
+  topics: [hybrid-search-reranking]
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Run and fine-tune cross-encoders locally; retrieve-and-rerank examples."
+  last_checked: 2026-09-25
+- id: ai-qdrant-hybrid
+  title: "Qdrant - Hybrid queries"
+  url: https://qdrant.tech/documentation/concepts/hybrid-queries/
+  type: docs
+  topics: [hybrid-search-reranking, vector-databases]
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Prefetch + fusion (RRF/DBSF) and multi-stage queries in a vector DB."
+  last_checked: 2026-09-25
+- id: ai-elastic-rrf
+  title: "Elastic - Reciprocal rank fusion"
+  url: https://www.elastic.co/guide/en/elasticsearch/reference/current/rrf.html
+  type: docs
+  topics: [hybrid-search-reranking]
+  priority: P2
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Concise RRF definition and parameters."
+  last_checked: 2026-09-25
+- id: ai-jina-colbert
+  title: "Jina - What is ColBERT and late interaction"
+  url: https://jina.ai/news/what-is-colbert-and-late-interaction-and-why-they-matter-in-search/
+  type: article
+  topics: [hybrid-search-reranking]
+  priority: P2
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: "Visual intuition for bi-encoder vs cross-encoder vs late interaction."
+  last_checked: 2026-09-25
+- id: ai-cohere-rerank
+  title: "Cohere - Rerank overview"
+  url: https://docs.cohere.com/docs/rerank-overview
+  type: docs
+  topics: [hybrid-search-reranking]
+  priority: P2
+  complexity: 2
+  level: intermediate
+  cost: freemium
+  gem: false
+  why: "Hosted reranker API semantics."
+  last_checked: 2026-09-25
+- id: ai-pgvectorscale
+  title: "pgvectorscale"
+  url: https://github.com/timescale/pgvectorscale
+  type: docs
+  topics: [vector-databases]
+  priority: P1
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: "StreamingDiskANN and label-filtered search for Postgres."
+  last_checked: 2026-09-25
+- id: ai-qdrant-docs
+  title: "Qdrant documentation"
+  url: https://qdrant.tech/documentation/
+  type: docs
+  topics: [vector-databases]
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Filterable HNSW, quantization, multitenancy."
+  last_checked: 2026-09-25
+- id: ai-pinecone-hnsw
+  title: "Pinecone - Hierarchical Navigable Small Worlds"
+  url: https://www.pinecone.io/learn/series/faiss/hnsw/
+  type: article
+  topics: [vector-databases]
+  priority: P0
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Best visual explanation of how HNSW search works."
+  last_checked: 2026-09-25
+- id: ai-ann-benchmarks
+  title: "ANN-Benchmarks"
+  url: https://ann-benchmarks.com/
+  type: interactive
+  topics: [vector-databases]
+  priority: P2
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: "Recall vs QPS frontiers across ANN algorithms."
+  last_checked: 2026-09-25
+- id: ai-jkatz-blog
+  title: "Jonathan Katz - blog"
+  url: https://jkatz05.com/
+  type: article
+  topics: [vector-databases]
+  priority: P1
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: "pgvector committer's deep dives on performance, quantization, filtering."
+  last_checked: 2026-09-25
+- id: ai-ms-graphrag
+  title: "Microsoft GraphRAG documentation"
+  url: https://microsoft.github.io/graphrag/
+  type: docs
+  topics: [advanced-rag]
+  priority: P1
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: false
+  why: "Indexing pipeline, local/global/DRIFT search."
+  last_checked: 2026-09-25
+- id: ai-lazygraphrag
+  title: "LazyGraphRAG announcement (Microsoft Research)"
+  url: https://www.microsoft.com/en-us/research/blog/lazygraphrag-setting-a-new-standard-for-quality-and-cost/
+  type: article
+  topics: [advanced-rag]
+  priority: P1
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: false
+  why: "Why deferring LLM work slashes index cost (may block automated fetch)."
+  last_checked: 2026-09-25
+- id: ai-self-rag
+  title: "Self-RAG paper"
+  url: https://arxiv.org/abs/2310.11511
+  type: paper
+  topics: [advanced-rag]
+  priority: P2
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: false
+  why: "Retrieval-on-demand plus self-critique."
+  last_checked: 2026-09-25
+- id: ai-crag
+  title: "Corrective RAG (CRAG) paper"
+  url: https://arxiv.org/abs/2401.15884
+  type: paper
+  topics: [advanced-rag]
+  priority: P2
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: false
+  why: "Retrieval evaluator with corrective actions; template for graders."
+  last_checked: 2026-09-25
+- id: ai-agentic-rag-evidence
+  title: "Is agentic RAG always better? (arXiv 2601.07711)"
+  url: https://arxiv.org/abs/2601.07711
+  type: paper
+  topics: [advanced-rag]
+  priority: P1
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: false
+  why: "Evidence-based counterweight to agentic RAG hype."
+  last_checked: 2026-09-25
+- id: ai-lightrag
+  title: "LightRAG"
+  url: https://github.com/HKUDS/LightRAG
+  type: docs
+  topics: [advanced-rag]
+  priority: P2
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: "Lightweight graph RAG with incremental updates."
+  last_checked: 2026-09-25
+- id: ai-evals-faq
+  title: "Hamel Husain and Shreya Shankar - Evals FAQ"
+  url: https://hamel.dev/blog/posts/evals-faq/
+  type: article
+  topics: [evals-error-analysis, eval-tooling]
+  priority: P0
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Densest practical Q&A on error analysis, judges, RAG and agent evals."
+  last_checked: 2026-09-25
+- id: ai-hamel-evals
+  title: "Hamel Husain - Your AI Product Needs Evals"
+  url: https://hamel.dev/blog/posts/evals/
+  type: article
+  topics: [evals-error-analysis]
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Foundational three-level eval framework with a worked example."
+  last_checked: 2026-09-25
+- id: ai-hamel-llm-judge
+  title: "Hamel Husain - Using LLM-as-a-Judge"
+  url: https://hamel.dev/blog/posts/llm-judge/
+  type: article
+  topics: [evals-error-analysis]
+  priority: P0
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: true
+  why: "Step-by-step judge building with critique-first prompts and calibration."
+  last_checked: 2026-09-25
+- id: ai-hamel-field-guide
+  title: "Hamel Husain - A Field Guide to Rapidly Improving AI Products"
+  url: https://hamel.dev/blog/posts/field-guide/
+  type: article
+  topics: [evals-error-analysis, llm-observability]
+  priority: P0
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Error-analysis workflow, data viewers and prioritisation."
+  last_checked: 2026-09-25
+- id: ai-eugeneyan-llm-evaluators
+  title: "Eugene Yan - Evaluating the effectiveness of LLM-evaluators"
+  url: https://eugeneyan.com/writing/llm-evaluators/
+  type: article
+  topics: [evals-error-analysis]
+  priority: P1
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: "Survey of judge biases and reliability with practical guidance."
+  last_checked: 2026-09-25
+- id: ai-dlai-eval-agents
+  title: "DeepLearning.AI - Evaluating AI Agents"
+  url: https://learn.deeplearning.ai/courses/evaluating-ai-agents/information
+  type: course
+  topics: [evals-error-analysis]
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Short course on trajectory and component-level agent evals."
+  last_checked: 2026-09-25
+- id: ai-pydantic-evals
+  title: "Pydantic Evals"
+  url: https://pydantic.dev/docs/ai/evals/
+  type: docs
+  topics: [evals-error-analysis, eval-tooling, pydantic-ai]
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Code-first datasets, evaluators and LLM judges."
+  last_checked: 2026-09-25
+- id: ai-promptfoo-intro
+  title: "promptfoo - getting started"
+  url: https://www.promptfoo.dev/docs/intro/
+  type: docs
+  topics: [eval-tooling]
+  priority: P0
+  complexity: 1
+  level: beginner
+  cost: free
+  gem: false
+  why: "Fastest way to compare prompts and models with assertions."
+  last_checked: 2026-09-25
+- id: ai-promptfoo-config
+  title: "promptfoo - configuration guide"
+  url: https://www.promptfoo.dev/docs/configuration/guide/
+  type: docs
+  topics: [eval-tooling]
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Providers, assertions, defaultTest, Python providers."
+  last_checked: 2026-09-25
+- id: ai-promptfoo-gh-action
+  title: "promptfoo - GitHub Action"
+  url: https://www.promptfoo.dev/docs/integrations/github-action/
+  type: docs
+  topics: [eval-tooling]
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "CI integration with PR diffs."
+  last_checked: 2026-09-25
+- id: ai-promptfoo-owasp-agentic
+  title: "promptfoo - OWASP agentic red-team preset"
+  url: https://www.promptfoo.dev/docs/red-team/owasp-agentic-ai/
+  type: docs
+  topics: [eval-tooling]
+  priority: P0
+  complexity: 3
+  level: advanced
+  cost: free
+  gem: true
+  why: "Automated adversarial testing mapped to agentic risks."
+  last_checked: 2026-09-25
+- id: ai-deepeval
+  title: "DeepEval docs"
+  url: https://deepeval.com/
+  type: docs
+  topics: [eval-tooling]
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: freemium
+  gem: false
+  why: "Pytest-style LLM tests with G-Eval, RAG and agent metrics."
+  last_checked: 2026-09-25
+- id: ai-deepeval-geval
+  title: "DeepEval - G-Eval"
+  url: https://deepeval.com/docs/metrics-llm-evals
+  type: docs
+  topics: [eval-tooling]
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: freemium
+  gem: false
+  why: "Custom criteria and evaluation steps as a judge."
+  last_checked: 2026-09-25
+- id: ai-ragas-metrics
+  title: "Ragas - available metrics"
+  url: https://docs.ragas.io/en/stable/concepts/metrics/available_metrics/
+  type: docs
+  topics: [eval-tooling]
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: "RAG metric definitions and modern API."
+  last_checked: 2026-09-25
+- id: ai-inspect-ai
+  title: "Inspect (UK AISI)"
+  url: https://inspect.aisi.org.uk/
+  type: docs
+  topics: [eval-tooling]
+  priority: P1
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: "Rigorous eval framework with agent/sandbox support and log viewer."
+  last_checked: 2026-09-25
+- id: ai-langfuse-docs
+  title: "Langfuse docs"
+  url: https://langfuse.com/docs
+  type: docs
+  topics: [llm-observability]
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Tracing, prompts, datasets, evals, self-hosting; SDK v4 is OTel-based."
+  last_checked: 2026-09-25
+- id: ai-langfuse-python-instr
+  title: "Langfuse - Python SDK instrumentation"
+  url: https://langfuse.com/docs/observability/sdk/python/instrumentation
+  type: docs
+  topics: [llm-observability]
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "@observe, context managers, propagate_attributes."
+  last_checked: 2026-09-25
+- id: ai-langfuse-langchain
+  title: "Langfuse - LangChain/LangGraph integration"
+  url: https://langfuse.com/integrations/frameworks/langchain
+  type: docs
+  topics: [llm-observability, langgraph]
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "CallbackHandler setup for LangGraph runs."
+  last_checked: 2026-09-25
+- id: ai-phoenix-docs
+  title: "Arize Phoenix docs"
+  url: https://arize.com/docs/phoenix
+  type: docs
+  topics: [llm-observability]
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Local-first OSS tracing and evals with OpenInference."
+  last_checked: 2026-09-25
+- id: ai-otel-genai
+  title: "OpenTelemetry GenAI semantic conventions"
+  url: https://opentelemetry.io/docs/specs/semconv/gen-ai/
+  type: docs
+  topics: [llm-observability]
+  priority: P0
+  complexity: 3
+  level: advanced
+  cost: free
+  gem: false
+  why: "Canonical span/attribute definitions (Development status)."
+  last_checked: 2026-09-25
+- id: ai-otel-genai-repo
+  title: "semantic-conventions-genai repo"
+  url: https://github.com/open-telemetry/semantic-conventions-genai
+  type: docs
+  topics: [llm-observability]
+  priority: P1
+  complexity: 3
+  level: advanced
+  cost: free
+  gem: false
+  why: "Where the conventions now live; track changes here."
+  last_checked: 2026-09-25
+- id: ai-openllmetry
+  title: "OpenLLMetry (Traceloop)"
+  url: https://github.com/traceloop/openllmetry
+  type: docs
+  topics: [llm-observability]
+  priority: P2
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: true
+  why: "OTel instrumentation for many LLM SDKs and vector DBs."
+  last_checked: 2026-09-25
+- id: ai-logfire-docs
+  title: "Pydantic Logfire docs"
+  url: https://logfire.pydantic.dev/docs/
+  type: docs
+  topics: [llm-observability, pydantic-ai]
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: freemium
+  gem: false
+  why: "OTel-native platform integrated with Pydantic AI."
+  last_checked: 2026-09-25
+- id: ai-langgraph-overview
+  title: "LangGraph docs - overview"
+  url: https://docs.langchain.com/oss/python/langgraph/overview
+  type: docs
+  topics: [langgraph, agent-patterns]
+  priority: P0
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Entry point to graph API, persistence, streaming, interrupts."
+  last_checked: 2026-09-25
+- id: ai-langgraph-graph-api
+  title: "LangGraph - Graph API"
+  url: https://docs.langchain.com/oss/python/langgraph/graph-api
+  type: docs
+  topics: [langgraph]
+  priority: P0
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: "State, reducers, nodes, edges, Send, Command, subgraphs."
+  last_checked: 2026-09-25
+- id: ai-langgraph-persistence
+  title: "LangGraph - Persistence"
+  url: https://docs.langchain.com/oss/python/langgraph/persistence
+  type: docs
+  topics: [langgraph, durable-execution-hitl]
+  priority: P0
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: false
+  why: "Checkpointers, threads, Postgres setup, durability modes."
+  last_checked: 2026-09-25
+- id: ai-langgraph-interrupts
+  title: "LangGraph - Interrupts"
+  url: https://docs.langchain.com/oss/python/langgraph/interrupts
+  type: docs
+  topics: [langgraph, durable-execution-hitl]
+  priority: P0
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: false
+  why: "interrupt() and Command(resume=...) rules and gotchas."
+  last_checked: 2026-09-25
+- id: ai-langgraph-functional
+  title: "LangGraph - Functional API"
+  url: https://docs.langchain.com/oss/python/langgraph/functional-api
+  type: docs
+  topics: [langgraph]
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: "@entrypoint/@task for durable ordinary Python."
+  last_checked: 2026-09-25
+- id: ai-langgraph-memory
+  title: "LangGraph - Memory"
+  url: https://docs.langchain.com/oss/python/langgraph/add-memory
+  type: docs
+  topics: [langgraph]
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Short-term (checkpoint) vs long-term (Store) memory."
+  last_checked: 2026-09-25
+- id: ai-langchain-academy-langgraph
+  title: "LangChain Academy - Intro to LangGraph"
+  url: https://academy.langchain.com/courses/intro-to-langgraph
+  type: course
+  topics: [langgraph]
+  priority: P0
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Free structured course with notebooks."
+  last_checked: 2026-09-25
+- id: ai-pydantic-ai-durable
+  title: "Pydantic AI - Durable execution"
+  url: https://pydantic.dev/docs/ai/capabilities/durable_execution/overview/
+  type: docs
+  topics: [durable-execution-hitl, pydantic-ai]
+  priority: P0
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: false
+  why: "Agents on Temporal, DBOS, Prefect and more; engine trade-offs."
+  last_checked: 2026-09-25
+- id: ai-temporal-pydantic-blog
+  title: "Temporal - Durable AI agents with Pydantic AI and Temporal"
+  url: https://temporal.io/blog/build-durable-ai-agents-pydantic-ai-and-temporal
+  type: article
+  topics: [durable-execution-hitl]
+  priority: P1
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: false
+  why: "Activities vs workflow determinism for agents."
+  last_checked: 2026-09-25
+- id: ai-dbos-docs
+  title: "DBOS documentation"
+  url: https://docs.dbos.dev/
+  type: docs
+  topics: [durable-execution-hitl]
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: true
+  why: "Postgres-native durable workflows without a separate cluster."
+  last_checked: 2026-09-25
+- id: ai-owasp-agentic-2026
+  title: "OWASP Top 10 for Agentic Applications 2026"
+  url: https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/
+  type: docs
+  topics: [durable-execution-hitl]
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Excessive agency and oversight failures; why approval gates exist."
+  last_checked: 2026-09-25
+- id: ai-pydantic-ai-overview
+  title: "Pydantic AI docs - overview"
+  url: https://pydantic.dev/docs/ai/overview/
+  type: docs
+  topics: [pydantic-ai]
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Canonical docs: agents, tools, output, MCP, testing, durability."
+  last_checked: 2026-09-25
+- id: ai-pydantic-ai-mcp
+  title: "Pydantic AI - MCP client"
+  url: https://pydantic.dev/docs/ai/mcp/client/
+  type: docs
+  topics: [pydantic-ai]
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "MCPToolset over stdio and Streamable HTTP."
+  last_checked: 2026-09-25
+- id: ai-pydantic-ai-testing
+  title: "Pydantic AI - Unit testing"
+  url: https://pydantic.dev/docs/ai/testing/
+  type: docs
+  topics: [pydantic-ai]
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "TestModel, FunctionModel, override, ALLOW_MODEL_REQUESTS."
+  last_checked: 2026-09-25
+- id: ai-pydantic-ai-v2
+  title: "Pydantic AI V2 announcement"
+  url: https://pydantic.dev/articles/pydantic-ai-v2
+  type: article
+  topics: [pydantic-ai]
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: true
+  why: "Capabilities and the Harness; V2 rationale and breaking changes."
+  last_checked: 2026-09-25

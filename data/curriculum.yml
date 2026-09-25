@@ -1,0 +1,979 @@
+# Week-by-week curriculum (source for scripts/build_plan.py).
+# Each normal week: 20 tasks with fixed per-track counts (agentic-ai 3, system-design 3, dsa 5,
+# architecture 2, python 3, java-spring-ai 2, staff-skills 1, review 1). Light weeks keep counts, ~65% minutes.
+# topic: plain slug from data/topics.yml (globally unique; resolved across tracks) or case-studies/<slug>.
+meta: {start_date: 2026-09-26, week1_monday: 2026-09-28, timezone: Asia/Kolkata}
+phases:
+- id: 0
+  name: Baseline
+  weeks: [0]
+  goal: Calibrate starting level and get the toolchain working so week 1 starts with building, not setup.
+  gate: [Baseline SD mock scored with the rubric, 3 DSA mediums attempted with times logged, AI self-assessment scores + skip list written to docs/log/baseline.md, 'uv, Docker, Ollama and API keys verified with a smoke-test call']
+- id: 1
+  name: Foundations
+  weeks: [1, 2, 3, 4]
+  goal: Refresh modern Python/Java/LLM foundations and start the capstone with structured outputs, tools and workflow patterns.
+  gate: [Capstone repo with FastAPI /triage returning validated structured output and a typed tool loop, Orchestrator-workers + evaluator-optimizer feature working with 10 golden examples, ADRs 001-004 written; AGENTS.md in capstone repo, 'Arrays/hashing, two pointers, sliding window, stack: 20+ problems solved', interview-1 mock scored >= 2.5/4 average on the rubric]
+- id: 2
+  name: RAG + Evals
+  weeks: [5, 6, 7, 8]
+  goal: 'Ship hybrid RAG with reranking and an eval-driven workflow: error analysis, aligned judges and CI gates with tracing.'
+  gate: [Hybrid retrieval beats dense-only on the golden set (hit rate@5 reported), Failure taxonomy from >= 100 traces; LLM judge TPR/TNR >= 0.8 against hand labels, Eval job in CI failing on threshold regressions; Langfuse traces for every request, Design doc v1 reviewed; ADRs 005-008, interview-2 mock scored >= 2.75/4]
+- id: 3
+  name: Agents + Protocols
+  weeks: [9, 10, 11, 12]
+  goal: Build a durable LangGraph orchestrator with Pydantic AI sub-agents, MCP servers in Python and Spring AI, HITL and memory.
+  gate: [LangGraph orchestrator survives kill/restart mid-run and resumes from checkpoint, HITL approval gates every side-effecting tool call, Python MCP server + Spring AI MCP server both called by the orchestrator over Streamable HTTP, Written multi-agent platform design + influence plan artifact, interview-3 mock scored >= 3/4]
+- id: 4
+  name: Production & AI Architecture
+  weeks: [13, 14, 15, 16]
+  goal: Make the capstone production-grade (guardrails, routing, cost, observability, SLOs) and produce Staff-level architecture/strategy artifacts.
+  gate: [promptfoo OWASP agentic red-team suite in CI with no high-severity failures, Routing cuts cost per resolved incident >= 30% without eval regression, SLOs + burn-rate alerts + online evals live; C4 + ADRs 013-016, 'Strategy doc, tech-debt proposal and AI adoption plan written', interview-4 mock scored >= 3/4]
+- id: 5
+  name: Scale & Depth
+  weeks: [17, 18, 19, 20]
+  goal: 'Go deep: DSPy/GEPA, inference serving, fine-tuning trade-offs, advanced RAG, distributed consensus, free-threaded Python, JVM concurrency.'
+  gate: [DSPy vs hand-prompt vs fine-tune ablation written with numbers, Self-hosted model serving experiment with cost/quality comparison, Gossip Glomers broadcast challenge passing; Raft explained in < 5 min, Mentoring plan + talk/blog draft done, interview-5 mock scored >= 3.25/4]
+- id: 6
+  name: Capstone + Interview Loop
+  weeks: [21, 22, 23, 24]
+  goal: Ship capstone v1.0 on Azure with write-ups, and run full interview loops until scores are consistently strong.
+  gate: [Capstone deployed on Azure Container Apps + Foundry with passing smoke evals, '2 blog posts, README, demo video, arc42 doc and ADR set 001-024 published', STAR bank with 12+ stories, interview-6 mock scored >= 3.5/4 on every dimension]
+- id: 7
+  name: Buffer
+  weeks: [25, 26]
+  goal: Catch up on slipped work and pick a specialization for the next 6 months.
+  gate: [No P0 task left incomplete in progress.yml, Specialization spike written up, Final retro + next-6-month plan published]
+weeks:
+- week: 0
+  phase: 0
+  theme: Baseline & environment
+  light: true
+  checkpoint: null
+  project: Dev environment ready (uv, Docker, Ollama, API keys) + baseline scores recorded in docs/log/
+  tasks:
+    agentic-ai:
+    - {title: 'Self-assessment quiz on LLM fundamentals/agents/RAG/evals (score 1-5 per topic) + env setup: uv, Docker, Ollama (pull a 7-8B model), OpenAI/Anthropic/Azure keys in a .env, smoke-test one call each', topic: llm-fundamentals, minutes: 90, kind: practice, resource: 'https://docs.astral.sh/uv/'}
+    system-design:
+    - {title: 'Baseline 60-min SD mock: design a URL shortener end-to-end (requirements, estimates, API, data, scale, failure); self-score with the rubric', topic: framework-and-estimation, minutes: 60, kind: practice, resource: 'https://www.hellointerview.com/learn/system-design/in-a-hurry/introduction'}
+    dsa:
+    - {title: 'Baseline medium (timed 30 min, Python): Group Anagrams — note approach + complexity out loud', topic: approach-complexity, minutes: 30, kind: practice, resource: 'https://neetcode.io'}
+    - {title: 'Baseline medium (timed 30 min): Longest Substring Without Repeating Characters — use collections/itertools idioms', topic: python-idioms, minutes: 30, kind: practice, resource: 'https://neetcode.io'}
+    - {title: 'Baseline medium (timed 30 min): Number of Islands — then log all 3 baseline problems (time, pattern, solved?) in the NeetCode 250 tracker', topic: problem-tracker, minutes: 30, kind: practice, resource: 'https://neetcode.io'}
+    architecture: []
+    python:
+    - {title: 'Tooling setup: uv python install 3.14 + 3.14t, ruff + ty + pre-commit in a scratch repo; confirm `uv run pytest` works', topic: modern-tooling, minutes: 30, kind: practice, resource: 'https://docs.astral.sh/uv/'}
+    java-spring-ai: []
+    staff-skills: []
+    review:
+    - {title: 'Write your goals (role, AI-architect portfolio, interview target date) + skip list from baseline scores into docs/log/baseline.md', topic: staff-archetypes, minutes: 30, kind: write}
+- week: 1
+  phase: 1
+  theme: Agent patterns, structured outputs, SD framework
+  light: false
+  checkpoint: null
+  project: 'Capstone repo skeleton: uv + FastAPI + Pydantic structured-output /triage endpoint'
+  tasks:
+    agentic-ai:
+    - {title: 'Read Anthropic ''Building effective agents'' and map each pattern (chaining, routing, parallelisation, orchestrator-workers, evaluator-optimizer, agents) to an Agentic Ops Copilot use case', topic: agent-patterns, minutes: 60, kind: learn, resource: 'https://www.anthropic.com/engineering/building-effective-agents'}
+    - {title: 'LLM fundamentals refresh: tokenisation, temperature/top-p, reasoning vs non-reasoning models — run one prompt on 2 hosted + 1 Ollama model and log tokens, latency, cost', topic: llm-fundamentals, minutes: 60, kind: practice, resource: 'https://github.com/chiphuyen/aie-book'}
+    - {title: 'Capstone build: create repo (uv, ruff, ty, pre-commit, pytest), FastAPI app with lifespan + /health + /triage returning a Pydantic-validated IncidentTriage structured output', topic: prompting-structured-outputs, minutes: 120, kind: build, resource: 'https://ai.pydantic.dev/'}
+    system-design:
+    - {title: 'Hello Interview ''System Design in a Hurry'': rebuild your delivery framework (reqs → entities → API → HLD → deep dives) as a one-page checklist', topic: framework-and-estimation, minutes: 45, kind: learn, resource: 'https://www.hellointerview.com/learn/system-design/in-a-hurry/introduction'}
+    - {title: 'Latency numbers + back-of-envelope drill: estimate QPS, storage and bandwidth for 3 prompts (URL shortener, chat, LLM triage API) in 15 min each', topic: scalability-fundamentals, minutes: 45, kind: practice}
+    - {title: 'Written design: URL shortener at 100M URLs/month — ID generation, KV choice, cache, 301 vs 302, analytics pipeline; 2-page doc', topic: case-studies/url-shortener, minutes: 45, kind: write}
+    dsa:
+    - {title: Contains Duplicate + Valid Anagram (hash set / Counter), topic: arrays-hashing, minutes: 25, kind: practice, resource: 'https://neetcode.io'}
+    - {title: Two Sum + Group Anagrams (hash map keyed by sorted tuple/count signature), topic: arrays-hashing, minutes: 30, kind: practice, resource: 'https://neetcode.io'}
+    - {title: Top K Frequent Elements (bucket sort vs heap — state both complexities), topic: arrays-hashing, minutes: 25, kind: practice, resource: 'https://neetcode.io'}
+    - {title: 'Product of Array Except Self (prefix/suffix, O(1) extra space)', topic: arrays-hashing, minutes: 25, kind: practice, resource: 'https://neetcode.io'}
+    - {title: Longest Consecutive Sequence + Encode and Decode Strings, topic: arrays-hashing, minutes: 30, kind: practice, resource: 'https://neetcode.io'}
+    architecture:
+    - {title: 'Fundamentals of Software Architecture 2e ch1-2: laws of architecture, architecture characteristics; list top-5 characteristics for the capstone', topic: architect-role-tradeoffs, minutes: 45, kind: learn}
+    - {title: 'Write ADR 001 for capstone: record architecture decisions using MADR template in docs/adr/', topic: adrs, minutes: 30, kind: write, resource: 'https://adr.github.io'}
+    python:
+    - {title: 'Rep: uv workspace + dependency groups; ruff rule set (I, UP, B, SIM) + ty in pre-commit on capstone', topic: modern-tooling, minutes: 20, kind: practice, resource: 'https://docs.astral.sh/uv/'}
+    - {title: 'Rep: Pydantic v2 model_config (strict, frozen, extra=''forbid''), field_validator vs model_validator on IncidentTriage', topic: pydantic-v2, minutes: 20, kind: practice}
+    - {title: 'Rep: FastAPI lifespan + dependency-injected settings (pydantic-settings) and httpx AsyncClient reuse', topic: fastapi-production, minutes: 20, kind: practice}
+    java-spring-ai:
+    - {title: 'Modern Java 21→25 tour: records, sealed interfaces, pattern matching for switch — model Incident/Severity as sealed hierarchy', topic: modern-java, minutes: 30, kind: learn, resource: 'https://openjdk.org/projects/jdk/25/'}
+    - {title: 'Generate Spring Boot 4 / Java 25 project for the Java side of capstone (web, actuator, Spring AI starter); run /actuator/health', topic: spring-boot-4, minutes: 30, kind: build}
+    staff-skills:
+    - {title: 'Read StaffEng archetypes (Tech Lead, Architect, Solver, Right Hand) and note which work you already do', topic: staff-archetypes, minutes: 30, kind: learn, resource: 'https://staffeng.com/guides/staff-archetypes/'}
+    review:
+    - {title: 'Flashcards: 15 cards on agent patterns + latency numbers; explain-it-back the 6 BEA patterns in 5 min', topic: agent-patterns, minutes: 60, kind: review}
+- week: 2
+  phase: 1
+  theme: Tool calling, API design, two pointers
+  light: false
+  checkpoint: null
+  project: 'Capstone: typed tool calling loop (runbook search, service status, ticket create)'
+  tasks:
+    agentic-ai:
+    - {title: 'Structured outputs deep dive: constrained decoding vs tool-forcing vs validate-and-retry; measure failure rate on 50 synthetic incident texts', topic: prompting-structured-outputs, minutes: 60, kind: practice}
+    - {title: 'LLM internals for engineers: KV cache, context window cost, prefill vs decode latency — estimate p50/p95 latency and cost per /triage call', topic: llm-fundamentals, minutes: 60, kind: learn, resource: 'https://github.com/chiphuyen/aie-book'}
+    - {title: 'Capstone build: 3 typed tools (search_runbooks stub, get_service_status, create_ticket) with Pydantic arg schemas, error-as-result returns and a hand-rolled tool loop with max-steps', topic: tool-calling, minutes: 120, kind: build}
+    system-design:
+    - {title: 'API design: idempotency keys, cursor pagination, REST vs gRPC vs GraphQL trade-offs — decide for capstone''s external API', topic: api-design, minutes: 45, kind: learn}
+    - {title: 'Load balancing: L4 vs L7, algorithms, health checks — work through Sam Who''s interactive essay', topic: load-balancing, minutes: 45, kind: learn, resource: 'https://samwho.dev/load-balancing/'}
+    - {title: 'Written design: estimation write-up — size the capstone for 50 teams, 2k incidents/day, 10 tool calls each (tokens, $/month, QPS, storage)', topic: framework-and-estimation, minutes: 45, kind: write}
+    dsa:
+    - {title: Valid Sudoku (row/col/box sets), topic: arrays-hashing, minutes: 25, kind: practice, resource: 'https://neetcode.io'}
+    - {title: Valid Palindrome + Two Sum II - Input Array Is Sorted, topic: two-pointers, minutes: 30, kind: practice, resource: 'https://neetcode.io'}
+    - {title: '3Sum (sort + two pointers, skip duplicates)', topic: two-pointers, minutes: 25, kind: practice, resource: 'https://neetcode.io'}
+    - {title: Container With Most Water (greedy pointer move proof), topic: two-pointers, minutes: 25, kind: practice, resource: 'https://neetcode.io'}
+    - {title: Trapping Rain Water (two pointers with left/right max), topic: two-pointers, minutes: 30, kind: practice, resource: 'https://neetcode.io'}
+    architecture:
+    - {title: 'Architecture styles: modular monolith vs microservices vs event-driven — score each against the capstone''s characteristics', topic: architecture-styles, minutes: 45, kind: learn, resource: 'https://microservices.io'}
+    - {title: 'Write ADR 002 for capstone: modular monolith (Python) + separate Spring AI MCP service', topic: architecture-styles, minutes: 30, kind: write, resource: 'https://adr.github.io'}
+    python:
+    - {title: 'Rep: typing.Protocol for an LLMClient port; structural vs nominal typing, runtime_checkable caveats', topic: typing-advanced, minutes: 20, kind: practice, resource: 'https://typing.python.org'}
+    - {title: 'Rep: data model — __eq__/__hash__/__repr__ on a value object; why dataclass(frozen=True) vs Pydantic here', topic: data-model, minutes: 20, kind: practice, resource: 'https://www.fluentpython.com/'}
+    - {title: 'Rep: Pydantic discriminated unions for tool results (Success | ToolError) with Field(discriminator=...)', topic: pydantic-v2, minutes: 20, kind: practice}
+    java-spring-ai:
+    - {title: 'Spring AI 2.0 ChatClient fluent API: system/user prompts, options, streaming — hello-world against Ollama', topic: spring-ai-fundamentals, minutes: 30, kind: learn, resource: 'https://spring.io/blog/2026/06/12/spring-ai-2-0-0-GA-available-now/'}
+    - {title: 'Spring AI structured output: .entity(IncidentTriage.class) with a Java record; compare failure behaviour to Python', topic: spring-ai-fundamentals, minutes: 30, kind: build}
+    staff-skills:
+    - {title: 'Artifact: archetype self-assessment — which archetype you target, evidence you have, 3 gaps (docs/log/staff/archetype.md)', topic: staff-archetypes, minutes: 30, kind: write, resource: 'https://staffeng.com/guides/staff-archetypes/'}
+    review:
+    - {title: 'Explain-it-back (record 5 min): tool-calling loop design and why tool errors are returned as results; 15 flashcards on API design', topic: tool-calling, minutes: 60, kind: review}
+- week: 3
+  phase: 1
+  theme: Context engineering, workflows, sliding window
+  light: false
+  checkpoint: null
+  project: 'Capstone: routing + prompt-chaining workflow with history compaction'
+  tasks:
+    agentic-ai:
+    - {title: 'Read Anthropic ''Effective context engineering for AI agents''; write a context budget for the triage agent (system, tools, retrieved docs, history, scratchpad)', topic: context-engineering, minutes: 60, kind: learn, resource: 'https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents'}
+    - {title: 'Reasoning models: when extended thinking helps vs hurts; compare a reasoning and a fast model on 20 triage cases (accuracy, latency, cost)', topic: llm-fundamentals, minutes: 60, kind: practice}
+    - {title: 'Capstone build: routing workflow — classify incident type then dispatch to specialised prompt chains; add history compaction when context > budget', topic: agent-patterns, minutes: 120, kind: build, resource: 'https://www.anthropic.com/engineering/building-effective-agents'}
+    system-design:
+    - {title: 'DDIA 2e ch1-2: reliability, scalability, maintainability — describe load parameters + percentiles for the capstone', topic: scalability-fundamentals, minutes: 45, kind: learn, resource: 'https://martin.kleppmann.com/2026/03/24/designing-data-intensive-applications-2e.html'}
+    - {title: 'Proxies & gateways: reverse proxy, API gateway, service mesh — where each sits in front of an LLM service', topic: load-balancing, minutes: 45, kind: learn}
+    - {title: 'Written design: public API for the capstone — REST + SSE streaming, idempotent ticket creation, cursor pagination, versioning, error model', topic: api-design, minutes: 45, kind: write}
+    dsa:
+    - {title: Best Time to Buy and Sell Stock + Longest Substring Without Repeating Characters, topic: sliding-window, minutes: 25, kind: practice, resource: 'https://neetcode.io'}
+    - {title: Longest Repeating Character Replacement (window validity = len - maxfreq <= k), topic: sliding-window, minutes: 30, kind: practice, resource: 'https://neetcode.io'}
+    - {title: Permutation in String (fixed window counts), topic: sliding-window, minutes: 25, kind: practice, resource: 'https://neetcode.io'}
+    - {title: Minimum Window Substring (need/have counters), topic: sliding-window, minutes: 25, kind: practice, resource: 'https://neetcode.io'}
+    - {title: Sliding Window Maximum (monotonic deque), topic: sliding-window, minutes: 30, kind: practice, resource: 'https://neetcode.io'}
+    architecture:
+    - {title: 'Design patterns that still matter: strategy, adapter, decorator, chain of responsibility — map each to LLM provider / middleware code', topic: design-patterns, minutes: 45, kind: learn, resource: 'https://refactoring.guru'}
+    - {title: 'Write ADR 003 for capstone: LLM provider abstraction via Protocol-based adapter (vs LiteLLM-only) ', topic: design-patterns, minutes: 30, kind: write, resource: 'https://adr.github.io'}
+    python:
+    - {title: 'Rep: asyncio.TaskGroup to fan out 5 tool calls; exception propagation via ExceptionGroup/except*', topic: asyncio-deep, minutes: 20, kind: practice}
+    - {title: 'Rep: asyncio cancellation + asyncio.timeout(); make a tool call cancel-safe (cleanup in finally)', topic: asyncio-deep, minutes: 20, kind: practice}
+    - {title: 'Rep: ParamSpec + Concatenate to type a @retry decorator that preserves signatures', topic: typing-advanced, minutes: 20, kind: practice, resource: 'https://typing.python.org'}
+    java-spring-ai:
+    - {title: 'Spring Boot 4 highlights: API versioning, built-in retry/concurrency limits, JSpecify null-safety — apply @Retryable to an LLM call', topic: spring-boot-4, minutes: 30, kind: learn}
+    - {title: 'Spring AI advisors: SimpleLoggerAdvisor + MessageChatMemoryAdvisor; write a custom advisor that redacts emails from prompts', topic: spring-ai-fundamentals, minutes: 30, kind: build, resource: 'https://spring.io/blog/2026/06/12/spring-ai-2-0-0-GA-available-now/'}
+    staff-skills:
+    - {title: 'Read a good design doc structure (context, goals/non-goals, alternatives, risks) and draft a template for docs/log/design-doc-template.md', topic: design-docs-rfcs, minutes: 30, kind: learn, resource: 'https://lethain.com'}
+    review:
+    - {title: 'Retro week 1-3 + flashcards: context engineering vocabulary (compaction, JIT retrieval, tool budget); explain-it-back sliding window invariant', topic: context-engineering, minutes: 60, kind: review}
+- week: 4
+  phase: 1
+  theme: Orchestrator-workers, AI-assisted dev, stack — interview-1
+  light: false
+  checkpoint: interview-1
+  project: 'Capstone: orchestrator-workers ''draft postmortem'' with evaluator-optimizer loop + 10 golden examples'
+  tasks:
+    agentic-ai:
+    - {title: 'AI-assisted development: write AGENTS.md for the capstone repo (commands, conventions, test policy) and add a Claude Code skill for ''add a tool''', topic: ai-assisted-development, minutes: 60, kind: build, resource: 'https://agents.md/'}
+    - {title: 'Context engineering lab: just-in-time retrieval (tool fetches runbook) vs preloaded context — compare token usage and answer quality on 10 cases', topic: context-engineering, minutes: 60, kind: practice, resource: 'https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents'}
+    - {title: 'Capstone build: orchestrator-workers for ''draft postmortem'' (timeline, impact, root cause workers) + evaluator-optimizer critique loop; commit 10 golden examples as seed eval set', topic: agent-patterns, minutes: 120, kind: build, resource: 'https://www.anthropic.com/engineering/building-effective-agents'}
+    system-design:
+    - {title: 'Interview framework refresh: practise requirements + estimation opening for ''design Pastebin'' in 10 min, recorded', topic: framework-and-estimation, minutes: 45, kind: practice, resource: 'https://www.hellointerview.com/learn/system-design/in-a-hurry/introduction'}
+    - {title: 'Scalability patterns recap: stateless services, horizontal scaling, queues for load levelling — map to the capstone', topic: scalability-fundamentals, minutes: 45, kind: learn, resource: 'https://samwho.dev/blog/'}
+    - {title: 'Timed 45-min SD mock (interview-1): Pastebin / URL shortener variant with custom aliases + expiry; self-score', topic: case-studies/url-shortener, minutes: 45, kind: practice}
+    dsa:
+    - {title: Valid Parentheses + Min Stack, topic: stack, minutes: 25, kind: practice, resource: 'https://neetcode.io'}
+    - {title: Evaluate Reverse Polish Notation, topic: stack, minutes: 30, kind: practice, resource: 'https://neetcode.io'}
+    - {title: Daily Temperatures (monotonic decreasing stack), topic: stack, minutes: 25, kind: practice, resource: 'https://neetcode.io'}
+    - {title: Car Fleet (sort + stack), topic: stack, minutes: 25, kind: practice, resource: 'https://neetcode.io'}
+    - {title: 'Timed coding mock (interview-1): Largest Rectangle in Histogram in 30 min, narrate trade-offs', topic: stack, minutes: 30, kind: practice, resource: 'https://neetcode.io'}
+    architecture:
+    - {title: 'SOLID & refactoring at scale: refactor the capstone tool loop (SRP, DIP via ports), note code smells found', topic: solid-refactoring, minutes: 45, kind: learn, resource: 'https://refactoring.guru'}
+    - {title: 'Write ADR 004 for capstone: structured-output validation strategy (schema-constrained decoding + bounded retry)', topic: architect-role-tradeoffs, minutes: 30, kind: write, resource: 'https://adr.github.io'}
+    python:
+    - {title: 'Rep: asyncio.Semaphore + bounded queue for backpressure on concurrent LLM calls', topic: asyncio-deep, minutes: 20, kind: practice}
+    - {title: 'Rep: async context managers (contextlib.asynccontextmanager) for a pooled client; generator-based pipelines', topic: generators-context-managers, minutes: 20, kind: practice}
+    - {title: 'Rep: FastAPI StreamingResponse / SSE for token streaming with client-disconnect handling', topic: fastapi-production, minutes: 20, kind: practice}
+    java-spring-ai:
+    - {title: 'Java 25 features: compact source files, flexible constructor bodies, module imports, scoped values (final) — 4 micro-examples', topic: modern-java, minutes: 30, kind: learn, resource: 'https://openjdk.org/projects/jdk/25/'}
+    - {title: Port the /triage endpoint to Spring AI (ChatClient + record output) and compare with Python implementation, topic: spring-ai-fundamentals, minutes: 30, kind: build}
+    staff-skills:
+    - {title: 'List 3 candidate ''Staff projects'' at work or in the capstone with scope, stakeholders, and why they are Staff-level', topic: staff-archetypes, minutes: 30, kind: write, resource: 'https://noidea.dog/staff-resources'}
+    review:
+    - {title: 'interview-1: full mock — SD + coding + AI SD + behavioral, score with docs/interviews/rubric.md and log gaps into next week''s plan', topic: framework-and-estimation, minutes: 60, kind: review}
+- week: 5
+  phase: 2
+  theme: RAG fundamentals, caching, hexagonal
+  light: false
+  checkpoint: null
+  project: 'Capstone: RAG v0 — ingest runbooks/postmortems into pgvector, naive dense retrieval behind a Retriever port'
+  tasks:
+    agentic-ai:
+    - {title: 'RAG fundamentals: chunking strategies (fixed, recursive, semantic, structure-aware), embedding model choice, top-k — write a comparison table for runbooks/postmortems', topic: rag-fundamentals, minutes: 60, kind: learn, resource: 'https://eugeneyan.com/writing/llm-patterns/'}
+    - {title: 'Vector databases: pgvector HNSW vs IVFFlat parameters (m, ef_construction, ef_search, lists) — build an index on 50k chunks and measure recall@10 vs latency', topic: vector-databases, minutes: 60, kind: practice, resource: 'https://github.com/pgvector/pgvector'}
+    - {title: 'Capstone build: ingestion pipeline (Markdown/PDF → chunks → embeddings → pgvector via docker-compose) + Retriever port with dense adapter; answer with citations', topic: rag-fundamentals, minutes: 120, kind: build}
+    system-design:
+    - {title: 'Caching strategies: cache-aside, write-through, write-behind, TTL + stampede protection (request coalescing, probabilistic early expiry)', topic: caching, minutes: 45, kind: learn}
+    - {title: 'Storage engines: B-tree vs LSM-tree, write/read amplification (DDIA 2e storage chapter)', topic: databases-sql-nosql, minutes: 45, kind: learn, resource: 'https://martin.kleppmann.com/2026/03/24/designing-data-intensive-applications-2e.html'}
+    - {title: 'Written design: apply your AI system design framework to ''design an internal support chatbot'' — requirements, data, model choice, eval plan, risks', topic: framework, minutes: 45, kind: write, resource: 'https://www.hellointerview.com/learn/ml-system-design/in-a-hurry/introduction'}
+    dsa:
+    - {title: Generate Parentheses (stack + backtracking warm-up), topic: stack, minutes: 25, kind: practice, resource: 'https://neetcode.io'}
+    - {title: Binary Search + Search a 2D Matrix, topic: binary-search, minutes: 30, kind: practice, resource: 'https://neetcode.io'}
+    - {title: Koko Eating Bananas (binary search on answer), topic: binary-search, minutes: 25, kind: practice, resource: 'https://neetcode.io'}
+    - {title: Find Minimum in Rotated Sorted Array, topic: binary-search, minutes: 25, kind: practice, resource: 'https://neetcode.io'}
+    - {title: Search in Rotated Sorted Array + Time Based Key-Value Store, topic: binary-search, minutes: 30, kind: practice, resource: 'https://neetcode.io'}
+    architecture:
+    - {title: 'Cosmic Python ch1-3 / hexagonal architecture: domain model, repository, ports & adapters — sketch capstone layers', topic: hexagonal-clean, minutes: 45, kind: learn, resource: 'https://www.cosmicpython.com/'}
+    - {title: 'Write ADR 005 for capstone: hexagonal layout with retrieval, LLM and ticketing as ports', topic: hexagonal-clean, minutes: 30, kind: write, resource: 'https://adr.github.io'}
+    python:
+    - {title: 'Rep: pytest fixtures with scopes + factories; parametrize retrieval tests', topic: testing-pytest, minutes: 20, kind: practice}
+    - {title: 'Rep: Repository pattern for chunks (abstract base vs Protocol), in-memory fake for tests', topic: architecture-patterns-python, minutes: 20, kind: practice, resource: 'https://www.cosmicpython.com/'}
+    - {title: 'Rep: __iter__/__len__/__getitem__ on a ChunkCollection; sequence protocol vs subclassing list', topic: data-model, minutes: 20, kind: practice, resource: 'https://www.fluentpython.com/'}
+    java-spring-ai:
+    - {title: 'Spring AI VectorStore with PgVectorStore: configure dimensions, index type, metadata filters', topic: spring-ai-rag, minutes: 30, kind: learn, resource: 'https://spring.io/blog/2026/06/12/spring-ai-2-0-0-GA-available-now/'}
+    - {title: 'Spring AI ETL: DocumentReader → TokenTextSplitter → VectorStore for the same runbook corpus', topic: spring-ai-rag, minutes: 30, kind: build}
+    staff-skills:
+    - {title: 'Outline the capstone design doc (context, goals/non-goals, architecture, alternatives, risks, rollout)', topic: design-docs-rfcs, minutes: 30, kind: write}
+    review:
+    - {title: 'Explain-it-back: caching stampede mitigations + LSM vs B-tree in 3 min each; 20 flashcards on RAG vocabulary', topic: caching, minutes: 60, kind: review}
+- week: 6
+  phase: 2
+  theme: Hybrid search + reranking (light week)
+  light: true
+  checkpoint: null
+  project: 'Capstone: hybrid retrieval (BM25 + dense + metadata filters) with cross-encoder reranking'
+  tasks:
+    agentic-ai:
+    - {title: 'Hybrid search: BM25 + dense fusion (RRF vs weighted), metadata pre/post-filtering trade-offs', topic: hybrid-search-reranking, minutes: 40, kind: learn}
+    - {title: 'Rerankers: bi-encoder vs cross-encoder vs LLM reranking — read Pinecone series and pick one for the capstone', topic: hybrid-search-reranking, minutes: 40, kind: learn, resource: 'https://www.pinecone.io/learn/series/rag/rerankers/'}
+    - {title: 'Capstone build: add Postgres full-text (or pg_search) BM25 leg + RRF fusion + cross-encoder rerank; compare hit rate@5 vs dense-only on 30 queries', topic: hybrid-search-reranking, minutes: 75, kind: build}
+    system-design:
+    - {title: 'SQL vs NoSQL choice matrix: access patterns, transactions, secondary indexes — for 3 capstone entities', topic: databases-sql-nosql, minutes: 30, kind: learn}
+    - {title: 'Replication: single-leader, multi-leader, leaderless; replication lag anomalies (read-your-writes, monotonic reads)', topic: replication, minutes: 30, kind: learn, resource: 'https://martin.kleppmann.com/2026/03/24/designing-data-intensive-applications-2e.html'}
+    - {title: 'Written design: enterprise RAG system — ingestion, ACL-aware retrieval, hybrid search, reranking, eval, freshness (short 2-page version)', topic: rag-system, minutes: 30, kind: write}
+    dsa:
+    - {title: Median of Two Sorted Arrays (binary search on partition), topic: binary-search, minutes: 15, kind: practice, resource: 'https://neetcode.io'}
+    - {title: Reverse Linked List + Merge Two Sorted Lists, topic: linked-list, minutes: 20, kind: practice, resource: 'https://neetcode.io'}
+    - {title: Linked List Cycle (Floyd), topic: linked-list, minutes: 15, kind: practice, resource: 'https://neetcode.io'}
+    - {title: Reorder List, topic: linked-list, minutes: 15, kind: practice, resource: 'https://neetcode.io'}
+    - {title: Remove Nth Node From End of List, topic: linked-list, minutes: 20, kind: practice, resource: 'https://neetcode.io'}
+    architecture:
+    - {title: 'DDD strategic: subdomains (core/supporting/generic), bounded contexts, context map for the ops domain (Learning DDD, Khononov)', topic: ddd-strategic, minutes: 30, kind: learn}
+    - {title: 'Write ADR 006 for capstone: bounded contexts — Incident, Knowledge, Ticketing — and their integration style', topic: ddd-strategic, minutes: 20, kind: write, resource: 'https://adr.github.io'}
+    python:
+    - {title: 'Rep: Hypothesis property test for the chunker (no text lost, chunk size bounds)', topic: testing-pytest, minutes: 15, kind: practice}
+    - {title: 'Rep: Unit of Work context manager wrapping a Postgres transaction', topic: architecture-patterns-python, minutes: 15, kind: practice, resource: 'https://www.cosmicpython.com/'}
+    - {title: 'Rep: src layout + pyproject entry points; build a wheel with uv build', topic: packaging-project-structure, minutes: 10, kind: practice, resource: 'https://docs.astral.sh/uv/'}
+    java-spring-ai:
+    - {title: Spring AI RetrievalAugmentationAdvisor / QuestionAnswerAdvisor with filter expressions, topic: spring-ai-rag, minutes: 20, kind: learn}
+    - {title: Spring Boot 4 + Testcontainers dev services for pgvector in local runs, topic: spring-boot-4, minutes: 20, kind: build}
+    staff-skills:
+    - {title: 'Artifact: capstone design doc v1 (docs/log/design-doc-capstone.md) — send to one peer/AI reviewer for critique', topic: design-docs-rfcs, minutes: 20, kind: write}
+    review:
+    - {title: 'Light-week retro + flashcards: hybrid search, RRF, rerankers, replication anomalies', topic: hybrid-search-reranking, minutes: 40, kind: review}
+- week: 7
+  phase: 2
+  theme: 'Evals I: error analysis + LLM-as-judge'
+  light: false
+  checkpoint: null
+  project: 'Capstone: eval harness — error analysis on 100 traces, failure taxonomy, LLM-as-judge aligned to labels'
+  tasks:
+    agentic-ai:
+    - {title: 'Read Hamel & Shreya evals FAQ: error analysis → open/axial coding → failure taxonomy; apply to 50 capstone traces', topic: evals-error-analysis, minutes: 60, kind: learn, resource: 'https://hamel.dev/blog/posts/evals-faq/'}
+    - {title: 'LLM-as-judge: binary pass/fail judges, measure judge TPR/TNR against 40 hand labels; iterate judge prompt', topic: evals-error-analysis, minutes: 60, kind: practice, resource: 'https://hamel.dev/blog/posts/evals-faq/'}
+    - {title: 'Capstone build: eval harness (pytest-style) with golden set, retrieval metrics (recall@k, MRR) + generation judge; run on RAG v0 vs hybrid', topic: evals-error-analysis, minutes: 120, kind: build, resource: 'https://applied-llms.org/'}
+    system-design:
+    - {title: 'Partitioning: key-range vs hash, consistent hashing with vnodes, hot keys and rebalancing', topic: partitioning-sharding, minutes: 45, kind: learn}
+    - {title: 'Consistency models map: linearisable, sequential, causal, eventual; CAP vs PACELC — use Jepsen consistency pages', topic: consistency-models, minutes: 45, kind: learn, resource: 'https://jepsen.io/analyses'}
+    - {title: 'Written design: news feed / timeline — fan-out on write vs read, celebrity problem, ranking, cache layers', topic: case-studies/news-feed, minutes: 45, kind: write}
+    dsa:
+    - {title: Copy List with Random Pointer, topic: linked-list, minutes: 25, kind: practice, resource: 'https://neetcode.io'}
+    - {title: Add Two Numbers + Find the Duplicate Number, topic: linked-list, minutes: 30, kind: practice, resource: 'https://neetcode.io'}
+    - {title: LRU Cache (hash map + doubly linked list), topic: linked-list, minutes: 25, kind: practice, resource: 'https://neetcode.io'}
+    - {title: Merge K Sorted Lists, topic: linked-list, minutes: 25, kind: practice, resource: 'https://neetcode.io'}
+    - {title: Reverse Nodes in k-Group, topic: linked-list, minutes: 30, kind: practice, resource: 'https://neetcode.io'}
+    architecture:
+    - {title: 'DDD tactical: aggregates, invariants, value objects, domain events — model the Incident aggregate', topic: ddd-tactical, minutes: 45, kind: learn}
+    - {title: 'Write ADR 007 for capstone: Incident aggregate boundaries and domain events (IncidentTriaged, TicketCreated)', topic: ddd-tactical, minutes: 30, kind: write, resource: 'https://adr.github.io'}
+    python:
+    - {title: 'Rep: descriptors — build a validated field descriptor; how properties are descriptors', topic: decorators-descriptors-metaclasses, minutes: 20, kind: practice, resource: 'https://www.fluentpython.com/'}
+    - {title: 'Rep: message bus dispatching domain events to handlers (Cosmic Python ch8)', topic: architecture-patterns-python, minutes: 20, kind: practice, resource: 'https://www.cosmicpython.com/'}
+    - {title: 'Rep: testcontainers-python spinning pgvector for integration tests', topic: testing-pytest, minutes: 20, kind: practice}
+    java-spring-ai:
+    - {title: 'Spring AI evaluation: RelevancyEvaluator / FactCheckingEvaluator on the Java RAG path', topic: spring-ai-rag, minutes: 30, kind: learn}
+    - {title: Testcontainers (pgvector) integration test for the Spring AI RAG endpoint with a fixed 10-query assertion set, topic: spring-ai-rag, minutes: 30, kind: build}
+    staff-skills:
+    - {title: 'Write a 1-page exec summary of RAG v0 vs hybrid results (decision, numbers, risk, ask) for a non-technical stakeholder', topic: communication-stakeholders, minutes: 30, kind: write}
+    review:
+    - {title: 'Explain-it-back: consistent hashing + consistency models in 3 min each; flashcards on eval terms (TPR/TNR, axial coding)', topic: consistency-models, minutes: 60, kind: review}
+- week: 8
+  phase: 2
+  theme: Evals II in CI + observability — interview-2
+  light: false
+  checkpoint: interview-2
+  project: 'Capstone: promptfoo/DeepEval/Ragas in CI with thresholds + Langfuse tracing'
+  tasks:
+    agentic-ai:
+    - {title: 'Eval tooling survey: promptfoo vs DeepEval vs Ragas vs Inspect — pick per use case (regression, RAG metrics, agent tasks)', topic: eval-tooling, minutes: 60, kind: learn, resource: 'https://docs.ragas.io/'}
+    - {title: 'LLM observability: Langfuse traces/spans/scores + OTel GenAI semantic conventions (still Development status) — instrument one request end to end', topic: llm-observability, minutes: 60, kind: practice, resource: 'https://langfuse.com/docs'}
+    - {title: 'Capstone build: GitHub Actions eval job (promptfoo or DeepEval) failing the build under thresholds; Ragas faithfulness/context-precision report on the golden set', topic: eval-tooling, minutes: 120, kind: build, resource: 'https://deepeval.com/'}
+    system-design:
+    - {title: 'Search systems: inverted index, BM25, sharding an index, near-real-time refresh', topic: search-systems, minutes: 45, kind: learn}
+    - {title: 'Blob storage + CDN: presigned URLs, cache keys, invalidation, edge compute — for storing ingested documents', topic: storage-cdn, minutes: 45, kind: learn}
+    - {title: 'Timed 45-min AI SD mock (interview-2): design AI-powered semantic search for a 10M-document corpus', topic: ai-search, minutes: 45, kind: practice, resource: 'https://www.hellointerview.com/learn/ml-system-design/in-a-hurry/introduction'}
+    dsa:
+    - {title: Invert Binary Tree + Maximum Depth of Binary Tree, topic: trees, minutes: 25, kind: practice, resource: 'https://neetcode.io'}
+    - {title: Diameter of Binary Tree + Balanced Binary Tree, topic: trees, minutes: 30, kind: practice, resource: 'https://neetcode.io'}
+    - {title: Same Tree + Subtree of Another Tree, topic: trees, minutes: 25, kind: practice, resource: 'https://neetcode.io'}
+    - {title: Lowest Common Ancestor of a Binary Search Tree, topic: trees, minutes: 25, kind: practice, resource: 'https://neetcode.io'}
+    - {title: 'Timed coding mock (interview-2): Binary Tree Level Order Traversal + Binary Tree Right Side View in 30 min', topic: trees, minutes: 30, kind: practice, resource: 'https://neetcode.io'}
+    architecture:
+    - {title: 'Balancing Coupling in Software Design: strength, distance, volatility — score couplings in the capstone', topic: coupling-modularity, minutes: 45, kind: learn}
+    - {title: 'Write ADR 008 for capstone: pgvector over Qdrant for v1 (coupling, ops cost, scale ceiling, exit path)', topic: coupling-modularity, minutes: 30, kind: write, resource: 'https://qdrant.tech/documentation/'}
+    python:
+    - {title: 'Rep: Polars/DuckDB to aggregate eval results (per failure category, per model)', topic: data-tooling, minutes: 20, kind: practice}
+    - {title: 'Rep: class decorators vs metaclass vs __init_subclass__ for a tool registry', topic: decorators-descriptors-metaclasses, minutes: 20, kind: practice}
+    - {title: 'Rep: PEP 695 generics (class Result[T]) + TypedDict for eval records', topic: typing-advanced, minutes: 20, kind: practice, resource: 'https://typing.python.org'}
+    java-spring-ai:
+    - {title: Compare Spring AI vs Python RAG on the same 30-query set; note differences in retrieval defaults, topic: spring-ai-rag, minutes: 30, kind: practice}
+    - {title: Records + sealed types for eval results in Java; pattern-matching switch over outcomes, topic: modern-java, minutes: 30, kind: practice}
+    staff-skills:
+    - {title: 'Write a stakeholder update on eval-in-CI: what it catches, cost, what you need from other teams', topic: communication-stakeholders, minutes: 30, kind: write}
+    review:
+    - {title: 'interview-2: full mock — SD + coding + AI SD + behavioral, score with docs/interviews/rubric.md and log gaps into next week''s plan', topic: framework-and-estimation, minutes: 60, kind: review}
+- week: 9
+  phase: 3
+  theme: LangGraph orchestrator
+  light: false
+  checkpoint: null
+  project: 'Capstone: LangGraph orchestrator (state, nodes, conditional edges, Postgres checkpointer)'
+  tasks:
+    agentic-ai:
+    - {title: 'LangChain Academy ''Intro to LangGraph'' modules 1-2: StateGraph, reducers, conditional edges, checkpointers', topic: langgraph, minutes: 60, kind: learn, resource: 'https://academy.langchain.com/courses/intro-to-langgraph'}
+    - {title: 'LangGraph 1.x deep dive: persistence, threads, time travel, streaming modes; rebuild the triage router as a graph', topic: langgraph, minutes: 60, kind: practice, resource: 'https://academy.langchain.com/courses/intro-to-langgraph'}
+    - {title: 'Capstone build: LangGraph orchestrator (classify → retrieve → act → draft) with PostgresSaver checkpointer and streaming to FastAPI SSE', topic: langgraph, minutes: 120, kind: build, resource: 'https://academy.langchain.com/courses/intro-to-langgraph'}
+    system-design:
+    - {title: 'Kafka internals: log, partitions, consumer groups, offsets, ordering guarantees', topic: messaging-streaming, minutes: 45, kind: learn}
+    - {title: 'Delivery semantics: at-least-once + idempotent consumers, transactional/exactly-once in Kafka and its limits', topic: messaging-streaming, minutes: 45, kind: learn}
+    - {title: 'Written design: notification system — channels, templating, preferences, rate limiting, retries, dedupe', topic: case-studies/notification-system, minutes: 45, kind: write}
+    dsa:
+    - {title: Count Good Nodes in Binary Tree + Validate Binary Search Tree, topic: trees, minutes: 25, kind: practice, resource: 'https://neetcode.io'}
+    - {title: Kth Smallest Element in a BST, topic: trees, minutes: 30, kind: practice, resource: 'https://neetcode.io'}
+    - {title: Construct Binary Tree from Preorder and Inorder Traversal, topic: trees, minutes: 25, kind: practice, resource: 'https://neetcode.io'}
+    - {title: Binary Tree Maximum Path Sum, topic: trees, minutes: 25, kind: practice, resource: 'https://neetcode.io'}
+    - {title: Serialize and Deserialize Binary Tree, topic: trees, minutes: 30, kind: practice, resource: 'https://neetcode.io'}
+    architecture:
+    - {title: Sagas (orchestration vs choreography) + transactional outbox — microservices.io patterns, topic: sagas-outbox, minutes: 45, kind: learn, resource: 'https://microservices.io'}
+    - {title: 'Write ADR 009 for capstone: outbox for ticket-creation side effects triggered by the agent graph', topic: sagas-outbox, minutes: 30, kind: write, resource: 'https://adr.github.io'}
+    python:
+    - {title: 'Rep: async generators to stream LangGraph events through FastAPI', topic: asyncio-deep, minutes: 20, kind: practice}
+    - {title: 'Rep: Pydantic TypeAdapter + model_validate_json performance on large tool payloads', topic: pydantic-v2, minutes: 20, kind: practice}
+    - {title: 'Rep: generator send()/close() and yield from — build a lazy trace reader', topic: generators-context-managers, minutes: 20, kind: practice}
+    java-spring-ai:
+    - {title: 'Spring AI tool calling: @Tool methods, ToolCallback, returnDirect — expose service-status as a tool', topic: spring-ai-tools-mcp, minutes: 30, kind: learn, resource: 'https://spring.io/blog/2026/06/12/spring-ai-2-0-0-GA-available-now/'}
+    - {title: 'Spring AI MCP client: connect a ChatClient to an existing MCP server (filesystem) over stdio', topic: spring-ai-tools-mcp, minutes: 30, kind: build}
+    staff-skills:
+    - {title: Read lethain on influence/alignment; list stakeholders for adopting the capstone at work and what each cares about, topic: influence-without-authority, minutes: 30, kind: learn, resource: 'https://lethain.com'}
+    review:
+    - {title: 'Explain-it-back: LangGraph state + reducers + checkpoints; flashcards on Kafka semantics and sagas', topic: langgraph, minutes: 60, kind: review}
+- week: 10
+  phase: 3
+  theme: MCP + Pydantic AI sub-agents
+  light: false
+  checkpoint: null
+  project: 'Capstone: Python MCP server (runbooks, service status) + Pydantic AI sub-agents inside LangGraph nodes'
+  tasks:
+    agentic-ai:
+    - {title: 'MCP spec 2026-07-28: tools/resources/prompts, Streamable HTTP, stateless core, Tasks, OAuth/OIDC hardening — HF MCP course unit 1-2', topic: mcp, minutes: 60, kind: learn, resource: 'https://modelcontextprotocol.io/specification/2026-07-28'}
+    - {title: 'Pydantic AI: Agent, deps injection, typed outputs, tools, retries — build the ''root-cause analyst'' sub-agent', topic: pydantic-ai, minutes: 60, kind: practice, resource: 'https://ai.pydantic.dev/'}
+    - {title: 'Capstone build: Python MCP server exposing search_runbooks + get_service_status over Streamable HTTP; LangGraph nodes call it via MCP client; Pydantic AI sub-agent in the analyse node', topic: mcp, minutes: 120, kind: build, resource: 'https://huggingface.co/learn/mcp-course'}
+    system-design:
+    - {title: 'Retries, exponential backoff with jitter, retry budgets — Marc Brooker on retries and timeouts', topic: reliability-patterns, minutes: 45, kind: learn, resource: 'https://brooker.co.za/blog/'}
+    - {title: 'Batch vs stream pipelines: Lambda vs Kappa, windowing, late data — for ingesting incident streams into the RAG index', topic: data-pipelines, minutes: 45, kind: learn}
+    - {title: 'Written design: chat/messaging system — delivery guarantees, ordering, presence, fan-out, storage (cf. Discord''s message store)', topic: case-studies/chat-system, minutes: 45, kind: write}
+    dsa:
+    - {title: Implement Trie (Prefix Tree), topic: tries, minutes: 25, kind: practice, resource: 'https://neetcode.io'}
+    - {title: Design Add and Search Words Data Structure, topic: tries, minutes: 30, kind: practice, resource: 'https://neetcode.io'}
+    - {title: Word Search II (trie + DFS pruning), topic: tries, minutes: 25, kind: practice, resource: 'https://neetcode.io'}
+    - {title: Kth Largest Element in a Stream + Last Stone Weight, topic: heap, minutes: 25, kind: practice, resource: 'https://neetcode.io'}
+    - {title: K Closest Points to Origin, topic: heap, minutes: 30, kind: practice, resource: 'https://neetcode.io'}
+    architecture:
+    - {title: 'CQRS & event sourcing: when it pays off, projections, snapshotting, pitfalls', topic: cqrs-event-sourcing, minutes: 45, kind: learn}
+    - {title: 'Write ADR 010 for capstone: incident timeline as append-only event log with read projection (vs CRUD)', topic: cqrs-event-sourcing, minutes: 30, kind: write, resource: 'https://adr.github.io'}
+    python:
+    - {title: 'Rep: repository + UoW for agent run records; keep LangGraph state separate from domain state', topic: architecture-patterns-python, minutes: 20, kind: practice, resource: 'https://www.cosmicpython.com/'}
+    - {title: 'Rep: TaskGroup error handling with except* when parallel sub-agents fail', topic: asyncio-deep, minutes: 20, kind: practice}
+    - {title: 'Rep: FastAPI BackgroundTasks vs a real queue for long agent runs — implement 202 + status polling', topic: fastapi-production, minutes: 20, kind: practice}
+    java-spring-ai:
+    - {title: 'Spring AI MCP server: @McpTool / @McpResource annotations, Streamable HTTP transport (SSE deprecated)', topic: spring-ai-tools-mcp, minutes: 30, kind: learn, resource: 'https://spring.io/blog/2026/06/12/spring-ai-2-0-0-GA-available-now/'}
+    - {title: 'Start the Spring AI MCP server ''ticketing'' (create_ticket, get_ticket) with MCP Java SDK 2.0', topic: spring-ai-tools-mcp, minutes: 30, kind: build}
+    staff-skills:
+    - {title: 'Artifact: influence plan — adoption path for an agentic ops tool at work: allies, skeptics, pre-wiring, pilot, success metric', topic: influence-without-authority, minutes: 30, kind: write, resource: 'https://noidea.dog/staff-resources'}
+    review:
+    - {title: 'Explain-it-back: MCP transports + auth model; flashcards on retries/backoff and tries', topic: mcp, minutes: 60, kind: review}
+- week: 11
+  phase: 3
+  theme: Durable execution, HITL, multi-agent
+  light: false
+  checkpoint: null
+  project: 'Capstone: human-in-the-loop approval (interrupt/resume) + Spring AI MCP server wired in'
+  tasks:
+    agentic-ai:
+    - {title: 'Durable execution & HITL: LangGraph interrupt/Command resume, idempotent side effects, timeouts; compare with Temporal-style durable workflows', topic: durable-execution-hitl, minutes: 60, kind: learn, resource: 'https://academy.langchain.com/courses/intro-to-langgraph'}
+    - {title: 'Multi-agent systems: supervisor vs swarm vs hierarchical; failure modes (loops, context loss, cost blow-up) — decide if capstone needs >1 agent', topic: multi-agent-systems, minutes: 60, kind: learn, resource: 'https://www.anthropic.com/engineering/building-effective-agents'}
+    - {title: 'Capstone build: HITL approval node before create_ticket (interrupt → approve via API → resume from checkpoint) calling the Spring AI MCP server; kill/restart mid-run to prove durability', topic: durable-execution-hitl, minutes: 120, kind: build}
+    system-design:
+    - {title: 'Circuit breakers, bulkheads, load shedding, timeouts hierarchy — apply to tool calls and LLM providers', topic: reliability-patterns, minutes: 45, kind: learn}
+    - {title: 'Distributed job scheduler: leases, at-least-once execution, cron fan-out, dedupe — sketch + read notes', topic: case-studies/job-scheduler, minutes: 45, kind: learn}
+    - {title: 'Written design: multi-agent platform — agent registry, tool gateway (MCP), memory, orchestration, evals, tenancy, cost controls', topic: agent-platform, minutes: 45, kind: write}
+    dsa:
+    - {title: Kth Largest Element in an Array (quickselect vs heap), topic: heap, minutes: 25, kind: practice, resource: 'https://neetcode.io'}
+    - {title: Task Scheduler, topic: heap, minutes: 30, kind: practice, resource: 'https://neetcode.io'}
+    - {title: Design Twitter + Find Median from Data Stream, topic: heap, minutes: 25, kind: practice, resource: 'https://neetcode.io'}
+    - {title: Subsets, topic: backtracking, minutes: 25, kind: practice, resource: 'https://neetcode.io'}
+    - {title: Combination Sum, topic: backtracking, minutes: 30, kind: practice, resource: 'https://neetcode.io'}
+    architecture:
+    - {title: 'Enterprise integration patterns: channels, content-based router, aggregator, idempotent receiver — relate to MCP/A2A', topic: integration-patterns, minutes: 45, kind: learn}
+    - {title: 'Write ADR 011 for capstone: MCP as integration boundary for tools (vs direct SDK clients)', topic: integration-patterns, minutes: 30, kind: write, resource: 'https://adr.github.io'}
+    python:
+    - {title: 'Rep: uv workspaces monorepo — orchestrator, mcp-server, evals as members', topic: packaging-project-structure, minutes: 20, kind: practice, resource: 'https://docs.astral.sh/uv/'}
+    - {title: 'Rep: anyio/pytest-asyncio tests for the interrupt/resume flow', topic: testing-pytest, minutes: 20, kind: practice}
+    - {title: 'Rep: DuckDB over Langfuse trace exports to find slowest nodes', topic: data-tooling, minutes: 20, kind: practice}
+    java-spring-ai:
+    - {title: 'Finish Spring AI MCP server: OAuth-ready config, tool schemas, integration test from the Python LangGraph client', topic: spring-ai-tools-mcp, minutes: 30, kind: build}
+    - {title: 'Spring AI agentic patterns: chain, routing, orchestrator-workers examples — port one to the Java service', topic: spring-ai-agents, minutes: 30, kind: learn, resource: 'https://github.com/spring-ai-community/awesome-spring-ai'}
+    staff-skills:
+    - {title: 'Draft an exec update for your manager''s manager on the capstone/AI initiative: 5 bullets, 1 chart, 1 ask', topic: communication-stakeholders, minutes: 30, kind: write}
+    review:
+    - {title: 'Retro + explain-it-back: interrupt/resume guarantees and when multi-agent is worth it; flashcards on circuit breakers', topic: multi-agent-systems, minutes: 60, kind: review}
+- week: 12
+  phase: 3
+  theme: Protocols, memory, vendor SDKs (light) — interview-3
+  light: true
+  checkpoint: interview-3
+  project: 'Capstone: A2A/AG-UI spike + Mem0 memory prototype + vendor SDK comparison notes'
+  tasks:
+    agentic-ai:
+    - {title: 'A2A v1.0 (signed Agent Cards, JSON-RPC/gRPC/REST) + AG-UI event stream — where each fits next to MCP', topic: a2a-ag-ui, minutes: 40, kind: learn, resource: 'https://a2a-protocol.org/'}
+    - {title: 'Vendor SDK tour: Claude Agent SDK, OpenAI Agents SDK, Google ADK 2.0, MS Agent Framework 1.0 — same toy task in 2 of them, compare', topic: vendor-agent-sdks, minutes: 40, kind: practice, resource: 'https://code.claude.com/docs/en/agent-sdk/overview'}
+    - {title: 'Capstone build: add Mem0 (or Letta) long-term memory for per-team preferences; expose the orchestrator via AG-UI events to a minimal UI', topic: memory-systems, minutes: 75, kind: build, resource: 'https://docs.mem0.ai/'}
+    system-design:
+    - {title: Distributed job scheduler write-up review; data pipeline for trace → eval dataset, topic: data-pipelines, minutes: 30, kind: learn}
+    - {title: Kafka vs Pulsar vs SQS/Service Bus decision table, topic: messaging-streaming, minutes: 30, kind: learn}
+    - {title: 'Timed 45-min AI SD mock (interview-3): design a ChatGPT-style assistant (sessions, memory, tools, streaming, safety, cost)', topic: chat-assistant, minutes: 30, kind: practice}
+    dsa:
+    - {title: Permutations + Subsets II, topic: backtracking, minutes: 15, kind: practice, resource: 'https://neetcode.io'}
+    - {title: Combination Sum II, topic: backtracking, minutes: 20, kind: practice, resource: 'https://neetcode.io'}
+    - {title: Word Search, topic: backtracking, minutes: 15, kind: practice, resource: 'https://neetcode.io'}
+    - {title: Palindrome Partitioning, topic: backtracking, minutes: 15, kind: practice, resource: 'https://neetcode.io'}
+    - {title: 'Timed coding mock (interview-3): Number of Islands + Clone Graph in 30 min', topic: graphs, minutes: 20, kind: practice, resource: 'https://neetcode.io'}
+    architecture:
+    - {title: 'API contracts & schema evolution: backward/forward compatibility, consumer-driven contracts, versioning MCP tool schemas', topic: api-contracts-versioning, minutes: 30, kind: learn}
+    - {title: 'Write ADR 012 for capstone: tool schema versioning policy (additive changes, deprecation window)', topic: api-contracts-versioning, minutes: 20, kind: write, resource: 'https://adr.github.io'}
+    python:
+    - {title: 'Rep: Protocol + generics for a typed Memory store interface', topic: typing-advanced, minutes: 15, kind: practice, resource: 'https://typing.python.org'}
+    - {title: 'Rep: __getattr__/__slots__ trade-offs on high-volume event objects', topic: data-model, minutes: 15, kind: practice}
+    - {title: 'Rep: functools.wraps, cache, singledispatch in a tool registry', topic: decorators-descriptors-metaclasses, minutes: 10, kind: practice}
+    java-spring-ai:
+    - {title: Spring AI agent with ChatMemory + tool calling + MCP client end-to-end, topic: spring-ai-agents, minutes: 20, kind: build}
+    - {title: Evaluate where Spring AI agent patterns are enough vs needing LangGraph, topic: spring-ai-agents, minutes: 20, kind: learn}
+    staff-skills:
+    - {title: Read an incident-command model; note how you'd lead a Sev-1 involving an AI agent misbehaving, topic: incident-leadership, minutes: 20, kind: learn}
+    review:
+    - {title: 'interview-3: full mock — SD + coding + AI SD + behavioral, score with docs/interviews/rubric.md and log gaps into next week''s plan', topic: framework-and-estimation, minutes: 40, kind: review}
+- week: 13
+  phase: 4
+  theme: Guardrails & security
+  light: false
+  checkpoint: null
+  project: 'Capstone: guardrails layer (input/output/tool), prompt-injection red-team suite in CI'
+  tasks:
+    agentic-ai:
+    - {title: OWASP Top 10 for LLM Apps + OWASP Agentic Top 10 2026 (ASI01-ASI10) — threat-model the capstone per item, topic: guardrails-security, minutes: 60, kind: learn, resource: 'https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/'}
+    - {title: 'Lethal trifecta (private data + untrusted content + exfiltration): find every trifecta path in the capstone and design mitigations', topic: guardrails-security, minutes: 60, kind: learn, resource: 'https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/'}
+    - {title: 'Capstone build: guardrails (input classification, tool allow-lists + arg validation, output PII redaction) + promptfoo OWASP agentic red-team preset in CI', topic: guardrails-security, minutes: 120, kind: build, resource: 'https://www.promptfoo.dev/docs/red-team/owasp-agentic-ai/'}
+    system-design:
+    - {title: 'Rate limiting: token bucket, leaky bucket, sliding window log/counter; distributed limits with Redis + Lua', topic: rate-limiting, minutes: 45, kind: learn}
+    - {title: 'AuthN/Z: OAuth2/OIDC flows, token exchange, multi-tenant isolation, zero trust — how MCP OAuth fits', topic: security-authn-authz, minutes: 45, kind: learn}
+    - {title: 'Written design: multi-tenant LLM gateway — auth, quotas by tokens, routing, caching, fallbacks, audit, cost attribution', topic: llm-gateway, minutes: 45, kind: write, resource: 'https://docs.litellm.ai/'}
+    dsa:
+    - {title: Max Area of Island + Clone Graph, topic: graphs, minutes: 25, kind: practice, resource: 'https://neetcode.io'}
+    - {title: Pacific Atlantic Water Flow, topic: graphs, minutes: 30, kind: practice, resource: 'https://neetcode.io'}
+    - {title: Surrounded Regions + Rotting Oranges (multi-source BFS), topic: graphs, minutes: 25, kind: practice, resource: 'https://neetcode.io'}
+    - {title: Course Schedule + Course Schedule II (topological sort), topic: graphs, minutes: 25, kind: practice, resource: 'https://neetcode.io'}
+    - {title: Number of Connected Components (union-find) + Graph Valid Tree, topic: graphs, minutes: 30, kind: practice, resource: 'https://neetcode.io'}
+    architecture:
+    - {title: 'AI-native architecture: LLMs as non-deterministic components — deterministic shells, eval gates, fallbacks, human override (FoSA 2e GenAI chapters)', topic: ai-native-architecture, minutes: 45, kind: learn}
+    - {title: 'Write ADR 013 for capstone: guardrail placement (gateway vs in-graph vs tool server) and fail-closed policy', topic: ai-native-architecture, minutes: 30, kind: write, resource: 'https://adr.github.io'}
+    python:
+    - {title: 'Rep: structlog JSON logging with contextvars (request_id, tenant, run_id)', topic: observability-python, minutes: 20, kind: practice}
+    - {title: 'Rep: OpenTelemetry manual spans around tool calls with GenAI attributes', topic: observability-python, minutes: 20, kind: practice, resource: 'https://github.com/open-telemetry/semantic-conventions-genai'}
+    - {title: 'Rep: FastAPI middleware for OIDC JWT validation + tenant resolution', topic: fastapi-production, minutes: 20, kind: practice}
+    java-spring-ai:
+    - {title: Micrometer observations for Spring AI ChatClient/VectorStore; view token metrics, topic: observability-testing, minutes: 30, kind: learn}
+    - {title: 'Write the polyglot rationale: which capstone parts belong in Java vs Python and why', topic: polyglot-ai-architecture, minutes: 30, kind: write}
+    staff-skills:
+    - {title: 'Read lethain on writing engineering strategy (diagnosis, policy, actions); pick a strategy topic from work', topic: technical-strategy, minutes: 30, kind: learn, resource: 'https://lethain.com'}
+    review:
+    - {title: 'Explain-it-back: OWASP agentic top risks + lethal trifecta; flashcards on rate limiting algorithms', topic: guardrails-security, minutes: 60, kind: review}
+- week: 14
+  phase: 4
+  theme: Cost, latency, routing
+  light: false
+  checkpoint: null
+  project: 'Capstone: LiteLLM routing (cheap → strong escalation), semantic + prompt caching, streaming latency budget'
+  tasks:
+    agentic-ai:
+    - {title: 'Cost & latency levers: prompt caching, semantic caching, batching, streaming, speculative/parallel calls — build a latency budget per node', topic: cost-latency-optimization, minutes: 60, kind: learn, resource: 'https://applied-llms.org/'}
+    - {title: 'Model selection & routing: cascades, classifier routers, fallbacks; LiteLLM router config with budgets', topic: model-routing-gateways, minutes: 60, kind: practice, resource: 'https://docs.litellm.ai/'}
+    - {title: 'Capstone build: LiteLLM proxy in docker-compose (Ollama + 2 hosted models), cascade routing with eval-guarded escalation, prompt caching; report cost/latency before vs after', topic: model-routing-gateways, minutes: 120, kind: build, resource: 'https://docs.litellm.ai/'}
+    system-design:
+    - {title: 'SLOs, SLIs, error budgets, burn-rate alerting — define SLOs for the capstone (latency, success, eval-quality SLO)', topic: observability-slos, minutes: 45, kind: learn}
+    - {title: 'LLM capacity & cost planning: tokens/s, TTFT, concurrency, $ per resolved incident — spreadsheet model', topic: capacity-cost-planning, minutes: 45, kind: practice}
+    - {title: 'Written design: payment system — idempotency, ledger (double-entry), exactly-once illusions, reconciliation, PSP integration', topic: case-studies/payment-system, minutes: 45, kind: write}
+    dsa:
+    - {title: Redundant Connection (union-find), topic: graphs, minutes: 25, kind: practice, resource: 'https://neetcode.io'}
+    - {title: Word Ladder, topic: graphs, minutes: 30, kind: practice, resource: 'https://neetcode.io'}
+    - {title: Network Delay Time (Dijkstra), topic: advanced-graphs, minutes: 25, kind: practice, resource: 'https://neetcode.io'}
+    - {title: Min Cost to Connect All Points (Prim/Kruskal), topic: advanced-graphs, minutes: 25, kind: practice, resource: 'https://neetcode.io'}
+    - {title: Cheapest Flights Within K Stops (Bellman-Ford / BFS with stops), topic: advanced-graphs, minutes: 30, kind: practice, resource: 'https://neetcode.io'}
+    architecture:
+    - {title: 'C4 model + arc42: draw capstone context, container, component diagrams as code (Structurizr DSL or Mermaid)', topic: documenting-architecture, minutes: 45, kind: learn, resource: 'https://c4model.com'}
+    - {title: 'Write ADR 014 for capstone: LiteLLM as model gateway (vs custom router vs managed gateway)', topic: ai-native-architecture, minutes: 30, kind: write, resource: 'https://adr.github.io'}
+    python:
+    - {title: 'Rep: OTel metrics (histograms for token usage, latency) exported to Langfuse/Prometheus', topic: observability-python, minutes: 20, kind: practice}
+    - {title: 'Rep: async token-bucket rate limiter for provider calls', topic: asyncio-deep, minutes: 20, kind: practice}
+    - {title: 'Rep: snapshot tests for prompts + cost assertions in pytest', topic: testing-pytest, minutes: 20, kind: practice}
+    java-spring-ai:
+    - {title: Export Spring AI OTel traces to Langfuse; align attributes with GenAI semconv, topic: observability-testing, minutes: 30, kind: build, resource: 'https://langfuse.com/docs'}
+    - {title: Spring AI guardrail advisor (input/output check) in the Java service, topic: spring-ai-agents, minutes: 30, kind: build}
+    staff-skills:
+    - {title: 'Artifact: technical strategy doc (2-3 pages) — ''AI agents for operations: diagnosis, guiding policies, coherent actions''', topic: technical-strategy, minutes: 30, kind: write, resource: 'https://lethain.com'}
+    review:
+    - {title: 'Run a mock architecture review of the capstone C4 docs + ADRs with a peer/AI reviewer: checklist, risks, decision log; flashcards on SLOs and graph algorithms', topic: architecture-reviews, minutes: 60, kind: review}
+- week: 15
+  phase: 4
+  theme: Managed platforms & production checklist
+  light: false
+  checkpoint: null
+  project: 'Capstone: Microsoft Foundry Agent Service spike + production-readiness checklist pass'
+  tasks:
+    agentic-ai:
+    - {title: 'Managed agent platforms: Microsoft Foundry Agent Service (Responses API) vs Bedrock AgentCore — map capstone components to each', topic: managed-agent-platforms, minutes: 60, kind: learn, resource: 'https://learn.microsoft.com/en-us/azure/foundry/agents/overview'}
+    - {title: 'Production checklist: evals gate, observability, guardrails, cost caps, fallbacks, rollback, data retention, incident runbook — audit the capstone', topic: production-checklist, minutes: 60, kind: practice, resource: 'https://applied-llms.org/'}
+    - {title: 'Capstone build: run the triage agent on Foundry Agent Service (or MS Agent Framework) against the same eval set; compare quality, latency, cost, ops burden', topic: managed-agent-platforms, minutes: 120, kind: build, resource: 'https://learn.microsoft.com/en-us/agent-framework/overview/'}
+    system-design:
+    - {title: 'Zero trust + agent identity: workload identity, per-tool scopes, tenant isolation patterns (silo/pool/bridge)', topic: security-authn-authz, minutes: 45, kind: learn}
+    - {title: 'Quotas for LLM platforms: token-based rate limits per tenant, fairness, burst handling', topic: rate-limiting, minutes: 45, kind: learn}
+    - {title: 'Written design: LLM evaluation & observability platform — trace ingestion, datasets, judges, online evals, dashboards', topic: evaluation-platform, minutes: 45, kind: write, resource: 'https://arize.com/docs/phoenix'}
+    dsa:
+    - {title: Swim in Rising Water (Dijkstra / binary search + BFS), topic: advanced-graphs, minutes: 25, kind: practice, resource: 'https://neetcode.io'}
+    - {title: Reconstruct Itinerary (Hierholzer), topic: advanced-graphs, minutes: 30, kind: practice, resource: 'https://neetcode.io'}
+    - {title: Climbing Stairs + Min Cost Climbing Stairs, topic: dp-1d, minutes: 25, kind: practice, resource: 'https://neetcode.io'}
+    - {title: House Robber + House Robber II, topic: dp-1d, minutes: 25, kind: practice, resource: 'https://neetcode.io'}
+    - {title: Longest Palindromic Substring, topic: dp-1d, minutes: 30, kind: practice, resource: 'https://neetcode.io'}
+    architecture:
+    - {title: 'Evolutionary architecture: fitness functions — turn eval thresholds, latency budgets and dependency rules into CI checks', topic: evolutionary-architecture, minutes: 45, kind: learn}
+    - {title: 'Write ADR 015 for capstone: architectural fitness functions in CI (eval score, p95, import-linter rules)', topic: evolutionary-architecture, minutes: 30, kind: write, resource: 'https://adr.github.io'}
+    python:
+    - {title: 'Rep: py-spy / cProfile flame graph of the ingestion pipeline', topic: performance-profiling, minutes: 20, kind: practice}
+    - {title: 'Rep: memray/scalene memory profile of embedding batch job', topic: performance-profiling, minutes: 20, kind: practice}
+    - {title: 'Rep: refactor a service layer to use the message bus for side effects', topic: architecture-patterns-python, minutes: 20, kind: practice, resource: 'https://www.cosmicpython.com/'}
+    java-spring-ai:
+    - {title: Secure the Spring AI MCP server with OAuth2 resource server (Spring Security) per MCP authorization spec, topic: spring-ai-tools-mcp, minutes: 30, kind: build, resource: 'https://modelcontextprotocol.io/specification/2026-07-28'}
+    - {title: 'Spring Boot 4 production settings: graceful shutdown, virtual threads flag, actuator probes for Container Apps', topic: spring-boot-4, minutes: 30, kind: practice}
+    staff-skills:
+    - {title: 'Artifact: tech-debt proposal — inventory, cost of delay, prioritised paydown plan, how you''d get it funded', topic: technical-debt, minutes: 30, kind: write}
+    review:
+    - {title: 'Explain-it-back: managed vs self-built agent platform trade-offs; flashcards on production checklist items', topic: production-checklist, minutes: 60, kind: review}
+- week: 16
+  phase: 4
+  theme: Architecture docs & AI-era leadership — interview-4
+  light: false
+  checkpoint: interview-4
+  project: 'Capstone: C4 + arc42 doc set, observability dashboards, SLOs live'
+  tasks:
+    agentic-ai:
+    - {title: 'LLM observability in production: online evals, sampling, PII in traces, cost dashboards in Langfuse/Phoenix', topic: llm-observability, minutes: 60, kind: learn, resource: 'https://arize.com/docs/phoenix'}
+    - {title: 'Cost optimisation review: find top-3 token sinks from traces and fix (context trimming, cache hits, cheaper model)', topic: cost-latency-optimization, minutes: 60, kind: practice}
+    - {title: 'Capstone build: Langfuse dashboards + alerting on SLO burn and eval-score drift; online LLM-as-judge on 10% of traffic', topic: llm-observability, minutes: 120, kind: build, resource: 'https://langfuse.com/docs'}
+    system-design:
+    - {title: 'LLM capacity planning II: GPU vs API break-even, rate-limit headroom, multi-provider failover', topic: capacity-cost-planning, minutes: 45, kind: learn}
+    - {title: 'Intelligent document processing pipeline: OCR/layout models, extraction schemas, human review queue', topic: document-processing, minutes: 45, kind: learn}
+    - {title: 'Timed 45-min SD mock (interview-4): metrics & monitoring system (ingestion, TSDB, downsampling, alerting)', topic: case-studies/metrics-monitoring, minutes: 45, kind: practice}
+    dsa:
+    - {title: Decode Ways, topic: dp-1d, minutes: 25, kind: practice, resource: 'https://neetcode.io'}
+    - {title: Coin Change, topic: dp-1d, minutes: 30, kind: practice, resource: 'https://neetcode.io'}
+    - {title: Maximum Product Subarray + Palindromic Substrings, topic: dp-1d, minutes: 25, kind: practice, resource: 'https://neetcode.io'}
+    - {title: Word Break, topic: dp-1d, minutes: 25, kind: practice, resource: 'https://neetcode.io'}
+    - {title: 'Timed coding mock (interview-4): Longest Increasing Subsequence + Partition Equal Subset Sum in 30 min', topic: dp-1d, minutes: 30, kind: practice, resource: 'https://neetcode.io'}
+    architecture:
+    - {title: 'Team Topologies: stream-aligned vs platform teams, cognitive load, Conway''s law for an AI platform', topic: team-topologies, minutes: 45, kind: learn, resource: 'https://teamtopologies.com'}
+    - {title: 'Write ADR 016 for capstone: ownership model — platform team owns gateway/evals, stream teams own agents', topic: team-topologies, minutes: 30, kind: write, resource: 'https://adr.github.io'}
+    python:
+    - {title: 'Rep: Pydantic computed fields + serializers for API responses', topic: pydantic-v2, minutes: 20, kind: practice}
+    - {title: 'Rep: overloads + Literal types for a typed client API', topic: typing-advanced, minutes: 20, kind: practice, resource: 'https://typing.python.org'}
+    - {title: 'Rep: benchmark with pytest-benchmark; avoid premature optimisation', topic: performance-profiling, minutes: 20, kind: practice}
+    java-spring-ai:
+    - {title: 'Write the polyglot decision doc: Java vs Python for AI services (talent, ecosystem, ops, latency)', topic: polyglot-ai-architecture, minutes: 30, kind: write}
+    - {title: Testcontainers + WireMock contract tests for the Java MCP server, topic: observability-testing, minutes: 30, kind: build}
+    staff-skills:
+    - {title: 'Artifact: AI adoption plan for an engineering org — productivity measurement, risk policy, enablement', topic: ai-era-leadership, minutes: 30, kind: write}
+    review:
+    - {title: 'interview-4: full mock — SD + coding + AI SD + behavioral, score with docs/interviews/rubric.md and log gaps into next week''s plan', topic: framework-and-estimation, minutes: 60, kind: review}
+- week: 17
+  phase: 5
+  theme: DSPy + Raft + free-threaded Python
+  light: false
+  checkpoint: null
+  project: 'Capstone: DSPy/GEPA-optimised triage classifier vs hand prompt, measured with the eval harness'
+  tasks:
+    agentic-ai:
+    - {title: 'DSPy 3.x: signatures, modules, metrics, optimizers — work through The Data Quarry ''Learning DSPy'' optimizers post', topic: dspy, minutes: 60, kind: learn, resource: 'https://thedataquarry.com/blog/learning-dspy-3-working-with-optimizers/'}
+    - {title: GEPA reflective optimizer (dspy.GEPA) — run the HF cookbook on a small task and read the traces, topic: dspy, minutes: 60, kind: practice, resource: 'https://huggingface.co/learn/cookbook/dspy_gepa'}
+    - {title: 'Capstone build: DSPy program for incident classification + GEPA optimisation; compare to hand-tuned prompt on the golden set (accuracy, cost)', topic: dspy, minutes: 120, kind: build, resource: 'https://dspy.ai/'}
+    system-design:
+    - {title: 'Raft: leader election, log replication, safety — Raft visualisation + paper sections 5.1-5.4', topic: consensus-raft, minutes: 45, kind: learn, resource: 'https://thesecretlivesofdata.com/raft/'}
+    - {title: 'Fly.io Gossip Glomers challenges 1-3 (echo, unique IDs, broadcast) in Go or Python Maelstrom', topic: consensus-raft, minutes: 45, kind: practice, resource: 'https://fly.io/dist-sys/'}
+    - {title: 'Written design: LLM inference/serving platform — batching, KV cache, autoscaling on GPUs, multi-model routing, SLOs', topic: llm-serving-platform, minutes: 45, kind: write, resource: 'https://docs.vllm.ai/'}
+    dsa:
+    - {title: Coin Change II revisit + Unique Paths, topic: dp-2d, minutes: 25, kind: practice, resource: 'https://neetcode.io'}
+    - {title: Longest Common Subsequence, topic: dp-2d, minutes: 30, kind: practice, resource: 'https://neetcode.io'}
+    - {title: Best Time to Buy and Sell Stock with Cooldown, topic: dp-2d, minutes: 25, kind: practice, resource: 'https://neetcode.io'}
+    - {title: Target Sum, topic: dp-2d, minutes: 25, kind: practice, resource: 'https://neetcode.io'}
+    - {title: Interleaving String, topic: dp-2d, minutes: 30, kind: practice, resource: 'https://neetcode.io'}
+    architecture:
+    - {title: 'Legacy modernization & strangler fig (Architecture Modernization, Nick Tune) — plan inserting agents into a legacy ops tool', topic: legacy-modernization, minutes: 45, kind: learn, resource: 'https://www.manning.com/books/architecture-modernization'}
+    - {title: 'Write ADR 017 for capstone: introduce agents via strangler fig behind existing ticketing UI', topic: legacy-modernization, minutes: 30, kind: write, resource: 'https://adr.github.io'}
+    python:
+    - {title: 'Rep: threads vs processes vs asyncio decision table; run a CPU-bound benchmark on 3.14 vs 3.14t', topic: concurrency-models, minutes: 20, kind: practice, resource: 'https://py-free-threading.github.io/'}
+    - {title: 'Rep: free-threaded 3.14t — thread-safety of your code, extension compatibility checks', topic: concurrency-models, minutes: 20, kind: practice, resource: 'https://py-free-threading.github.io/'}
+    - {title: 'Rep: dis module — read bytecode of a hot function; specialising adaptive interpreter', topic: cpython-internals, minutes: 20, kind: practice, resource: 'https://tenthousandmeters.com/'}
+    java-spring-ai:
+    - {title: 'Virtual threads: fan out 20 LLM calls with Executors.newVirtualThreadPerTaskExecutor; pinning pitfalls', topic: virtual-threads-structured-concurrency, minutes: 30, kind: learn, resource: 'https://openjdk.org/projects/jdk/25/'}
+    - {title: 'Structured concurrency (preview in 25): StructuredTaskScope for parallel tool calls with cancellation', topic: virtual-threads-structured-concurrency, minutes: 30, kind: practice, resource: 'https://openjdk.org/projects/jdk/25/'}
+    staff-skills:
+    - {title: 'Decision-making under ambiguity: write a one-way vs two-way door analysis for a real pending decision', topic: decision-making, minutes: 30, kind: write}
+    review:
+    - {title: 'Explain-it-back: Raft election + log matching; flashcards on DSPy concepts and 2-D DP recurrences', topic: consensus-raft, minutes: 60, kind: review}
+- week: 18
+  phase: 5
+  theme: Inference serving (light)
+  light: true
+  checkpoint: null
+  project: 'Capstone: self-hosted vLLM (or Ollama) serving experiment with quantised model behind LiteLLM'
+  tasks:
+    agentic-ai:
+    - {title: 'Inference serving: continuous batching, PagedAttention, prefix caching — vLLM vs SGLang vs Ollama', topic: inference-serving, minutes: 40, kind: learn, resource: 'https://docs.vllm.ai/'}
+    - {title: 'Quantisation (GGUF, AWQ, GPTQ, FP8) — quality/latency trade-off measured with the eval set', topic: inference-serving, minutes: 40, kind: practice, resource: 'https://docs.sglang.ai/'}
+    - {title: 'Capstone build: serve a quantised 7-8B model via vLLM/Ollama behind LiteLLM; route the ''classify'' node to it and compare quality/cost', topic: inference-serving, minutes: 75, kind: build, resource: 'https://docs.vllm.ai/'}
+    system-design:
+    - {title: 'Leases, fencing tokens, clock pitfalls — Kleppmann lectures on distributed locks', topic: consensus-raft, minutes: 30, kind: learn, resource: 'https://www.youtube.com/playlist?list=PLeKd45zvjcDFUEv_ohr_HdUFe97RItdiB'}
+    - {title: 'Multi-region: active-passive vs active-active, RPO/RTO, failover testing', topic: multi-region-dr, minutes: 30, kind: learn}
+    - {title: 'Written design: distributed key-value store — partitioning, replication, quorum, hinted handoff, anti-entropy (Dynamo)', topic: case-studies/distributed-kv-store, minutes: 30, kind: write, resource: 'https://martinfowler.com/articles/patterns-of-distributed-systems/'}
+    dsa:
+    - {title: Edit Distance, topic: dp-2d, minutes: 15, kind: practice, resource: 'https://neetcode.io'}
+    - {title: Longest Increasing Path in a Matrix, topic: dp-2d, minutes: 20, kind: practice, resource: 'https://neetcode.io'}
+    - {title: Distinct Subsequences, topic: dp-2d, minutes: 15, kind: practice, resource: 'https://neetcode.io'}
+    - {title: Burst Balloons, topic: dp-2d, minutes: 15, kind: practice, resource: 'https://neetcode.io'}
+    - {title: Regular Expression Matching, topic: dp-2d, minutes: 20, kind: practice, resource: 'https://neetcode.io'}
+    architecture:
+    - {title: 'Data architecture: CDC, lakehouse, data mesh — keeping a vector index in sync with source systems', topic: data-architecture, minutes: 30, kind: learn}
+    - {title: 'Write ADR 018 for capstone: CDC (Debezium-style) from ticket DB into the RAG index', topic: data-architecture, minutes: 20, kind: write, resource: 'https://adr.github.io'}
+    python:
+    - {title: 'Rep: GIL internals + what changes without it', topic: cpython-internals, minutes: 15, kind: practice, resource: 'https://blog.codingconfessions.com/'}
+    - {title: 'Rep: concurrent.futures vs asyncio.to_thread for blocking SDKs', topic: concurrency-models, minutes: 15, kind: practice}
+    - {title: 'Rep: profile async code with py-spy --idle', topic: performance-profiling, minutes: 10, kind: practice}
+    java-spring-ai:
+    - {title: Scoped values (final in 25) vs ThreadLocal for request context in virtual threads, topic: virtual-threads-structured-concurrency, minutes: 20, kind: learn, resource: 'https://openjdk.org/projects/jdk/25/'}
+    - {title: 'JVM performance intro: GC choices (G1, ZGC), JFR recording of the MCP server', topic: jvm-performance, minutes: 20, kind: practice}
+    staff-skills:
+    - {title: 'Artifact: mentoring plan — 1 mentee, goals, cadence, sponsorship opportunities you''ll create', topic: mentoring-sponsorship, minutes: 20, kind: write}
+    review:
+    - {title: 'Light-week retro + flashcards: inference serving vocabulary, quorum math', topic: inference-serving, minutes: 40, kind: review}
+- week: 19
+  phase: 5
+  theme: Fine-tuning trade-offs, GraphRAG
+  light: false
+  checkpoint: null
+  project: 'Capstone: LoRA/QLoRA fine-tune experiment (Unsloth/TRL) vs prompt+DSPy baseline; GraphRAG spike'
+  tasks:
+    agentic-ai:
+    - {title: 'Fine-tuning: when not to (prompting, RAG, DSPy first); LoRA/QLoRA mechanics; DPO vs GRPO — HF LLM course chapters', topic: fine-tuning, minutes: 60, kind: learn, resource: 'https://huggingface.co/learn/llm-course'}
+    - {title: 'Advanced RAG: agentic RAG (not always better), GraphRAG, LazyGraphRAG — decide if capstone corpus benefits', topic: advanced-rag, minutes: 60, kind: learn, resource: 'https://www.microsoft.com/en-us/research/blog/lazygraphrag-setting-a-new-standard-for-quality-and-cost/'}
+    - {title: 'Capstone build: QLoRA fine-tune a small model on 500 labelled triage examples with Unsloth/TRL; evaluate vs DSPy baseline; write ablation', topic: fine-tuning, minutes: 120, kind: build, resource: 'https://unsloth.ai/docs/get-started/reinforcement-learning-rl-guide'}
+    system-design:
+    - {title: 'Active-active + conflict resolution (LWW, CRDTs) and DR drills', topic: multi-region-dr, minutes: 45, kind: learn}
+    - {title: 'Classic ML system design: recommendation & ranking funnel (candidate gen, ranking, re-ranking, features)', topic: recsys-ml-basics, minutes: 45, kind: learn, resource: 'https://www.hellointerview.com/learn/ml-system-design/in-a-hurry/introduction'}
+    - {title: 'Written design: coding agent / code-review bot — repo context, sandboxing, tool permissions, evals, cost', topic: coding-agent, minutes: 45, kind: write, resource: 'https://openai.github.io/openai-agents-python/'}
+    dsa:
+    - {title: Longest Common Subsequence revisit (space-optimised), topic: dp-2d, minutes: 25, kind: practice, resource: 'https://neetcode.io'}
+    - {title: Maximum Subarray (Kadane), topic: greedy, minutes: 30, kind: practice, resource: 'https://neetcode.io'}
+    - {title: Jump Game + Jump Game II, topic: greedy, minutes: 25, kind: practice, resource: 'https://neetcode.io'}
+    - {title: Gas Station, topic: greedy, minutes: 25, kind: practice, resource: 'https://neetcode.io'}
+    - {title: Hand of Straights + Merge Triplets to Form Target Triplet, topic: greedy, minutes: 30, kind: practice, resource: 'https://neetcode.io'}
+    architecture:
+    - {title: 'AI-native architecture II: agent reliability patterns — deterministic control flow, bounded autonomy, compensation', topic: ai-native-architecture, minutes: 45, kind: learn}
+    - {title: 'Write ADR 019 for capstone: prompt + DSPy over fine-tuning for v1 (with evidence from ablation)', topic: ai-native-architecture, minutes: 30, kind: write, resource: 'https://adr.github.io'}
+    python:
+    - {title: 'Rep: subinterpreters / concurrent.interpreters (3.14) experiment', topic: concurrency-models, minutes: 20, kind: practice}
+    - {title: 'Rep: refcounting, gc generations, memory layout of objects', topic: cpython-internals, minutes: 20, kind: practice, resource: 'https://tenthousandmeters.com/'}
+    - {title: 'Rep: vectorise a hot loop with Polars instead of Python', topic: performance-profiling, minutes: 20, kind: practice}
+    java-spring-ai:
+    - {title: 'JVM: Leyden AOT cache + compact object headers — measure startup/memory of the MCP server', topic: jvm-performance, minutes: 30, kind: practice, resource: 'https://openjdk.org/projects/jdk/25/'}
+    - {title: Virtual thread pinning diagnosis with JFR, topic: virtual-threads-structured-concurrency, minutes: 30, kind: practice}
+    staff-skills:
+    - {title: 'Decision journal: document 2 ambiguous calls from the capstone (options, info missing, reversibility, chosen path)', topic: decision-making, minutes: 30, kind: write}
+    review:
+    - {title: 'Explain-it-back: when to fine-tune vs RAG vs DSPy (3-min answer); flashcards on greedy proofs', topic: fine-tuning, minutes: 60, kind: review}
+- week: 20
+  phase: 5
+  theme: Consolidation — interview-5
+  light: false
+  checkpoint: interview-5
+  project: 'Capstone: advanced RAG decision implemented (or rejected with evidence); talk/blog draft'
+  tasks:
+    agentic-ai:
+    - {title: 'Advanced RAG lab: query rewriting/decomposition + agentic retrieval loop vs single-shot hybrid on the golden set', topic: advanced-rag, minutes: 60, kind: practice}
+    - {title: 'Fine-tuning follow-up: DPO on preference pairs from HITL approvals (design only if no GPU) — expected gains vs risks', topic: fine-tuning, minutes: 60, kind: learn, resource: 'https://huggingface.co/docs/trl'}
+    - {title: 'Capstone build: ship the winning retrieval configuration + regression evals; update eval dashboards', topic: advanced-rag, minutes: 120, kind: build}
+    system-design:
+    - {title: 'Gossip Glomers: broadcast + g-counter challenges', topic: consensus-raft, minutes: 45, kind: practice, resource: 'https://fly.io/dist-sys/'}
+    - {title: 'Geospatial indexing: geohash, quadtree, S2 — proximity queries at scale', topic: case-studies/ride-hailing-proximity, minutes: 45, kind: learn}
+    - {title: 'Timed 45-min SD mock (interview-5): ride hailing / proximity service', topic: case-studies/ride-hailing-proximity, minutes: 45, kind: practice}
+    dsa:
+    - {title: Insert Interval + Merge Intervals, topic: intervals, minutes: 25, kind: practice, resource: 'https://neetcode.io'}
+    - {title: Non-overlapping Intervals, topic: intervals, minutes: 30, kind: practice, resource: 'https://neetcode.io'}
+    - {title: Meeting Rooms II + Minimum Interval to Include Each Query, topic: intervals, minutes: 25, kind: practice, resource: 'https://neetcode.io'}
+    - {title: Single Number + Number of 1 Bits + Counting Bits, topic: math-bits, minutes: 25, kind: practice, resource: 'https://neetcode.io'}
+    - {title: 'Timed coding mock (interview-5): Rotate Image + Spiral Matrix in 30 min', topic: math-bits, minutes: 30, kind: practice, resource: 'https://neetcode.io'}
+    architecture:
+    - {title: 'Legacy modernization case: migrate a monolith''s reporting to event-driven with strangler + CDC — write the phased plan', topic: legacy-modernization, minutes: 45, kind: learn}
+    - {title: 'Write ADR 020 for capstone: API models by default, self-hosted serving only for classify node (cost/latency evidence)', topic: ai-native-architecture, minutes: 30, kind: write, resource: 'https://adr.github.io'}
+    python:
+    - {title: 'Rep: free-threaded vs multiprocessing for embedding pre-processing', topic: concurrency-models, minutes: 20, kind: practice, resource: 'https://py-free-threading.github.io/'}
+    - {title: 'Rep: asyncio vs threads under 3.14t for I/O-bound tool calls', topic: asyncio-deep, minutes: 20, kind: practice}
+    - {title: 'Rep: profile + fix one hotspot in the capstone', topic: performance-profiling, minutes: 20, kind: practice}
+    java-spring-ai:
+    - {title: 'JVM tuning: container-aware heap, GC logs for the MCP server under load', topic: jvm-performance, minutes: 30, kind: practice}
+    - {title: Benchmark virtual threads vs platform threads for blocking tool calls, topic: virtual-threads-structured-concurrency, minutes: 30, kind: practice}
+    staff-skills:
+    - {title: 'Artifact: talk or blog draft — ''Evals-first agent engineering: lessons from building an Ops Copilot''', topic: communication-stakeholders, minutes: 30, kind: write}
+    review:
+    - {title: 'interview-5: full mock — SD + coding + AI SD + behavioral, score with docs/interviews/rubric.md and log gaps into next week''s plan', topic: behavioral-interviews, minutes: 60, kind: review}
+- week: 21
+  phase: 6
+  theme: Capstone polish + STAR bank I
+  light: false
+  checkpoint: null
+  project: 'Capstone: deploy to Azure Container Apps + Foundry; end-to-end demo script'
+  tasks:
+    agentic-ai:
+    - {title: 'Deployment architecture for Azure: Container Apps, Foundry models, Key Vault, managed identity, Postgres Flexible Server + pgvector', topic: managed-agent-platforms, minutes: 60, kind: learn, resource: 'https://learn.microsoft.com/en-us/azure/foundry/agents/overview'}
+    - {title: 'Production checklist pass 2: close every red item (rollback, cost caps, retention, runbook)', topic: production-checklist, minutes: 60, kind: practice}
+    - {title: 'Capstone build: deploy orchestrator + MCP servers to Azure Container Apps via IaC (Bicep/Terraform); smoke evals against the deployed stack', topic: production-checklist, minutes: 120, kind: build, resource: 'https://learn.microsoft.com/en-us/azure/foundry/agents/overview'}
+    system-design:
+    - {title: 'Timed AI SD mock: enterprise RAG system (redo, compare with week 6 write-up)', topic: rag-system, minutes: 45, kind: practice}
+    - {title: Caching + consistency deep-dive questions drill (10 L3 questions out loud), topic: caching, minutes: 45, kind: practice}
+    - {title: 'Written design: capstone architecture as an interview answer — 2-page ''design a multi-agent ops platform'' doc', topic: agent-platform, minutes: 45, kind: write}
+    dsa:
+    - {title: Reverse Bits + Missing Number + Sum of Two Integers, topic: math-bits, minutes: 25, kind: practice, resource: 'https://neetcode.io'}
+    - {title: 'Pow(x, n) + Multiply Strings', topic: math-bits, minutes: 30, kind: practice, resource: 'https://neetcode.io'}
+    - {title: 'LLD: LRU cache + TTL cache, thread-safe (threading.Lock)', topic: concurrency-lld, minutes: 25, kind: practice, resource: 'https://www.techinterviewhandbook.org'}
+    - {title: 'LLD: rate limiter (token bucket) with concurrency tests', topic: concurrency-lld, minutes: 25, kind: practice}
+    - {title: 'LLD: bounded blocking queue / producer-consumer (Condition)', topic: concurrency-lld, minutes: 30, kind: practice}
+    architecture:
+    - {title: 'arc42 full doc for capstone (sections 1-12, trimmed) + C4 diagrams updated', topic: documenting-architecture, minutes: 45, kind: learn, resource: 'https://arc42.org'}
+    - {title: 'Write ADR 021 for capstone: Azure deployment topology (Container Apps + Foundry + managed identity)', topic: documenting-architecture, minutes: 30, kind: write, resource: 'https://adr.github.io'}
+    python:
+    - {title: 'Rep: clean up typing across the capstone (ty strict on core package)', topic: typing-advanced, minutes: 20, kind: practice}
+    - {title: 'Rep: raise coverage on domain layer to 90% with property tests', topic: testing-pytest, minutes: 20, kind: practice}
+    - {title: 'Rep: FastAPI production config: workers, timeouts, graceful shutdown', topic: fastapi-production, minutes: 20, kind: practice}
+    java-spring-ai:
+    - {title: Deploy the Spring AI MCP server to Azure Container Apps with managed identity, topic: spring-ai-tools-mcp, minutes: 30, kind: build}
+    - {title: Java README + architecture notes for the MCP server, topic: spring-ai-fundamentals, minutes: 30, kind: write}
+    staff-skills:
+    - {title: 'STAR bank part 1: 6 stories (conflict, influence, failure, ambiguity, technical leadership, mentoring) in docs/interviews/star-bank.md', topic: behavioral-interviews, minutes: 30, kind: write}
+    review:
+    - {title: 'Explain-it-back: your capstone architecture in 5 min to a ''VP'' audience; flashcards on LLD patterns', topic: ai-native-architecture, minutes: 60, kind: review}
+- week: 22
+  phase: 6
+  theme: Write-ups + STAR bank II
+  light: false
+  checkpoint: null
+  project: 'Capstone: README, demo video, blog post #1 (eval-driven agent development)'
+  tasks:
+    agentic-ai:
+    - {title: 'Write blog post #1: eval-driven development of the Ops Copilot (error analysis → judges → CI gates) with real numbers', topic: evals-error-analysis, minutes: 60, kind: write, resource: 'https://hamel.dev/blog/posts/evals-faq/'}
+    - {title: 'Multi-agent retrospective: where a second agent helped/hurt; document failure modes observed', topic: multi-agent-systems, minutes: 60, kind: write}
+    - {title: 'Capstone build: README (architecture, run locally, evals, costs), 5-min demo recording, tag v1.0', topic: llm-observability, minutes: 120, kind: build}
+    system-design:
+    - {title: 'Timed SD mock: chat system (redo) — focus on deep dives and trade-off articulation', topic: case-studies/chat-system, minutes: 45, kind: practice}
+    - {title: Replication + partitioning L3 drill (10 questions out loud), topic: partitioning-sharding, minutes: 45, kind: practice}
+    - {title: 'Written design (timed): multi-tenant LLM gateway redo in 45 min', topic: llm-gateway, minutes: 45, kind: write}
+    dsa:
+    - {title: 'LLD: parking lot with OOP + extensibility discussion', topic: concurrency-lld, minutes: 25, kind: practice}
+    - {title: 'LLD: in-memory pub/sub with concurrent subscribers', topic: concurrency-lld, minutes: 30, kind: practice}
+    - {title: 'Revision: Coin Change + Word Break (DP weak spot)', topic: dp-1d, minutes: 25, kind: practice, resource: 'https://neetcode.io'}
+    - {title: 'Revision: Course Schedule II + Redundant Connection', topic: graphs, minutes: 25, kind: practice, resource: 'https://neetcode.io'}
+    - {title: 'Revision: Minimum Window Substring + Trapping Rain Water', topic: sliding-window, minutes: 30, kind: practice, resource: 'https://neetcode.io'}
+    architecture:
+    - {title: 'Architecture review of the capstone using your ADR set: find stale decisions, write superseding notes', topic: architect-role-tradeoffs, minutes: 45, kind: learn}
+    - {title: 'Write ADR 022 for capstone: tenant isolation model for a multi-team rollout (pool with row-level security)', topic: ai-native-architecture, minutes: 30, kind: write, resource: 'https://adr.github.io'}
+    python:
+    - {title: 'Rep: implement LRU with OrderedDict and with dict+linked list; compare', topic: data-model, minutes: 20, kind: practice}
+    - {title: 'Rep: asyncio interview questions — explain event loop, cancellation, TaskGroup semantics', topic: asyncio-deep, minutes: 20, kind: practice}
+    - {title: 'Rep: Pydantic v2 interview questions — validation modes, performance, serialization', topic: pydantic-v2, minutes: 20, kind: practice}
+    java-spring-ai:
+    - {title: Spring AI RAG + MCP demo polish; record Java side of the demo, topic: spring-ai-rag, minutes: 30, kind: build}
+    - {title: 'Java concurrency interview drill: virtual threads, structured concurrency, CompletableFuture', topic: virtual-threads-structured-concurrency, minutes: 30, kind: practice}
+    staff-skills:
+    - {title: 'STAR bank part 2: 6 Staff-level stories (strategy, cross-org alignment, tech debt, incident, hiring bar, AI adoption) with metrics', topic: behavioral-interviews, minutes: 30, kind: write}
+    review:
+    - {title: 'Retro + flashcards: all P0 AI topics; explain-it-back guardrails and routing', topic: guardrails-security, minutes: 60, kind: review}
+- week: 23
+  phase: 6
+  theme: Full mock loops
+  light: false
+  checkpoint: null
+  project: 'Capstone: blog post #2 (guardrails/architecture), final ADR review, portfolio page'
+  tasks:
+    agentic-ai:
+    - {title: 'Write blog post #2: securing an agent — lethal trifecta analysis, guardrails, red-team results', topic: guardrails-security, minutes: 60, kind: write, resource: 'https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/'}
+    - {title: 'Vector DB drill: HNSW vs IVF, quantisation, filtered search, sharding a vector index — 5 L3 questions answered out loud', topic: vector-databases, minutes: 60, kind: practice, resource: 'https://github.com/pgvector/pgvector'}
+    - {title: 'Capstone build: final hardening — load test, cost report, fix top eval failures; publish portfolio page', topic: cost-latency-optimization, minutes: 120, kind: build}
+    system-design:
+    - {title: 'Timed SD mock: payment system (redo) with a peer or AI interviewer', topic: case-studies/payment-system, minutes: 45, kind: practice}
+    - {title: 'Consistency + consensus L3 drill (Raft, leases, linearisability) out loud', topic: consistency-models, minutes: 45, kind: practice}
+    - {title: 'Written design (timed): LLM evaluation platform redo in 45 min', topic: evaluation-platform, minutes: 45, kind: write}
+    dsa:
+    - {title: 'LLD: thread-safe connection pool / semaphore-based limiter', topic: concurrency-lld, minutes: 25, kind: practice}
+    - {title: 'LLD: design a job scheduler class API with retries and backoff', topic: concurrency-lld, minutes: 30, kind: practice}
+    - {title: 'Revision: Longest Increasing Subsequence + Edit Distance', topic: dp-2d, minutes: 25, kind: practice, resource: 'https://neetcode.io'}
+    - {title: 'Revision: Network Delay Time + Min Cost to Connect All Points', topic: advanced-graphs, minutes: 25, kind: practice, resource: 'https://neetcode.io'}
+    - {title: 'Timed set: 2 random mediums from weakest patterns in 30 min', topic: approach-complexity, minutes: 30, kind: practice, resource: 'https://neetcode.io'}
+    architecture:
+    - {title: 'Architecture interview prep: present 3 ADRs as trade-off stories (context, options, decision, consequences)', topic: adrs, minutes: 45, kind: practice}
+    - {title: 'Write ADR 023 for capstone: observability & eval architecture (Langfuse + OTel + CI gates) retrospective', topic: evolutionary-architecture, minutes: 30, kind: write, resource: 'https://adr.github.io'}
+    python:
+    - {title: 'Rep: descriptors/metaclasses interview explanations with examples', topic: decorators-descriptors-metaclasses, minutes: 20, kind: practice}
+    - {title: 'Rep: generators & context managers interview explanations', topic: generators-context-managers, minutes: 20, kind: practice}
+    - {title: 'Rep: concurrency models explanation incl. free-threading', topic: concurrency-models, minutes: 20, kind: practice}
+    java-spring-ai:
+    - {title: 'Spring AI interview drill: advisors, tool calling, MCP server annotations, structured output', topic: spring-ai-tools-mcp, minutes: 30, kind: practice}
+    - {title: 'Spring AI agents vs LangGraph: 3-min comparison answer', topic: spring-ai-agents, minutes: 30, kind: practice}
+    staff-skills:
+    - {title: 'Behavioral mock: 4 Staff questions with the STAR bank, recorded and self-scored', topic: behavioral-interviews, minutes: 30, kind: practice}
+    review:
+    - {title: 'Explain-it-back: 5 random P0 topics picked from topics.yml; flashcards on weak cards only', topic: framework-and-estimation, minutes: 60, kind: review}
+- week: 24
+  phase: 6
+  theme: Final loop — interview-6
+  light: false
+  checkpoint: interview-6
+  project: 'Capstone v1.0 shipped: repo, deployed demo, 2 blog posts, ADR set, arc42 doc'
+  tasks:
+    agentic-ai:
+    - {title: 'AI architect interview prep: articulate the capstone''s evolution (v0 → v1) with metrics', topic: production-checklist, minutes: 60, kind: practice}
+    - {title: 'Pydantic AI refresh: move one sub-agent to the latest Pydantic AI release, add output validators + Logfire/OTel instrumentation, compare traces', topic: pydantic-ai, minutes: 60, kind: practice, resource: 'https://ai.pydantic.dev/'}
+    - {title: 'Capstone build: final demo run on Azure, record walkthrough, archive eval reports', topic: managed-agent-platforms, minutes: 120, kind: build}
+    system-design:
+    - {title: 'Framework drill: 3 openings (requirements + estimates) in 10 min each', topic: framework-and-estimation, minutes: 45, kind: practice, resource: 'https://www.hellointerview.com/learn/system-design/in-a-hurry/introduction'}
+    - {title: 'AI SD drill: LLM gateway + serving platform deep-dive questions', topic: capacity-cost-planning, minutes: 45, kind: practice}
+    - {title: 'Timed 45-min AI SD mock (interview-6): design a multi-agent platform for enterprise operations', topic: agent-platform, minutes: 45, kind: practice}
+    dsa:
+    - {title: 'Revision: 3Sum + Container With Most Water', topic: two-pointers, minutes: 25, kind: practice, resource: 'https://neetcode.io'}
+    - {title: 'Revision: Serialize and Deserialize Binary Tree', topic: trees, minutes: 30, kind: practice, resource: 'https://neetcode.io'}
+    - {title: 'Revision: Word Search II', topic: tries, minutes: 25, kind: practice, resource: 'https://neetcode.io'}
+    - {title: 'Revision: Find Median from Data Stream', topic: heap, minutes: 25, kind: practice, resource: 'https://neetcode.io'}
+    - {title: 'Timed coding mock (interview-6): 2 unseen mediums in 30 min', topic: approach-complexity, minutes: 30, kind: practice, resource: 'https://neetcode.io'}
+    architecture:
+    - {title: 'Architecture style trade-offs drill: 5 ''monolith vs microservices vs event-driven'' scenario questions', topic: architecture-styles, minutes: 45, kind: practice}
+    - {title: 'Write ADR 024 for capstone: v2 roadmap decisions (what you''d change and why)', topic: architect-role-tradeoffs, minutes: 30, kind: write, resource: 'https://adr.github.io'}
+    python:
+    - {title: 'Rep: timed Python fluency — implement a typed async retry decorator from scratch', topic: typing-advanced, minutes: 20, kind: practice}
+    - {title: 'Rep: Python data model rapid-fire questions', topic: data-model, minutes: 20, kind: practice}
+    - {title: 'Rep: FastAPI/Pydantic production gotchas list', topic: fastapi-production, minutes: 20, kind: practice}
+    java-spring-ai:
+    - {title: 'Java side final: README, benchmarks, deployed MCP endpoint check', topic: spring-ai-tools-mcp, minutes: 30, kind: review}
+    - {title: 'Polyglot architecture 3-min answer: why Java MCP server + Python orchestrator', topic: polyglot-ai-architecture, minutes: 30, kind: practice}
+    staff-skills:
+    - {title: 'Behavioral: ''Why Staff? / Why AI architect?'' narrative + 30-60-90 day plan', topic: behavioral-interviews, minutes: 30, kind: write}
+    review:
+    - {title: 'interview-6: full mock — SD + coding + AI SD + behavioral, score with docs/interviews/rubric.md and log gaps into next week''s plan', topic: behavioral-interviews, minutes: 60, kind: review}
+- week: 25
+  phase: 7
+  theme: Buffer I — catch-up + specialization choice
+  light: true
+  checkpoint: null
+  project: Catch up on any unfinished capstone increments; choose a specialization (serving, evals platform, or multi-agent) and scope a 2-week spike
+  tasks:
+    agentic-ai:
+    - {title: 'Catch-up: add Pydantic AI output validators, ModelRetry and usage limits to every sub-agent; re-run evals', topic: pydantic-ai, minutes: 40, kind: build, resource: 'https://ai.pydantic.dev/'}
+    - {title: 'Specialization spike choice: write a 1-page proposal (serving vs evals platform vs protocols) with success criteria', topic: a2a-ag-ui, minutes: 40, kind: write, resource: 'https://a2a-protocol.org/'}
+    - {title: 'Specialization build block 1: benchmark pgvector vs Qdrant on the capstone corpus (filtered search, recall@10, p95, ops cost) and record results', topic: vector-databases, minutes: 75, kind: build, resource: 'https://qdrant.tech/documentation/'}
+    system-design:
+    - {title: Redo weakest SD topic from interview rubric scores, topic: reliability-patterns, minutes: 30, kind: practice}
+    - {title: Read one paper from the list (Dynamo/Spanner/Kafka) and summarise trade-offs, topic: databases-sql-nosql, minutes: 30, kind: learn, resource: 'https://martin.kleppmann.com/2026/03/24/designing-data-intensive-applications-2e.html'}
+    - {title: 'Written design: redo the lowest-scored mock design', topic: document-processing, minutes: 30, kind: write}
+    dsa:
+    - {title: 'Revision (weak pattern): Largest Rectangle in Histogram', topic: stack, minutes: 15, kind: practice, resource: 'https://neetcode.io'}
+    - {title: 'Revision: Median of Two Sorted Arrays', topic: binary-search, minutes: 20, kind: practice, resource: 'https://neetcode.io'}
+    - {title: 'Revision: Merge K Sorted Lists', topic: linked-list, minutes: 15, kind: practice, resource: 'https://neetcode.io'}
+    - {title: 'Revision: N-Queens', topic: backtracking, minutes: 15, kind: practice, resource: 'https://neetcode.io'}
+    - {title: 'Revision: Alien Dictionary (topological sort)', topic: advanced-graphs, minutes: 20, kind: practice, resource: 'https://neetcode.io'}
+    architecture:
+    - {title: Catch-up architecture reading (Hard Parts / Team Topologies chapter of choice), topic: coupling-modularity, minutes: 30, kind: learn}
+    - {title: 'Write ADR 025 for capstone: specialization spike architecture', topic: adrs, minutes: 20, kind: write, resource: 'https://adr.github.io'}
+    python:
+    - {title: 'Rep: packaging — publish the eval harness as an internal package', topic: packaging-project-structure, minutes: 15, kind: practice}
+    - {title: 'Rep: data tooling — eval analytics notebook with Polars', topic: data-tooling, minutes: 15, kind: practice}
+    - {title: 'Rep: observability — trace sampling config', topic: observability-python, minutes: 10, kind: practice}
+    java-spring-ai:
+    - {title: Catch-up Java task from progress.yml, topic: spring-ai-agents, minutes: 20, kind: build}
+    - {title: 'JVM performance: one improvement measured end to end', topic: jvm-performance, minutes: 20, kind: practice}
+    staff-skills:
+    - {title: 'Tech-debt follow-up: score the capstone''s debt after v1.0 and add the top-3 items to the v2 roadmap with cost of delay', topic: technical-debt, minutes: 20, kind: write}
+    review:
+    - {title: 'Retro of weeks 1-24: what stuck, what didn''t; update skip list and next-6-month goals', topic: decision-making, minutes: 40, kind: review}
+- week: 26
+  phase: 7
+  theme: Buffer II — catch-up + next plan
+  light: true
+  checkpoint: null
+  project: Finish specialization spike; publish final retro and next-6-month plan
+  tasks:
+    agentic-ai:
+    - {title: 'Specialization build block 2: finish spike + eval it', topic: inference-serving, minutes: 40, kind: build}
+    - {title: Write up the spike (ablation / failure analysis), topic: evals-error-analysis, minutes: 40, kind: write}
+    - {title: 'Catch-up: any remaining capstone gap; tag v1.1', topic: durable-execution-hitl, minutes: 75, kind: build}
+    system-design:
+    - {title: Redo second-weakest SD topic, topic: multi-region-dr, minutes: 30, kind: practice}
+    - {title: Read one more paper (Spanner/Zanzibar) and summarise, topic: security-authn-authz, minutes: 30, kind: learn}
+    - {title: 'Written design: timed redo of your weakest AI SD question', topic: llm-serving-platform, minutes: 30, kind: write}
+    dsa:
+    - {title: 'Revision: Edit Distance', topic: dp-2d, minutes: 15, kind: practice, resource: 'https://neetcode.io'}
+    - {title: 'Revision: Meeting Rooms II', topic: intervals, minutes: 20, kind: practice, resource: 'https://neetcode.io'}
+    - {title: 'Revision: Jump Game II', topic: greedy, minutes: 15, kind: practice, resource: 'https://neetcode.io'}
+    - {title: 'Revision: Top K Frequent Elements + Product of Array Except Self', topic: arrays-hashing, minutes: 15, kind: practice, resource: 'https://neetcode.io'}
+    - {title: 'Timed set: 2 unseen mediums', topic: approach-complexity, minutes: 20, kind: practice, resource: 'https://neetcode.io'}
+    architecture:
+    - {title: 'Catch-up: evolutionary architecture fitness function added to CI', topic: evolutionary-architecture, minutes: 30, kind: learn}
+    - {title: 'Write ADR 026 for capstone: close-out — what v2 looks like', topic: adrs, minutes: 20, kind: write, resource: 'https://adr.github.io'}
+    python:
+    - {title: 'Rep: CPython internals reading of choice', topic: cpython-internals, minutes: 15, kind: practice, resource: 'https://tenthousandmeters.com/'}
+    - {title: 'Rep: performance fix of choice', topic: performance-profiling, minutes: 15, kind: practice}
+    - {title: 'Rep: typing clean-up', topic: typing-advanced, minutes: 10, kind: practice}
+    java-spring-ai:
+    - {title: Catch-up Java task, topic: spring-ai-rag, minutes: 20, kind: build}
+    - {title: Java 25 features recap quiz, topic: modern-java, minutes: 20, kind: review}
+    staff-skills:
+    - {title: 'Incident leadership: write a blameless postmortem template and practise on a past incident', topic: incident-leadership, minutes: 20, kind: write}
+    review:
+    - {title: Final retro + publish next-6-month plan to docs/log/, topic: staff-archetypes, minutes: 40, kind: review}

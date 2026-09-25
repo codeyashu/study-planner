@@ -1,0 +1,29 @@
+name: Weekly link check
+
+on:
+  schedule:
+    - cron: "0 1 * * 0"   # Sunday 06:30 IST
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v5
+      - uses: astral-sh/setup-uv@v6
+      - run: uv sync --frozen
+      - name: Check links
+        id: check
+        continue-on-error: true
+        run: uv run python scripts/check_links.py --docs
+      - name: Open issue if broken
+        if: steps.check.outcome == 'failure'
+        run: |
+          gh label create maintenance --color fbca04 2>/dev/null || true
+          gh issue create --title "Broken links — week of $(date -u +%F)" --body-file build/link-report.md --label maintenance

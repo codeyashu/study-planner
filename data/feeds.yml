@@ -1,0 +1,39 @@
+# RSS/Atom sources for docs/reading/feed.md (built daily by scripts/build_feeds.py).
+# Verified 2026-09-25. tags: ai | sd | arch | python | java | career | news
+# max: items per feed per build (keeps firehoses like HN in check)
+feeds:
+  # --- AI engineering ---
+  - {name: Simon Willison, url: "https://simonwillison.net/atom/everything/", tags: [ai], max: 6}
+  - {name: Latent Space, url: "https://www.latent.space/feed", tags: [ai], max: 3}
+  - {name: AINews (smol.ai), url: "https://news.smol.ai/rss.xml", tags: [ai, news], max: 2}
+  - {name: Import AI, url: "https://importai.substack.com/feed", tags: [ai], max: 2}
+  - {name: Interconnects, url: "https://www.interconnects.ai/feed", tags: [ai], max: 2}
+  - {name: Ahead of AI (Raschka), url: "https://magazine.sebastianraschka.com/feed", tags: [ai], max: 2}
+  - {name: Eugene Yan, url: "https://eugeneyan.com/rss/", tags: [ai], max: 2}
+  - {name: Hamel Husain, url: "https://hamel.dev/index.xml", tags: [ai], max: 2}
+  - {name: Lil'Log (Lilian Weng), url: "https://lilianweng.github.io/index.xml", tags: [ai], max: 1}
+  - {name: Chip Huyen, url: "https://huyenchip.com/feed.xml", tags: [ai], max: 1}
+  - {name: Decoding AI, url: "https://www.decodingai.com/feed", tags: [ai], max: 2}
+  - {name: Hugging Face Blog, url: "https://huggingface.co/blog/feed.xml", tags: [ai], max: 3}
+  - {name: OpenAI News, url: "https://openai.com/news/rss.xml", tags: [ai, news], max: 3}
+  - {name: Anthropic Engineering (unofficial), url: "https://raw.githubusercontent.com/conoro/anthropic-engineering-rss-feed/main/anthropic_engineering_rss.xml", tags: [ai], max: 2}
+  - {name: TLDR AI, url: "https://tldr.tech/api/rss/ai", tags: [ai, news], max: 2}
+  - {name: Ben's Bites, url: "https://www.bensbites.com/feed", tags: [ai, news], max: 2}
+  # --- System design / architecture / distributed systems ---
+  - {name: ByteByteGo, url: "https://blog.bytebytego.com/feed", tags: [sd], max: 2}
+  - {name: System Design Newsletter (Neo Kim), url: "https://newsletter.systemdesign.one/feed", tags: [sd], max: 2}
+  - {name: Marc Brooker, url: "https://brooker.co.za/blog/rss.xml", tags: [sd], max: 2}
+  - {name: InfoQ, url: "https://feed.infoq.com/", tags: [arch, java, news], max: 4}
+  - {name: Architecture Notes, url: "https://architecturenotes.co/feed", tags: [arch], max: 1}
+  # --- Career / engineering leadership ---
+  - {name: The Pragmatic Engineer, url: "https://newsletter.pragmaticengineer.com/feed", tags: [career], max: 2}
+  - {name: Refactoring (Luca Rossi), url: "https://refactoring.fm/feed", tags: [career], max: 2}
+  - {name: High Growth Engineer, url: "https://read.highgrowthengineer.com/feed", tags: [career], max: 1}
+  # --- Python / Java ---
+  - {name: Real Python, url: "https://realpython.com/atom.xml", tags: [python], max: 2}
+  - {name: Baeldung Java Weekly, url: "https://www.baeldung.com/category/weekly-review/feed", tags: [java], max: 1}
+  # --- Firehose (filtered) ---
+  - {name: Hacker News (best), url: "https://hnrss.org/best", tags: [news], max: 8}
+
+# Newsletters without a working RSS feed — subscribe by email (listed on docs/reading/newsletters.md):
+#   The Batch (deeplearning.ai/the-batch), Python Weekly (pythonweekly.com), PyCoder's Weekly (pycoders.com)

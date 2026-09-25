@@ -1,0 +1,1894 @@
+# Curated resources for the architecture track. Schema: id, title, url, type, topics[slugs], priority P0-P2, complexity 1-5, level, cost free|paid|freemium, gem, why, last_checked.
+# URLs verified reachable (HTTP 200 or publisher-blocked bot access) on 2026-09-25.
+- id: arch-fsa2
+  title: Fundamentals of Software Architecture, 2nd ed. (Richards & Ford)
+  url: https://fundamentalsofsoftwarearchitecture.com/
+  type: book
+  topics:
+  - architect-role-tradeoffs
+  - architecture-styles
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: paid
+  gem: false
+  why: 'Canonical vocabulary: characteristics, quanta, and star-rated architecture styles; 2e adds GenAI material.'
+  last_checked: '2026-09-25'
+- id: arch-d2a
+  title: Developer to Architect lessons (Mark Richards)
+  url: https://www.developertoarchitect.com/lessons/
+  type: video
+  topics:
+  - architect-role-tradeoffs
+  - architecture-styles
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: true
+  why: Ten-minute lessons on trade-offs, soft skills and styles with very high signal per minute.
+  last_checked: '2026-09-25'
+- id: arch-elevator
+  title: The Architect Elevator (Gregor Hohpe)
+  url: https://architectelevator.com/
+  type: article
+  topics:
+  - architect-role-tradeoffs
+  priority: P0
+  complexity: 3
+  level: advanced
+  cost: paid
+  gem: false
+  why: Best articulation of the Staff+ architect as translator between strategy and engine room.
+  last_checked: '2026-09-25'
+- id: arch-fowler-arch
+  title: Software Architecture Guide (Martin Fowler)
+  url: https://martinfowler.com/architecture/
+  type: article
+  topics:
+  - architect-role-tradeoffs
+  - architecture-styles
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: Short opinionated essays on what architecture is and how to think about it.
+  last_checked: '2026-09-25'
+- id: arch-harmel
+  title: Scaling the Practice of Architecture, Conversationally (Harmel-Law)
+  url: https://martinfowler.com/articles/scaling-architecture-conversationally.html
+  type: article
+  topics:
+  - architect-role-tradeoffs
+  - adrs
+  priority: P1
+  complexity: 3
+  level: advanced
+  cost: free
+  gem: true
+  why: The advice process for decentralised architecture decisions; pairs with ADRs.
+  last_checked: '2026-09-25'
+- id: arch-zimmermann-dm
+  title: Architectural decision making (Olaf Zimmermann)
+  url: https://www.ozimmer.ch/practices/2020/04/27/ArchitectureDecisionMaking.html
+  type: article
+  topics:
+  - adrs
+  - architect-role-tradeoffs
+  priority: P1
+  complexity: 3
+  level: advanced
+  cost: free
+  gem: true
+  why: Y-statements and practical guidance on when and how to record decisions.
+  last_checked: '2026-09-25'
+- id: arch-katas
+  title: Architectural Katas (Neal Ford)
+  url: https://nealford.com/katas/
+  type: interactive
+  topics:
+  - architect-role-tradeoffs
+  - architecture-styles
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: Realistic requirement sets for practising trade-off reasoning.
+  last_checked: '2026-09-25'
+- id: arch-mono-first
+  title: MonolithFirst (Martin Fowler)
+  url: https://martinfowler.com/bliki/MonolithFirst.html
+  type: article
+  topics:
+  - architecture-styles
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: Concise argument for starting monolithic, with counter-arguments.
+  last_checked: '2026-09-25'
+- id: arch-microservices-fowler
+  title: Microservices (Lewis & Fowler)
+  url: https://martinfowler.com/articles/microservices.html
+  type: article
+  topics:
+  - architecture-styles
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: The defining article; read for the characteristics rather than the hype.
+  last_checked: '2026-09-25'
+- id: arch-premium
+  title: MicroservicePremium (Martin Fowler)
+  url: https://martinfowler.com/bliki/MicroservicePremium.html
+  type: article
+  topics:
+  - architecture-styles
+  - coupling-modularity
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: The operational cost of distribution in one page.
+  last_checked: '2026-09-25'
+- id: arch-msio
+  title: microservices.io pattern language (Chris Richardson)
+  url: https://microservices.io/patterns/microservices.html
+  type: docs
+  topics:
+  - architecture-styles
+  - sagas-outbox
+  - cqrs-event-sourcing
+  priority: P0
+  complexity: 3
+  level: advanced
+  cost: free
+  gem: true
+  why: Forces and consequences for every decomposition and data pattern.
+  last_checked: '2026-09-25'
+- id: arch-msio-dark
+  title: Dark energy and dark matter forces (Richardson)
+  url: https://microservices.io/articles/dark-energy-dark-matter/dark-matter/minimize-design-time-coupling.html
+  type: article
+  topics:
+  - coupling-modularity
+  - architecture-styles
+  priority: P1
+  complexity: 3
+  level: advanced
+  cost: free
+  gem: true
+  why: Forces that pull services apart or hold them together; a complement to balanced coupling.
+  last_checked: '2026-09-25'
+- id: arch-mspatterns2
+  title: Microservices Patterns, 2nd ed. (Richardson)
+  url: https://www.manning.com/books/microservices-patterns-second-edition
+  type: book
+  topics:
+  - sagas-outbox
+  - architecture-styles
+  - cqrs-event-sourcing
+  priority: P1
+  complexity: 4
+  level: advanced
+  cost: paid
+  gem: false
+  why: Deepest treatment of sagas, CQRS and decomposition with Java examples.
+  last_checked: '2026-09-25'
+- id: arch-fowler-eda
+  title: What do you mean by Event-Driven? (Fowler)
+  url: https://martinfowler.com/articles/201701-event-driven.html
+  type: article
+  topics:
+  - architecture-styles
+  - cqrs-event-sourcing
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: true
+  why: Separates the four meanings of event-driven in ten minutes.
+  last_checked: '2026-09-25'
+- id: arch-azure-styles
+  title: 'Azure Architecture Center: architecture styles'
+  url: https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/
+  type: docs
+  topics:
+  - architecture-styles
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: When-to-use and when-not-to-use comparison of styles.
+  last_checked: '2026-09-25'
+- id: arch-segment
+  title: Goodbye Microservices (Segment/Twilio)
+  url: https://www.twilio.com/en-us/blog/developers/best-practices/goodbye-microservices
+  type: article
+  topics:
+  - architecture-styles
+  - legacy-modernization
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: Real re-consolidation story with numbers and reasoning.
+  last_checked: '2026-09-25'
+- id: arch-shopify
+  title: Deconstructing the monolith (Shopify)
+  url: https://shopify.engineering/deconstructing-monolith-designing-software-maximizes-developer-productivity
+  type: article
+  topics:
+  - architecture-styles
+  - coupling-modularity
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: true
+  why: How a very large Rails monolith was modularised instead of split.
+  last_checked: '2026-09-25'
+- id: arch-modulith
+  title: Spring Modulith reference
+  url: https://docs.spring.io/spring-modulith/reference/
+  type: docs
+  topics:
+  - architecture-styles
+  - evolutionary-architecture
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: Module verification and event publication registry for modular monoliths in Java.
+  last_checked: '2026-09-25'
+- id: arch-learning-ddd
+  title: Learning Domain-Driven Design (Vlad Khononov)
+  url: https://vladikk.com/
+  type: book
+  topics:
+  - ddd-strategic
+  - ddd-tactical
+  priority: P0
+  complexity: 3
+  level: intermediate
+  cost: paid
+  gem: false
+  why: Clearest modern DDD book; positions tactical patterns by subdomain type.
+  last_checked: '2026-09-25'
+- id: arch-ddd-crew-cm
+  title: 'DDD Crew: Context Mapping'
+  url: https://github.com/ddd-crew/context-mapping
+  type: docs
+  topics:
+  - ddd-strategic
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: true
+  why: Visual cheat sheet of relationship patterns with team-relationship guidance.
+  last_checked: '2026-09-25'
+- id: arch-ddd-crew-smp
+  title: 'DDD Crew: Starter Modelling Process'
+  url: https://github.com/ddd-crew/ddd-starter-modelling-process
+  type: docs
+  topics:
+  - ddd-strategic
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: true
+  why: Step-by-step path from discovery to code with canvases.
+  last_checked: '2026-09-25'
+- id: arch-ddd-crew-bcc
+  title: 'DDD Crew: Bounded Context Canvas'
+  url: https://github.com/ddd-crew/bounded-context-canvas
+  type: docs
+  topics:
+  - ddd-strategic
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: One-page template to design and review a context.
+  last_checked: '2026-09-25'
+- id: arch-ddd-crew-cdc
+  title: 'DDD Crew: Core Domain Charts'
+  url: https://github.com/ddd-crew/core-domain-charts
+  type: docs
+  topics:
+  - ddd-strategic
+  priority: P1
+  complexity: 3
+  level: advanced
+  cost: free
+  gem: true
+  why: Track subdomain strategy over time; useful as LLMs commoditise capabilities.
+  last_checked: '2026-09-25'
+- id: arch-ddd-crew-agg
+  title: 'DDD Crew: Aggregate Design Canvas'
+  url: https://github.com/ddd-crew/aggregate-design-canvas
+  type: docs
+  topics:
+  - ddd-tactical
+  priority: P1
+  complexity: 3
+  level: advanced
+  cost: free
+  gem: true
+  why: Forces you to state invariants, throughput and size before drawing an aggregate.
+  last_checked: '2026-09-25'
+- id: arch-evans-ref
+  title: DDD Reference (Eric Evans, PDF)
+  url: https://www.domainlanguage.com/wp-content/uploads/2016/05/DDD_Reference_2015-03.pdf
+  type: docs
+  topics:
+  - ddd-strategic
+  - ddd-tactical
+  priority: P1
+  complexity: 3
+  level: advanced
+  cost: free
+  gem: false
+  why: Evans's own concise definitions of every pattern.
+  last_checked: '2026-09-25'
+- id: arch-bc-fowler
+  title: Bounded Context (Fowler bliki)
+  url: https://martinfowler.com/bliki/BoundedContext.html
+  type: article
+  topics:
+  - ddd-strategic
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: Five-minute intuition for why one model cannot serve everyone.
+  last_checked: '2026-09-25'
+- id: arch-context-mapper
+  title: Context Mapper
+  url: https://contextmapper.org/
+  type: interactive
+  topics:
+  - ddd-strategic
+  priority: P2
+  complexity: 3
+  level: advanced
+  cost: free
+  gem: true
+  why: DSL and tooling to model context maps as code.
+  last_checked: '2026-09-25'
+- id: arch-eventstorming
+  title: EventStorming (Alberto Brandolini)
+  url: https://www.eventstorming.com/
+  type: docs
+  topics:
+  - ddd-strategic
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: Official site for the discovery workshop technique.
+  last_checked: '2026-09-25'
+- id: arch-arch-mod
+  title: Architecture Modernization (Nick Tune & Jean-Georges Perrin)
+  url: https://www.manning.com/books/architecture-modernization
+  type: book
+  topics:
+  - ddd-strategic
+  - legacy-modernization
+  - team-topologies
+  priority: P0
+  complexity: 4
+  level: advanced
+  cost: paid
+  gem: true
+  why: Strategic DDD and sociotechnical design applied to modernization.
+  last_checked: '2026-09-25'
+- id: arch-vernon-agg
+  title: Effective Aggregate Design (Vaughn Vernon)
+  url: https://www.dddcommunity.org/library/vernon_2011/
+  type: article
+  topics:
+  - ddd-tactical
+  priority: P0
+  complexity: 3
+  level: advanced
+  cost: free
+  gem: true
+  why: The definitive essay on aggregate boundaries.
+  last_checked: '2026-09-25'
+- id: arch-agg-fowler
+  title: DDD_Aggregate (Fowler bliki)
+  url: https://martinfowler.com/bliki/DDD_Aggregate.html
+  type: article
+  topics:
+  - ddd-tactical
+  priority: P2
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: Short definition and common confusions.
+  last_checked: '2026-09-25'
+- id: arch-vo-fowler
+  title: Value Object (Fowler bliki)
+  url: https://martinfowler.com/bliki/ValueObject.html
+  type: article
+  topics:
+  - ddd-tactical
+  priority: P2
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: Why equality by value matters, with pitfalls.
+  last_checked: '2026-09-25'
+- id: arch-iddd
+  title: Implementing Domain-Driven Design (Vernon)
+  url: https://www.informit.com/store/implementing-domain-driven-design-9780321834577
+  type: book
+  topics:
+  - ddd-tactical
+  priority: P2
+  complexity: 4
+  level: advanced
+  cost: paid
+  gem: false
+  why: Deep Java-centric treatment of tactical patterns.
+  last_checked: '2026-09-25'
+- id: arch-jmolecules
+  title: jMolecules
+  url: https://www.jmolecules.org/
+  type: docs
+  topics:
+  - ddd-tactical
+  - hexagonal-clean
+  - evolutionary-architecture
+  priority: P2
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: Express DDD/hexagonal concepts as annotations and verify them.
+  last_checked: '2026-09-25'
+- id: arch-cosmic
+  title: Cosmic Python (Percival & Gregory)
+  url: https://www.cosmicpython.com/
+  type: book
+  topics:
+  - hexagonal-clean
+  - ddd-tactical
+  - cqrs-event-sourcing
+  - sagas-outbox
+  - solid-refactoring
+  priority: P0
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: true
+  why: Repository, UoW, aggregates, events and CQRS in idiomatic Python; free online.
+  last_checked: '2026-09-25'
+- id: arch-cosmic-agg
+  title: 'Cosmic Python: Aggregates chapter'
+  url: https://www.cosmicpython.com/book/chapter_07_aggregate.html
+  type: book
+  topics:
+  - ddd-tactical
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: true
+  why: Aggregates with optimistic concurrency in Python.
+  last_checked: '2026-09-25'
+- id: arch-cosmic-bus
+  title: 'Cosmic Python: Events and the Message Bus'
+  url: https://www.cosmicpython.com/book/chapter_08_events_and_message_bus.html
+  type: book
+  topics:
+  - ddd-tactical
+  - sagas-outbox
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: Domain events raised by aggregates and dispatched after commit.
+  last_checked: '2026-09-25'
+- id: arch-cosmic-cqrs
+  title: 'Cosmic Python: CQRS chapter'
+  url: https://www.cosmicpython.com/book/chapter_12_cqrs.html
+  type: book
+  topics:
+  - cqrs-event-sourcing
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: Pragmatic CQRS without event sourcing.
+  last_checked: '2026-09-25'
+- id: arch-cockburn
+  title: Hexagonal Architecture (Alistair Cockburn)
+  url: https://alistair.cockburn.us/hexagonal-architecture/
+  type: article
+  topics:
+  - hexagonal-clean
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: The original ports-and-adapters article.
+  last_checked: '2026-09-25'
+- id: arch-garrido
+  title: Hexagonal Architecture explained (Juan Manuel Garrido de Paz)
+  url: https://jmgarridopaz.github.io/content/hexagonalarchitecture.html
+  type: article
+  topics:
+  - hexagonal-clean
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: true
+  why: Rigorous illustrated walkthrough of driving vs driven ports.
+  last_checked: '2026-09-25'
+- id: arch-graca
+  title: Explicit Architecture (Herberto Graca)
+  url: https://herbertograca.com/2017/11/16/explicit-architecture-01-ddd-hexagonal-onion-clean-cqrs-how-i-put-it-all-together/
+  type: article
+  topics:
+  - hexagonal-clean
+  - cqrs-event-sourcing
+  priority: P1
+  complexity: 3
+  level: advanced
+  cost: free
+  gem: true
+  why: Integrates hexagonal, onion, clean, DDD and CQRS in one picture.
+  last_checked: '2026-09-25'
+- id: arch-clean
+  title: The Clean Architecture (Robert C. Martin)
+  url: https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html
+  type: article
+  topics:
+  - hexagonal-clean
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: The dependency rule, concisely.
+  last_checked: '2026-09-25'
+- id: arch-ddd-hex
+  title: Domain-Driven Hexagon (Sairyss)
+  url: https://github.com/sairyss/domain-driven-hexagon
+  type: docs
+  topics:
+  - hexagonal-clean
+  priority: P2
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: Annotated reference repository with rationale for each folder.
+  last_checked: '2026-09-25'
+- id: arch-importlinter
+  title: import-linter
+  url: https://import-linter.readthedocs.io/
+  type: docs
+  topics:
+  - hexagonal-clean
+  - evolutionary-architecture
+  - coupling-modularity
+  - solid-refactoring
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: true
+  why: Enforce layering and boundaries in Python CI.
+  last_checked: '2026-09-25'
+- id: arch-archunit
+  title: ArchUnit
+  url: https://www.archunit.org/
+  type: docs
+  topics:
+  - hexagonal-clean
+  - evolutionary-architecture
+  - solid-refactoring
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: 'Architecture tests for Java: layers, cycles, naming.'
+  last_checked: '2026-09-25'
+- id: arch-cqrs-fowler
+  title: CQRS (Fowler bliki)
+  url: https://martinfowler.com/bliki/CQRS.html
+  type: article
+  topics:
+  - cqrs-event-sourcing
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: Balanced intro including the warning that most systems should not use it.
+  last_checked: '2026-09-25'
+- id: arch-es-fowler
+  title: Event Sourcing (Fowler)
+  url: https://martinfowler.com/eaaDev/EventSourcing.html
+  type: article
+  topics:
+  - cqrs-event-sourcing
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: Classic explanation of replay, temporal queries and external effects.
+  last_checked: '2026-09-25'
+- id: arch-event-driven-io
+  title: event-driven.io (Oskar Dudycz)
+  url: https://event-driven.io/en/
+  type: article
+  topics:
+  - cqrs-event-sourcing
+  - sagas-outbox
+  priority: P1
+  complexity: 3
+  level: advanced
+  cost: free
+  gem: true
+  why: Most practical current writing on event sourcing, projections and versioning.
+  last_checked: '2026-09-25'
+- id: arch-cqrs-myths
+  title: CQRS facts and myths explained (Dudycz)
+  url: https://event-driven.io/en/cqrs_facts_and_myths_explained/
+  type: article
+  topics:
+  - cqrs-event-sourcing
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: true
+  why: 'Clears up misconceptions: CQRS does not require ES or two databases.'
+  last_checked: '2026-09-25'
+- id: arch-msio-es
+  title: 'microservices.io: Event sourcing'
+  url: https://microservices.io/patterns/data/event-sourcing.html
+  type: docs
+  topics:
+  - cqrs-event-sourcing
+  priority: P2
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: Forces and consequences in a microservices context.
+  last_checked: '2026-09-25'
+- id: arch-azure-es
+  title: 'Azure Architecture Center: Event Sourcing pattern'
+  url: https://learn.microsoft.com/en-us/azure/architecture/patterns/event-sourcing
+  type: docs
+  topics:
+  - cqrs-event-sourcing
+  priority: P2
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: Issues-and-considerations list with when-not-to-use.
+  last_checked: '2026-09-25'
+- id: arch-kurrent
+  title: 'Kurrent (EventStoreDB): Event sourcing'
+  url: https://www.kurrent.io/event-sourcing
+  type: docs
+  topics:
+  - cqrs-event-sourcing
+  priority: P2
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: Vendor intro to ES concepts from the EventStoreDB team.
+  last_checked: '2026-09-25'
+- id: arch-kleppmann-inside-out
+  title: Turning the database inside out (Martin Kleppmann)
+  url: https://martin.kleppmann.com/2015/03/04/turning-the-database-inside-out.html
+  type: article
+  topics:
+  - cqrs-event-sourcing
+  - data-architecture
+  priority: P1
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: The log-centric worldview behind ES, CDC and stream processing.
+  last_checked: '2026-09-25'
+- id: arch-ddia
+  title: Designing Data-Intensive Applications (Kleppmann & Riccomini)
+  url: https://dataintensive.net/
+  type: book
+  topics:
+  - cqrs-event-sourcing
+  - data-architecture
+  priority: P0
+  complexity: 4
+  level: advanced
+  cost: paid
+  gem: false
+  why: Foundations for logs, derived data and stream processing.
+  last_checked: '2026-09-25'
+- id: arch-msio-saga
+  title: 'microservices.io: Saga'
+  url: https://microservices.io/patterns/data/saga.html
+  type: docs
+  topics:
+  - sagas-outbox
+  priority: P0
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: true
+  why: Definitive saga pattern page with choreography and orchestration.
+  last_checked: '2026-09-25'
+- id: arch-msio-outbox
+  title: 'microservices.io: Transactional outbox'
+  url: https://microservices.io/patterns/data/transactional-outbox.html
+  type: docs
+  topics:
+  - sagas-outbox
+  priority: P0
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: Forces, relay options and consequences.
+  last_checked: '2026-09-25'
+- id: arch-outbox-inbox
+  title: Outbox, inbox patterns and delivery guarantees (Dudycz)
+  url: https://event-driven.io/en/outbox_inbox_patterns_and_delivery_guarantees_explained/
+  type: article
+  topics:
+  - sagas-outbox
+  priority: P0
+  complexity: 3
+  level: advanced
+  cost: free
+  gem: true
+  why: At-least-once plus idempotency explained clearly.
+  last_checked: '2026-09-25'
+- id: arch-debezium-outbox
+  title: Reliable microservices data exchange with the outbox pattern (Debezium)
+  url: https://debezium.io/blog/2019/02/19/reliable-microservices-data-exchange-with-the-outbox-pattern/
+  type: article
+  topics:
+  - sagas-outbox
+  priority: P1
+  complexity: 3
+  level: advanced
+  cost: free
+  gem: false
+  why: CDC-based outbox with a runnable example.
+  last_checked: '2026-09-25'
+- id: arch-debezium-router
+  title: Debezium Outbox Event Router
+  url: https://debezium.io/documentation/reference/stable/transformations/outbox-event-router.html
+  type: docs
+  topics:
+  - sagas-outbox
+  - data-architecture
+  priority: P2
+  complexity: 3
+  level: advanced
+  cost: free
+  gem: false
+  why: Reference for routing outbox rows to topics.
+  last_checked: '2026-09-25'
+- id: arch-starbucks
+  title: Starbucks Does Not Use Two-Phase Commit (Hohpe)
+  url: https://www.enterpriseintegrationpatterns.com/ramblings/18_starbucks.html
+  type: article
+  topics:
+  - sagas-outbox
+  - integration-patterns
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: true
+  why: Best intuition for why async plus compensation beats 2PC.
+  last_checked: '2026-09-25'
+- id: arch-temporal-saga
+  title: Saga pattern made easy (Temporal)
+  url: https://temporal.io/blog/saga-pattern-made-easy
+  type: article
+  topics:
+  - sagas-outbox
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: Sagas expressed as durable workflow code.
+  last_checked: '2026-09-25'
+- id: arch-azure-saga
+  title: 'Azure Architecture Center: Saga'
+  url: https://learn.microsoft.com/en-us/azure/architecture/patterns/saga
+  type: docs
+  topics:
+  - sagas-outbox
+  priority: P2
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: Comparison, issues and considerations.
+  last_checked: '2026-09-25'
+- id: arch-eip-site
+  title: Enterprise Integration Patterns (Hohpe & Woolf)
+  url: https://www.enterpriseintegrationpatterns.com/
+  type: docs
+  topics:
+  - integration-patterns
+  priority: P0
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: Every pattern with diagrams; free companion to the book.
+  last_checked: '2026-09-25'
+- id: arch-eip-ramblings
+  title: Gregor's Ramblings
+  url: https://www.enterpriseintegrationpatterns.com/ramblings.html
+  type: article
+  topics:
+  - integration-patterns
+  - architect-role-tradeoffs
+  priority: P2
+  complexity: 3
+  level: advanced
+  cost: free
+  gem: true
+  why: Two decades of short essays on integration and architecture.
+  last_checked: '2026-09-25'
+- id: arch-camel-eip
+  title: Apache Camel EIP reference
+  url: https://camel.apache.org/components/latest/eips/enterprise-integration-patterns.html
+  type: docs
+  topics:
+  - integration-patterns
+  priority: P2
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: Executable EIPs mapped to code.
+  last_checked: '2026-09-25'
+- id: arch-confluent-patterns
+  title: Confluent Event Streaming Patterns
+  url: https://developer.confluent.io/patterns/
+  type: docs
+  topics:
+  - integration-patterns
+  - cqrs-event-sourcing
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: true
+  why: 'EIP updated for event streaming: envelopes, claim check, dead letter streams.'
+  last_checked: '2026-09-25'
+- id: arch-cant-buy
+  title: You Can't Buy Integration (Fowler site)
+  url: https://martinfowler.com/articles/cant-buy-integration.html
+  type: article
+  topics:
+  - integration-patterns
+  priority: P2
+  complexity: 3
+  level: advanced
+  cost: free
+  gem: false
+  why: Why integration is architecture, not a product purchase.
+  last_checked: '2026-09-25'
+- id: arch-map
+  title: Microservice API Patterns
+  url: https://www.microservice-api-patterns.org/
+  type: docs
+  topics:
+  - integration-patterns
+  - api-contracts-versioning
+  priority: P2
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: Pattern language for API message design.
+  last_checked: '2026-09-25'
+- id: arch-asyncapi
+  title: AsyncAPI
+  url: https://www.asyncapi.com/
+  type: docs
+  topics:
+  - integration-patterns
+  - api-contracts-versioning
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: Contract specification for event-driven APIs.
+  last_checked: '2026-09-25'
+- id: arch-balancing
+  title: Balancing Coupling in Software Design (Vlad Khononov)
+  url: https://www.informit.com/store/balancing-coupling-in-software-design-universal-design-9780137353484
+  type: book
+  topics:
+  - coupling-modularity
+  priority: P0
+  complexity: 4
+  level: advanced
+  cost: paid
+  gem: true
+  why: The strength/distance/volatility model; best modern coupling book.
+  last_checked: '2026-09-25'
+- id: arch-coupling-dev
+  title: coupling.dev
+  url: https://coupling.dev/
+  type: article
+  topics:
+  - coupling-modularity
+  priority: P0
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: true
+  why: Free introduction to the balanced coupling model.
+  last_checked: '2026-09-25'
+- id: arch-tidyfirst
+  title: Tidy First? (Kent Beck)
+  url: https://tidyfirst.substack.com/
+  type: article
+  topics:
+  - coupling-modularity
+  - solid-refactoring
+  priority: P2
+  complexity: 2
+  level: intermediate
+  cost: freemium
+  gem: false
+  why: Economics of structural change and coupling as cost of change.
+  last_checked: '2026-09-25'
+- id: arch-refguru
+  title: 'Refactoring.Guru: Design Patterns'
+  url: https://refactoring.guru/design-patterns
+  type: docs
+  topics:
+  - design-patterns
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: freemium
+  gem: false
+  why: Best-illustrated pattern catalogue with Python and Java examples.
+  last_checked: '2026-09-25'
+- id: arch-pypatterns
+  title: The Python Patterns Guide (Brandon Rhodes)
+  url: https://python-patterns.guide/
+  type: docs
+  topics:
+  - design-patterns
+  priority: P1
+  complexity: 3
+  level: advanced
+  cost: free
+  gem: true
+  why: Which GoF patterns survive in Python and how they change.
+  last_checked: '2026-09-25'
+- id: arch-gpp
+  title: Game Programming Patterns (Robert Nystrom)
+  url: https://gameprogrammingpatterns.com/
+  type: book
+  topics:
+  - design-patterns
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: true
+  why: Clearest patterns writing anywhere; free online.
+  last_checked: '2026-09-25'
+- id: arch-eaa
+  title: Patterns of Enterprise Application Architecture catalog (Fowler)
+  url: https://martinfowler.com/eaaCatalog/
+  type: docs
+  topics:
+  - design-patterns
+  - hexagonal-clean
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: Repository, Unit of Work, Data Mapper and friends.
+  last_checked: '2026-09-25'
+- id: arch-azure-patterns
+  title: 'Azure Architecture Center: cloud design patterns'
+  url: https://learn.microsoft.com/en-us/azure/architecture/patterns/
+  type: docs
+  topics:
+  - design-patterns
+  - architecture-styles
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: Resilience, messaging and data patterns with when-not-to-use.
+  last_checked: '2026-09-25'
+- id: arch-refactoring-catalog
+  title: Refactoring catalog (Fowler)
+  url: https://refactoring.com/catalog/
+  type: docs
+  topics:
+  - solid-refactoring
+  - design-patterns
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: Mechanics of each refactoring.
+  last_checked: '2026-09-25'
+- id: arch-smells
+  title: 'Refactoring.Guru: Code smells'
+  url: https://refactoring.guru/refactoring/smells
+  type: docs
+  topics:
+  - solid-refactoring
+  priority: P2
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: Smells linked to the refactorings that fix them.
+  last_checked: '2026-09-25'
+- id: arch-wewlc
+  title: Working Effectively with Legacy Code (Feathers)
+  url: https://www.informit.com/store/working-effectively-with-legacy-code-9780131177055
+  type: book
+  topics:
+  - solid-refactoring
+  - legacy-modernization
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: paid
+  gem: false
+  why: Seams and characterisation tests.
+  last_checked: '2026-09-25'
+- id: arch-understand-legacy
+  title: Understand Legacy Code
+  url: https://understandlegacycode.com/
+  type: article
+  topics:
+  - solid-refactoring
+  - legacy-modernization
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: true
+  why: 'Modern practical techniques: approval tests, mikado method.'
+  last_checked: '2026-09-25'
+- id: arch-aposd
+  title: A Philosophy of Software Design (John Ousterhout)
+  url: https://web.stanford.edu/~ouster/cgi-bin/book.php
+  type: book
+  topics:
+  - solid-refactoring
+  - design-patterns
+  priority: P1
+  complexity: 3
+  level: advanced
+  cost: paid
+  gem: true
+  why: Deep modules and complexity budgets; counterweight to over-abstraction.
+  last_checked: '2026-09-25'
+- id: arch-nygard
+  title: Documenting Architecture Decisions (Michael Nygard)
+  url: https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions
+  type: article
+  topics:
+  - adrs
+  priority: P0
+  complexity: 1
+  level: beginner
+  cost: free
+  gem: false
+  why: The original ADR post.
+  last_checked: '2026-09-25'
+- id: arch-adr-gh
+  title: adr.github.io
+  url: https://adr.github.io/
+  type: docs
+  topics:
+  - adrs
+  priority: P0
+  complexity: 1
+  level: beginner
+  cost: free
+  gem: false
+  why: Hub for templates, tools and examples.
+  last_checked: '2026-09-25'
+- id: arch-madr
+  title: MADR templates
+  url: https://adr.github.io/madr/
+  type: docs
+  topics:
+  - adrs
+  priority: P1
+  complexity: 1
+  level: beginner
+  cost: free
+  gem: false
+  why: Popular Markdown ADR template with options and drivers.
+  last_checked: '2026-09-25'
+- id: arch-adr-jph
+  title: Architecture decision record repo (Joel Parker Henderson)
+  url: https://github.com/joelparkerhenderson/architecture-decision-record
+  type: docs
+  topics:
+  - adrs
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: true
+  why: Huge collection of ADR templates, examples and guidance.
+  last_checked: '2026-09-25'
+- id: arch-adr-tools
+  title: adr-tools (Nat Pryce)
+  url: https://github.com/npryce/adr-tools
+  type: interactive
+  topics:
+  - adrs
+  priority: P2
+  complexity: 1
+  level: beginner
+  cost: free
+  gem: false
+  why: CLI for creating, superseding and listing ADRs.
+  last_checked: '2026-09-25'
+- id: arch-log4brains
+  title: log4brains
+  url: https://github.com/thomvaill/log4brains
+  type: interactive
+  topics:
+  - adrs
+  - documenting-architecture
+  priority: P2
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: true
+  why: Publishes an ADR log as a searchable static site.
+  last_checked: '2026-09-25'
+- id: arch-tw-adr
+  title: 'Thoughtworks Radar: Lightweight ADRs'
+  url: https://www.thoughtworks.com/radar/techniques/lightweight-architecture-decision-records
+  type: article
+  topics:
+  - adrs
+  priority: P2
+  complexity: 1
+  level: beginner
+  cost: free
+  gem: false
+  why: Industry endorsement and adoption guidance.
+  last_checked: '2026-09-25'
+- id: arch-c4
+  title: The C4 model (Simon Brown)
+  url: https://c4model.com/
+  type: docs
+  topics:
+  - documenting-architecture
+  priority: P0
+  complexity: 2
+  level: beginner
+  cost: free
+  gem: false
+  why: Canonical definitions, notation guidance and examples.
+  last_checked: '2026-09-25'
+- id: arch-c4-abs
+  title: 'C4 model: abstractions'
+  url: https://c4model.com/abstractions
+  type: docs
+  topics:
+  - documenting-architecture
+  priority: P1
+  complexity: 2
+  level: beginner
+  cost: free
+  gem: false
+  why: Precise definitions of person, system, container and component.
+  last_checked: '2026-09-25'
+- id: arch-structurizr-dsl
+  title: Structurizr DSL docs
+  url: https://docs.structurizr.com/dsl
+  type: docs
+  topics:
+  - documenting-architecture
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: Reference for the C4-as-code DSL.
+  last_checked: '2026-09-25'
+- id: arch-arc42
+  title: arc42
+  url: https://arc42.org/
+  type: docs
+  topics:
+  - documenting-architecture
+  priority: P0
+  complexity: 2
+  level: beginner
+  cost: free
+  gem: false
+  why: Template and tips for the twelve documentation sections.
+  last_checked: '2026-09-25'
+- id: arch-likec4
+  title: LikeC4
+  url: https://likec4.dev/
+  type: interactive
+  topics:
+  - documenting-architecture
+  priority: P2
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: true
+  why: Architecture-as-code with live preview and embeddable views.
+  last_checked: '2026-09-25'
+- id: arch-mermaid-c4
+  title: Mermaid C4 syntax
+  url: https://mermaid.js.org/syntax/c4.html
+  type: docs
+  topics:
+  - documenting-architecture
+  priority: P2
+  complexity: 1
+  level: beginner
+  cost: free
+  gem: false
+  why: C4 diagrams inline in Markdown (marked experimental).
+  last_checked: '2026-09-25'
+- id: arch-d2
+  title: D2 language
+  url: https://d2lang.com/
+  type: interactive
+  topics:
+  - documenting-architecture
+  priority: P2
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: true
+  why: Modern diagram language with clean layouts.
+  last_checked: '2026-09-25'
+- id: arch-icepanel
+  title: IcePanel
+  url: https://icepanel.io/
+  type: interactive
+  topics:
+  - documenting-architecture
+  priority: P2
+  complexity: 2
+  level: intermediate
+  cost: freemium
+  gem: false
+  why: Model-based C4 tool with flows.
+  last_checked: '2026-09-25'
+- id: arch-bea
+  title: Building Evolutionary Architectures, 2nd ed.
+  url: https://evolutionaryarchitecture.com/
+  type: book
+  topics:
+  - evolutionary-architecture
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: paid
+  gem: false
+  why: Origin of fitness functions with a catalogue.
+  last_checked: '2026-09-25'
+- id: arch-ffdd
+  title: Fitness function-driven development (Thoughtworks)
+  url: https://www.thoughtworks.com/insights/articles/fitness-function-driven-development
+  type: article
+  topics:
+  - evolutionary-architecture
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: Short applied introduction with sample fitness functions.
+  last_checked: '2026-09-25'
+- id: arch-parallel-change
+  title: Parallel Change (Fowler)
+  url: https://martinfowler.com/bliki/ParallelChange.html
+  type: article
+  topics:
+  - evolutionary-architecture
+  - api-contracts-versioning
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: Expand, migrate, contract.
+  last_checked: '2026-09-25'
+- id: arch-evodb
+  title: Evolutionary Database Design (Fowler)
+  url: https://martinfowler.com/articles/evodb.html
+  type: article
+  topics:
+  - evolutionary-architecture
+  - data-architecture
+  priority: P2
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: Evolving schemas safely with migrations.
+  last_checked: '2026-09-25'
+- id: arch-continuous-arch
+  title: Continuous Architecture
+  url: https://continuousarchitecture.com/
+  type: article
+  topics:
+  - evolutionary-architecture
+  priority: P2
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: true
+  why: Architecture in continuous delivery contexts.
+  last_checked: '2026-09-25'
+- id: arch-strangler
+  title: StranglerFigApplication (Fowler)
+  url: https://martinfowler.com/bliki/StranglerFigApplication.html
+  type: article
+  topics:
+  - legacy-modernization
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: Origin of the metaphor.
+  last_checked: '2026-09-25'
+- id: arch-pld
+  title: Patterns of Legacy Displacement
+  url: https://martinfowler.com/articles/patterns-legacy-displacement/
+  type: article
+  topics:
+  - legacy-modernization
+  priority: P0
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: Catalogue of practical displacement patterns.
+  last_checked: '2026-09-25'
+- id: arch-break-monolith
+  title: How to break a Monolith into Microservices (Fowler)
+  url: https://martinfowler.com/articles/break-monolith-into-microservices.html
+  type: article
+  topics:
+  - legacy-modernization
+  - architecture-styles
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: Sequencing and slicing guidance from Sam Newman.
+  last_checked: '2026-09-25'
+- id: arch-mono2micro
+  title: Monolith to Microservices (Sam Newman)
+  url: https://samnewman.io/books/monolith-to-microservices/
+  type: book
+  topics:
+  - legacy-modernization
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: paid
+  gem: false
+  why: Strangler, branch by abstraction, parallel run and data decomposition.
+  last_checked: '2026-09-25'
+- id: arch-azure-strangler
+  title: 'Azure Architecture Center: Strangler Fig'
+  url: https://learn.microsoft.com/en-us/azure/architecture/patterns/strangler-fig
+  type: docs
+  topics:
+  - legacy-modernization
+  priority: P2
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: Concise issues and considerations.
+  last_checked: '2026-09-25'
+- id: arch-aws-strangler
+  title: 'AWS Prescriptive Guidance: Strangler fig'
+  url: https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/strangler-fig.html
+  type: docs
+  topics:
+  - legacy-modernization
+  priority: P2
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: Cloud implementation guidance.
+  last_checked: '2026-09-25'
+- id: arch-debezium
+  title: Debezium documentation
+  url: https://debezium.io/
+  type: docs
+  topics:
+  - data-architecture
+  - legacy-modernization
+  - sagas-outbox
+  priority: P1
+  complexity: 3
+  level: advanced
+  cost: free
+  gem: false
+  why: Reference CDC toolkit.
+  last_checked: '2026-09-25'
+- id: arch-tt-book
+  title: Team Topologies (Skelton & Pais)
+  url: https://teamtopologies.com/book
+  type: book
+  topics:
+  - team-topologies
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: paid
+  gem: false
+  why: Source of team types and interaction modes.
+  last_checked: '2026-09-25'
+- id: arch-tt-key
+  title: 'Team Topologies: Key concepts'
+  url: https://teamtopologies.com/key-concepts
+  type: docs
+  topics:
+  - team-topologies
+  priority: P0
+  complexity: 2
+  level: beginner
+  cost: free
+  gem: true
+  why: Free concise summary of team types, modes and fracture planes.
+  last_checked: '2026-09-25'
+- id: arch-conway-fowler
+  title: Conway's Law (Fowler bliki)
+  url: https://martinfowler.com/bliki/ConwaysLaw.html
+  type: article
+  topics:
+  - team-topologies
+  priority: P1
+  complexity: 1
+  level: beginner
+  cost: free
+  gem: false
+  why: Brief explanation including the Inverse Conway Maneuver.
+  last_checked: '2026-09-25'
+- id: arch-conway-paper
+  title: How Do Committees Invent? (Melvin Conway)
+  url: https://www.melconway.com/Home/Committees_Paper.html
+  type: article
+  topics:
+  - team-topologies
+  priority: P2
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: true
+  why: The original paper.
+  last_checked: '2026-09-25'
+- id: arch-staffeng-arch
+  title: 'StaffEng: Staff archetypes'
+  url: https://staffeng.com/guides/staff-archetypes/
+  type: article
+  topics:
+  - team-topologies
+  - architect-role-tradeoffs
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: Where the architect archetype fits.
+  last_checked: '2026-09-25'
+- id: arch-stripe-versioning
+  title: 'APIs as infrastructure: future-proofing Stripe with versioning'
+  url: https://stripe.com/blog/api-versioning
+  type: article
+  topics:
+  - api-contracts-versioning
+  priority: P0
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: true
+  why: Date-pinned versioning with a compatibility transformation layer.
+  last_checked: '2026-09-25'
+- id: arch-aip
+  title: Google API Improvement Proposals
+  url: https://google.aip.dev/
+  type: docs
+  topics:
+  - api-contracts-versioning
+  priority: P1
+  complexity: 3
+  level: advanced
+  cost: free
+  gem: false
+  why: Rigorous API design and compatibility guidance.
+  last_checked: '2026-09-25'
+- id: arch-zalando
+  title: Zalando RESTful API Guidelines
+  url: https://opensource.zalando.com/restful-api-guidelines/
+  type: docs
+  topics:
+  - api-contracts-versioning
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: Lint-able guidelines incl. compatibility and deprecation.
+  last_checked: '2026-09-25'
+- id: arch-buf
+  title: 'Buf: breaking change detection'
+  url: https://buf.build/docs/breaking/
+  type: docs
+  topics:
+  - api-contracts-versioning
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: Automated Protobuf compatibility checks.
+  last_checked: '2026-09-25'
+- id: arch-protobuf-dd
+  title: 'Protobuf: dos and don''ts'
+  url: https://protobuf.dev/programming-guides/dos-donts/
+  type: docs
+  topics:
+  - api-contracts-versioning
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: true
+  why: Precise rules for safe schema changes.
+  last_checked: '2026-09-25'
+- id: arch-confluent-compat
+  title: 'Confluent Schema Registry: schema evolution and compatibility'
+  url: https://docs.confluent.io/platform/current/schema-registry/fundamentals/schema-evolution.html
+  type: docs
+  topics:
+  - api-contracts-versioning
+  - cqrs-event-sourcing
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: Compatibility modes and upgrade order.
+  last_checked: '2026-09-25'
+- id: arch-pact
+  title: 'Pact: how Pact works'
+  url: https://docs.pact.io/getting_started/how_pact_works
+  type: docs
+  topics:
+  - api-contracts-versioning
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: Consumer-driven contract testing workflow.
+  last_checked: '2026-09-25'
+- id: arch-hyrum
+  title: Hyrum's Law
+  url: https://www.hyrumslaw.com/
+  type: article
+  topics:
+  - api-contracts-versioning
+  priority: P2
+  complexity: 1
+  level: beginner
+  cost: free
+  gem: true
+  why: Why every observable behaviour becomes a contract.
+  last_checked: '2026-09-25'
+- id: arch-data-mesh
+  title: Data Mesh Principles and Logical Architecture
+  url: https://martinfowler.com/articles/data-mesh-principles.html
+  type: article
+  topics:
+  - data-architecture
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: The four principles in the author's words.
+  last_checked: '2026-09-25'
+- id: arch-mesh-origin
+  title: How to Move Beyond a Monolithic Data Lake to a Distributed Data Mesh
+  url: https://martinfowler.com/articles/data-monolith-to-mesh.html
+  type: article
+  topics:
+  - data-architecture
+  priority: P2
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: The original argument for mesh.
+  last_checked: '2026-09-25'
+- id: arch-dm-arch
+  title: datamesh-architecture.com
+  url: https://www.datamesh-architecture.com/
+  type: docs
+  topics:
+  - data-architecture
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: true
+  why: Practical guide with data product canvas and pitfalls.
+  last_checked: '2026-09-25'
+- id: arch-lakehouse-paper
+  title: 'Lakehouse: A New Generation of Open Platforms (CIDR 2021)'
+  url: https://www.cidrdb.org/cidr2021/papers/cidr2021_paper17.pdf
+  type: paper
+  topics:
+  - data-architecture
+  priority: P2
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: false
+  why: Foundational lakehouse paper.
+  last_checked: '2026-09-25'
+- id: arch-iceberg
+  title: Apache Iceberg
+  url: https://iceberg.apache.org/
+  type: docs
+  topics:
+  - data-architecture
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: Table format spec and catalog integrations.
+  last_checked: '2026-09-25'
+- id: arch-delta
+  title: Delta Lake
+  url: https://delta.io/
+  type: docs
+  topics:
+  - data-architecture
+  priority: P2
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: Delta protocol and features.
+  last_checked: '2026-09-25'
+- id: arch-confluent-cdc
+  title: Change data capture explained (Confluent)
+  url: https://www.confluent.io/learn/change-data-capture/
+  type: article
+  topics:
+  - data-architecture
+  priority: P1
+  complexity: 2
+  level: beginner
+  cost: free
+  gem: false
+  why: Overview of CDC approaches and trade-offs.
+  last_checked: '2026-09-25'
+- id: arch-bea-agents
+  title: Building effective agents (Anthropic)
+  url: https://www.anthropic.com/engineering/building-effective-agents
+  type: article
+  topics:
+  - ai-native-architecture
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: Workflow vs agent taxonomy and start-simple guidance.
+  last_checked: '2026-09-25'
+- id: arch-multi-agent-research
+  title: How we built our multi-agent research system (Anthropic)
+  url: https://www.anthropic.com/engineering/multi-agent-research-system
+  type: article
+  topics:
+  - ai-native-architecture
+  priority: P1
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: Candid orchestrator-worker architecture write-up with costs and failures.
+  last_checked: '2026-09-25'
+- id: arch-writing-tools
+  title: Writing effective tools for agents (Anthropic)
+  url: https://www.anthropic.com/engineering/writing-tools-for-agents
+  type: article
+  topics:
+  - ai-native-architecture
+  - api-contracts-versioning
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: Tool design as API design for LLM consumers.
+  last_checked: '2026-09-25'
+- id: arch-ctx-eng
+  title: Effective context engineering for AI agents (Anthropic)
+  url: https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents
+  type: article
+  topics:
+  - ai-native-architecture
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: Context as a finite architectural resource.
+  last_checked: '2026-09-25'
+- id: arch-genai-patterns
+  title: Emerging Patterns in Building GenAI Products (Fowler site)
+  url: https://martinfowler.com/articles/gen-ai-patterns/
+  type: article
+  topics:
+  - ai-native-architecture
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: true
+  why: Architect-oriented pattern catalogue for GenAI products.
+  last_checked: '2026-09-25'
+- id: arch-huyen-platform
+  title: Building A Generative AI Platform (Chip Huyen)
+  url: https://huyenchip.com/2024/07/25/genai-platform.html
+  type: article
+  topics:
+  - ai-native-architecture
+  priority: P0
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: true
+  why: Component-by-component GenAI platform architecture.
+  last_checked: '2026-09-25'
+- id: arch-eugene-patterns
+  title: Patterns for Building LLM-based Systems and Products (Eugene Yan)
+  url: https://eugeneyan.com/writing/llm-patterns/
+  type: article
+  topics:
+  - ai-native-architecture
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: 'Seven patterns: evals, RAG, caching, guardrails, feedback.'
+  last_checked: '2026-09-25'
+- id: arch-applied-llms
+  title: Applied LLMs
+  url: https://applied-llms.org/
+  type: article
+  topics:
+  - ai-native-architecture
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: Practitioner lessons across tactical, operational, strategic levels.
+  last_checked: '2026-09-25'
+- id: arch-trifecta
+  title: The lethal trifecta for AI agents (Simon Willison)
+  url: https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/
+  type: article
+  topics:
+  - ai-native-architecture
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: Mental model for the most dangerous agent architecture.
+  last_checked: '2026-09-25'
+- id: arch-mcp
+  title: Model Context Protocol
+  url: https://modelcontextprotocol.io/
+  type: docs
+  topics:
+  - ai-native-architecture
+  - integration-patterns
+  priority: P0
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: Primary source for MCP.
+  last_checked: '2026-09-25'
+- id: arch-a2a
+  title: A2A protocol
+  url: https://a2a-protocol.org/
+  type: docs
+  topics:
+  - ai-native-architecture
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: Primary source for agent-to-agent interoperability.
+  last_checked: '2026-09-25'
+- id: arch-azure-ai
+  title: 'Azure Architecture Center: AI/ML guidance'
+  url: https://learn.microsoft.com/en-us/azure/architecture/ai-ml/
+  type: docs
+  topics:
+  - ai-native-architecture
+  priority: P2
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: Reference architectures for RAG, agents and MLOps on Azure.
+  last_checked: '2026-09-25'

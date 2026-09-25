@@ -1,0 +1,8 @@
+nav:
+  - index.md
+  - interviews.md
+  - ignorance-log.md
+  - ADRs: adrs
+  - Retros: retros
+  - retro-template.md
+  - adr-template.md

@@ -1,0 +1,196 @@
+# Topic contract — single source of truth for topic slugs.
+# Page path: docs/tracks/<track>/<slug>.md   (case studies: docs/tracks/<track>/case-studies/<slug>.md)
+# priority: P0 = must (core to goal), P1 = should, P2 = nice/specialist
+# complexity: 1 (easy refresh) .. 5 (deep, multi-week)
+# phase: roadmap phase where it is first scheduled (0..7)
+# hours: total target effort incl. reading outside scheduled tasks and review hours; scheduled minutes may be lower
+#        for areas the learner is already strong in (system design, Python).
+
+tracks:
+  system-design:
+    title: System Design
+    icon: material/sitemap
+    topics:
+      - {slug: framework-and-estimation, title: "Interview framework & back-of-envelope estimation", priority: P0, complexity: 2, phase: 1, hours: 3}
+      - {slug: scalability-fundamentals, title: "Scalability fundamentals & latency numbers", priority: P0, complexity: 2, phase: 1, hours: 3}
+      - {slug: load-balancing, title: "Load balancing & proxies", priority: P0, complexity: 2, phase: 1, hours: 2}
+      - {slug: caching, title: "Caching strategies", priority: P0, complexity: 3, phase: 2, hours: 4}
+      - {slug: databases-sql-nosql, title: "Databases: SQL vs NoSQL, storage engines", priority: P0, complexity: 3, phase: 2, hours: 5}
+      - {slug: replication, title: "Replication", priority: P0, complexity: 3, phase: 2, hours: 3}
+      - {slug: partitioning-sharding, title: "Partitioning & sharding, consistent hashing", priority: P0, complexity: 3, phase: 2, hours: 3}
+      - {slug: consistency-models, title: "Consistency models, CAP & PACELC", priority: P0, complexity: 4, phase: 2, hours: 4}
+      - {slug: consensus-raft, title: "Consensus: Raft, leases, fencing", priority: P1, complexity: 5, phase: 5, hours: 6}
+      - {slug: messaging-streaming, title: "Message queues & streaming (Kafka)", priority: P0, complexity: 3, phase: 3, hours: 5}
+      - {slug: api-design, title: "API design: REST, gRPC, GraphQL, idempotency, pagination", priority: P0, complexity: 2, phase: 1, hours: 3}
+      - {slug: rate-limiting, title: "Rate limiting & quotas", priority: P0, complexity: 3, phase: 4, hours: 3}
+      - {slug: search-systems, title: "Search systems & inverted indexes", priority: P1, complexity: 3, phase: 2, hours: 3}
+      - {slug: storage-cdn, title: "Blob storage, CDN & edge", priority: P1, complexity: 2, phase: 2, hours: 2}
+      - {slug: reliability-patterns, title: "Reliability: retries, backoff, circuit breakers, bulkheads", priority: P0, complexity: 3, phase: 3, hours: 3}
+      - {slug: observability-slos, title: "Observability, SLOs & error budgets", priority: P0, complexity: 3, phase: 4, hours: 3}
+      - {slug: data-pipelines, title: "Batch & stream data pipelines", priority: P1, complexity: 3, phase: 3, hours: 3}
+      - {slug: multi-region-dr, title: "Multi-region, DR & failover", priority: P1, complexity: 4, phase: 5, hours: 3}
+      - {slug: security-authn-authz, title: "Security: authN/Z, OAuth2/OIDC, zero trust, multi-tenancy", priority: P0, complexity: 3, phase: 4, hours: 3}
+    case_studies:
+      - {slug: url-shortener, title: "URL shortener", priority: P0, complexity: 2, phase: 1, hours: 2}
+      - {slug: news-feed, title: "News feed / timeline", priority: P0, complexity: 3, phase: 2, hours: 3}
+      - {slug: chat-system, title: "Chat / messaging system", priority: P0, complexity: 4, phase: 3, hours: 3}
+      - {slug: notification-system, title: "Notification system", priority: P0, complexity: 3, phase: 3, hours: 2}
+      - {slug: payment-system, title: "Payment system", priority: P0, complexity: 4, phase: 4, hours: 3}
+      - {slug: distributed-kv-store, title: "Distributed key-value store", priority: P1, complexity: 5, phase: 5, hours: 4}
+      - {slug: metrics-monitoring, title: "Metrics & monitoring system", priority: P1, complexity: 4, phase: 4, hours: 3}
+      - {slug: ride-hailing-proximity, title: "Ride hailing / proximity service", priority: P1, complexity: 4, phase: 5, hours: 3}
+      - {slug: job-scheduler, title: "Distributed job scheduler", priority: P1, complexity: 4, phase: 3, hours: 3}
+
+  ai-system-design:
+    title: AI System Design
+    icon: material/brain
+    topics:
+      - {slug: framework, title: "AI system design interview framework", priority: P0, complexity: 2, phase: 2, hours: 2}
+      - {slug: rag-system, title: "Design an enterprise RAG system", priority: P0, complexity: 4, phase: 2, hours: 4}
+      - {slug: chat-assistant, title: "Design a ChatGPT-style assistant", priority: P0, complexity: 4, phase: 3, hours: 3}
+      - {slug: agent-platform, title: "Design a multi-agent platform", priority: P0, complexity: 5, phase: 3, hours: 4}
+      - {slug: llm-gateway, title: "Design a multi-tenant LLM gateway", priority: P0, complexity: 4, phase: 4, hours: 3}
+      - {slug: llm-serving-platform, title: "Design an LLM inference/serving platform", priority: P1, complexity: 5, phase: 5, hours: 4}
+      - {slug: evaluation-platform, title: "Design an LLM evaluation & observability platform", priority: P0, complexity: 4, phase: 4, hours: 3}
+      - {slug: document-processing, title: "Design an intelligent document processing pipeline", priority: P1, complexity: 3, phase: 4, hours: 3}
+      - {slug: ai-search, title: "Design AI-powered semantic search", priority: P1, complexity: 4, phase: 2, hours: 3}
+      - {slug: coding-agent, title: "Design a coding agent / code-review bot", priority: P1, complexity: 4, phase: 5, hours: 3}
+      - {slug: recsys-ml-basics, title: "Classic ML system design: recommendation & ranking", priority: P2, complexity: 4, phase: 5, hours: 4}
+      - {slug: capacity-cost-planning, title: "LLM capacity, latency & cost planning", priority: P0, complexity: 3, phase: 4, hours: 2}
+
+  architecture:
+    title: Architecture & Design
+    icon: material/domain
+    topics:
+      - {slug: architect-role-tradeoffs, title: "The architect role & trade-off thinking", priority: P0, complexity: 2, phase: 1, hours: 2}
+      - {slug: architecture-styles, title: "Architecture styles: modular monolith → microservices → event-driven → serverless", priority: P0, complexity: 3, phase: 1, hours: 4}
+      - {slug: ddd-strategic, title: "DDD strategic: subdomains, bounded contexts, context maps", priority: P0, complexity: 3, phase: 2, hours: 4}
+      - {slug: ddd-tactical, title: "DDD tactical: aggregates, entities, value objects, domain events", priority: P0, complexity: 3, phase: 2, hours: 3}
+      - {slug: hexagonal-clean, title: "Hexagonal / clean architecture, ports & adapters", priority: P0, complexity: 2, phase: 2, hours: 3}
+      - {slug: cqrs-event-sourcing, title: "CQRS & event sourcing", priority: P1, complexity: 4, phase: 3, hours: 4}
+      - {slug: sagas-outbox, title: "Sagas, outbox & distributed transactions", priority: P0, complexity: 4, phase: 3, hours: 3}
+      - {slug: integration-patterns, title: "Enterprise integration patterns", priority: P1, complexity: 3, phase: 3, hours: 3}
+      - {slug: coupling-modularity, title: "Coupling, cohesion & modularity (balanced coupling)", priority: P0, complexity: 3, phase: 2, hours: 3}
+      - {slug: design-patterns, title: "Design patterns that still matter (GoF, modern)", priority: P1, complexity: 2, phase: 1, hours: 3}
+      - {slug: solid-refactoring, title: "SOLID, refactoring & code quality at scale", priority: P1, complexity: 2, phase: 1, hours: 2}
+      - {slug: documenting-architecture, title: "C4, arc42 & diagrams as code", priority: P0, complexity: 2, phase: 4, hours: 2}
+      - {slug: adrs, title: "Architecture Decision Records", priority: P0, complexity: 1, phase: 1, hours: 1}
+      - {slug: evolutionary-architecture, title: "Evolutionary architecture & fitness functions", priority: P1, complexity: 3, phase: 4, hours: 2}
+      - {slug: legacy-modernization, title: "Legacy modernization & strangler fig", priority: P0, complexity: 3, phase: 4, hours: 3}
+      - {slug: team-topologies, title: "Team Topologies & Conway's law", priority: P0, complexity: 2, phase: 4, hours: 2}
+      - {slug: api-contracts-versioning, title: "API contracts, versioning & schema evolution", priority: P1, complexity: 3, phase: 3, hours: 2}
+      - {slug: data-architecture, title: "Data architecture: lakehouse, data mesh, CDC", priority: P1, complexity: 3, phase: 5, hours: 3}
+      - {slug: ai-native-architecture, title: "AI-native architecture: LLMs as system components", priority: P0, complexity: 4, phase: 4, hours: 4}
+
+  python:
+    title: Advanced Python
+    icon: material/language-python
+    topics:
+      - {slug: modern-tooling, title: "Modern tooling: uv, ruff, ty, pre-commit", priority: P0, complexity: 1, phase: 1, hours: 2}
+      - {slug: data-model, title: "Python data model & dunder protocols", priority: P0, complexity: 3, phase: 1, hours: 3}
+      - {slug: typing-advanced, title: "Advanced typing: generics, Protocols, ParamSpec, TypedDict", priority: P0, complexity: 3, phase: 1, hours: 3}
+      - {slug: pydantic-v2, title: "Pydantic v2 in depth", priority: P0, complexity: 2, phase: 1, hours: 3}
+      - {slug: asyncio-deep, title: "asyncio in depth: TaskGroups, cancellation, backpressure", priority: P0, complexity: 4, phase: 1, hours: 5}
+      - {slug: concurrency-models, title: "Concurrency models: threads, processes, free-threaded 3.14t", priority: P0, complexity: 4, phase: 5, hours: 4}
+      - {slug: fastapi-production, title: "FastAPI for production", priority: P0, complexity: 2, phase: 1, hours: 3}
+      - {slug: testing-pytest, title: "Testing: pytest, fixtures, Hypothesis, testcontainers", priority: P0, complexity: 2, phase: 2, hours: 3}
+      - {slug: generators-context-managers, title: "Iterators, generators & context managers", priority: P1, complexity: 2, phase: 1, hours: 2}
+      - {slug: decorators-descriptors-metaclasses, title: "Decorators, descriptors & metaclasses", priority: P1, complexity: 4, phase: 2, hours: 3}
+      - {slug: architecture-patterns-python, title: "Architecture patterns in Python (repository, UoW, message bus)", priority: P0, complexity: 3, phase: 2, hours: 4}
+      - {slug: packaging-project-structure, title: "Packaging, project layout & monorepos", priority: P1, complexity: 2, phase: 2, hours: 2}
+      - {slug: performance-profiling, title: "Performance & profiling", priority: P1, complexity: 3, phase: 5, hours: 3}
+      - {slug: cpython-internals, title: "CPython internals: bytecode, GIL, memory", priority: P2, complexity: 4, phase: 5, hours: 4}
+      - {slug: data-tooling, title: "Data tooling: Polars, DuckDB, Arrow", priority: P1, complexity: 2, phase: 2, hours: 2}
+      - {slug: observability-python, title: "Observability in Python: structlog, OpenTelemetry", priority: P1, complexity: 2, phase: 4, hours: 2}
+
+  agentic-ai:
+    title: Agentic AI & LLM Engineering
+    icon: material/robot
+    topics:
+      - {slug: llm-fundamentals, title: "LLM fundamentals: tokens, transformers, sampling, reasoning models", priority: P0, complexity: 3, phase: 1, hours: 4}
+      - {slug: prompting-structured-outputs, title: "Prompting & structured outputs", priority: P0, complexity: 2, phase: 1, hours: 3}
+      - {slug: context-engineering, title: "Context engineering", priority: P0, complexity: 3, phase: 1, hours: 3}
+      - {slug: agent-patterns, title: "Agent & workflow patterns (Building Effective Agents)", priority: P0, complexity: 3, phase: 1, hours: 3}
+      - {slug: tool-calling, title: "Tool calling & function design", priority: P0, complexity: 2, phase: 1, hours: 2}
+      - {slug: rag-fundamentals, title: "RAG fundamentals: chunking, embeddings, retrieval", priority: P0, complexity: 3, phase: 2, hours: 4}
+      - {slug: hybrid-search-reranking, title: "Hybrid search & reranking", priority: P0, complexity: 3, phase: 2, hours: 3}
+      - {slug: vector-databases, title: "Vector databases: pgvector, Qdrant & friends", priority: P0, complexity: 3, phase: 2, hours: 3}
+      - {slug: advanced-rag, title: "Advanced RAG: agentic RAG, GraphRAG, LazyGraphRAG", priority: P1, complexity: 4, phase: 5, hours: 4}
+      - {slug: evals-error-analysis, title: "Evals I: error analysis, LLM-as-judge, eval-driven development", priority: P0, complexity: 4, phase: 2, hours: 5}
+      - {slug: eval-tooling, title: "Evals II: promptfoo, DeepEval, Ragas, Inspect in CI", priority: P0, complexity: 3, phase: 2, hours: 3}
+      - {slug: llm-observability, title: "LLM observability: Langfuse, Phoenix, OTel GenAI semconv", priority: P0, complexity: 3, phase: 2, hours: 3}
+      - {slug: langgraph, title: "LangGraph: graphs, state, checkpoints", priority: P0, complexity: 4, phase: 3, hours: 6}
+      - {slug: durable-execution-hitl, title: "Durable execution & human-in-the-loop", priority: P0, complexity: 4, phase: 3, hours: 3}
+      - {slug: pydantic-ai, title: "Pydantic AI", priority: P0, complexity: 2, phase: 3, hours: 4}
+      - {slug: dspy, title: "DSPy & prompt optimization (GEPA)", priority: P1, complexity: 4, phase: 5, hours: 4}
+      - {slug: vendor-agent-sdks, title: "Vendor agent SDKs: Claude Agent SDK, OpenAI Agents SDK, Google ADK, MS Agent Framework", priority: P1, complexity: 3, phase: 3, hours: 4}
+      - {slug: mcp, title: "Model Context Protocol (MCP)", priority: P0, complexity: 3, phase: 3, hours: 5}
+      - {slug: a2a-ag-ui, title: "A2A & AG-UI protocols", priority: P1, complexity: 3, phase: 3, hours: 3}
+      - {slug: memory-systems, title: "Agent memory systems (Mem0, Letta, Zep)", priority: P1, complexity: 3, phase: 3, hours: 3}
+      - {slug: multi-agent-systems, title: "Multi-agent systems: when, how, and failure modes", priority: P0, complexity: 4, phase: 3, hours: 4}
+      - {slug: guardrails-security, title: "Guardrails & security: OWASP LLM/Agentic Top 10, prompt injection", priority: P0, complexity: 4, phase: 4, hours: 5}
+      - {slug: cost-latency-optimization, title: "Cost & latency optimization: caching, batching, streaming", priority: P0, complexity: 3, phase: 4, hours: 3}
+      - {slug: model-routing-gateways, title: "Model selection, routing & gateways (LiteLLM)", priority: P0, complexity: 3, phase: 4, hours: 3}
+      - {slug: inference-serving, title: "Inference serving: vLLM, SGLang, Ollama, quantization", priority: P1, complexity: 4, phase: 5, hours: 4}
+      - {slug: fine-tuning, title: "Fine-tuning: LoRA/QLoRA, DPO, GRPO — and when not to", priority: P1, complexity: 5, phase: 5, hours: 6}
+      - {slug: managed-agent-platforms, title: "Managed platforms: Microsoft Foundry, Bedrock AgentCore", priority: P1, complexity: 3, phase: 4, hours: 3}
+      - {slug: ai-assisted-development, title: "AI-assisted development: coding agents, AGENTS.md, skills", priority: P0, complexity: 2, phase: 1, hours: 2}
+      - {slug: production-checklist, title: "Shipping LLM features to production: the checklist", priority: P0, complexity: 3, phase: 4, hours: 2}
+
+  java-spring-ai:
+    title: Java & Spring AI
+    icon: material/language-java
+    topics:
+      - {slug: modern-java, title: "Modern Java 21→25: records, sealed types, patterns", priority: P1, complexity: 2, phase: 1, hours: 3}
+      - {slug: virtual-threads-structured-concurrency, title: "Virtual threads, structured concurrency & scoped values", priority: P0, complexity: 3, phase: 5, hours: 3}
+      - {slug: spring-boot-4, title: "Spring Boot 4 & Spring Framework 7", priority: P0, complexity: 2, phase: 1, hours: 3}
+      - {slug: spring-ai-fundamentals, title: "Spring AI 2.0 fundamentals: ChatClient, advisors, structured output", priority: P0, complexity: 2, phase: 1, hours: 3}
+      - {slug: spring-ai-rag, title: "RAG with Spring AI & pgvector", priority: P0, complexity: 3, phase: 2, hours: 3}
+      - {slug: spring-ai-tools-mcp, title: "Tool calling & MCP servers in Spring AI", priority: P0, complexity: 3, phase: 3, hours: 3}
+      - {slug: spring-ai-agents, title: "Agentic patterns with Spring AI", priority: P1, complexity: 3, phase: 3, hours: 3}
+      - {slug: observability-testing, title: "Observability & testing: Micrometer, OTel, Testcontainers", priority: P1, complexity: 2, phase: 4, hours: 2}
+      - {slug: jvm-performance, title: "JVM performance, GC & Leyden/AOT", priority: P2, complexity: 4, phase: 5, hours: 3}
+      - {slug: polyglot-ai-architecture, title: "Java vs Python for AI: polyglot architecture decisions", priority: P1, complexity: 2, phase: 4, hours: 1}
+
+  dsa:
+    title: DSA
+    icon: material/graph
+    topics:
+      - {slug: approach-complexity, title: "Problem-solving approach & complexity analysis", priority: P0, complexity: 1, phase: 0, hours: 2}
+      - {slug: python-idioms, title: "Python idioms for interviews", priority: P0, complexity: 1, phase: 0, hours: 1}
+      - {slug: arrays-hashing, title: "Arrays & hashing", priority: P0, complexity: 1, phase: 1, hours: 4}
+      - {slug: two-pointers, title: "Two pointers", priority: P0, complexity: 2, phase: 1, hours: 3}
+      - {slug: sliding-window, title: "Sliding window", priority: P0, complexity: 2, phase: 1, hours: 3}
+      - {slug: stack, title: "Stack & monotonic stack", priority: P0, complexity: 2, phase: 1, hours: 3}
+      - {slug: binary-search, title: "Binary search (incl. on answer)", priority: P0, complexity: 2, phase: 2, hours: 3}
+      - {slug: linked-list, title: "Linked list", priority: P0, complexity: 2, phase: 2, hours: 3}
+      - {slug: trees, title: "Trees: DFS, BFS, BST", priority: P0, complexity: 3, phase: 2, hours: 5}
+      - {slug: tries, title: "Tries", priority: P1, complexity: 3, phase: 3, hours: 2}
+      - {slug: heap, title: "Heap / priority queue", priority: P0, complexity: 2, phase: 3, hours: 3}
+      - {slug: backtracking, title: "Backtracking", priority: P0, complexity: 3, phase: 3, hours: 4}
+      - {slug: graphs, title: "Graphs: BFS, DFS, topological sort, union-find", priority: P0, complexity: 3, phase: 3, hours: 5}
+      - {slug: advanced-graphs, title: "Advanced graphs: Dijkstra, MST, Bellman-Ford", priority: P1, complexity: 4, phase: 4, hours: 4}
+      - {slug: dp-1d, title: "Dynamic programming 1-D", priority: P0, complexity: 4, phase: 4, hours: 5}
+      - {slug: dp-2d, title: "Dynamic programming 2-D", priority: P0, complexity: 4, phase: 5, hours: 5}
+      - {slug: greedy, title: "Greedy", priority: P0, complexity: 3, phase: 5, hours: 3}
+      - {slug: intervals, title: "Intervals", priority: P0, complexity: 2, phase: 5, hours: 2}
+      - {slug: math-bits, title: "Math, geometry & bit manipulation", priority: P1, complexity: 2, phase: 5, hours: 2}
+      - {slug: concurrency-lld, title: "Concurrency & low-level design problems (LRU, rate limiter, parking lot)", priority: P0, complexity: 3, phase: 6, hours: 4}
+      - {slug: problem-tracker, title: "NeetCode 250 problem tracker", priority: P0, complexity: 1, phase: 1, hours: 0}
+
+  staff-skills:
+    title: Staff+ Skills
+    icon: material/account-tie
+    topics:
+      - {slug: staff-archetypes, title: "Staff archetypes & operating at Staff+", priority: P0, complexity: 2, phase: 1, hours: 2}
+      - {slug: technical-strategy, title: "Writing engineering strategy & vision", priority: P0, complexity: 4, phase: 4, hours: 3}
+      - {slug: design-docs-rfcs, title: "Design docs & RFCs that get approved", priority: P0, complexity: 2, phase: 2, hours: 2}
+      - {slug: influence-without-authority, title: "Influence without authority & alignment", priority: P0, complexity: 3, phase: 3, hours: 2}
+      - {slug: technical-debt, title: "Managing technical debt & quality", priority: P0, complexity: 3, phase: 4, hours: 2}
+      - {slug: mentoring-sponsorship, title: "Mentoring, sponsorship & growing engineers", priority: P1, complexity: 2, phase: 5, hours: 2}
+      - {slug: incident-leadership, title: "Incident leadership & blameless postmortems", priority: P1, complexity: 2, phase: 4, hours: 2}
+      - {slug: communication-stakeholders, title: "Communicating with executives & stakeholders", priority: P0, complexity: 3, phase: 3, hours: 2}
+      - {slug: decision-making, title: "Decision-making under ambiguity", priority: P0, complexity: 3, phase: 5, hours: 2}
+      - {slug: architecture-reviews, title: "Running architecture reviews & guilds", priority: P1, complexity: 2, phase: 4, hours: 1}
+      - {slug: ai-era-leadership, title: "Leading engineering in the AI era: adoption, productivity, risk", priority: P0, complexity: 3, phase: 4, hours: 2}
+      - {slug: behavioral-interviews, title: "Behavioral & Staff interviews: STAR stories bank", priority: P0, complexity: 2, phase: 6, hours: 3}

@@ -1,0 +1,13 @@
+nav:
+- index.md
+- modern-java.md
+- virtual-threads-structured-concurrency.md
+- spring-boot-4.md
+- spring-ai-fundamentals.md
+- spring-ai-rag.md
+- spring-ai-tools-mcp.md
+- spring-ai-agents.md
+- observability-testing.md
+- jvm-performance.md
+- polyglot-ai-architecture.md
+- Question bank: questions.md

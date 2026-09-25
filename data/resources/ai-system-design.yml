@@ -1,0 +1,1011 @@
+# AI system design resources. Schema: id, title, url, type, topics, priority, complexity, level, cost, gem, why, last_checked
+# URLs status-checked 2026-09-25 (HTTP 200) except where noted in `why`.
+resources:
+  - id: aisd-framework-building-effective-agents
+    title: "Building effective agents (Anthropic)"
+    url: https://www.anthropic.com/engineering/building-effective-agents
+    type: article
+    topics: [framework, agent-platform]
+    priority: P0
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Canonical workflow-vs-agent taxonomy to quote when justifying architecture."
+    last_checked: 2026-09-25
+  - id: aisd-evals
+    title: "Your AI Product Needs Evals (Hamel Husain)"
+    url: https://hamel.dev/blog/posts/evals/
+    type: article
+    topics: [framework, evaluation-platform]
+    priority: P0
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: true
+    why: "Best case for evals-first development."
+    last_checked: 2026-09-25
+  - id: aisd-evalsfaq
+    title: "Evals FAQ (Husain & Shankar)"
+    url: https://hamel.dev/blog/posts/evals-faq/
+    type: article
+    topics: [framework, evaluation-platform, rag-system, document-processing]
+    priority: P0
+    complexity: 3
+    level: advanced
+    cost: free
+    gem: true
+    why: "Binary judges, error analysis and calibration in practice."
+    last_checked: 2026-09-25
+  - id: aisd-appliedllms
+    title: "What We've Learned From A Year of Building with LLMs"
+    url: https://applied-llms.org/
+    type: article
+    topics: [framework]
+    priority: P0
+    complexity: 2
+    level: advanced
+    cost: free
+    gem: true
+    why: "Tactical, operational and strategic lessons; Staff-level talking points."
+    last_checked: 2026-09-25
+  - id: aisd-genai-platform
+    title: "Building a Generative AI Platform (Chip Huyen)"
+    url: https://huyenchip.com/2024/07/25/genai-platform.html
+    type: article
+    topics: [framework, llm-gateway, chat-assistant]
+    priority: P0
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: false
+    why: "One diagram that grows component by component."
+    last_checked: 2026-09-25
+  - id: aisd-llm-patterns
+    title: "Patterns for Building LLM-based Systems (Eugene Yan)"
+    url: https://eugeneyan.com/writing/llm-patterns/
+    type: article
+    topics: [framework]
+    priority: P1
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Pattern vocabulary: evals, RAG, guardrails, caching, feedback."
+    last_checked: 2026-09-25
+  - id: aisd-aie-book
+    title: "AI Engineering (Chip Huyen)"
+    url: https://github.com/chiphuyen/aie-book
+    type: book
+    topics: [framework, capacity-cost-planning, evaluation-platform]
+    priority: P0
+    complexity: 3
+    level: advanced
+    cost: paid
+    gem: false
+    why: "Most complete 2025+ treatment of evals, RAG, agents and inference cost."
+    last_checked: 2026-09-25
+  - id: aisd-genai-sdi
+    title: "Generative AI System Design Interview (Aminian & Sheng)"
+    url: https://bytebytego.com/courses/genai-system-design-interview
+    type: book
+    topics: [framework]
+    priority: P1
+    complexity: 2
+    level: intermediate
+    cost: paid
+    gem: false
+    why: "Interview-format walkthroughs; light on agents and evals, so supplement."
+    last_checked: 2026-09-25
+  - id: aisd-hi-mlsd
+    title: "Hello Interview: ML System Design in a Hurry"
+    url: https://www.hellointerview.com/learn/ml-system-design/in-a-hurry/introduction
+    type: course
+    topics: [framework, recsys-ml-basics]
+    priority: P1
+    complexity: 2
+    level: intermediate
+    cost: freemium
+    gem: false
+    why: "Interview delivery framework from experienced interviewers."
+    last_checked: 2026-09-25
+  - id: aisd-owasp-agentic
+    title: "OWASP Top 10 for Agentic Applications 2026"
+    url: https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/
+    type: docs
+    topics: [framework, agent-platform]
+    priority: P0
+    complexity: 3
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Threat vocabulary for the safety step."
+    last_checked: 2026-09-25
+  - id: aisd-lethal-trifecta
+    title: "The lethal trifecta for AI agents (Simon Willison)"
+    url: https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/
+    type: article
+    topics: [framework, chat-assistant, coding-agent]
+    priority: P0
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: true
+    why: "Shortest useful mental model for agent exfiltration risk."
+    last_checked: 2026-09-25
+  - id: aisd-ctx-retrieval
+    title: "Introducing Contextual Retrieval (Anthropic)"
+    url: https://www.anthropic.com/news/contextual-retrieval
+    type: article
+    topics: [rag-system, ai-search]
+    priority: P0
+    complexity: 3
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Contextual chunks + BM25 + rerank with numbers."
+    last_checked: 2026-09-25
+  - id: aisd-pinecone-rerank
+    title: "Rerankers and Two-Stage Retrieval (Pinecone)"
+    url: https://www.pinecone.io/learn/series/rag/rerankers/
+    type: article
+    topics: [rag-system, ai-search]
+    priority: P0
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: true
+    why: "Clearest visual explanation of bi- vs cross-encoders."
+    last_checked: 2026-09-25
+  - id: aisd-qdrant-hybrid
+    title: "Hybrid search (Qdrant)"
+    url: https://qdrant.tech/articles/hybrid-search/
+    type: article
+    topics: [rag-system, ai-search]
+    priority: P1
+    complexity: 3
+    level: intermediate
+    cost: free
+    gem: true
+    why: "Fusion strategies and trade-offs."
+    last_checked: 2026-09-25
+  - id: aisd-lazygraphrag
+    title: "LazyGraphRAG (Microsoft Research)"
+    url: https://www.microsoft.com/en-us/research/blog/lazygraphrag-setting-a-new-standard-for-quality-and-cost/
+    type: article
+    topics: [rag-system]
+    priority: P1
+    complexity: 4
+    level: advanced
+    cost: free
+    gem: false
+    why: "When graph approaches beat vector RAG and at what cost (link not re-verified from this environment)."
+    last_checked: 2026-09-25
+  - id: aisd-agentic-rag-worth
+    title: "Is Agentic RAG worth it? (arXiv 2601.07711)"
+    url: https://arxiv.org/abs/2601.07711
+    type: paper
+    topics: [rag-system]
+    priority: P1
+    complexity: 4
+    level: advanced
+    cost: free
+    gem: true
+    why: "Evidence for routing instead of agentic-everywhere."
+    last_checked: 2026-09-25
+  - id: aisd-embed-quant
+    title: "Embedding quantization (Hugging Face)"
+    url: https://huggingface.co/blog/embedding-quantization
+    type: article
+    topics: [rag-system, ai-search]
+    priority: P1
+    complexity: 3
+    level: intermediate
+    cost: free
+    gem: true
+    why: "Binary/int8 math that makes index sizing concrete."
+    last_checked: 2026-09-25
+  - id: aisd-pgvector
+    title: "pgvector"
+    url: https://github.com/pgvector/pgvector
+    type: docs
+    topics: [rag-system]
+    priority: P0
+    complexity: 3
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Vector search inside Postgres; filtering and iterative scans."
+    last_checked: 2026-09-25
+  - id: aisd-docling
+    title: "Docling"
+    url: https://github.com/docling-project/docling
+    type: docs
+    topics: [rag-system, document-processing]
+    priority: P1
+    complexity: 3
+    level: intermediate
+    cost: free
+    gem: true
+    why: "Open-source layout-aware document parsing."
+    last_checked: 2026-09-25
+  - id: aisd-marker
+    title: "Marker"
+    url: https://github.com/datalab-to/marker
+    type: docs
+    topics: [document-processing]
+    priority: P2
+    complexity: 3
+    level: intermediate
+    cost: free
+    gem: true
+    why: "Fast PDF to Markdown with tables, self-hostable."
+    last_checked: 2026-09-25
+  - id: aisd-ragas
+    title: "Ragas docs"
+    url: https://docs.ragas.io/
+    type: docs
+    topics: [rag-system]
+    priority: P1
+    complexity: 3
+    level: intermediate
+    cost: free
+    gem: false
+    why: "RAG metrics starting point; calibrate before trusting."
+    last_checked: 2026-09-25
+  - id: aisd-ctx-eng
+    title: "Effective context engineering for AI agents (Anthropic)"
+    url: https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents
+    type: article
+    topics: [chat-assistant, coding-agent]
+    priority: P0
+    complexity: 3
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Compaction, tool-result clearing and memory playbook."
+    last_checked: 2026-09-25
+  - id: aisd-claude-cache
+    title: "Prompt caching (Claude docs)"
+    url: https://docs.claude.com/en/docs/build-with-claude/prompt-caching
+    type: docs
+    topics: [chat-assistant, llm-gateway, capacity-cost-planning]
+    priority: P0
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Exact prefix-caching semantics, TTLs and pricing multipliers."
+    last_checked: 2026-09-25
+  - id: aisd-openai-cache
+    title: "Prompt caching (OpenAI docs)"
+    url: https://platform.openai.com/docs/guides/prompt-caching
+    type: docs
+    topics: [chat-assistant, capacity-cost-planning]
+    priority: P1
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Automatic caching behaviour for comparison."
+    last_checked: 2026-09-25
+  - id: aisd-agui
+    title: "AG-UI docs"
+    url: https://docs.ag-ui.com/
+    type: docs
+    topics: [chat-assistant, agent-platform]
+    priority: P1
+    complexity: 3
+    level: intermediate
+    cost: free
+    gem: true
+    why: "Standard event model for streaming agent UIs."
+    last_checked: 2026-09-25
+  - id: aisd-mcp-spec
+    title: "MCP specification (2026-07-28)"
+    url: https://modelcontextprotocol.io/specification/2026-07-28
+    type: docs
+    topics: [chat-assistant, agent-platform]
+    priority: P0
+    complexity: 3
+    level: advanced
+    cost: free
+    gem: false
+    why: "Tools, auth model and stateless core."
+    last_checked: 2026-09-25
+  - id: aisd-mem0
+    title: "Mem0 docs"
+    url: https://docs.mem0.ai/
+    type: docs
+    topics: [chat-assistant]
+    priority: P1
+    complexity: 3
+    level: intermediate
+    cost: freemium
+    gem: false
+    why: "Concrete memory extraction and update design."
+    last_checked: 2026-09-25
+  - id: aisd-routellm
+    title: "RouteLLM (LMSYS blog)"
+    url: https://lmsys.org/blog/2024-07-01-routellm/
+    type: article
+    topics: [chat-assistant, llm-gateway, capacity-cost-planning]
+    priority: P1
+    complexity: 4
+    level: advanced
+    cost: free
+    gem: true
+    why: "Learned routing with cost/quality curves."
+    last_checked: 2026-09-25
+  - id: aisd-routellm-paper
+    title: "RouteLLM: Learning to Route LLMs with Preference Data"
+    url: https://arxiv.org/abs/2406.18665
+    type: paper
+    topics: [llm-gateway]
+    priority: P2
+    complexity: 4
+    level: advanced
+    cost: free
+    gem: false
+    why: "Method behind learned routing."
+    last_checked: 2026-09-25
+  - id: aisd-linkedin-genai
+    title: "Musings on building a GenAI product (LinkedIn Engineering)"
+    url: https://www.linkedin.com/blog/engineering/generative-ai/musings-on-building-a-generative-ai-product
+    type: article
+    topics: [chat-assistant]
+    priority: P1
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: true
+    why: "Honest production lessons on latency, evals and capacity."
+    last_checked: 2026-09-25
+  - id: aisd-cc-sandbox
+    title: "Claude Code sandboxing (Anthropic)"
+    url: https://www.anthropic.com/engineering/claude-code-sandboxing
+    type: article
+    topics: [chat-assistant, coding-agent]
+    priority: P1
+    complexity: 4
+    level: advanced
+    cost: free
+    gem: true
+    why: "Filesystem and network isolation design for agents."
+    last_checked: 2026-09-25
+  - id: aisd-multi-agent-research
+    title: "How we built our multi-agent research system (Anthropic)"
+    url: https://www.anthropic.com/engineering/multi-agent-research-system
+    type: article
+    topics: [agent-platform]
+    priority: P0
+    complexity: 4
+    level: advanced
+    cost: free
+    gem: false
+    why: "Token multipliers, orchestration and evals with real numbers."
+    last_checked: 2026-09-25
+  - id: aisd-dont-build-multi
+    title: "Don't Build Multi-Agents (Cognition)"
+    url: https://cognition.ai/blog/dont-build-multi-agents
+    type: article
+    topics: [agent-platform]
+    priority: P0
+    complexity: 3
+    level: intermediate
+    cost: free
+    gem: true
+    why: "Sharp counter-argument centred on shared context."
+    last_checked: 2026-09-25
+  - id: aisd-lc-multi-agent
+    title: "How and when to build multi-agent systems (LangChain)"
+    url: https://blog.langchain.com/how-and-when-to-build-multi-agent-systems/
+    type: article
+    topics: [agent-platform]
+    priority: P1
+    complexity: 3
+    level: intermediate
+    cost: free
+    gem: true
+    why: "Reconciles the pro and con multi-agent views."
+    last_checked: 2026-09-25
+  - id: aisd-writing-tools
+    title: "Writing effective tools for agents (Anthropic)"
+    url: https://www.anthropic.com/engineering/writing-tools-for-agents
+    type: article
+    topics: [agent-platform, coding-agent]
+    priority: P0
+    complexity: 3
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Tool design determines agent quality."
+    last_checked: 2026-09-25
+  - id: aisd-a2a
+    title: "A2A protocol"
+    url: https://a2a-protocol.org/
+    type: docs
+    topics: [agent-platform]
+    priority: P1
+    complexity: 3
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Agent Cards, tasks and bindings (v1.0, 2026)."
+    last_checked: 2026-09-25
+  - id: aisd-langgraph
+    title: "LangGraph overview"
+    url: https://docs.langchain.com/oss/python/langgraph/overview
+    type: docs
+    topics: [agent-platform]
+    priority: P0
+    complexity: 3
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Checkpoints, interrupts and durable execution."
+    last_checked: 2026-09-25
+  - id: aisd-foundry-agents
+    title: "Microsoft Foundry Agent Service"
+    url: https://learn.microsoft.com/en-us/azure/foundry/agents/overview
+    type: docs
+    topics: [agent-platform]
+    priority: P1
+    complexity: 3
+    level: intermediate
+    cost: paid
+    gem: false
+    why: "Managed runtime and identity on Azure."
+    last_checked: 2026-09-25
+  - id: aisd-agentcore
+    title: "Amazon Bedrock AgentCore"
+    url: https://docs.aws.amazon.com/bedrock-agentcore/
+    type: docs
+    topics: [agent-platform, llm-gateway]
+    priority: P1
+    complexity: 3
+    level: intermediate
+    cost: paid
+    gem: false
+    why: "Runtime, Gateway, Identity, Policy, Memory, Evaluations."
+    last_checked: 2026-09-25
+  - id: aisd-litellm
+    title: "LiteLLM docs"
+    url: https://docs.litellm.ai/
+    type: docs
+    topics: [llm-gateway]
+    priority: P0
+    complexity: 3
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Reference feature set for virtual keys, budgets, routing, fallbacks."
+    last_checked: 2026-09-25
+  - id: aisd-envoy-ai
+    title: "Envoy AI Gateway"
+    url: https://aigateway.envoyproxy.io/
+    type: docs
+    topics: [llm-gateway]
+    priority: P1
+    complexity: 4
+    level: advanced
+    cost: free
+    gem: true
+    why: "Kubernetes-native high-performance gateway data plane."
+    last_checked: 2026-09-25
+  - id: aisd-gie
+    title: "Gateway API Inference Extension"
+    url: https://gateway-api-inference-extension.sigs.k8s.io/
+    type: docs
+    topics: [llm-gateway, llm-serving-platform]
+    priority: P2
+    complexity: 4
+    level: advanced
+    cost: free
+    gem: true
+    why: "Model-aware routing to self-hosted pools."
+    last_checked: 2026-09-25
+  - id: aisd-presidio
+    title: "Microsoft Presidio"
+    url: https://github.com/microsoft/presidio
+    type: docs
+    topics: [llm-gateway, document-processing]
+    priority: P1
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: false
+    why: "PII detection and anonymisation building block."
+    last_checked: 2026-09-25
+  - id: aisd-pagedattention
+    title: "Efficient Memory Management for LLM Serving with PagedAttention"
+    url: https://arxiv.org/abs/2309.06180
+    type: paper
+    topics: [llm-serving-platform]
+    priority: P1
+    complexity: 4
+    level: advanced
+    cost: free
+    gem: false
+    why: "Foundational KV-cache paper behind vLLM."
+    last_checked: 2026-09-25
+  - id: aisd-kipply
+    title: "Transformer Inference Arithmetic (kipply)"
+    url: https://kipp.ly/p/transformer-inference-arithmetic
+    type: article
+    topics: [llm-serving-platform, capacity-cost-planning]
+    priority: P0
+    complexity: 4
+    level: advanced
+    cost: free
+    gem: true
+    why: "First-principles memory and latency math."
+    last_checked: 2026-09-25
+  - id: aisd-scaling-book
+    title: "How to Scale Your Model"
+    url: https://jax-ml.github.io/scaling-book/
+    type: book
+    topics: [llm-serving-platform, capacity-cost-planning]
+    priority: P2
+    complexity: 5
+    level: advanced
+    cost: free
+    gem: true
+    why: "Roofline and parallelism reasoning."
+    last_checked: 2026-09-25
+  - id: aisd-nvidia-inference
+    title: "Mastering LLM Techniques: Inference Optimization (NVIDIA)"
+    url: https://developer.nvidia.com/blog/mastering-llm-techniques-inference-optimization/
+    type: article
+    topics: [llm-serving-platform]
+    priority: P1
+    complexity: 3
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Batching, KV cache, parallelism and quantisation overview."
+    last_checked: 2026-09-25
+  - id: aisd-databricks-inference
+    title: "LLM Inference Performance Engineering (Databricks)"
+    url: https://www.databricks.com/blog/llm-inference-performance-engineering-best-practices
+    type: article
+    topics: [llm-serving-platform, capacity-cost-planning]
+    priority: P1
+    complexity: 3
+    level: intermediate
+    cost: free
+    gem: true
+    why: "TTFT/TPOT definitions and hardware trade-offs with numbers."
+    last_checked: 2026-09-25
+  - id: aisd-vllm
+    title: "vLLM docs"
+    url: https://docs.vllm.ai/
+    type: docs
+    topics: [llm-serving-platform]
+    priority: P0
+    complexity: 3
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Prefix caching, multi-LoRA, quantisation, OpenAI-compatible server."
+    last_checked: 2026-09-25
+  - id: aisd-vllm-apc
+    title: "vLLM automatic prefix caching"
+    url: https://docs.vllm.ai/en/latest/features/automatic_prefix_caching.html
+    type: docs
+    topics: [llm-serving-platform, capacity-cost-planning]
+    priority: P2
+    complexity: 3
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Self-hosted equivalent of prompt caching."
+    last_checked: 2026-09-25
+  - id: aisd-sglang
+    title: "SGLang docs"
+    url: https://docs.sglang.ai/
+    type: docs
+    topics: [llm-serving-platform]
+    priority: P1
+    complexity: 3
+    level: intermediate
+    cost: free
+    gem: false
+    why: "RadixAttention and structured generation."
+    last_checked: 2026-09-25
+  - id: aisd-distserve
+    title: "DistServe (arXiv 2401.09670)"
+    url: https://arxiv.org/abs/2401.09670
+    type: paper
+    topics: [llm-serving-platform]
+    priority: P2
+    complexity: 5
+    level: advanced
+    cost: free
+    gem: false
+    why: "Disaggregated prefill/decode and goodput."
+    last_checked: 2026-09-25
+  - id: aisd-sarathi
+    title: "Sarathi-Serve (arXiv 2403.02310)"
+    url: https://arxiv.org/abs/2403.02310
+    type: paper
+    topics: [llm-serving-platform]
+    priority: P2
+    complexity: 5
+    level: advanced
+    cost: free
+    gem: false
+    why: "Chunked prefill for throughput-latency trade-off."
+    last_checked: 2026-09-25
+  - id: aisd-llmd
+    title: "llm-d"
+    url: https://llm-d.ai/
+    type: docs
+    topics: [llm-serving-platform]
+    priority: P2
+    complexity: 4
+    level: advanced
+    cost: free
+    gem: false
+    why: "Kubernetes-native distributed inference with KV-aware routing."
+    last_checked: 2026-09-25
+  - id: aisd-validators
+    title: "Who Validates the Validators? (arXiv 2404.12272)"
+    url: https://arxiv.org/abs/2404.12272
+    type: paper
+    topics: [evaluation-platform]
+    priority: P1
+    complexity: 4
+    level: advanced
+    cost: free
+    gem: true
+    why: "Criteria drift and aligning judges with human preferences."
+    last_checked: 2026-09-25
+  - id: aisd-llm-evaluators
+    title: "Evaluating the Effectiveness of LLM-Evaluators (Eugene Yan)"
+    url: https://eugeneyan.com/writing/llm-evaluators/
+    type: article
+    topics: [evaluation-platform]
+    priority: P1
+    complexity: 3
+    level: advanced
+    cost: free
+    gem: true
+    why: "Survey of judge techniques and pitfalls."
+    last_checked: 2026-09-25
+  - id: aisd-langfuse
+    title: "Langfuse docs"
+    url: https://langfuse.com/docs
+    type: docs
+    topics: [evaluation-platform]
+    priority: P0
+    complexity: 3
+    level: intermediate
+    cost: freemium
+    gem: false
+    why: "OSS tracing, datasets, evaluators, annotation."
+    last_checked: 2026-09-25
+  - id: aisd-phoenix
+    title: "Arize Phoenix"
+    url: https://arize.com/docs/phoenix
+    type: docs
+    topics: [evaluation-platform]
+    priority: P1
+    complexity: 3
+    level: intermediate
+    cost: free
+    gem: false
+    why: "OSS tracing and evals on OTel/OpenInference."
+    last_checked: 2026-09-25
+  - id: aisd-otel-genai
+    title: "OpenTelemetry GenAI semantic conventions"
+    url: https://opentelemetry.io/docs/specs/semconv/gen-ai/
+    type: docs
+    topics: [evaluation-platform, llm-gateway]
+    priority: P0
+    complexity: 3
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Span and attribute standard (Development status as of Sept 2026)."
+    last_checked: 2026-09-25
+  - id: aisd-inspect
+    title: "Inspect (UK AISI)"
+    url: https://inspect.aisi.org.uk/
+    type: docs
+    topics: [evaluation-platform]
+    priority: P2
+    complexity: 4
+    level: advanced
+    cost: free
+    gem: false
+    why: "Rigorous eval framework, strong for agents."
+    last_checked: 2026-09-25
+  - id: aisd-promptfoo-owasp
+    title: "promptfoo OWASP agentic red teaming"
+    url: https://www.promptfoo.dev/docs/red-team/owasp-agentic-ai/
+    type: docs
+    topics: [evaluation-platform]
+    priority: P1
+    complexity: 3
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Security evals in CI."
+    last_checked: 2026-09-25
+  - id: aisd-dlai-eval-agents
+    title: "Evaluating AI Agents (DeepLearning.AI)"
+    url: https://learn.deeplearning.ai/courses/evaluating-ai-agents/information
+    type: course
+    topics: [evaluation-platform, agent-platform]
+    priority: P1
+    complexity: 3
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Trajectory and component evals hands-on."
+    last_checked: 2026-09-25
+  - id: aisd-azure-di
+    title: "Azure AI Document Intelligence"
+    url: https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/
+    type: docs
+    topics: [document-processing]
+    priority: P1
+    complexity: 3
+    level: intermediate
+    cost: paid
+    gem: false
+    why: "Prebuilt and custom extraction, layout, bounding boxes."
+    last_checked: 2026-09-25
+  - id: aisd-azure-cu
+    title: "Azure AI Content Understanding"
+    url: https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/overview
+    type: docs
+    topics: [document-processing]
+    priority: P2
+    complexity: 3
+    level: intermediate
+    cost: paid
+    gem: false
+    why: "Schema-driven multimodal extraction service."
+    last_checked: 2026-09-25
+  - id: aisd-pydantic-ai
+    title: "Pydantic AI"
+    url: https://ai.pydantic.dev/
+    type: docs
+    topics: [document-processing, agent-platform]
+    priority: P0
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Typed structured outputs with validation and retries."
+    last_checked: 2026-09-25
+  - id: aisd-claude-batch
+    title: "Batch processing (Claude docs)"
+    url: https://docs.anthropic.com/en/docs/build-with-claude/batch-processing
+    type: docs
+    topics: [document-processing, capacity-cost-planning]
+    priority: P1
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Async batch discount mechanics."
+    last_checked: 2026-09-25
+  - id: aisd-openai-batch
+    title: "Batch API (OpenAI docs)"
+    url: https://platform.openai.com/docs/guides/batch
+    type: docs
+    topics: [document-processing, capacity-cost-planning]
+    priority: P2
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Batch pattern on OpenAI."
+    last_checked: 2026-09-25
+  - id: aisd-colbert
+    title: "ColBERT (arXiv 2004.12832)"
+    url: https://arxiv.org/abs/2004.12832
+    type: paper
+    topics: [ai-search, recsys-ml-basics]
+    priority: P2
+    complexity: 4
+    level: advanced
+    cost: free
+    gem: false
+    why: "Late interaction retrieval."
+    last_checked: 2026-09-25
+  - id: aisd-yan-discovery
+    title: "System Design for Recommendations and Search (Eugene Yan)"
+    url: https://eugeneyan.com/writing/system-design-for-discovery/
+    type: article
+    topics: [ai-search, recsys-ml-basics]
+    priority: P0
+    complexity: 3
+    level: intermediate
+    cost: free
+    gem: true
+    why: "Real architectures across companies for search and recsys."
+    last_checked: 2026-09-25
+  - id: aisd-mteb
+    title: "MTEB leaderboard"
+    url: https://huggingface.co/spaces/mteb/leaderboard
+    type: interactive
+    topics: [ai-search]
+    priority: P2
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Embedding model shortlist; evaluate on your data."
+    last_checked: 2026-09-25
+  - id: aisd-sbert
+    title: "Sentence Transformers"
+    url: https://sbert.net/
+    type: docs
+    topics: [ai-search]
+    priority: P1
+    complexity: 3
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Bi-encoder and cross-encoder training."
+    last_checked: 2026-09-25
+  - id: aisd-swebench-paper
+    title: "SWE-bench (arXiv 2310.06770)"
+    url: https://arxiv.org/abs/2310.06770
+    type: paper
+    topics: [coding-agent]
+    priority: P1
+    complexity: 3
+    level: advanced
+    cost: free
+    gem: false
+    why: "Benchmark design to mirror internally."
+    last_checked: 2026-09-25
+  - id: aisd-swebench
+    title: "SWE-bench site"
+    url: https://www.swebench.com/
+    type: interactive
+    topics: [coding-agent]
+    priority: P2
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Leaderboards and variants."
+    last_checked: 2026-09-25
+  - id: aisd-cc-best
+    title: "Claude Code best practices (Anthropic)"
+    url: https://www.anthropic.com/engineering/claude-code-best-practices
+    type: article
+    topics: [coding-agent]
+    priority: P1
+    complexity: 2
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Agentic coding workflow patterns."
+    last_checked: 2026-09-25
+  - id: aisd-aider-map
+    title: "Aider repo map"
+    url: https://aider.chat/docs/repomap.html
+    type: docs
+    topics: [coding-agent]
+    priority: P1
+    complexity: 3
+    level: intermediate
+    cost: free
+    gem: true
+    why: "Compact repo context via tree-sitter."
+    last_checked: 2026-09-25
+  - id: aisd-agents-md
+    title: "AGENTS.md"
+    url: https://agents.md/
+    type: docs
+    topics: [coding-agent]
+    priority: P0
+    complexity: 1
+    level: beginner
+    cost: free
+    gem: false
+    why: "Cross-tool repo conventions standard."
+    last_checked: 2026-09-25
+  - id: aisd-copilot-agent
+    title: "GitHub Copilot coding agent docs"
+    url: https://docs.github.com/en/copilot/using-github-copilot/coding-agent
+    type: docs
+    topics: [coding-agent]
+    priority: P2
+    complexity: 2
+    level: intermediate
+    cost: paid
+    gem: false
+    why: "Managed product baseline for build-vs-buy."
+    last_checked: 2026-09-25
+  - id: aisd-claude-agent-sdk
+    title: "Claude Agent SDK"
+    url: https://code.claude.com/docs/en/agent-sdk/overview
+    type: docs
+    topics: [coding-agent]
+    priority: P1
+    complexity: 3
+    level: intermediate
+    cost: paid
+    gem: false
+    why: "Build custom agents on the Claude Code harness."
+    last_checked: 2026-09-25
+  - id: aisd-openai-agents
+    title: "OpenAI Agents SDK"
+    url: https://openai.github.io/openai-agents-python/
+    type: docs
+    topics: [coding-agent]
+    priority: P2
+    complexity: 3
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Sandbox agents (beta, Apr 2026)."
+    last_checked: 2026-09-25
+  - id: aisd-rules-of-ml
+    title: "Rules of Machine Learning (Google)"
+    url: https://developers.google.com/machine-learning/guides/rules-of-ml
+    type: article
+    topics: [recsys-ml-basics]
+    priority: P1
+    complexity: 3
+    level: intermediate
+    cost: free
+    gem: true
+    why: "Practical wisdom on features, skew and launches."
+    last_checked: 2026-09-25
+  - id: aisd-youtube-recs
+    title: "Deep Neural Networks for YouTube Recommendations"
+    url: https://research.google/pubs/deep-neural-networks-for-youtube-recommendations/
+    type: paper
+    topics: [recsys-ml-basics]
+    priority: P1
+    complexity: 3
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Canonical two-stage recommender."
+    last_checked: 2026-09-25
+  - id: aisd-yan-bandits
+    title: "Bandits for Recommender Systems (Eugene Yan)"
+    url: https://eugeneyan.com/writing/bandits/
+    type: article
+    topics: [recsys-ml-basics]
+    priority: P2
+    complexity: 3
+    level: intermediate
+    cost: free
+    gem: true
+    why: "Exploration explained with caveats."
+    last_checked: 2026-09-25
+  - id: aisd-yan-recsys-llm
+    title: "Recommender systems and LLMs (Eugene Yan)"
+    url: https://eugeneyan.com/writing/recsys-llm/
+    type: article
+    topics: [recsys-ml-basics]
+    priority: P2
+    complexity: 3
+    level: intermediate
+    cost: free
+    gem: false
+    why: "Where LLMs help in recsys."
+    last_checked: 2026-09-25
+  - id: aisd-dmls
+    title: "Designing Machine Learning Systems (Chip Huyen)"
+    url: https://huyenchip.com/books/
+    type: book
+    topics: [recsys-ml-basics]
+    priority: P1
+    complexity: 3
+    level: advanced
+    cost: paid
+    gem: false
+    why: "Data, features, deployment and monitoring end to end."
+    last_checked: 2026-09-25

@@ -1,0 +1,1623 @@
+# Curated resources for the Advanced Python track. last_checked: 2026-09-25 (URLs HTTP-verified).
+# Schema: id, title, url, type, topics[], priority, complexity, level, cost, gem, why, last_checked
+
+- id: py-uv-docs
+  title: "uv documentation"
+  url: "https://docs.astral.sh/uv/"
+  type: docs
+  topics: [modern-tooling, packaging-project-structure]
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Authoritative; Concepts > Projects is the mental model for lock/sync/run."
+  last_checked: 2026-09-25
+- id: py-uv-scripts
+  title: "uv: running scripts (PEP 723)"
+  url: "https://docs.astral.sh/uv/guides/scripts/"
+  type: docs
+  topics: [modern-tooling]
+  priority: P0
+  complexity: 1
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Inline dependencies, script locks and shebangs; ideal for agent-generated scripts."
+  last_checked: 2026-09-25
+- id: py-uv-docker
+  title: "uv: Docker integration guide"
+  url: "https://docs.astral.sh/uv/guides/integration/docker/"
+  type: docs
+  topics: [modern-tooling, packaging-project-structure]
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Official multi-stage and cache-mount patterns."
+  last_checked: 2026-09-25
+- id: py-hynek-docker-uv
+  title: "Hynek: Production-ready Docker containers with uv"
+  url: "https://hynek.me/articles/docker-uv/"
+  type: article
+  topics: [modern-tooling, packaging-project-structure]
+  priority: P1
+  complexity: 2
+  level: advanced
+  cost: free
+  gem: true
+  why: "Opinionated, battle-tested Dockerfile reasoning."
+  last_checked: 2026-09-25
+- id: py-ruff-docs
+  title: "ruff documentation"
+  url: "https://docs.astral.sh/ruff/"
+  type: docs
+  topics: [modern-tooling]
+  priority: P0
+  complexity: 1
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Linter/formatter config; pair with the rule index to choose families deliberately."
+  last_checked: 2026-09-25
+- id: py-ruff-rules
+  title: "ruff rule index"
+  url: "https://docs.astral.sh/ruff/rules/"
+  type: docs
+  topics: [modern-tooling, asyncio-deep]
+  priority: P1
+  complexity: 1
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Look up ASYNC, UP, B, S rules and their fixes."
+  last_checked: 2026-09-25
+- id: py-ty-docs
+  title: "ty documentation"
+  url: "https://docs.astral.sh/ty/"
+  type: docs
+  topics: [modern-tooling, typing-advanced]
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Astral's type checker (beta): config and coming-from-mypy/pyright guide."
+  last_checked: 2026-09-25
+- id: py-pep723
+  title: "PEP 723: Inline script metadata"
+  url: "https://peps.python.org/pep-0723/"
+  type: spec
+  topics: [modern-tooling]
+  priority: P1
+  complexity: 1
+  level: intermediate
+  cost: free
+  gem: false
+  why: "The standard behind uv/pipx script dependencies."
+  last_checked: 2026-09-25
+- id: py-pylock
+  title: "pylock.toml specification (PEP 751)"
+  url: "https://packaging.python.org/en/latest/specifications/pylock-toml/"
+  type: spec
+  topics: [modern-tooling, packaging-project-structure]
+  priority: P1
+  complexity: 3
+  level: advanced
+  cost: free
+  gem: false
+  why: "Standard lock format and your portability story away from uv.lock."
+  last_checked: 2026-09-25
+- id: py-boring-deps
+  title: "James Bennett: Boring Python - dependency management"
+  url: "https://www.b-list.org/weblog/2022/may/13/boring-python-dependencies/"
+  type: article
+  topics: [modern-tooling, packaging-project-structure]
+  priority: P2
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: true
+  why: "Tool-independent principles for reproducible dependencies."
+  last_checked: 2026-09-25
+- id: py-precommit
+  title: "pre-commit"
+  url: "https://pre-commit.com/"
+  type: docs
+  topics: [modern-tooling]
+  priority: P1
+  complexity: 1
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Hook framework; keep hooks fast."
+  last_checked: 2026-09-25
+- id: py-prek
+  title: "prek (Rust pre-commit drop-in)"
+  url: "https://github.com/j178/prek"
+  type: repo
+  topics: [modern-tooling]
+  priority: P2
+  complexity: 1
+  level: intermediate
+  cost: free
+  gem: true
+  why: "Faster reimplementation reading the same config."
+  last_checked: 2026-09-25
+- id: py-pydata-model
+  title: "Python reference: Data model"
+  url: "https://docs.python.org/3/reference/datamodel.html"
+  type: docs
+  topics: [data-model, decorators-descriptors-metaclasses, cpython-internals]
+  priority: P0
+  complexity: 3
+  level: advanced
+  cost: free
+  gem: false
+  why: "The real Python API; read Special method names end to end."
+  last_checked: 2026-09-25
+- id: py-fluent-python
+  title: "Fluent Python, 2nd ed. (Luciano Ramalho)"
+  url: "https://www.fluentpython.com/"
+  type: book
+  topics: [data-model, typing-advanced, generators-context-managers, decorators-descriptors-metaclasses, concurrency-models]
+  priority: P0
+  complexity: 3
+  level: advanced
+  cost: paid
+  gem: false
+  why: "Best treatment of data model, typing, generators, descriptors and concurrency."
+  last_checked: 2026-09-25
+- id: py-collections-abc
+  title: "collections.abc"
+  url: "https://docs.python.org/3/library/collections.abc.html"
+  type: docs
+  topics: [data-model]
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Mixin table shows what you get for free when implementing protocols."
+  last_checked: 2026-09-25
+- id: py-tenthousand-objects
+  title: "Python behind the scenes #6: how the object system works"
+  url: "https://tenthousandmeters.com/blog/python-behind-the-scenes-6-how-python-object-system-works/"
+  type: article
+  topics: [data-model, cpython-internals]
+  priority: P1
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: "How C-level slots map to dunder methods."
+  last_checked: 2026-09-25
+- id: py-tenthousand-attrs
+  title: "Python behind the scenes #7: how attributes work"
+  url: "https://tenthousandmeters.com/blog/python-behind-the-scenes-7-how-python-attributes-work/"
+  type: article
+  topics: [data-model, decorators-descriptors-metaclasses, cpython-internals]
+  priority: P1
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: "Attribute lookup in CPython step by step."
+  last_checked: 2026-09-25
+- id: py-descriptor-howto
+  title: "Descriptor HowTo Guide"
+  url: "https://docs.python.org/3/howto/descriptor.html"
+  type: docs
+  topics: [data-model, decorators-descriptors-metaclasses]
+  priority: P0
+  complexity: 3
+  level: advanced
+  cost: free
+  gem: false
+  why: "Pure-Python versions of property, methods and classmethod; definitive."
+  last_checked: 2026-09-25
+- id: py-ned-names
+  title: "Ned Batchelder: Facts and myths about Python names and values"
+  url: "https://nedbatchelder.com/text/names.html"
+  type: article
+  topics: [data-model]
+  priority: P2
+  complexity: 1
+  level: intermediate
+  cost: free
+  gem: true
+  why: "Mental model behind aliasing bugs."
+  last_checked: 2026-09-25
+- id: py-hynek-subclassing
+  title: "Hynek: Subclassing in Python Redux"
+  url: "https://hynek.me/articles/python-subclassing-redux/"
+  type: article
+  topics: [data-model, decorators-descriptors-metaclasses, architecture-patterns-python]
+  priority: P1
+  complexity: 3
+  level: advanced
+  cost: free
+  gem: true
+  why: "When to prefer composition/protocols over inheritance."
+  last_checked: 2026-09-25
+- id: py-mcoding
+  title: "mCoding (YouTube)"
+  url: "https://www.youtube.com/@mCoding"
+  type: video
+  topics: [data-model, decorators-descriptors-metaclasses, generators-context-managers, cpython-internals]
+  priority: P2
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: true
+  why: "Short precise videos on dunders, slots, generators and gotchas."
+  last_checked: 2026-09-25
+- id: py-arjancodes
+  title: "ArjanCodes (YouTube)"
+  url: "https://www.youtube.com/@ArjanCodes"
+  type: video
+  topics: [architecture-patterns-python, typing-advanced]
+  priority: P2
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Software design in Python: protocols, DI, patterns."
+  last_checked: 2026-09-25
+- id: py-typing-docs
+  title: "Python typing documentation (typing.python.org)"
+  url: "https://typing.python.org/en/latest/"
+  type: docs
+  topics: [typing-advanced]
+  priority: P0
+  complexity: 3
+  level: advanced
+  cost: free
+  gem: false
+  why: "Official guides and reference maintained by the typing council."
+  last_checked: 2026-09-25
+- id: py-typing-spec-generics
+  title: "Typing spec: Generics"
+  url: "https://typing.python.org/en/latest/spec/generics.html"
+  type: spec
+  topics: [typing-advanced]
+  priority: P1
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: false
+  why: "Precise variance, ParamSpec and TypeVarTuple rules."
+  last_checked: 2026-09-25
+- id: py-typing-protocols
+  title: "Typing reference: Protocols"
+  url: "https://typing.python.org/en/latest/reference/protocols.html"
+  type: docs
+  topics: [typing-advanced, architecture-patterns-python]
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Structural typing patterns and pitfalls."
+  last_checked: 2026-09-25
+- id: py-typing-modernizing
+  title: "Modernizing superseded typing features"
+  url: "https://typing.python.org/en/latest/guides/modernizing.html"
+  type: docs
+  topics: [typing-advanced]
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: true
+  why: "Exact old-to-new mapping (TypeVar to PEP 695, Optional to |)."
+  last_checked: 2026-09-25
+- id: py-pep695
+  title: "PEP 695: Type parameter syntax"
+  url: "https://peps.python.org/pep-0695/"
+  type: spec
+  topics: [typing-advanced]
+  priority: P1
+  complexity: 3
+  level: advanced
+  cost: free
+  gem: false
+  why: "Motivation and variance inference details."
+  last_checked: 2026-09-25
+- id: py-pep649
+  title: "PEP 649: Deferred evaluation of annotations"
+  url: "https://peps.python.org/pep-0649/"
+  type: spec
+  topics: [typing-advanced, pydantic-v2]
+  priority: P1
+  complexity: 3
+  level: advanced
+  cost: free
+  gem: false
+  why: "Why 3.14 annotations are lazy; read with PEP 749."
+  last_checked: 2026-09-25
+- id: py-pyright-vs-mypy
+  title: "Pyright: mypy comparison"
+  url: "https://github.com/microsoft/pyright/blob/main/docs/mypy-comparison.md"
+  type: docs
+  topics: [typing-advanced, modern-tooling]
+  priority: P2
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: "Explains inference differences you will hit between checkers."
+  last_checked: 2026-09-25
+- id: py-adamj-circular
+  title: "Adam Johnson: fixing circular imports with type hints"
+  url: "https://adamj.eu/tech/2021/05/13/python-type-hints-how-to-fix-circular-imports/"
+  type: article
+  topics: [typing-advanced]
+  priority: P2
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: true
+  why: "Practical TYPE_CHECKING patterns."
+  last_checked: 2026-09-25
+- id: py-pydantic-docs
+  title: "Pydantic documentation"
+  url: "https://pydantic.dev/docs/validation/latest/get-started/"
+  type: docs
+  topics: [pydantic-v2]
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Official docs; the Concepts section is excellent."
+  last_checked: 2026-09-25
+- id: py-pydantic-validators
+  title: "Pydantic: Validators"
+  url: "https://pydantic.dev/docs/validation/latest/concepts/validators/"
+  type: docs
+  topics: [pydantic-v2]
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Modes, Annotated validators, ordering."
+  last_checked: 2026-09-25
+- id: py-pydantic-unions
+  title: "Pydantic: Unions"
+  url: "https://pydantic.dev/docs/validation/latest/concepts/unions/"
+  type: docs
+  topics: [pydantic-v2]
+  priority: P0
+  complexity: 3
+  level: advanced
+  cost: free
+  gem: false
+  why: "Smart vs discriminated unions; essential for agent actions."
+  last_checked: 2026-09-25
+- id: py-pydantic-perf
+  title: "Pydantic: Performance tips"
+  url: "https://pydantic.dev/docs/validation/latest/concepts/performance/"
+  type: docs
+  topics: [pydantic-v2, performance-profiling]
+  priority: P1
+  complexity: 3
+  level: advanced
+  cost: free
+  gem: true
+  why: "Short high-signal list from the maintainers."
+  last_checked: 2026-09-25
+- id: py-pydantic-jsonschema
+  title: "Pydantic: JSON Schema"
+  url: "https://pydantic.dev/docs/validation/latest/concepts/json_schema/"
+  type: docs
+  topics: [pydantic-v2]
+  priority: P0
+  complexity: 3
+  level: advanced
+  cost: free
+  gem: false
+  why: "Customising the schema the LLM sees."
+  last_checked: 2026-09-25
+- id: py-pydantic-experimental
+  title: "Pydantic: Experimental features (partial validation)"
+  url: "https://pydantic.dev/docs/validation/latest/concepts/experimental/"
+  type: docs
+  topics: [pydantic-v2]
+  priority: P1
+  complexity: 3
+  level: advanced
+  cost: free
+  gem: false
+  why: "Streaming JSON validation."
+  last_checked: 2026-09-25
+- id: py-pydantic-migration
+  title: "Pydantic: Migration guide (v1 to v2)"
+  url: "https://pydantic.dev/docs/validation/latest/get-started/migration/"
+  type: docs
+  topics: [pydantic-v2]
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "API mapping and behavioural changes."
+  last_checked: 2026-09-25
+- id: py-pydanticai-output
+  title: "Pydantic AI: Output"
+  url: "https://pydantic.dev/docs/ai/core-concepts/output/"
+  type: docs
+  topics: [pydantic-v2, typing-advanced]
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Structured output and validation-retry in an agent framework."
+  last_checked: 2026-09-25
+- id: py-pydantic-llm-intro
+  title: "Pydantic: Steering LLMs with structured outputs"
+  url: "https://pydantic.dev/articles/llm-intro"
+  type: article
+  topics: [pydantic-v2]
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: true
+  why: "Why schemas beat prompts for reliable extraction."
+  last_checked: 2026-09-25
+- id: py-hynek-serialization
+  title: "Hynek: Serialization (domain vs wire models)"
+  url: "https://hynek.me/articles/serialization/"
+  type: article
+  topics: [pydantic-v2, architecture-patterns-python]
+  priority: P1
+  complexity: 3
+  level: advanced
+  cost: free
+  gem: true
+  why: "Argues for separating domain and wire models."
+  last_checked: 2026-09-25
+- id: py-asyncio-task
+  title: "asyncio: Coroutines and Tasks"
+  url: "https://docs.python.org/3/library/asyncio-task.html"
+  type: docs
+  topics: [asyncio-deep]
+  priority: P0
+  complexity: 3
+  level: advanced
+  cost: free
+  gem: false
+  why: "TaskGroup, timeouts and cancellation semantics."
+  last_checked: 2026-09-25
+- id: py-asyncio-dev
+  title: "asyncio: Developing with asyncio"
+  url: "https://docs.python.org/3/library/asyncio-dev.html"
+  type: docs
+  topics: [asyncio-deep, performance-profiling]
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Debug mode, blocking detection, never-awaited coroutines."
+  last_checked: 2026-09-25
+- id: py-vorpus-sc
+  title: "Nathaniel J. Smith: Notes on structured concurrency"
+  url: "https://vorpus.org/blog/notes-on-structured-concurrency-or-go-statement-considered-harmful/"
+  type: article
+  topics: [asyncio-deep]
+  priority: P0
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: "The essay that led to TaskGroup and nurseries."
+  last_checked: 2026-09-25
+- id: py-vorpus-timeouts
+  title: "Nathaniel J. Smith: Timeouts and cancellation for humans"
+  url: "https://vorpus.org/blog/timeouts-and-cancellation-for-humans/"
+  type: article
+  topics: [asyncio-deep]
+  priority: P0
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: "Deadlines and cancel scopes: the right mental model."
+  last_checked: 2026-09-25
+- id: py-async-pressure
+  title: "Armin Ronacher: I'm not feeling the async pressure"
+  url: "https://lucumr.pocoo.org/2020/1/1/async-pressure/"
+  type: article
+  topics: [asyncio-deep, fastapi-production]
+  priority: P0
+  complexity: 3
+  level: advanced
+  cost: free
+  gem: true
+  why: "Backpressure explained; still the best article."
+  last_checked: 2026-09-25
+- id: py-hynek-waiting
+  title: "Hynek: Waiting in asyncio"
+  url: "https://hynek.me/articles/waiting-in-asyncio/"
+  type: article
+  topics: [asyncio-deep]
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: true
+  why: "gather vs wait vs TaskGroup vs as_completed guide."
+  last_checked: 2026-09-25
+- id: py-tenthousand-async
+  title: "Python behind the scenes #12: how async/await works"
+  url: "https://tenthousandmeters.com/blog/python-behind-the-scenes-12-how-asyncawait-works-in-python/"
+  type: article
+  topics: [asyncio-deep, generators-context-managers]
+  priority: P1
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: "From generators to the event loop internals."
+  last_checked: 2026-09-25
+- id: py-fowler-asyncio
+  title: "Python Concurrency with asyncio (Matthew Fowler)"
+  url: "https://www.manning.com/books/python-concurrency-with-asyncio"
+  type: book
+  topics: [asyncio-deep]
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: paid
+  gem: false
+  why: "Most thorough book-length treatment."
+  last_checked: 2026-09-25
+- id: py-beazley-concurrency
+  title: "David Beazley: Python Concurrency From the Ground Up (PyCon 2015)"
+  url: "https://www.youtube.com/watch?v=MCs5OvhV9S4"
+  type: video
+  topics: [asyncio-deep, generators-context-managers]
+  priority: P1
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: "Live-codes an event loop; the model clicks."
+  last_checked: 2026-09-25
+- id: py-anyio
+  title: "AnyIO documentation"
+  url: "https://anyio.readthedocs.io/en/stable/"
+  type: docs
+  topics: [asyncio-deep, fastapi-production]
+  priority: P1
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: false
+  why: "Cancel scopes and the layer Starlette/FastAPI use."
+  last_checked: 2026-09-25
+- id: py-free-threading-guide
+  title: "Python Free-Threading Guide"
+  url: "https://py-free-threading.github.io/"
+  type: docs
+  topics: [concurrency-models, cpython-internals]
+  priority: P0
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: "Community hub: porting, compatibility tracker, testing."
+  last_checked: 2026-09-25
+- id: py-free-threading-porting
+  title: "Free-threading: porting guide"
+  url: "https://py-free-threading.github.io/porting/"
+  type: docs
+  topics: [concurrency-models]
+  priority: P1
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: "Concrete thread-safety patterns."
+  last_checked: 2026-09-25
+- id: py-free-threading-howto
+  title: "HOWTO: Python support for free threading"
+  url: "https://docs.python.org/3/howto/free-threading-python.html"
+  type: docs
+  topics: [concurrency-models]
+  priority: P0
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Official behaviour and flags."
+  last_checked: 2026-09-25
+- id: py-pep703
+  title: "PEP 703: Making the GIL optional"
+  url: "https://peps.python.org/pep-0703/"
+  type: spec
+  topics: [concurrency-models, cpython-internals]
+  priority: P1
+  complexity: 5
+  level: advanced
+  cost: free
+  gem: false
+  why: "Design rationale: biased refcounting, immortal objects."
+  last_checked: 2026-09-25
+- id: py-pep779
+  title: "PEP 779: Supported status criteria for free-threaded Python"
+  url: "https://peps.python.org/pep-0779/"
+  type: spec
+  topics: [concurrency-models]
+  priority: P1
+  complexity: 3
+  level: advanced
+  cost: free
+  gem: false
+  why: "What officially supported means in 3.14."
+  last_checked: 2026-09-25
+- id: py-pep734
+  title: "PEP 734: Multiple interpreters in the stdlib"
+  url: "https://peps.python.org/pep-0734/"
+  type: spec
+  topics: [concurrency-models]
+  priority: P2
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: false
+  why: "Model and limits of subinterpreters."
+  last_checked: 2026-09-25
+- id: py-whatsnew-314
+  title: "What's New in Python 3.14"
+  url: "https://docs.python.org/3/whatsnew/3.14.html"
+  type: docs
+  topics: [concurrency-models, performance-profiling, cpython-internals, typing-advanced]
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Free-threading numbers, forkserver default, deferred annotations, GC note."
+  last_checked: 2026-09-25
+- id: py-tenthousand-gil
+  title: "Python behind the scenes #13: the GIL and its effects"
+  url: "https://tenthousandmeters.com/blog/python-behind-the-scenes-13-the-gil-and-its-effects-on-python-multithreading/"
+  type: article
+  topics: [concurrency-models, cpython-internals]
+  priority: P1
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: "Best explanation of what the GIL does and when it releases."
+  last_checked: 2026-09-25
+- id: py-pythonspeed-gil
+  title: "Itamar Turner-Trauring: Python's GIL and parallelism"
+  url: "https://pythonspeed.com/articles/python-gil/"
+  type: article
+  topics: [concurrency-models]
+  priority: P2
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Practical framing for data workloads."
+  last_checked: 2026-09-25
+- id: py-concurrent-futures
+  title: "concurrent.futures"
+  url: "https://docs.python.org/3/library/concurrent.futures.html"
+  type: docs
+  topics: [concurrency-models]
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Executor semantics you actually use."
+  last_checked: 2026-09-25
+- id: py-fastapi-docs
+  title: "FastAPI documentation"
+  url: "https://fastapi.tiangolo.com/"
+  type: docs
+  topics: [fastapi-production]
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Excellent and current, including deployment guidance."
+  last_checked: 2026-09-25
+- id: py-fastapi-async
+  title: "FastAPI: Concurrency and async/await"
+  url: "https://fastapi.tiangolo.com/async/"
+  type: docs
+  topics: [fastapi-production, asyncio-deep]
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "def vs async def rules in one page."
+  last_checked: 2026-09-25
+- id: py-fastapi-lifespan
+  title: "FastAPI: Lifespan events"
+  url: "https://fastapi.tiangolo.com/advanced/events/"
+  type: docs
+  topics: [fastapi-production]
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Correct startup/shutdown resource pattern."
+  last_checked: 2026-09-25
+- id: py-fastapi-yield
+  title: "FastAPI: Dependencies with yield"
+  url: "https://fastapi.tiangolo.com/tutorial/dependencies/dependencies-with-yield/"
+  type: docs
+  topics: [fastapi-production]
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Exit-code timing semantics."
+  last_checked: 2026-09-25
+- id: py-fastapi-test-deps
+  title: "FastAPI: Testing dependencies with overrides"
+  url: "https://fastapi.tiangolo.com/advanced/testing-dependencies/"
+  type: docs
+  topics: [fastapi-production, testing-pytest]
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "The DI testing seam."
+  last_checked: 2026-09-25
+- id: py-fastapi-workers
+  title: "FastAPI: Server workers"
+  url: "https://fastapi.tiangolo.com/deployment/server-workers/"
+  type: docs
+  topics: [fastapi-production]
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Process model and one-process-per-container guidance."
+  last_checked: 2026-09-25
+- id: py-starlette
+  title: "Starlette documentation"
+  url: "https://starlette.dev/"
+  type: docs
+  topics: [fastapi-production]
+  priority: P1
+  complexity: 3
+  level: advanced
+  cost: free
+  gem: false
+  why: "Layer under FastAPI: middleware, lifespan, streaming."
+  last_checked: 2026-09-25
+- id: py-uvicorn
+  title: "Uvicorn documentation"
+  url: "https://uvicorn.dev/"
+  type: docs
+  topics: [fastapi-production]
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Settings: concurrency limits, keep-alive, graceful shutdown."
+  last_checked: 2026-09-25
+- id: py-fastapi-best-practices
+  title: "zhanymkanov/fastapi-best-practices"
+  url: "https://github.com/zhanymkanov/fastapi-best-practices"
+  type: repo
+  topics: [fastapi-production, architecture-patterns-python]
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: true
+  why: "Opinionated structure and pitfalls from real projects."
+  last_checked: 2026-09-25
+- id: py-httpx
+  title: "HTTPX documentation"
+  url: "https://www.python-httpx.org/"
+  type: docs
+  topics: [fastapi-production, asyncio-deep, testing-pytest]
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Timeouts, limits, transports, ASGITransport for tests."
+  last_checked: 2026-09-25
+- id: py-pytest-docs
+  title: "pytest documentation"
+  url: "https://docs.pytest.org/en/stable/"
+  type: docs
+  topics: [testing-pytest]
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Official docs; fixtures explanation page is excellent."
+  last_checked: 2026-09-25
+- id: py-pytest-fixtures
+  title: "pytest: About fixtures"
+  url: "https://docs.pytest.org/en/stable/explanation/fixtures.html"
+  type: docs
+  topics: [testing-pytest]
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Scope, teardown ordering and the DI model."
+  last_checked: 2026-09-25
+- id: py-pytest-parametrize
+  title: "pytest: How to parametrize"
+  url: "https://docs.pytest.org/en/stable/how-to/parametrize.html"
+  type: docs
+  topics: [testing-pytest]
+  priority: P1
+  complexity: 1
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Ids, marks, indirect."
+  last_checked: 2026-09-25
+- id: py-hypothesis-docs
+  title: "Hypothesis documentation"
+  url: "https://hypothesis.readthedocs.io/en/latest/"
+  type: docs
+  topics: [testing-pytest]
+  priority: P0
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Strategies, settings, health checks."
+  last_checked: 2026-09-25
+- id: py-hypothesis-stateful
+  title: "Hypothesis: Stateful testing"
+  url: "https://hypothesis.readthedocs.io/en/latest/stateful.html"
+  type: docs
+  topics: [testing-pytest]
+  priority: P1
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: "State-machine tests find bugs unit tests never do."
+  last_checked: 2026-09-25
+- id: py-hypothesis-articles
+  title: "Hypothesis articles"
+  url: "https://hypothesis.works/articles/"
+  type: article
+  topics: [testing-pytest]
+  priority: P2
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: true
+  why: "Maintainers' essays on property-based thinking."
+  last_checked: 2026-09-25
+- id: py-testcontainers-guide
+  title: "Testcontainers for Python: getting started"
+  url: "https://testcontainers.com/guides/getting-started-with-testcontainers-for-python/"
+  type: tutorial
+  topics: [testing-pytest]
+  priority: P0
+  complexity: 2
+  level: beginner
+  cost: free
+  gem: false
+  why: "Official walkthrough with real Postgres."
+  last_checked: 2026-09-25
+- id: py-pytest-asyncio
+  title: "pytest-asyncio documentation"
+  url: "https://pytest-asyncio.readthedocs.io/en/latest/"
+  type: docs
+  topics: [testing-pytest, asyncio-deep]
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Loop scopes and modes."
+  last_checked: 2026-09-25
+- id: py-pytest-recording
+  title: "pytest-recording"
+  url: "https://github.com/kiwicom/pytest-recording"
+  type: repo
+  topics: [testing-pytest]
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: true
+  why: "Record/replay HTTP for provider contract tests."
+  last_checked: 2026-09-25
+- id: py-inline-snapshot
+  title: "inline-snapshot"
+  url: "https://github.com/15r10nk/inline-snapshot"
+  type: repo
+  topics: [testing-pytest]
+  priority: P2
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: true
+  why: "Self-updating snapshot tests for prompts and schemas."
+  last_checked: 2026-09-25
+- id: py-hynek-testing-packaging
+  title: "Hynek: Testing & packaging"
+  url: "https://hynek.me/articles/testing-packaging/"
+  type: article
+  topics: [testing-pytest, packaging-project-structure]
+  priority: P1
+  complexity: 3
+  level: advanced
+  cost: free
+  gem: true
+  why: "Why src layout and testing the installed package."
+  last_checked: 2026-09-25
+- id: py-py-functional-howto
+  title: "Python HOWTO: Functional programming"
+  url: "https://docs.python.org/3/howto/functional.html"
+  type: docs
+  topics: [generators-context-managers]
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Iterators and generators, clearly."
+  last_checked: 2026-09-25
+- id: py-contextlib
+  title: "contextlib"
+  url: "https://docs.python.org/3/library/contextlib.html"
+  type: docs
+  topics: [generators-context-managers]
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "ExitStack, aclosing, suppress semantics."
+  last_checked: 2026-09-25
+- id: py-itertools
+  title: "itertools (docs and recipes)"
+  url: "https://docs.python.org/3/library/itertools.html"
+  type: docs
+  topics: [generators-context-managers]
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "The recipes section is a masterclass."
+  last_checked: 2026-09-25
+- id: py-beazley-tutorials
+  title: "David Beazley: tutorials"
+  url: "https://www.dabeaz.com/tutorials.html"
+  type: site
+  topics: [generators-context-managers, asyncio-deep]
+  priority: P2
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: "Index of his classic generator/coroutine/concurrency material."
+  last_checked: 2026-09-25
+- id: py-pep789
+  title: "PEP 789: Limiting yield in async generators"
+  url: "https://peps.python.org/pep-0789/"
+  type: spec
+  topics: [generators-context-managers, asyncio-deep]
+  priority: P2
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: false
+  why: "Why yielding inside cancel scopes is dangerous."
+  last_checked: 2026-09-25
+- id: py-functools
+  title: "functools"
+  url: "https://docs.python.org/3/library/functools.html"
+  type: docs
+  topics: [decorators-descriptors-metaclasses]
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "wraps, cache, cached_property, singledispatch, partial."
+  last_checked: 2026-09-25
+- id: py-ionel-metaclasses
+  title: "Understanding Python metaclasses (Ionel Cristian Maries)"
+  url: "https://blog.ionelmc.ro/2015/02/09/understanding-python-metaclasses/"
+  type: article
+  topics: [decorators-descriptors-metaclasses]
+  priority: P2
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: "Clearest account of the metaclass call chain and pitfalls."
+  last_checked: 2026-09-25
+- id: py-wrapt
+  title: "wrapt (Graham Dumpleton)"
+  url: "https://github.com/GrahamDumpleton/wrapt"
+  type: repo
+  topics: [decorators-descriptors-metaclasses]
+  priority: P2
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: "Library-grade decorators and why naive ones fail."
+  last_checked: 2026-09-25
+- id: py-cosmic-python
+  title: "Architecture Patterns with Python (Cosmic Python)"
+  url: "https://www.cosmicpython.com/"
+  type: book
+  topics: [architecture-patterns-python]
+  priority: P0
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Canonical Python treatment of repository, UoW and message bus; free online."
+  last_checked: 2026-09-25
+- id: py-cosmic-repo
+  title: "Cosmic Python ch.2: Repository"
+  url: "https://www.cosmicpython.com/book/chapter_02_repository"
+  type: book
+  topics: [architecture-patterns-python]
+  priority: P0
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Ports and fakes."
+  last_checked: 2026-09-25
+- id: py-cosmic-uow
+  title: "Cosmic Python ch.6: Unit of Work"
+  url: "https://www.cosmicpython.com/book/chapter_06_uow"
+  type: book
+  topics: [architecture-patterns-python]
+  priority: P0
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Transaction boundary as a context manager."
+  last_checked: 2026-09-25
+- id: py-cosmic-bus
+  title: "Cosmic Python ch.9: Message bus"
+  url: "https://www.cosmicpython.com/book/chapter_09_all_messagebus"
+  type: book
+  topics: [architecture-patterns-python]
+  priority: P1
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: false
+  why: "Events and handlers."
+  last_checked: 2026-09-25
+- id: py-cosmic-code
+  title: "cosmicpython/code (branches per chapter)"
+  url: "https://github.com/cosmicpython/code"
+  type: repo
+  topics: [architecture-patterns-python]
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: true
+  why: "Diff each chapter's step in code."
+  last_checked: 2026-09-25
+- id: py-sqlalchemy-asyncio
+  title: "SQLAlchemy: asyncio extension"
+  url: "https://docs.sqlalchemy.org/en/20/orm/extensions/asyncio.html"
+  type: docs
+  topics: [architecture-patterns-python, fastapi-production]
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Correct async sessions and lazy-load pitfalls."
+  last_checked: 2026-09-25
+- id: py-pypa-guide
+  title: "Python Packaging User Guide"
+  url: "https://packaging.python.org/en/latest/"
+  type: docs
+  topics: [packaging-project-structure]
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Canonical tutorials and specifications."
+  last_checked: 2026-09-25
+- id: py-pypa-pyproject
+  title: "Writing your pyproject.toml"
+  url: "https://packaging.python.org/en/latest/guides/writing-pyproject-toml/"
+  type: docs
+  topics: [packaging-project-structure]
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Field-by-field reference."
+  last_checked: 2026-09-25
+- id: py-pypa-src-layout
+  title: "src layout vs flat layout"
+  url: "https://packaging.python.org/en/latest/discussions/src-layout-vs-flat-layout/"
+  type: docs
+  topics: [packaging-project-structure]
+  priority: P1
+  complexity: 1
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Official comparison."
+  last_checked: 2026-09-25
+- id: py-uv-workspaces
+  title: "uv: Workspaces"
+  url: "https://docs.astral.sh/uv/concepts/projects/workspaces/"
+  type: docs
+  topics: [packaging-project-structure, modern-tooling]
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Monorepo mechanics and limits."
+  last_checked: 2026-09-25
+- id: py-uv-build-backend
+  title: "uv: Build backend"
+  url: "https://docs.astral.sh/uv/concepts/build-backend/"
+  type: docs
+  topics: [packaging-project-structure]
+  priority: P2
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "uv_build configuration and publishing flow."
+  last_checked: 2026-09-25
+- id: py-py-spy
+  title: "py-spy"
+  url: "https://github.com/benfred/py-spy"
+  type: tool
+  topics: [performance-profiling]
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Sampling profiler for live production processes."
+  last_checked: 2026-09-25
+- id: py-scalene
+  title: "Scalene"
+  url: "https://github.com/plasma-umass/scalene"
+  type: tool
+  topics: [performance-profiling]
+  priority: P2
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: "CPU + memory + native/Python split per line."
+  last_checked: 2026-09-25
+- id: py-memray
+  title: "memray"
+  url: "https://github.com/bloomberg/memray"
+  type: tool
+  topics: [performance-profiling]
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Memory profiler including native allocations."
+  last_checked: 2026-09-25
+- id: py-pyinstrument
+  title: "pyinstrument"
+  url: "https://github.com/joerick/pyinstrument"
+  type: tool
+  topics: [performance-profiling, fastapi-production]
+  priority: P2
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Readable async-aware wall-clock profiles."
+  last_checked: 2026-09-25
+- id: py-perf-profiling-howto
+  title: "Python support for the Linux perf profiler"
+  url: "https://docs.python.org/3/howto/perf_profiling.html"
+  type: docs
+  topics: [performance-profiling, cpython-internals]
+  priority: P2
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: false
+  why: "Show Python frames in perf."
+  last_checked: 2026-09-25
+- id: py-pyperf
+  title: "pyperf"
+  url: "https://pyperf.readthedocs.io/en/latest/"
+  type: docs
+  topics: [performance-profiling]
+  priority: P2
+  complexity: 3
+  level: advanced
+  cost: free
+  gem: false
+  why: "Trustworthy benchmarking methodology."
+  last_checked: 2026-09-25
+- id: py-pythonspeed-articles
+  title: "pythonspeed.com articles"
+  url: "https://pythonspeed.com/articles/"
+  type: article
+  topics: [performance-profiling, data-tooling, concurrency-models]
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: true
+  why: "Practical performance and memory writing for data workloads."
+  last_checked: 2026-09-25
+- id: py-tracemalloc
+  title: "tracemalloc"
+  url: "https://docs.python.org/3/library/tracemalloc.html"
+  type: docs
+  topics: [performance-profiling, cpython-internals]
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Stdlib memory tracing and snapshot diffs."
+  last_checked: 2026-09-25
+- id: py-codingconfessions
+  title: "Confessions of a Code Addict"
+  url: "https://blog.codingconfessions.com/"
+  type: blog
+  topics: [cpython-internals, performance-profiling]
+  priority: P1
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: "Deep CPython internals write-ups."
+  last_checked: 2026-09-25
+- id: py-codingconfessions-gc
+  title: "Code Addict: CPython garbage collection internals"
+  url: "https://blog.codingconfessions.com/p/cpython-garbage-collection-internals"
+  type: article
+  topics: [cpython-internals]
+  priority: P1
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: "Generational GC explained with the source."
+  last_checked: 2026-09-25
+- id: py-tenthousandmeters
+  title: "Python behind the scenes (tenthousandmeters.com)"
+  url: "https://tenthousandmeters.com/"
+  type: blog
+  topics: [cpython-internals, data-model, asyncio-deep, concurrency-models]
+  priority: P1
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: "Best free walkthrough of the CPython VM, objects, GIL and imports."
+  last_checked: 2026-09-25
+- id: py-tenthousand-vm
+  title: "Python behind the scenes #1: how the CPython VM works"
+  url: "https://tenthousandmeters.com/blog/python-behind-the-scenes-1-how-the-cpython-vm-works/"
+  type: article
+  topics: [cpython-internals]
+  priority: P1
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: "Start of the series: compiler, code objects, eval loop."
+  last_checked: 2026-09-25
+- id: py-cpython-internaldocs
+  title: "CPython InternalDocs"
+  url: "https://github.com/python/cpython/blob/main/InternalDocs/README.md"
+  type: docs
+  topics: [cpython-internals]
+  priority: P2
+  complexity: 5
+  level: advanced
+  cost: free
+  gem: false
+  why: "Maintainers' own docs on the interpreter, GC and compiler."
+  last_checked: 2026-09-25
+- id: py-dis
+  title: "dis module"
+  url: "https://docs.python.org/3/library/dis.html"
+  type: docs
+  topics: [cpython-internals, performance-profiling]
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Bytecode reference for your version."
+  last_checked: 2026-09-25
+- id: py-beazley-gil
+  title: "David Beazley: Understanding the Python GIL"
+  url: "https://www.youtube.com/watch?v=Obt-vMVdM8s"
+  type: video
+  topics: [cpython-internals, concurrency-models]
+  priority: P2
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: "The classic talk on GIL behaviour."
+  last_checked: 2026-09-25
+- id: py-pep659
+  title: "PEP 659: Specializing adaptive interpreter"
+  url: "https://peps.python.org/pep-0659/"
+  type: spec
+  topics: [cpython-internals, performance-profiling]
+  priority: P2
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: false
+  why: "How hot bytecode specialises."
+  last_checked: 2026-09-25
+- id: py-polars-docs
+  title: "Polars user guide"
+  url: "https://docs.pola.rs/"
+  type: docs
+  topics: [data-tooling]
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Expressions, lazy API, streaming."
+  last_checked: 2026-09-25
+- id: py-polars-lazy
+  title: "Polars: Lazy API"
+  url: "https://docs.pola.rs/user-guide/lazy/"
+  type: docs
+  topics: [data-tooling]
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Optimiser and explain()."
+  last_checked: 2026-09-25
+- id: py-polars-pandas
+  title: "Polars: Coming from pandas"
+  url: "https://docs.pola.rs/user-guide/migration/pandas/"
+  type: docs
+  topics: [data-tooling]
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Concept mapping and gotchas."
+  last_checked: 2026-09-25
+- id: py-duckdb-docs
+  title: "DuckDB documentation"
+  url: "https://duckdb.org/docs/stable/"
+  type: docs
+  topics: [data-tooling]
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "SQL dialect, extensions, Python client."
+  last_checked: 2026-09-25
+- id: py-duckdb-python
+  title: "DuckDB: Python client overview"
+  url: "https://duckdb.org/docs/stable/clients/python/overview"
+  type: docs
+  topics: [data-tooling]
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Relations, Arrow/Polars integration, parameters."
+  last_checked: 2026-09-25
+- id: py-duckdb-polars
+  title: "DuckDB and Polars guide"
+  url: "https://duckdb.org/docs/stable/guides/python/polars"
+  type: docs
+  topics: [data-tooling]
+  priority: P2
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Zero-copy interchange."
+  last_checked: 2026-09-25
+- id: py-arrow-python
+  title: "Apache Arrow: Python docs"
+  url: "https://arrow.apache.org/docs/python/"
+  type: docs
+  topics: [data-tooling]
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Tables, compute, Parquet, datasets."
+  last_checked: 2026-09-25
+- id: py-arrow-columnar
+  title: "Arrow columnar format specification"
+  url: "https://arrow.apache.org/docs/format/Columnar.html"
+  type: spec
+  topics: [data-tooling]
+  priority: P2
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: "Why zero-copy works: buffers and validity bitmaps."
+  last_checked: 2026-09-25
+- id: py-polars-blog
+  title: "Polars blog"
+  url: "https://pola.rs/posts/"
+  type: blog
+  topics: [data-tooling, performance-profiling]
+  priority: P2
+  complexity: 3
+  level: advanced
+  cost: free
+  gem: true
+  why: "Engine internals, benchmarks, streaming engine."
+  last_checked: 2026-09-25
+- id: py-structlog-docs
+  title: "structlog documentation"
+  url: "https://www.structlog.org/en/stable/"
+  type: docs
+  topics: [observability-python]
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Processors, bound loggers, stdlib integration."
+  last_checked: 2026-09-25
+- id: py-structlog-bp
+  title: "structlog: Logging best practices"
+  url: "https://www.structlog.org/en/stable/logging-best-practices.html"
+  type: docs
+  topics: [observability-python]
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: true
+  why: "Opinionated production guidance."
+  last_checked: 2026-09-25
+- id: py-structlog-ctxvars
+  title: "structlog: contextvars"
+  url: "https://www.structlog.org/en/stable/contextvars.html"
+  type: docs
+  topics: [observability-python, asyncio-deep]
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Request-scoped context in async code."
+  last_checked: 2026-09-25
+- id: py-otel-python
+  title: "OpenTelemetry Python"
+  url: "https://opentelemetry.io/docs/languages/python/"
+  type: docs
+  topics: [observability-python]
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "SDK, instrumentation, exporters."
+  last_checked: 2026-09-25
+- id: py-otel-python-start
+  title: "OpenTelemetry Python: Getting started"
+  url: "https://opentelemetry.io/docs/languages/python/getting-started/"
+  type: tutorial
+  topics: [observability-python]
+  priority: P0
+  complexity: 1
+  level: beginner
+  cost: free
+  gem: false
+  why: "Working baseline."
+  last_checked: 2026-09-25
+- id: py-otel-fastapi
+  title: "OpenTelemetry FastAPI instrumentation"
+  url: "https://opentelemetry-python-contrib.readthedocs.io/en/latest/instrumentation/fastapi/fastapi.html"
+  type: docs
+  topics: [observability-python, fastapi-production]
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Options, exclusions, hooks."
+  last_checked: 2026-09-25
+- id: py-otel-genai
+  title: "OpenTelemetry GenAI semantic conventions"
+  url: "https://opentelemetry.io/docs/specs/semconv/gen-ai/"
+  type: spec
+  topics: [observability-python]
+  priority: P1
+  complexity: 3
+  level: advanced
+  cost: free
+  gem: false
+  why: "Current gen_ai.* attribute names (Development status)."
+  last_checked: 2026-09-25
+- id: py-logfire-fastapi
+  title: "Pydantic Logfire: FastAPI integration"
+  url: "https://pydantic.dev/docs/logfire/integrations/web-frameworks/fastapi/"
+  type: docs
+  topics: [observability-python, fastapi-production, pydantic-v2]
+  priority: P2
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Fast path to OTel-native agent traces."
+  last_checked: 2026-09-25
+- id: py-twelve-factor-logs
+  title: "The Twelve-Factor App: Logs"
+  url: "https://12factor.net/logs"
+  type: article
+  topics: [observability-python]
+  priority: P2
+  complexity: 1
+  level: beginner
+  cost: free
+  gem: false
+  why: "Why event streams to stdout."
+  last_checked: 2026-09-25
+- id: py-honeycomb-blog
+  title: "Honeycomb blog"
+  url: "https://www.honeycomb.io/blog"
+  type: blog
+  topics: [observability-python]
+  priority: P2
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: true
+  why: "Best writing on high-cardinality debugging with traces."
+  last_checked: 2026-09-25

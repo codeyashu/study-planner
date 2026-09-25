@@ -1,0 +1,183 @@
+{
+ "generated": "2026-09-25",
+ "start": "2026-09-26",
+ "end": "2027-03-28",
+ "current_week": 0,
+ "total": {
+  "planned": 527,
+  "due": 0,
+  "done": 0,
+  "behind": 0
+ },
+ "streak": 0,
+ "longest_streak": 0,
+ "by_track": {
+  "agentic-ai": {
+   "label": "Agentic AI",
+   "planned": 79,
+   "due": 0,
+   "done": 0,
+   "minutes_done": 0
+  },
+  "system-design": {
+   "label": "System Design",
+   "planned": 79,
+   "due": 0,
+   "done": 0,
+   "minutes_done": 0
+  },
+  "dsa": {
+   "label": "DSA",
+   "planned": 133,
+   "due": 0,
+   "done": 0,
+   "minutes_done": 0
+  },
+  "architecture": {
+   "label": "Architecture",
+   "planned": 52,
+   "due": 0,
+   "done": 0,
+   "minutes_done": 0
+  },
+  "python": {
+   "label": "Python",
+   "planned": 79,
+   "due": 0,
+   "done": 0,
+   "minutes_done": 0
+  },
+  "java-spring-ai": {
+   "label": "Java/Spring AI",
+   "planned": 52,
+   "due": 0,
+   "done": 0,
+   "minutes_done": 0
+  },
+  "staff-skills": {
+   "label": "Staff+",
+   "planned": 26,
+   "due": 0,
+   "done": 0,
+   "minutes_done": 0
+  },
+  "review": {
+   "label": "Review",
+   "planned": 27,
+   "due": 0,
+   "done": 0,
+   "minutes_done": 0
+  }
+ },
+ "weeks": {
+  "0": {
+   "planned": 7,
+   "done": 0
+  },
+  "1": {
+   "planned": 20,
+   "done": 0
+  },
+  "2": {
+   "planned": 20,
+   "done": 0
+  },
+  "3": {
+   "planned": 20,
+   "done": 0
+  },
+  "4": {
+   "planned": 20,
+   "done": 0
+  },
+  "5": {
+   "planned": 20,
+   "done": 0
+  },
+  "6": {
+   "planned": 20,
+   "done": 0
+  },
+  "7": {
+   "planned": 20,
+   "done": 0
+  },
+  "8": {
+   "planned": 20,
+   "done": 0
+  },
+  "9": {
+   "planned": 20,
+   "done": 0
+  },
+  "10": {
+   "planned": 20,
+   "done": 0
+  },
+  "11": {
+   "planned": 20,
+   "done": 0
+  },
+  "12": {
+   "planned": 20,
+   "done": 0
+  },
+  "13": {
+   "planned": 20,
+   "done": 0
+  },
+  "14": {
+   "planned": 20,
+   "done": 0
+  },
+  "15": {
+   "planned": 20,
+   "done": 0
+  },
+  "16": {
+   "planned": 20,
+   "done": 0
+  },
+  "17": {
+   "planned": 20,
+   "done": 0
+  },
+  "18": {
+   "planned": 20,
+   "done": 0
+  },
+  "19": {
+   "planned": 20,
+   "done": 0
+  },
+  "20": {
+   "planned": 20,
+   "done": 0
+  },
+  "21": {
+   "planned": 20,
+   "done": 0
+  },
+  "22": {
+   "planned": 20,
+   "done": 0
+  },
+  "23": {
+   "planned": 20,
+   "done": 0
+  },
+  "24": {
+   "planned": 20,
+   "done": 0
+  },
+  "25": {
+   "planned": 20,
+   "done": 0
+  },
+  "26": {
+   "planned": 20,
+   "done": 0
+  }
+ },
+ "heatmap": {}
+}
