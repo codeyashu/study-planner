@@ -1,4 +1,4 @@
-**Next: Saturday 26 Sep — Baseline & environment**
+**Day 1 · Week 0 — Baseline & environment** · 270 min
 
 - [ ] **Agentic AI** · 90 min · Self-assessment quiz on LLM fundamentals/agents/RAG/evals (score 1-5 per topic) + env setup: uv, Docker, Ollama (pull a 7-8B model), OpenAI/Anthropic/Azure keys in a .env, smoke-test one call each → [LLM fundamentals: tokens, transformers, sampling, reasoning models](tracks/agentic-ai/llm-fundamentals.md) · [resource](https://docs.astral.sh/uv/) <small>`w00-ai-1`</small>
 - [ ] **System Design** · 60 min · Baseline 60-min SD mock: design a URL shortener end-to-end (requirements, estimates, API, data, scale, failure); self-score with the rubric → [Interview framework & back-of-envelope estimation](tracks/system-design/framework-and-estimation.md) · [resource](https://www.hellointerview.com/learn/system-design/in-a-hurry/introduction) <small>`w00-sd-1`</small>

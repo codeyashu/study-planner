@@ -1,13 +1,13 @@
 {
- "generated": "2026-09-25",
+ "generated": "2026-09-26",
  "start": "2026-09-26",
  "end": "2027-03-28",
  "current_week": 0,
  "total": {
   "planned": 527,
-  "due": 0,
+  "due": 6,
   "done": 0,
-  "behind": 0
+  "behind": 6
  },
  "streak": 0,
  "longest_streak": 0,
@@ -15,21 +15,21 @@
   "agentic-ai": {
    "label": "Agentic AI",
    "planned": 79,
-   "due": 0,
+   "due": 1,
    "done": 0,
    "minutes_done": 0
   },
   "system-design": {
    "label": "System Design",
    "planned": 79,
-   "due": 0,
+   "due": 1,
    "done": 0,
    "minutes_done": 0
   },
   "dsa": {
    "label": "DSA",
    "planned": 133,
-   "due": 0,
+   "due": 2,
    "done": 0,
    "minutes_done": 0
   },
@@ -43,7 +43,7 @@
   "python": {
    "label": "Python",
    "planned": 79,
-   "due": 0,
+   "due": 1,
    "done": 0,
    "minutes_done": 0
   },
@@ -64,7 +64,7 @@
   "review": {
    "label": "Review",
    "planned": 27,
-   "due": 0,
+   "due": 1,
    "done": 0,
    "minutes_done": 0
   }

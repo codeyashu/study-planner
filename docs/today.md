@@ -4,12 +4,12 @@ hide: [navigation]
 generated: true
 ---
 
-# Today · Friday 25 September 2026
+# Today · Saturday 26 September 2026
 
-!!! info "No tasks scheduled today — next session in 1 day (Sat 26 Sep)"
-    Week 0 · Baseline & environment
+!!! abstract "Day 1 · Week 0 · Phase 0 — Baseline & environment"
+    Planned **270 min** · 0/6 done · [Week page](roadmap/weeks/week-00.md)
 
-## Coming up: Saturday 26 Sep
+## Tasks
 
 - [ ] **Agentic AI** · 90 min · Self-assessment quiz on LLM fundamentals/agents/RAG/evals (score 1-5 per topic) + env setup: uv, Docker, Ollama (pull a 7-8B model), OpenAI/Anthropic/Azure keys in a .env, smoke-test one call each → [LLM fundamentals: tokens, transformers, sampling, reasoning models](tracks/agentic-ai/llm-fundamentals.md) · [resource](https://docs.astral.sh/uv/) <small>`w00-ai-1`</small>
 - [ ] **System Design** · 60 min · Baseline 60-min SD mock: design a URL shortener end-to-end (requirements, estimates, API, data, scale, failure); self-score with the rubric → [Interview framework & back-of-envelope estimation](tracks/system-design/framework-and-estimation.md) · [resource](https://www.hellointerview.com/learn/system-design/in-a-hurry/introduction) <small>`w00-sd-1`</small>
@@ -29,4 +29,4 @@ Latest: **Day −1 — Orientation: the 2026 landscape in five reads** — read 
 3. Answer 3 questions from today's topic out loud (explain-it-back).
 4. Tick boxes in today's GitHub issue *Day N* and close it — progress syncs automatically.
 
-<small>Generated 2026-09-25 22:57 IST by `scripts/gen_today.py`.</small>
+<small>Generated 2026-09-26 05:18 UTC by `scripts/gen_today.py`.</small>

@@ -5,11 +5,12 @@ generated: true
 
 # Today's feed
 
-!!! info "38 items from the last 72 h · built Fri 25 Sep 2026 22:57 IST"
+!!! info "38 items from the last 72 h · built Sat 26 Sep 2026 10:48 IST"
     Auto-aggregated from [data/feeds.yml](https://github.com/codeyashu/study-planner/blob/main/data/feeds.yml). Skim titles; open at most 3. The curated picks live in the [digest](../digest/index.md).
 
 ## AI engineering
 
+- [OpenRouter: from Seed to Stripe — with OpenRouter’s Alex Atallah & AMP’s Anjney Midha](https://www.latent.space/p/openrouter) — *Latent Space* · 26 Sep 04:44
 - [Proaction boosts sales 60% and saves 75+ hours with Codex](https://openai.com/index/proaction) — *OpenAI News* · 26 Sep 00:30
 - [Quoting John Gruber](https://simonwillison.net/2026/Sep/25/john-gruber/) — *Simon Willison* · 25 Sep 22:52
 - [50 years of tech devices](https://www.bensbites.com/p/50-years-of-tech-devices) — *Ben's Bites* · 25 Sep 19:20
@@ -20,7 +21,6 @@ generated: true
 - [Note on 24th September 2026](https://simonwillison.net/2026/Sep/24/harder/) — *Simon Willison* · 25 Sep 05:01
 - [commit-rewriter 0.2](https://simonwillison.net/2026/Sep/24/commit-rewriter/) — *Simon Willison* · 25 Sep 01:36
 - [datasette 1.0a41](https://simonwillison.net/2026/Sep/24/datasette/) — *Simon Willison* · 25 Sep 00:45
-- [Foundries vs Navigators: Lowering the Cost of Science](https://www.latent.space/p/foundries-vs-navigators-lowering) — *Latent Space* · 24 Sep 20:33
 - [Accelerating vision-language models with LFM2.5-VL-DSpark](https://huggingface.co/blog/LiquidAI/lfm2-5-vl-dspark) — *Hugging Face Blog* · 24 Sep 19:38
 - [Back to Claude](https://www.bensbites.com/p/back-to-claude) — *Ben's Bites* · 24 Sep 18:34
 - [Gemini TTS 🗣️, Claude’s novel enzyme 🧬, Google private memory 🔒](https://tldr.tech/ai/2026-09-24) — *TLDR AI* · 24 Sep 05:30
@@ -55,11 +55,15 @@ generated: true
 
 ## News
 
-- [Dutch governments builds alternative for Microsoft based on NixOS](https://www.dawo.community/en/) — *Hacker News (best)* · 25 Sep 13:36
-- [Goodbye Google](https://robert.ocallahan.org/2026/09/goodbye-google.html) — *Hacker News (best)* · 25 Sep 10:22
-- [California is chasing wealth that has feet](https://blog.landeconomics.org/p/california-is-chasing-wealth-that) — *Hacker News (best)* · 25 Sep 02:04
-- [Opus 5.5 is good at explainer videos](https://launchvideo.io) — *Hacker News (best)* · 25 Sep 01:58
-- [Show HN: Whiteboard (YC W26) – An open-source IDE for thoughtful software design](https://github.com/devdotfast/whiteboard) — *Hacker News (best)* · 24 Sep 22:51
-- [Why is the liver so weirdly regenerative?](https://dynomight.substack.com/p/liver) — *Hacker News (best)* · 24 Sep 21:53
-- [GitHub has not removed malicious imitation software after 3 weeks](https://successfulsoftware.net/2026/09/24/github-has-not-removed-malicious-imitation-software-after-3-weeks/) — *Hacker News (best)* · 24 Sep 21:20
-- [F-Droid 2.0](https://f-droid.org/2026/09/24/f-droid-2.0-a-new-chapter-for-android-freedom.html) — *Hacker News (best)* · 24 Sep 20:56
+- [Revealing the details of how OpenAI agents hacked Hugging Face](https://swarmtraces.org/) — *Hacker News (best)* · 26 Sep 02:39
+- [Ollaya – Ollama for open-source, Jev-style decision models](https://ollaya.dev/) — *Hacker News (best)* · 26 Sep 00:03
+- [U.S. appeals court upholds designation of Anthropic as supply chain risk](https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html) — *Hacker News (best)* · 25 Sep 20:59
+- [Factorio that you can touch](https://factorio.com/blog/post/fff-447) — *Hacker News (best)* · 25 Sep 19:54
+- [Allow babywearing carriers on planes](https://www.jefftk.com/p/allow-carriers-on-planes) — *Hacker News (best)* · 25 Sep 19:30
+- [First Principles Thinking](https://sunilsadasivan.com/writing/first-principles-thinking/) — *Hacker News (best)* · 25 Sep 19:25
+- [Platform-independent SIMD in Go](https://go.dev/blog/simd-experiment) — *Hacker News (best)* · 25 Sep 17:17
+- [Git-bug: Distributed, offline-first bug tracker embedded in Git](https://github.com/git-bug/git-bug) — *Hacker News (best)* · 25 Sep 17:08
+
+??? warning "Feeds that failed this run"
+
+    - **Import AI** — `HTTPError: 403 Client Error: Forbidden for url: https://importai.substack.com/feed`
