@@ -49,7 +49,11 @@ Rate yourself 0–3 on each item (0 = never touched, 1 = read about it, 2 = buil
 - [ ] Create the capstone repo `agentic-ops-copilot` (empty, with README)
 - [ ] Clone this repo; `uv sync && uv run mkdocs serve` works
 
-## 5. Write your skip list (30 min)
+## 5. Communication baseline (about 3 h across the weekend)
+
+Complete [Week 0 drills](../tracks/communication/drills/week-00.md): a 40-item grammar diagnostic, a 60-word vocabulary check, a recorded 2-minute talk, a 150-word status email and a self-assessment. Save the raw results in `docs/log/comm-baseline.md`; you'll repeat the same tests in week 24 and compare.
+
+## 6. Write your skip list (30 min)
 
 In `docs/log/baseline.md`, list:
 

@@ -8,9 +8,10 @@ this repo MUST follow this file.
 
 - 15 years experience; already strong in system design and Python. Skip beginner material; go for depth, trade-offs, production reality.
 - Goal: Staff/Principal + AI architect + ship production agentic systems; interview-ready as a checkpoint (weeks 4/8/12/16/20/24).
-- Time: 12–15 h/week. Weekdays ~1.5 h, Saturday ~3 h build block, Sunday ~2.5 h build + review.
+- Time: ~17–18 h/week (12–15 h technical + 30 min/day Communication & English). Weekdays ~2 h, Saturday ~3.5 h build block, Sunday ~3 h build + review.
 - Stack: Python-first (uv, Pydantic v2, FastAPI, Pydantic AI, LangGraph, DSPy), Azure (Microsoft Foundry) + local/cloud-agnostic (Docker, Ollama, pgvector), Java 25 / Spring Boot 4 / Spring AI 2.0 alongside. Full DSA track (NeetCode 250 path, Python).
 - Timezone: IST (UTC+05:30). Roadmap start: Week 0 = Sat 2026-09-26; Week 1 = Mon 2026-09-28; Week 24 ends Sun 2027-03-14; buffer weeks 25–26.
+- English: B2+ heading to C1 — understands well; gaps in speaking fluency, vocabulary range and writing precision. Wants medium-to-high difficulty communication practice (grammar, vocabulary, idioms, phrasal verbs, pronunciation, business writing, soft skills).
 - Prefers resources that EXPLAIN well (visual, intuitive, practical), including lesser-known gems — not only famous ones.
 
 ## 2. Repository map
@@ -19,12 +20,14 @@ this repo MUST follow this file.
 |---|---|---|
 | `data/topics.yml` | Topic contract: every topic slug, priority, complexity, phase | humans / weekly agent |
 | `data/curriculum.yml` | Week-by-week tasks per track (source for plan) | humans / weekly agent |
+| `data/communication.yml` | Weekly arc for the Communication & English track (merged into the plan as 7 daily 30-min tasks) | humans / weekly agent |
 | `data/plan.yml` | GENERATED day-by-day plan (`scripts/build_plan.py`) | script only |
 | `data/progress.yml` | Completed task ids + dates | `scripts/sync_progress.py`, human |
 | `data/feeds.yml` | RSS sources | humans / weekly agent |
 | `data/resources/<track>.yml` | Curated resources with metadata | track authors / weekly agent |
 | `docs/tracks/<track>/<slug>.md` | Topic pages (template §4) | agents / human |
 | `docs/tracks/<track>/questions.md` | Cross-topic interview & scenario question bank | agents |
+| `docs/tracks/communication/drills/week-NN.md` | Daily English/communication drills (day types fixed; see comm section §6.4) | agents / human |
 | `docs/roadmap/weeks/week-NN.md` | GENERATED week pages | script only |
 | `docs/today.md` | GENERATED daily page | script only |
 | `docs/digest/posts/YYYY-MM-DD.md` | Daily digest posts (blog) | daily agent |
@@ -135,7 +138,10 @@ Use-case/scenario questions describe a realistic situation (inputs, constraints,
    ## Question of the day
    ??? question "…" (L2/L3, tied to today's topic, with answer)
    ## Tip for today's task
+   ## English word of the day
+   **Word/idiom:** … · **Meaning:** … · **Example (work context):** … · **Grammar/style tip (1–2 lines, C1 level):** …
    ```
+3b. English section: choose a C1-level word or idiom that is *not* in `docs/tracks/communication/drills/` for the current or earlier weeks, relevant to the day's technical theme, in genuinely current workplace usage; mark register (formal/informal, US/UK). Verify it in a dictionary (Cambridge/Oxford/Merriam-Webster).
 4. Only link to pages you actually opened. No duplicates of the previous 7 digests.
 5. If a release changes a fact on a topic page (version, API, deprecation), update that page and its `last_reviewed`.
 6. Comment the digest link on today's GitHub issue "Day N — …" if tools allow.
@@ -148,7 +154,14 @@ Use-case/scenario questions describe a realistic situation (inputs, constraints,
 4. Read `data/progress.yml`: if the learner is > 3 days behind, rebalance next week in `data/curriculum.yml` (push P2 items to buffer weeks; never drop P0), then `uv run python scripts/build_plan.py`.
 5. Draft `docs/log/retros/week-NN.md` from the template with stats (tasks done by track, streak).
 6. Add 3–5 new newsletters/articles worth reviewing to `docs/reading/` if genuinely good.
+6b. Communication: read the learner's error log (`docs/log/comm-errors.md`, if present) and the past week's drill scores; adjust next week's focus in `data/communication.yml` if a pattern needs reinforcement, then rebuild the plan.
 7. Commit: `weekly: refresh week NN` and push.
+
+### 6.4 Communication & English track
+- Daily task ids are `wNN-comm-1..7` (Mon Grammar, Tue Vocabulary, Wed Speaking, Thu Idioms & phrasal verbs, Fri Writing, Sat Speaking record, Sun Soft skills + weekly review). Each links to `drills/week-NN.md#day-N`.
+- Drill heading format is strict: `## Day N — <Type>: <focus> {#day-N}`. Vocabulary/idiom tables use the exact headers `| Word | Part of speech | Meaning | Example |` and `| Expression | Meaning | Example |` so `scripts/export_vocab.py` can build the Anki deck.
+- Difficulty ramps medium (wk 1–8) → medium-high (wk 9–20) → high (wk 21–26). Vocabulary never repeats across weeks; later drills recycle earlier words.
+- Accuracy rule: grammar explanations and idiom usage must be verifiable in Cambridge/Oxford/Merriam-Webster; never invent idioms.
 
 ### 6.3 `on-demand` ("update roadmap", "add topic X", "I finished X")
 - New topic → add to `data/topics.yml`, create page per §4, schedule in `data/curriculum.yml`, rebuild plan.
@@ -166,5 +179,6 @@ uv run python scripts/gen_today.py        # today page (use --date YYYY-MM-DD to
 uv run python scripts/build_feeds.py      # RSS -> docs/reading/feed.md
 uv run python scripts/stats.py            # progress -> docs/assets/stats.json
 uv run python scripts/check_links.py      # link check of resources
+uv run python scripts/export_vocab.py     # drill vocab/idiom tables -> build/vocab.csv (Anki)
 uv run pytest                             # script tests
 ```

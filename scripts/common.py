@@ -23,6 +23,7 @@ TRACK_ORDER = [
     "python",
     "java-spring-ai",
     "staff-skills",
+    "communication",
     "review",
 ]
 
@@ -35,6 +36,7 @@ TRACK_LABEL = {
     "python": "Python",
     "java-spring-ai": "Java/Spring AI",
     "staff-skills": "Staff+",
+    "communication": "Communication",
     "review": "Review",
 }
 
@@ -47,6 +49,7 @@ TRACK_ABBR = {
     "python": "py",
     "java-spring-ai": "java",
     "staff-skills": "staff",
+    "communication": "comm",
     "review": "rev",
 }
 
@@ -59,6 +62,7 @@ SLOTS = {
     "architecture": [2, 6],
     "java-spring-ai": [3, 5],
     "staff-skills": [6],
+    "communication": [0, 1, 2, 3, 4, 5, 6],
     "review": [6],
 }
 

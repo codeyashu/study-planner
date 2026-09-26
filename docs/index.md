@@ -93,6 +93,14 @@ gantt
 
     [:octicons-arrow-right-24: Architecture](tracks/architecture/index.md) · [Python](tracks/python/index.md) · [Java](tracks/java-spring-ai/index.md)
 
+-   :material-message-text: **Communication & English**
+
+    ---
+
+    A 30-minute drill every day: grammar, vocabulary, idioms, speaking, writing and soft skills, with a baseline and re-tests.
+
+    [:octicons-arrow-right-24: Communication](tracks/communication/index.md) · [Weekly drills](tracks/communication/drills/index.md)
+
 -   :material-graph: **DSA · Staff+ skills**
 
     ---

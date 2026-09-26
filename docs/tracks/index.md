@@ -15,6 +15,7 @@ last_reviewed: 2026-09-25
 | [Java & Spring AI](java-spring-ai/index.md) | 10 | Java 25, Spring Boot 4, Spring AI 2.0, MCP in Java | 1 h |
 | [DSA](dsa/index.md) | 21 | NeetCode-250 pattern path, LLD, concurrency | 2.25 h |
 | [Staff+ skills](staff-skills/index.md) | 12 | Strategy, influence, tech debt, mentoring, STAR bank | 0.5 h |
+| [Communication & English](communication/index.md) | 28 + 27 weekly drill pages | Grammar, vocabulary, idioms, phrasal verbs, pronunciation, business writing, soft skills (daily) | 3.5 h |
 
 **Every topic page has the same shape:** at-a-glance box (priority, complexity, hours, "done when") → why it matters → core concepts → curated resources (:gem: marks lesser-known but excellent explainers) → hands-on lab → questions graded L1–L4 with hidden answers → real-world use cases → pitfalls → checklist.
 

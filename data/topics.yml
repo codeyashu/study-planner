@@ -194,3 +194,42 @@ tracks:
       - {slug: architecture-reviews, title: "Running architecture reviews & guilds", priority: P1, complexity: 2, phase: 4, hours: 1}
       - {slug: ai-era-leadership, title: "Leading engineering in the AI era: adoption, productivity, risk", priority: P0, complexity: 3, phase: 4, hours: 2}
       - {slug: behavioral-interviews, title: "Behavioral & Staff interviews: STAR stories bank", priority: P0, complexity: 2, phase: 6, hours: 3}
+
+  communication:
+    title: Communication & English
+    icon: material/message-text
+    topics:
+      # grammar & precision
+      - {slug: articles-determiners, title: "Articles & determiners: a / the / zero", priority: P0, complexity: 3, phase: 1, hours: 2}
+      - {slug: prepositions-collocations, title: "Prepositions & collocations", priority: P0, complexity: 3, phase: 1, hours: 2}
+      - {slug: tenses-aspect, title: "Tenses & aspect: perfect vs simple, narrative tenses", priority: P0, complexity: 3, phase: 1, hours: 2}
+      - {slug: conditionals-modals-hedging, title: "Conditionals, modals & hedging", priority: P0, complexity: 4, phase: 1, hours: 2}
+      - {slug: sentence-structure-parallelism, title: "Sentence structure & parallelism", priority: P0, complexity: 3, phase: 2, hours: 2}
+      - {slug: active-passive-emphasis, title: "Active vs passive voice, inversion & emphasis", priority: P1, complexity: 4, phase: 3, hours: 2}
+      - {slug: clauses-and-cohesion, title: "Clauses, participles & cohesion (linking words)", priority: P1, complexity: 4, phase: 3, hours: 2}
+      - {slug: punctuation-style, title: "Punctuation & style", priority: P1, complexity: 2, phase: 2, hours: 1}
+      - {slug: common-errors-fluent-speakers, title: "Common errors of fluent non-native speakers", priority: P0, complexity: 3, phase: 2, hours: 2}
+      # vocabulary, idioms & phrasal verbs
+      - {slug: business-tech-vocabulary, title: "Business & tech-leadership vocabulary", priority: P0, complexity: 3, phase: 1, hours: 3}
+      - {slug: word-nuance-register, title: "Word nuance & register (formal vs informal)", priority: P0, complexity: 4, phase: 1, hours: 2}
+      - {slug: idioms-business, title: "Idioms for work: meetings, strategy, negotiation", priority: P0, complexity: 3, phase: 1, hours: 3}
+      - {slug: phrasal-verbs, title: "Phrasal verbs at work", priority: P0, complexity: 3, phase: 2, hours: 3}
+      - {slug: collocations-precision, title: "Collocations & precision with numbers and data", priority: P1, complexity: 3, phase: 2, hours: 2}
+      # spoken fluency & pronunciation
+      - {slug: pronunciation-stress-intonation, title: "Pronunciation: word stress, rhythm & intonation", priority: P0, complexity: 4, phase: 1, hours: 3}
+      - {slug: pace-fillers-clarity, title: "Pace, pauses, filler words & clarity", priority: P0, complexity: 3, phase: 1, hours: 2}
+      - {slug: structuring-spoken-answers, title: "Structuring spoken answers: PREP, pyramid, STAR", priority: P0, complexity: 3, phase: 2, hours: 2}
+      - {slug: meetings-and-presentations, title: "Meetings, presentations & speaking on calls", priority: P0, complexity: 3, phase: 2, hours: 3}
+      - {slug: shadowing-and-self-review, title: "Shadowing & self-review method", priority: P0, complexity: 2, phase: 1, hours: 2}
+      # business writing
+      - {slug: concise-writing-editing, title: "Concise writing & editing", priority: P0, complexity: 3, phase: 1, hours: 2}
+      - {slug: email-writing, title: "Email writing that gets action", priority: P0, complexity: 2, phase: 1, hours: 2}
+      - {slug: design-docs-and-strategy-prose, title: "Prose for design docs, RFCs & strategy", priority: P0, complexity: 4, phase: 2, hours: 3}
+      - {slug: executive-updates, title: "Executive updates, summaries & escalations", priority: P0, complexity: 3, phase: 4, hours: 2}
+      # soft skills
+      - {slug: feedback-and-conflict, title: "Feedback, disagreement & conflict", priority: P0, complexity: 3, phase: 1, hours: 3}
+      - {slug: negotiation-and-saying-no, title: "Negotiation & saying no", priority: P0, complexity: 4, phase: 3, hours: 3}
+      - {slug: storytelling-and-persuasion, title: "Storytelling & persuasion", priority: P0, complexity: 4, phase: 2, hours: 3}
+      - {slug: executive-presence, title: "Executive presence & handling Q&A", priority: P0, complexity: 4, phase: 4, hours: 3}
+      - {slug: listening-questions-cross-cultural, title: "Listening, asking questions & cross-cultural communication", priority: P1, complexity: 3, phase: 1, hours: 2}
+

@@ -36,6 +36,8 @@ from common import (  # noqa: E402
 def assign_days(track: str, tasks: list[dict], week: int) -> list[int]:
     """Return a weekday index for each task of a track."""
     n = len(tasks)
+    if n == 0:
+        return []
     if week == 0:
         # Week 0 is the Sat/Sun baseline weekend: alternate Saturday / Sunday.
         return [5 if i % 2 == 0 else 6 for i in range(n)]
@@ -48,6 +50,49 @@ def assign_days(track: str, tasks: list[dict], week: int) -> list[int]:
         return [slots[int(i * step)] for i in range(n)]
     # More tasks than slots: cycle through them.
     return [slots[i % len(slots)] for i in range(n)]
+
+
+DAY_KINDS = [
+    ("Grammar", "practice", "grammar"),
+    ("Vocabulary", "learn", "vocab"),
+    ("Speaking drill", "practice", "speaking"),
+    ("Idioms & phrasal verbs", "learn", "idiom"),
+    ("Writing", "write", "writing"),
+    ("Record & shadow", "practice", "speaking"),
+    ("Soft skills + weekly review", "review", "soft"),
+]
+
+
+def merge_communication(curriculum: dict, comm: dict | None) -> dict:
+    """Expand data/communication.yml into 7 daily tasks per week under tasks['communication']."""
+    if not comm:
+        return curriculum
+    by_week = {int(c["week"]): c for c in comm.get("weeks", [])}
+    full, light = int(comm.get("minutes", 30)), int(comm.get("light_minutes", 20))
+    for w in curriculum["weeks"]:
+        c = by_week.get(int(w["week"]))
+        if not c:
+            continue
+        minutes = light if (w.get("light") or c.get("light")) else full
+        wk = int(w["week"])
+        tasks = []
+        for i, (label, kind, key) in enumerate(DAY_KINDS, start=1):
+            if wk == 0 and key == "idiom":
+                continue  # baseline weekend: keep it to five short checks
+            title = f"{label}: {c[key]}"
+            if key == "soft" and c.get("checkpoint"):
+                title += f" — checkpoint {c['checkpoint']}: re-record and compare against the baseline rubric"
+            tasks.append(
+                {
+                    "title": title,
+                    "minutes": minutes,
+                    "kind": kind,
+                    "path": f"tracks/communication/drills/week-{wk:02d}.md#day-{i}",
+                    "path_title": f"Week {wk:02d} drills · day {i}",
+                }
+            )
+        w.setdefault("tasks", {})["communication"] = tasks
+    return curriculum
 
 
 def week_start(meta: dict, week: int) -> dt.date:
@@ -70,6 +115,8 @@ def build(curriculum: dict) -> dict:
                 date = monday + dt.timedelta(days=wd)
                 tid = f"w{wk:02d}-{TRACK_ABBR[track]}-{i}"
                 topic_meta = resolve_topic(track, task.get("topic"))
+                if task.get("path"):
+                    topic_meta = {"path": task["path"], "title": task.get("path_title", "Drill")}
                 item = {
                     "id": tid,
                     "track": track,
@@ -205,7 +252,13 @@ def build_track_navs() -> None:
             nav.append({"Case studies": "case-studies"})
             cs_nav = [f"{t['slug']}.md" for t in spec["case_studies"]]
             dump_yaml(tdir / "case-studies" / ".nav.yml", {"nav": cs_nav})
+        if track == "communication":
+            (tdir / "drills").mkdir(exist_ok=True)
+            nav.append({"Weekly drills": "drills"})
+            dump_yaml(tdir / "drills" / ".nav.yml", {"nav": ["index.md"] + [f"week-{w:02d}.md" for w in range(0, 27)]})
         nav.append({"Question bank": "questions.md"})
+        if track == "communication":
+            nav.append({"AI tutor prompts": "ai-tutor-prompts.md"})
         dump_yaml(tdir / ".nav.yml", {"nav": nav})
 
 
@@ -213,6 +266,7 @@ def main() -> None:
     curriculum = load_yaml(DATA / "curriculum.yml")
     if not curriculum:
         sys.exit("data/curriculum.yml missing")
+    curriculum = merge_communication(curriculum, load_yaml(DATA / "communication.yml"))
     result = build(curriculum)
     phases = {p["id"]: p for p in curriculum.get("phases", [])}
     dump_yaml(DATA / "plan.yml", {"generated": True, "meta": curriculum["meta"], "days": result["days"]})

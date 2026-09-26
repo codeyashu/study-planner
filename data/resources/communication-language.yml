@@ -1,0 +1,447 @@
+# Communication & English track - resources for the grammar/vocabulary/idiom topic pages
+# (articles-determiners, prepositions-collocations, tenses-aspect, conditionals-modals-hedging,
+#  sentence-structure-parallelism, active-passive-emphasis, clauses-and-cohesion, punctuation-style,
+#  common-errors-fluent-speakers, business-tech-vocabulary, word-nuance-register, idioms-business,
+#  phrasal-verbs, collocations-precision).
+# Schema: id, title, url, type, topics, priority, complexity, level, cost, gem, why, last_checked
+- id: comm-oxford-learners
+  title: "Oxford Learner's Dictionaries"
+  url: https://www.oxfordlearnersdictionaries.com/
+  type: docs
+  topics: [articles-determiners, prepositions-collocations, business-tech-vocabulary, word-nuance-register, phrasal-verbs]
+  priority: P0
+  complexity: 1
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Every noun marked countable/uncountable, verb patterns shown explicitly, usage labels for register."
+  last_checked: 2026-09-25
+
+- id: comm-cambridge-dictionary
+  title: "Cambridge Dictionary"
+  url: https://dictionary.cambridge.org/
+  type: docs
+  topics: [articles-determiners, prepositions-collocations, tenses-aspect, conditionals-modals-hedging, punctuation-style, common-errors-fluent-speakers, word-nuance-register, idioms-business, phrasal-verbs, collocations-precision]
+  priority: P0
+  complexity: 1
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Grammar section plus dictionary entries with common-learner-error notes drawn from a real learner corpus."
+  last_checked: 2026-09-25
+
+- id: comm-merriam-webster
+  title: "Merriam-Webster"
+  url: https://www.merriam-webster.com/
+  type: docs
+  topics: [articles-determiners, common-errors-fluent-speakers, business-tech-vocabulary, word-nuance-register, phrasal-verbs]
+  priority: P1
+  complexity: 1
+  level: intermediate
+  cost: free
+  gem: false
+  why: "American usage authority; 'Synonym Discussion' notes explain nuance between near-synonyms."
+  last_checked: 2026-09-25
+
+- id: comm-ozdic
+  title: "Ozdic: Online collocation dictionary"
+  url: https://ozdic.com/
+  type: docs
+  topics: [prepositions-collocations, business-tech-vocabulary, collocations-precision]
+  priority: P0
+  complexity: 2
+  level: intermediate-advanced
+  cost: free
+  gem: true
+  why: "Fastest way to check what a word actually collocates with (verb+noun, adjective+noun); most learners never find this tool."
+  last_checked: 2026-09-25
+
+- id: comm-just-the-word
+  title: "Just The Word"
+  url: http://www.just-the-word.com/
+  type: interactive
+  topics: [prepositions-collocations]
+  priority: P2
+  complexity: 2
+  level: advanced
+  cost: free
+  gem: true
+  why: "Corpus-backed collocation search with frequency data; settles in/on/at disputes with evidence."
+  last_checked: 2026-09-25
+
+- id: comm-coca
+  title: "English-Corpora.org (COCA)"
+  url: https://www.english-corpora.org/coca/
+  type: interactive
+  topics: [articles-determiners, prepositions-collocations, common-errors-fluent-speakers, word-nuance-register, phrasal-verbs, collocations-precision]
+  priority: P1
+  complexity: 3
+  level: advanced
+  cost: freemium
+  gem: true
+  why: "Real frequency data across genres settles usage debates (impact on/to, different from/than) that no rule fully resolves."
+  last_checked: 2026-09-25
+
+- id: comm-youglish
+  title: "YouGlish"
+  url: https://youglish.com/
+  type: interactive
+  topics: [common-errors-fluent-speakers, business-tech-vocabulary, phrasal-verbs]
+  priority: P1
+  complexity: 1
+  level: intermediate
+  cost: freemium
+  gem: false
+  why: "Hear any word or phrase used by real speakers in real videos; confirms stress and natural usage."
+  last_checked: 2026-09-25
+
+- id: comm-purdue-owl
+  title: "Purdue OWL"
+  url: https://owl.purdue.edu/
+  type: docs
+  topics: [articles-determiners, prepositions-collocations, sentence-structure-parallelism, active-passive-emphasis, clauses-and-cohesion, punctuation-style, common-errors-fluent-speakers]
+  priority: P0
+  complexity: 1
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Academic-professional writing handouts on articles, modifiers, parallelism, active/passive, transitions - all with exercises."
+  last_checked: 2026-09-25
+
+- id: comm-google-style-guide
+  title: "Google developer documentation style guide"
+  url: https://developers.google.com/style
+  type: docs
+  topics: [prepositions-collocations, sentence-structure-parallelism, active-passive-emphasis, clauses-and-cohesion, punctuation-style, business-tech-vocabulary, word-nuance-register, phrasal-verbs, collocations-precision]
+  priority: P0
+  complexity: 1
+  level: intermediate
+  cost: free
+  gem: false
+  why: "A real large engineering org's rules for sentence structure, voice, numbers, and word choice in technical writing."
+  last_checked: 2026-09-25
+
+- id: comm-plainlanguage
+  title: "Plain Language guidelines (plainlanguage.gov)"
+  url: https://www.plainlanguage.gov/
+  type: docs
+  topics: [sentence-structure-parallelism, active-passive-emphasis, word-nuance-register, collocations-precision]
+  priority: P1
+  complexity: 1
+  level: intermediate
+  cost: free
+  gem: true
+  why: "US government's own plain-writing rules; concrete before/after examples on active voice, sentence length, numbers."
+  last_checked: 2026-09-25
+
+- id: comm-swan-practical-usage
+  title: "Michael Swan, Practical English Usage"
+  url: ""
+  type: book
+  topics: [articles-determiners, prepositions-collocations, tenses-aspect, conditionals-modals-hedging, active-passive-emphasis, clauses-and-cohesion, common-errors-fluent-speakers, word-nuance-register]
+  priority: P0
+  complexity: 3
+  level: advanced
+  cost: paid
+  gem: false
+  why: "The single best reference for usage problems (articles, tenses, modals, inversion) organised as a dictionary you look things up in."
+  last_checked: 2026-09-25
+
+- id: comm-swan-smith-learner-english
+  title: "Michael Swan & Bernard Smith, Learner English"
+  url: ""
+  type: book
+  topics: [common-errors-fluent-speakers]
+  priority: P0
+  complexity: 3
+  level: intermediate-advanced
+  cost: paid
+  gem: true
+  why: "Chapters organised by the learner's first language (Hindi/Urdu, Mandarin, Spanish, etc.) listing exactly the transfer errors that persist at fluency; hard to find elsewhere."
+  last_checked: 2026-09-25
+
+- id: comm-hewings-advanced-grammar
+  title: "Martin Hewings, Advanced Grammar in Use"
+  url: ""
+  type: book
+  topics: [tenses-aspect, conditionals-modals-hedging, sentence-structure-parallelism, active-passive-emphasis, clauses-and-cohesion]
+  priority: P0
+  complexity: 2
+  level: advanced
+  cost: paid
+  gem: false
+  why: "Exercise-driven grammar reference with answer keys covering exactly the C1 structures this track needs."
+  last_checked: 2026-09-25
+
+- id: comm-murphy-egu
+  title: "Raymond Murphy, English Grammar in Use"
+  url: ""
+  type: book
+  topics: [articles-determiners, tenses-aspect]
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: paid
+  gem: false
+  why: "The standard self-study grammar reference; useful as a gentler companion to the Advanced edition."
+  last_checked: 2026-09-25
+
+- id: comm-williams-style
+  title: "Joseph Williams & Joseph Bizup, Style: Lessons in Clarity and Grace"
+  url: ""
+  type: book
+  topics: [sentence-structure-parallelism, active-passive-emphasis, clauses-and-cohesion]
+  priority: P0
+  complexity: 3
+  level: advanced
+  cost: paid
+  gem: true
+  why: "The best explanation available of old-before-new information order and end-weight - more useful than any connector list."
+  last_checked: 2026-09-25
+
+- id: comm-pinker-sense-of-style
+  title: "Steven Pinker, The Sense of Style"
+  url: ""
+  type: book
+  topics: [conditionals-modals-hedging, sentence-structure-parallelism, active-passive-emphasis]
+  priority: P1
+  complexity: 3
+  level: advanced
+  cost: paid
+  gem: false
+  why: "Cognitive-science grounded explanation of clear prose and a correction of the 'never use passive' myth."
+  last_checked: 2026-09-25
+
+- id: comm-strunk-white
+  title: "Strunk & White, The Elements of Style"
+  url: ""
+  type: book
+  topics: [sentence-structure-parallelism]
+  priority: P2
+  complexity: 1
+  level: intermediate
+  cost: paid
+  gem: false
+  why: "Short, quotable prompts on parallelism and concision; use as a spark, not as a complete rulebook (some rules are dated)."
+  last_checked: 2026-09-25
+
+- id: comm-economist-style-guide
+  title: "The Economist Style Guide"
+  url: ""
+  type: book
+  topics: [sentence-structure-parallelism, punctuation-style]
+  priority: P1
+  complexity: 2
+  level: intermediate-advanced
+  cost: paid
+  gem: true
+  why: "Compact, opinionated rules for short direct sentences and numbers in business writing - a working journalist's discipline."
+  last_checked: 2026-09-25
+
+- id: comm-truss-eats-shoots-leaves
+  title: "Lynne Truss, Eats, Shoots & Leaves"
+  url: ""
+  type: book
+  topics: [punctuation-style]
+  priority: P2
+  complexity: 1
+  level: intermediate
+  cost: paid
+  gem: false
+  why: "Entertaining, memorable way to internalise punctuation rules; a few opinions are contested, treat as a memory aid not gospel."
+  last_checked: 2026-09-25
+
+- id: comm-norris-between-you-and-me
+  title: "Mary Norris, Between You & Me"
+  url: ""
+  type: book
+  topics: [punctuation-style]
+  priority: P2
+  complexity: 2
+  level: intermediate
+  cost: paid
+  gem: true
+  why: "A working New Yorker copy editor's practical, funny take on hyphens, commas and style decisions in real editing."
+  last_checked: 2026-09-25
+
+- id: comm-chicago-manual
+  title: "The Chicago Manual of Style (online)"
+  url: ""
+  type: docs
+  topics: [punctuation-style]
+  priority: P2
+  complexity: 3
+  level: advanced
+  cost: paid
+  gem: false
+  why: "The reference for US publishing punctuation and style conventions when a definitive answer is needed."
+  last_checked: 2026-09-25
+
+- id: comm-bbc-learning-english
+  title: "BBC Learning English"
+  url: https://www.bbc.co.uk/learningenglish
+  type: video
+  topics: [tenses-aspect, conditionals-modals-hedging, clauses-and-cohesion, common-errors-fluent-speakers, word-nuance-register, idioms-business, phrasal-verbs]
+  priority: P0
+  complexity: 1
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Short grammar videos, 6 Minute English, and English at Work series with realistic workplace dialogue and idioms."
+  last_checked: 2026-09-25
+
+- id: comm-english-with-lucy
+  title: "English with Lucy (YouTube)"
+  url: https://www.youtube.com/@EnglishwithLucy
+  type: video
+  topics: [tenses-aspect, conditionals-modals-hedging]
+  priority: P1
+  complexity: 1
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Lively, clear video explanations of perfect tenses, narrative tenses and softening language."
+  last_checked: 2026-09-25
+
+- id: comm-perfect-english-grammar
+  title: "Perfect English Grammar"
+  url: https://www.perfect-english-grammar.com/
+  type: docs
+  topics: [articles-determiners, tenses-aspect]
+  priority: P1
+  complexity: 1
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Short rule explanations paired with quizzes, good for a daily 10-minute check-up."
+  last_checked: 2026-09-25
+
+- id: comm-grammarly-blog
+  title: "Grammarly blog"
+  url: https://www.grammarly.com/blog/
+  type: article
+  topics: [articles-determiners, sentence-structure-parallelism, active-passive-emphasis, punctuation-style, common-errors-fluent-speakers, phrasal-verbs]
+  priority: P2
+  complexity: 1
+  level: beginner-intermediate
+  cost: free
+  gem: false
+  why: "Accessible short posts on comma splices, dangling modifiers and confusable words; good for a quick refresher."
+  last_checked: 2026-09-25
+
+- id: comm-macmillan-dictionary
+  title: "Macmillan Dictionary"
+  url: https://www.macmillandictionary.com/
+  type: docs
+  topics: [word-nuance-register]
+  priority: P2
+  complexity: 1
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Clear style labels (formal/informal/disapproving) and thesaurus-style nuance notes for near-synonyms."
+  last_checked: 2026-09-25
+
+- id: comm-garner-modern-english-usage
+  title: "Bryan Garner, Garner's Modern English Usage"
+  url: ""
+  type: book
+  topics: [word-nuance-register]
+  priority: P1
+  complexity: 3
+  level: advanced
+  cost: paid
+  gem: false
+  why: "The definitive guide to disputed usage and register questions, with clear rulings and evidence."
+  last_checked: 2026-09-25
+
+- id: comm-mascull-business-vocab
+  title: "Bill Mascull, Business Vocabulary in Use (Advanced)"
+  url: ""
+  type: book
+  topics: [business-tech-vocabulary]
+  priority: P1
+  complexity: 2
+  level: intermediate-advanced
+  cost: paid
+  gem: false
+  why: "Structured business vocabulary with exercises and answer keys, topic-organised for direct application."
+  last_checked: 2026-09-25
+
+- id: comm-oxford-3000-5000
+  title: "Oxford Learner's Word Lists (Oxford 3000/5000)"
+  url: https://www.oxfordlearnersdictionaries.com/wordlists/
+  type: docs
+  topics: [business-tech-vocabulary]
+  priority: P2
+  complexity: 1
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Frequency-ranked word lists that help prioritise high-value vocabulary before rare words."
+  last_checked: 2026-09-25
+
+- id: comm-idioms-in-use
+  title: "Cambridge English Idioms in Use (Advanced)"
+  url: ""
+  type: book
+  topics: [idioms-business]
+  priority: P1
+  complexity: 2
+  level: advanced
+  cost: paid
+  gem: false
+  why: "Topic-organised idioms with register notes and exercises, matched to the situational groupings used on this track."
+  last_checked: 2026-09-25
+
+- id: comm-the-idioms
+  title: "The Idioms"
+  url: https://www.theidioms.com/
+  type: docs
+  topics: [idioms-business]
+  priority: P2
+  complexity: 1
+  level: intermediate
+  cost: free
+  gem: false
+  why: "Quick lookup for idiom meanings; cross-check currency against a corpus before using rarer entries."
+  last_checked: 2026-09-25
+
+- id: comm-phrasal-verbs-in-use
+  title: "Cambridge English Phrasal Verbs in Use (Advanced)"
+  url: ""
+  type: book
+  topics: [phrasal-verbs]
+  priority: P0
+  complexity: 2
+  level: intermediate-advanced
+  cost: paid
+  gem: false
+  why: "Topic-organised, business-relevant phrasal verbs with separability notes and exercises."
+  last_checked: 2026-09-25
+
+- id: comm-collocations-in-use
+  title: "Cambridge English Collocations in Use (Advanced)"
+  url: ""
+  type: book
+  topics: [prepositions-collocations, collocations-precision]
+  priority: P1
+  complexity: 2
+  level: intermediate-advanced
+  cost: paid
+  gem: false
+  why: "Includes a dedicated unit on describing trends and data, directly matching this track's precision-with-numbers focus."
+  last_checked: 2026-09-25
+
+- id: comm-nate-silver-signal-noise
+  title: "Nate Silver, The Signal and the Noise"
+  url: ""
+  type: book
+  topics: [collocations-precision]
+  priority: P2
+  complexity: 3
+  level: advanced
+  cost: paid
+  gem: true
+  why: "Not a language book, but sharpens the underlying habit of honest, precise uncertainty language around data and forecasts."
+  last_checked: 2026-09-25

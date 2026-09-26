@@ -13,4 +13,6 @@ Your own writing lives here: it's the evidence of growth, and portfolio material
 | `retros/week-NN.md` | Weekly retro ([template](retro-template.md)) | Sundays |
 | `adrs/NNNN-title.md` | Capstone Architecture Decision Records ([template](adr-template.md)) | ≥ 1/week |
 | `interviews.md` | Mock-interview score log | checkpoint weeks |
+| `comm-baseline.md` | English & communication baseline and re-test scores | weeks 0, 4, 8 … 24 |
+| `comm-errors.md` | Your recurring English/communication mistakes | daily, reviewed Sundays |
 | `ignorance-log.md` | "Things I realised I don't know" → turn into tasks | anytime |

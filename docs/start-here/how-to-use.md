@@ -25,6 +25,10 @@ flowchart LR
 !!! tip "Forgot to tick yesterday?"
     Re-open the old issue, tick the boxes and close it again. The completion date is the date you close it. You can also run `uv run python scripts/sync_progress.py --done w03-ai-2 w03-dsa-4` locally and push.
 
+## English & communication drills (30 min a day)
+
+Every day has one 30-minute communication task (`wNN-comm-N`) that links straight to that day's drill: Mon grammar, Tue vocabulary, Wed speaking drill, Thu idioms and phrasal verbs, Fri writing, Sat recorded talk with shadowing, Sun soft skills plus a weekly recap. Answers are hidden in collapsible blocks. Say the speaking tasks out loud and record the Saturday talk; score it with the rubric in the drill. Run `uv run python scripts/export_vocab.py` to get an Anki CSV of all the words and idioms. See the [Communication track](../tracks/communication/index.md).
+
 ## Question levels
 
 | Level | Meaning | How to use |

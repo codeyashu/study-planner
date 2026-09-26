@@ -1,0 +1,482 @@
+# Communication: speaking & writing resources. Bare list. Empty url = book, no link.
+- id: comm-rachels
+  title: Rachel's English
+  url: https://rachelsenglish.com/
+  type: video
+  topics:
+  - pronunciation-stress-intonation
+  - shadowing-and-self-review
+  - pace-fillers-clarity
+  priority: P0
+  complexity: 3
+  level: intermediate
+  cost: freemium
+  gem: false
+  why: Best free American-English stress, rhythm and reduction training.
+  last_checked: '2026-09-25'
+- id: comm-youglish
+  title: YouGlish
+  url: https://youglish.com/
+  type: interactive
+  topics:
+  - pronunciation-stress-intonation
+  - shadowing-and-self-review
+  - structuring-spoken-answers
+  - meetings-and-presentations
+  priority: P0
+  complexity: 2
+  level: all
+  cost: free
+  gem: true
+  why: Search any word or phrase and hear it in real talks; verifies stress and natural phrasing.
+  last_checked: '2026-09-25'
+- id: comm-soundsofspeech
+  title: Sounds of Speech (University of Iowa)
+  url: https://soundsofspeech.uiowa.edu/
+  type: interactive
+  topics:
+  - pronunciation-stress-intonation
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: true
+  why: Animated articulation of each English sound; helpful for th, v/w, t/d.
+  last_checked: '2026-09-25'
+- id: comm-praat
+  title: Praat
+  url: https://www.fon.hum.uva.nl/praat/
+  type: tool
+  topics:
+  - pronunciation-stress-intonation
+  - shadowing-and-self-review
+  priority: P2
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: true
+  why: 'Free phonetics software: view your pitch contour against a model.'
+  last_checked: '2026-09-25'
+- id: comm-camdict
+  title: Cambridge Dictionary
+  url: https://dictionary.cambridge.org/
+  type: reference
+  topics:
+  - pronunciation-stress-intonation
+  - email-writing
+  - meetings-and-presentations
+  priority: P0
+  complexity: 1
+  level: all
+  cost: free
+  gem: false
+  why: UK and US audio and IPA stress for every word; register labels.
+  last_checked: '2026-09-25'
+- id: comm-mw
+  title: Merriam-Webster
+  url: https://www.merriam-webster.com/
+  type: reference
+  topics:
+  - pronunciation-stress-intonation
+  priority: P1
+  complexity: 1
+  level: all
+  cost: free
+  gem: false
+  why: American pronunciation with audio and stress marks.
+  last_checked: '2026-09-25'
+- id: comm-bbcle
+  title: BBC Learning English
+  url: https://www.bbc.co.uk/learningenglish/
+  type: audio
+  topics:
+  - pronunciation-stress-intonation
+  - pace-fillers-clarity
+  - shadowing-and-self-review
+  - meetings-and-presentations
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: '6 Minute English and The English We Speak: transcripts and natural pace for shadowing.'
+  last_checked: '2026-09-25'
+- id: comm-julian-treasure
+  title: 'Julian Treasure: How to speak so that people want to listen (TED)'
+  url: https://www.ted.com/talks/julian_treasure_how_to_speak_so_that_people_want_to_listen
+  type: video
+  topics:
+  - pace-fillers-clarity
+  - pronunciation-stress-intonation
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: Ten-minute talk on pace, pitch, pause and register.
+  last_checked: '2026-09-25'
+- id: comm-toastmasters
+  title: Toastmasters International
+  url: https://www.toastmasters.org/
+  type: community
+  topics:
+  - pace-fillers-clarity
+  - structuring-spoken-answers
+  - meetings-and-presentations
+  - shadowing-and-self-review
+  priority: P0
+  complexity: 2
+  level: all
+  cost: freemium
+  gem: false
+  why: Structured practice with human evaluation; ah-counter and Table Topics roles.
+  last_checked: '2026-09-25'
+- id: comm-ted
+  title: TED
+  url: https://www.ted.com/
+  type: video
+  topics:
+  - structuring-spoken-answers
+  - meetings-and-presentations
+  - shadowing-and-self-review
+  - pace-fillers-clarity
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: 'Transcripts and varied speakers: shadowing clips and structure study.'
+  last_checked: '2026-09-25'
+- id: comm-otter
+  title: Otter
+  url: https://otter.ai/
+  type: tool
+  topics:
+  - pace-fillers-clarity
+  - shadowing-and-self-review
+  priority: P2
+  complexity: 1
+  level: all
+  cost: freemium
+  gem: false
+  why: Auto-transcripts for measuring words per minute and filler rate.
+  last_checked: '2026-09-25'
+- id: comm-atlassian-incident
+  title: Atlassian Incident Management Handbook
+  url: https://www.atlassian.com/incident-management/handbook
+  type: guide
+  topics:
+  - meetings-and-presentations
+  - executive-updates
+  - email-writing
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: Incident roles, comms templates and stakeholder updates.
+  last_checked: '2026-09-25'
+- id: comm-sre-postmortem
+  title: 'Google SRE Book: Postmortem Culture'
+  url: https://sre.google/sre-book/postmortem-culture/
+  type: article
+  topics:
+  - executive-updates
+  - design-docs-and-strategy-prose
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: Model for blameless postmortem writing.
+  last_checked: '2026-09-25'
+- id: comm-plainlanguage
+  title: Plain Language guidelines (plainlanguage.gov)
+  url: https://www.plainlanguage.gov/guidelines/
+  type: guide
+  topics:
+  - concise-writing-editing
+  - email-writing
+  - executive-updates
+  - structuring-spoken-answers
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: 'Reader-first rules with before/after examples: conclusion first, short sentences, active voice.'
+  last_checked: '2026-09-25'
+- id: comm-govuk-content
+  title: GOV.UK content design guidance
+  url: https://www.gov.uk/guidance/content-design
+  type: guide
+  topics:
+  - concise-writing-editing
+  - email-writing
+  - executive-updates
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: true
+  why: Best public model of concise, action-first writing for busy readers.
+  last_checked: '2026-09-25'
+- id: comm-google-style
+  title: Google developer documentation style guide
+  url: https://developers.google.com/style
+  type: guide
+  topics:
+  - concise-writing-editing
+  - design-docs-and-strategy-prose
+  priority: P0
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: Sentence-level rules for clear technical prose.
+  last_checked: '2026-09-25'
+- id: comm-ms-style
+  title: Microsoft Writing Style Guide
+  url: https://learn.microsoft.com/en-us/style-guide/welcome/
+  type: guide
+  topics:
+  - concise-writing-editing
+  - email-writing
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: Tone, plain words and bias-free wording for global audiences.
+  last_checked: '2026-09-25'
+- id: comm-purdue
+  title: Purdue OWL
+  url: https://owl.purdue.edu/
+  type: reference
+  topics:
+  - concise-writing-editing
+  - email-writing
+  - design-docs-and-strategy-prose
+  - executive-updates
+  priority: P1
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: Grammar, conciseness, professional writing and paragraph structure.
+  last_checked: '2026-09-25'
+- id: comm-hemingway
+  title: Hemingway Editor
+  url: https://hemingwayapp.com/
+  type: tool
+  topics:
+  - concise-writing-editing
+  priority: P2
+  complexity: 1
+  level: all
+  cost: free
+  gem: false
+  why: Highlights long sentences, adverbs and passive voice as an edit aid.
+  last_checked: '2026-09-25'
+- id: comm-grammarly-blog
+  title: Grammarly blog
+  url: https://www.grammarly.com/blog/
+  type: article
+  topics:
+  - concise-writing-editing
+  - email-writing
+  priority: P2
+  complexity: 1
+  level: intermediate
+  cost: free
+  gem: false
+  why: Short pages on wordiness, email etiquette and tone.
+  last_checked: '2026-09-25'
+- id: comm-design-docs-google
+  title: Design Docs at Google (Malte Ubl)
+  url: https://www.industrialempathy.com/posts/design-docs-at-google/
+  type: article
+  topics:
+  - design-docs-and-strategy-prose
+  priority: P0
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: What a design doc is for, its sections and its trade-off focus.
+  last_checked: '2026-09-25'
+- id: comm-peps
+  title: Python Enhancement Proposals
+  url: https://peps.python.org/
+  type: docs
+  topics:
+  - design-docs-and-strategy-prose
+  priority: P1
+  complexity: 3
+  level: advanced
+  cost: free
+  gem: true
+  why: 'Real RFC prose at scale: motivation, rationale, rejected ideas.'
+  last_checked: '2026-09-25'
+- id: comm-rust-rfcs
+  title: Rust RFCs
+  url: https://github.com/rust-lang/rfcs
+  type: docs
+  topics:
+  - design-docs-and-strategy-prose
+  priority: P1
+  complexity: 3
+  level: advanced
+  cost: free
+  gem: false
+  why: RFC template with drawbacks, alternatives and unresolved questions.
+  last_checked: '2026-09-25'
+- id: comm-lethain
+  title: Will Larson (lethain.com)
+  url: https://lethain.com/
+  type: blog
+  topics:
+  - design-docs-and-strategy-prose
+  - executive-updates
+  priority: P1
+  complexity: 4
+  level: advanced
+  cost: free
+  gem: false
+  why: Engineering strategy writing and managing up.
+  last_checked: '2026-09-25'
+- id: comm-staffeng
+  title: StaffEng
+  url: https://staffeng.com/
+  type: site
+  topics:
+  - design-docs-and-strategy-prose
+  - executive-updates
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: free
+  gem: false
+  why: Staff-level writing and influence stories.
+  last_checked: '2026-09-25'
+- id: comm-writethedocs
+  title: Write the Docs
+  url: https://www.writethedocs.org/
+  type: community
+  topics:
+  - design-docs-and-strategy-prose
+  priority: P2
+  complexity: 2
+  level: intermediate
+  cost: free
+  gem: false
+  why: Documentation writing practice and talks.
+  last_checked: '2026-09-25'
+- id: comm-minto
+  title: The Pyramid Principle (Barbara Minto)
+  url: null
+  type: book
+  topics:
+  - structuring-spoken-answers
+  - executive-updates
+  priority: P1
+  complexity: 4
+  level: advanced
+  cost: paid
+  gem: false
+  why: Origin of answer-first structure and MECE grouping.
+  last_checked: '2026-09-25'
+- id: comm-rumelt
+  title: Good Strategy / Bad Strategy (Richard Rumelt)
+  url: null
+  type: book
+  topics:
+  - design-docs-and-strategy-prose
+  priority: P1
+  complexity: 4
+  level: advanced
+  cost: paid
+  gem: false
+  why: The diagnosis, guiding policy, coherent actions kernel.
+  last_checked: '2026-09-25'
+- id: comm-zinsser
+  title: On Writing Well (William Zinsser)
+  url: null
+  type: book
+  topics:
+  - concise-writing-editing
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: paid
+  gem: false
+  why: Classic on clutter and clarity.
+  last_checked: '2026-09-25'
+- id: comm-williams
+  title: 'Style: Lessons in Clarity and Grace (Joseph Williams)'
+  url: null
+  type: book
+  topics:
+  - concise-writing-editing
+  - design-docs-and-strategy-prose
+  priority: P1
+  complexity: 4
+  level: advanced
+  cost: paid
+  gem: false
+  why: Systematic fixes for nominalisation-heavy, abstract prose.
+  last_checked: '2026-09-25'
+- id: comm-bernoff
+  title: Writing Without Bullshit (Josh Bernoff)
+  url: null
+  type: book
+  topics:
+  - email-writing
+  - executive-updates
+  priority: P2
+  complexity: 2
+  level: intermediate
+  cost: paid
+  gem: false
+  why: Boss-first, point-first business writing.
+  last_checked: '2026-09-25'
+- id: comm-jenkins
+  title: The Phonology of English as an International Language (Jennifer Jenkins)
+  url: null
+  type: book
+  topics:
+  - pronunciation-stress-intonation
+  priority: P2
+  complexity: 5
+  level: advanced
+  cost: paid
+  gem: true
+  why: 'Lingua Franca Core research: intelligibility over accent.'
+  last_checked: '2026-09-25'
+- id: comm-hancock
+  title: English Pronunciation in Use, Intermediate/Advanced (Mark Hancock)
+  url: null
+  type: book
+  topics:
+  - pronunciation-stress-intonation
+  priority: P1
+  complexity: 3
+  level: intermediate
+  cost: paid
+  gem: false
+  why: Systematic stress and intonation units with audio.
+  last_checked: '2026-09-25'
+- id: comm-forvo
+  title: Forvo
+  url: https://forvo.com/
+  type: reference
+  topics:
+  - shadowing-and-self-review
+  - pronunciation-stress-intonation
+  priority: P2
+  complexity: 1
+  level: all
+  cost: free
+  gem: false
+  why: Native pronunciations of words and names.
+  last_checked: '2026-09-25'

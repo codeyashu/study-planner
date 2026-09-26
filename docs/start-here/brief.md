@@ -22,10 +22,11 @@ last_reviewed: 2026-09-25
     - Langfuse/OTel tracing, guardrails, and model routing with budgets
 3. **Interview-ready.** Scores ≥ 3/4 ("Staff bar") on the [unified rubric](../interviews/rubric.md) in coding, system design, AI system design and behavioral rounds at checkpoint 6.
 4. **Staying current.** Has a sustainable habit of about 20 min/day of reading, backed by a curated digest rather than doomscrolling.
+5. **Communicates at a Staff level.** Measurable gains from the week-0 baseline to week 24 in grammar accuracy, vocabulary range, spoken fluency and business writing; scores a 3/4 or better on the behavioural and communication rubric rows.
 
 **Constraints:**
 
-- **Time:** 12–15 h/week. Every 6th week is lighter (weeks 6, 12, 18), plus 2 buffer weeks (25–26).
+- **Time:** 12–15 h/week technical plus 30 min/day of English & communication practice (~17–18 h total). Every 6th week is lighter (weeks 6, 12, 18), plus 2 buffer weeks (25–26).
 - **Budget:** about $30–50/month for APIs and cloud. Default to local models (Ollama) and free tiers; use paid APIs for evals and final runs.
 - **Stack:**
     - Python 3.14, uv, Pydantic v2, FastAPI, LangGraph, Pydantic AI, DSPy

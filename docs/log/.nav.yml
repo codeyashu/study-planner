@@ -1,6 +1,8 @@
 nav:
   - index.md
   - interviews.md
+  - comm-baseline.md
+  - comm-errors.md
   - ignorance-log.md
   - ADRs: adrs
   - Retros: retros

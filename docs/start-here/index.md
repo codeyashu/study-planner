@@ -26,6 +26,6 @@ This site is a **living learning system**, not a static reading list. Three thin
 ## The one-screen summary
 
 - **Goal:** Staff/Principal engineer + AI architect who ships production agentic systems. Interview-ready by week 24, measured at 6 checkpoints on one rubric.
-- **Time:** 12–15 h/week. Weekdays about 1.5 h, Saturday about 3 h (build), Sunday about 2.5 h (build + review).
-- **Tracks:** Agentic AI (4 h) · System design + AI SD (2.5 h) · DSA (2.5 h) · Architecture (1.5 h) · Python (1.5 h) · Java/Spring AI (1 h) · Staff+ (0.5 h) · Review (1 h).
+- **Time:** ~17–18 h/week: 12–15 h technical plus 30 min every day of English & communication practice. Weekdays about 2 h, Saturday about 3.5 h (build), Sunday about 3 h (build + review).
+- **Tracks:** Agentic AI (4 h) · System design + AI SD (2.5 h) · DSA (2.5 h) · Architecture (1.5 h) · Python (1.5 h) · Java/Spring AI (1 h) · Staff+ (0.5 h) · **Communication & English (3.5 h)** · Review (1 h).
 - **Output:** the *Agentic Ops Copilot* capstone, 6 phase projects, 15+ ADRs, 8 Staff artifacts, 2+ blog posts, and about 250 DSA problems.
