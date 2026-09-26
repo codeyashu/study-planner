@@ -191,7 +191,7 @@ Answer each aloud. Use: acknowledge, answer, evidence, stop.
 | just scratching the surface | Dealing with only a small part of a much larger issue. Neutral, slightly dramatic. | Those three tickets are just scratching the surface; the schema itself is the issue. |
 
 ### Exercise (6 items, timer 8 minutes)
-1. Choose: *"We can (meet / walk / hit) you halfway on the date."* (Note: `meet halfway`, Week 4, still applies here too — but name the fresh idiom for finding shared interest: find common ______.)
+1. Fill: *"After an hour of back-and-forth, we finally found common ______ on the release date."*
 2. Fill: *"A full rewrite is a ______ this quarter."*
 3. Rewrite idiomatically: *"These bugs are only the visible part of a much larger issue."*
 4. Rewrite idiomatically: *"There are too many separate components to give an exact date."*

@@ -324,7 +324,7 @@ Answer aloud, then open the answers.
 2. What is the correct verb form in *"A range of options ___ available"*?
 3. Which conditional has *had* in the if-clause and *would have* in the main clause?
 4. Give a passive reporting structure for "People say the vendor is late."
-5. Define *candid*.
+5. Define *unvarnished*.
 6. Define *meticulous* and give a collocation.
 7. Difference between *prudent* and *circumspect*?
 8. What does *pre-empt* mean?
