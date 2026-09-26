@@ -83,8 +83,8 @@ Copy this table into `docs/log/` or your notes and fill it after each checkpoint
 | CP6 (wk 24) | | | | | | | | | | |
 
 !!! tip "Where the prep material lives"
-    - Coding: [DSA track](../tracks/dsa/approach-complexity.md) and the [problem tracker](../tracks/dsa/problem-tracker.md)
-    - System design: [framework and estimation](../tracks/system-design/framework-and-estimation.md)
-    - AI system design: [AI SD framework](../tracks/ai-system-design/framework.md)
-    - LLD: [concurrency and LLD](../tracks/dsa/concurrency-lld.md), [design patterns](../tracks/architecture/design-patterns.md)
-    - Behavioral: [behavioral interviews](../tracks/staff-skills/behavioral-interviews.md), [Staff archetypes](../tracks/staff-skills/staff-archetypes.md)
+    - Coding: [DSA track](../../dsa/approach-complexity.md) and the [problem tracker](../../dsa/problem-tracker.md)
+    - System design: [framework and estimation](../../system-design/framework-and-estimation.md)
+    - AI system design: [AI SD framework](../../ai-system-design/framework.md)
+    - LLD: [concurrency and LLD](../../dsa/concurrency-lld.md), [design patterns](../../architecture/design-patterns.md)
+    - Behavioral: [behavioral interviews](../behavioral-interviews.md), [Staff archetypes](../staff-archetypes.md)

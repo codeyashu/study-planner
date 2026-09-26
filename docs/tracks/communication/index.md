@@ -9,6 +9,39 @@ last_reviewed: 2026-09-25
 !!! abstract "Track overview"
     **Level:** B2+ heading to C1 (medium-to-high difficulty, no beginner material) · **Rhythm:** one 30-minute drill a day, 7 days a week (20 minutes on light weeks) · **Span:** week 0 baseline, weeks 1-24, buffer weeks 25-26 · **Audience:** a senior engineer moving to Staff/Principal in a global logistics enterprise.
 
+## Reading order
+
+Read top to bottom; each page's *You're done when* line is the exit check before moving on.
+
+1. [Articles & determiners: a / the / zero](articles-determiners.md) — P0, ~2 h
+2. [Prepositions & collocations](prepositions-collocations.md) — P0, ~2 h
+3. [Tenses & aspect: perfect vs simple, narrative tenses](tenses-aspect.md) — P0, ~2 h
+4. [Conditionals, modals & hedging](conditionals-modals-hedging.md) — P0, ~2 h
+5. [Sentence structure & parallelism](sentence-structure-parallelism.md) — P0, ~2 h
+6. [Active vs passive voice, inversion & emphasis](active-passive-emphasis.md) — P1, ~2 h
+7. [Clauses, participles & cohesion (linking words)](clauses-and-cohesion.md) — P1, ~2 h
+8. [Punctuation & style](punctuation-style.md) — P1, ~1 h
+9. [Common errors of fluent non-native speakers](common-errors-fluent-speakers.md) — P0, ~2 h
+10. [Business & tech-leadership vocabulary](business-tech-vocabulary.md) — P0, ~3 h
+11. [Word nuance & register (formal vs informal)](word-nuance-register.md) — P0, ~2 h
+12. [Idioms for work: meetings, strategy, negotiation](idioms-business.md) — P0, ~3 h
+13. [Phrasal verbs at work](phrasal-verbs.md) — P0, ~3 h
+14. [Collocations & precision with numbers and data](collocations-precision.md) — P1, ~2 h
+15. [Pronunciation: word stress, rhythm & intonation](pronunciation-stress-intonation.md) — P0, ~3 h
+16. [Pace, pauses, filler words & clarity](pace-fillers-clarity.md) — P0, ~2 h
+17. [Structuring spoken answers: PREP, pyramid, STAR](structuring-spoken-answers.md) — P0, ~2 h
+18. [Meetings, presentations & speaking on calls](meetings-and-presentations.md) — P0, ~3 h
+19. [Shadowing & self-review method](shadowing-and-self-review.md) — P0, ~2 h
+20. [Concise writing & editing](concise-writing-editing.md) — P0, ~2 h
+21. [Email writing that gets action](email-writing.md) — P0, ~2 h
+22. [Prose for design docs, RFCs & strategy](design-docs-and-strategy-prose.md) — P0, ~3 h
+23. [Executive updates, summaries & escalations](executive-updates.md) — P0, ~2 h
+24. [Feedback, disagreement & conflict](feedback-and-conflict.md) — P0, ~3 h
+25. [Negotiation & saying no](negotiation-and-saying-no.md) — P0, ~3 h
+26. [Storytelling & persuasion](storytelling-and-persuasion.md) — P0, ~3 h
+27. [Executive presence & handling Q&A](executive-presence.md) — P0, ~3 h
+28. [Listening, asking questions & cross-cultural communication](listening-questions-cross-cultural.md) — P1, ~2 h
+
 ## Goals
 1. **Precision:** write and speak with fewer grammar and collocation errors, especially the ones fluent non-native speakers keep (articles, prepositions, tenses, uncountables).
 2. **Range:** a working vocabulary of C1 business and tech-leadership words, idioms and phrasal verbs, used with the right register.

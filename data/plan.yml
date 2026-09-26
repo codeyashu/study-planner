@@ -1262,8 +1262,8 @@ days:
     topic_title: Week 04 drills · day 7
   - id: w04-rev-1
     track: review
-    title: 'interview-1: full mock — SD + coding + AI SD + behavioral, score with docs/interviews/rubric.md and log gaps into
-      next week''s plan'
+    title: 'interview-1: full mock — SD + coding + AI SD + behavioral, score with the unified interview rubric and log gaps
+      into next week''s plan'
     minutes: 60
     kind: review
     topic: framework-and-estimation
@@ -2384,8 +2384,8 @@ days:
     topic_title: Week 08 drills · day 7
   - id: w08-rev-1
     track: review
-    title: 'interview-2: full mock — SD + coding + AI SD + behavioral, score with docs/interviews/rubric.md and log gaps into
-      next week''s plan'
+    title: 'interview-2: full mock — SD + coding + AI SD + behavioral, score with the unified interview rubric and log gaps
+      into next week''s plan'
     minutes: 60
     kind: review
     topic: framework-and-estimation
@@ -3505,8 +3505,8 @@ days:
     topic_title: Week 12 drills · day 7
   - id: w12-rev-1
     track: review
-    title: 'interview-3: full mock — SD + coding + AI SD + behavioral, score with docs/interviews/rubric.md and log gaps into
-      next week''s plan'
+    title: 'interview-3: full mock — SD + coding + AI SD + behavioral, score with the unified interview rubric and log gaps
+      into next week''s plan'
     minutes: 40
     kind: review
     topic: framework-and-estimation
@@ -4626,8 +4626,8 @@ days:
     topic_title: Week 16 drills · day 7
   - id: w16-rev-1
     track: review
-    title: 'interview-4: full mock — SD + coding + AI SD + behavioral, score with docs/interviews/rubric.md and log gaps into
-      next week''s plan'
+    title: 'interview-4: full mock — SD + coding + AI SD + behavioral, score with the unified interview rubric and log gaps
+      into next week''s plan'
     minutes: 60
     kind: review
     topic: framework-and-estimation
@@ -5750,8 +5750,8 @@ days:
     topic_title: Week 20 drills · day 7
   - id: w20-rev-1
     track: review
-    title: 'interview-5: full mock — SD + coding + AI SD + behavioral, score with docs/interviews/rubric.md and log gaps into
-      next week''s plan'
+    title: 'interview-5: full mock — SD + coding + AI SD + behavioral, score with the unified interview rubric and log gaps
+      into next week''s plan'
     minutes: 60
     kind: review
     topic: behavioral-interviews
@@ -6010,7 +6010,8 @@ days:
     resource: https://adr.github.io
   - id: w21-staff-1
     track: staff-skills
-    title: 'STAR bank part 1: 6 stories (conflict, influence, failure, ambiguity, technical leadership, mentoring) in docs/interviews/star-bank.md'
+    title: 'STAR bank part 1: 6 stories (conflict, influence, failure, ambiguity, technical leadership, mentoring) in the
+      STAR stories bank'
     minutes: 30
     kind: write
     topic: behavioral-interviews
@@ -6844,8 +6845,8 @@ days:
     topic_title: Week 24 drills · day 7
   - id: w24-rev-1
     track: review
-    title: 'interview-6: full mock — SD + coding + AI SD + behavioral, score with docs/interviews/rubric.md and log gaps into
-      next week''s plan'
+    title: 'interview-6: full mock — SD + coding + AI SD + behavioral, score with the unified interview rubric and log gaps
+      into next week''s plan'
     minutes: 60
     kind: review
     topic: behavioral-interviews

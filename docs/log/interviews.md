@@ -4,7 +4,7 @@ title: Mock interview log
 
 # Mock interview log
 
-Score each round 1–4 with the [unified rubric](../interviews/rubric.md).
+Score each round 1–4 with the [unified rubric](../tracks/staff-skills/interview-prep/rubric.md).
 
 | Checkpoint | Date | Coding | System design | AI SD | LLD | Behavioral | Avg | Biggest gap → action |
 |---|---|---|---|---|---|---|---|---|

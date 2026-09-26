@@ -206,7 +206,7 @@ weeks:
     staff-skills:
     - {title: 'List 3 candidate ''Staff projects'' at work or in the capstone with scope, stakeholders, and why they are Staff-level', topic: staff-archetypes, minutes: 30, kind: write, resource: 'https://noidea.dog/staff-resources'}
     review:
-    - {title: 'interview-1: full mock — SD + coding + AI SD + behavioral, score with docs/interviews/rubric.md and log gaps into next week''s plan', topic: framework-and-estimation, minutes: 60, kind: review}
+    - {title: 'interview-1: full mock — SD + coding + AI SD + behavioral, score with the unified interview rubric and log gaps into next week''s plan', topic: framework-and-estimation, minutes: 60, kind: review}
 - week: 5
   phase: 2
   theme: RAG fundamentals, caching, hexagonal
@@ -346,7 +346,7 @@ weeks:
     staff-skills:
     - {title: 'Write a stakeholder update on eval-in-CI: what it catches, cost, what you need from other teams', topic: communication-stakeholders, minutes: 30, kind: write}
     review:
-    - {title: 'interview-2: full mock — SD + coding + AI SD + behavioral, score with docs/interviews/rubric.md and log gaps into next week''s plan', topic: framework-and-estimation, minutes: 60, kind: review}
+    - {title: 'interview-2: full mock — SD + coding + AI SD + behavioral, score with the unified interview rubric and log gaps into next week''s plan', topic: framework-and-estimation, minutes: 60, kind: review}
 - week: 9
   phase: 3
   theme: LangGraph orchestrator
@@ -486,7 +486,7 @@ weeks:
     staff-skills:
     - {title: Read an incident-command model; note how you'd lead a Sev-1 involving an AI agent misbehaving, topic: incident-leadership, minutes: 20, kind: learn}
     review:
-    - {title: 'interview-3: full mock — SD + coding + AI SD + behavioral, score with docs/interviews/rubric.md and log gaps into next week''s plan', topic: framework-and-estimation, minutes: 40, kind: review}
+    - {title: 'interview-3: full mock — SD + coding + AI SD + behavioral, score with the unified interview rubric and log gaps into next week''s plan', topic: framework-and-estimation, minutes: 40, kind: review}
 - week: 13
   phase: 4
   theme: Guardrails & security
@@ -626,7 +626,7 @@ weeks:
     staff-skills:
     - {title: 'Artifact: AI adoption plan for an engineering org — productivity measurement, risk policy, enablement', topic: ai-era-leadership, minutes: 30, kind: write}
     review:
-    - {title: 'interview-4: full mock — SD + coding + AI SD + behavioral, score with docs/interviews/rubric.md and log gaps into next week''s plan', topic: framework-and-estimation, minutes: 60, kind: review}
+    - {title: 'interview-4: full mock — SD + coding + AI SD + behavioral, score with the unified interview rubric and log gaps into next week''s plan', topic: framework-and-estimation, minutes: 60, kind: review}
 - week: 17
   phase: 5
   theme: DSPy + Raft + free-threaded Python
@@ -766,7 +766,7 @@ weeks:
     staff-skills:
     - {title: 'Artifact: talk or blog draft — ''Evals-first agent engineering: lessons from building an Ops Copilot''', topic: communication-stakeholders, minutes: 30, kind: write}
     review:
-    - {title: 'interview-5: full mock — SD + coding + AI SD + behavioral, score with docs/interviews/rubric.md and log gaps into next week''s plan', topic: behavioral-interviews, minutes: 60, kind: review}
+    - {title: 'interview-5: full mock — SD + coding + AI SD + behavioral, score with the unified interview rubric and log gaps into next week''s plan', topic: behavioral-interviews, minutes: 60, kind: review}
 - week: 21
   phase: 6
   theme: Capstone polish + STAR bank I
@@ -799,7 +799,7 @@ weeks:
     - {title: Deploy the Spring AI MCP server to Azure Container Apps with managed identity, topic: spring-ai-tools-mcp, minutes: 30, kind: build}
     - {title: Java README + architecture notes for the MCP server, topic: spring-ai-fundamentals, minutes: 30, kind: write}
     staff-skills:
-    - {title: 'STAR bank part 1: 6 stories (conflict, influence, failure, ambiguity, technical leadership, mentoring) in docs/interviews/star-bank.md', topic: behavioral-interviews, minutes: 30, kind: write}
+    - {title: 'STAR bank part 1: 6 stories (conflict, influence, failure, ambiguity, technical leadership, mentoring) in the STAR stories bank', topic: behavioral-interviews, minutes: 30, kind: write}
     review:
     - {title: 'Explain-it-back: your capstone architecture in 5 min to a ''VP'' audience; flashcards on LLD patterns', topic: ai-native-architecture, minutes: 60, kind: review}
 - week: 22
@@ -906,7 +906,7 @@ weeks:
     staff-skills:
     - {title: 'Behavioral: ''Why Staff? / Why AI architect?'' narrative + 30-60-90 day plan', topic: behavioral-interviews, minutes: 30, kind: write}
     review:
-    - {title: 'interview-6: full mock — SD + coding + AI SD + behavioral, score with docs/interviews/rubric.md and log gaps into next week''s plan', topic: behavioral-interviews, minutes: 60, kind: review}
+    - {title: 'interview-6: full mock — SD + coding + AI SD + behavioral, score with the unified interview rubric and log gaps into next week''s plan', topic: behavioral-interviews, minutes: 60, kind: review}
 - week: 25
   phase: 7
   theme: Buffer I — catch-up + specialization choice

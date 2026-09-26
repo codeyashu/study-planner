@@ -139,4 +139,4 @@ Report both the weighted overall and the minimum round score; hiring committees 
 ## Related
 
 - [Checkpoints](checkpoints.md) · [Mock prompts](mock-prompts.md) · [AI mock interviewer](ai-mock-interviewer.md)
-- [System design framework](../tracks/system-design/framework-and-estimation.md) · [AI SD framework](../tracks/ai-system-design/framework.md) · [Behavioral interviews](../tracks/staff-skills/behavioral-interviews.md)
+- [System design framework](../../system-design/framework-and-estimation.md) · [AI SD framework](../../ai-system-design/framework.md) · [Behavioral interviews](../behavioral-interviews.md)

@@ -57,7 +57,7 @@ generated: true
 
 - [ ] **System Design** · 45 min · Written design: capstone architecture as an interview answer — 2-page 'design a multi-agent ops platform' doc → [Design a multi-agent platform](../../tracks/ai-system-design/agent-platform.md) <small>`w21-sd-3`</small>
 - [ ] **Architecture** · 30 min · Write ADR 021 for capstone: Azure deployment topology (Container Apps + Foundry + managed identity) → [C4, arc42 & diagrams as code](../../tracks/architecture/documenting-architecture.md) · [resource](https://adr.github.io) <small>`w21-arch-2`</small>
-- [ ] **Staff+** · 30 min · STAR bank part 1: 6 stories (conflict, influence, failure, ambiguity, technical leadership, mentoring) in docs/interviews/star-bank.md → [Behavioral & Staff interviews: STAR stories bank](../../tracks/staff-skills/behavioral-interviews.md) <small>`w21-staff-1`</small>
+- [ ] **Staff+** · 30 min · STAR bank part 1: 6 stories (conflict, influence, failure, ambiguity, technical leadership, mentoring) in the STAR stories bank → [Behavioral & Staff interviews: STAR stories bank](../../tracks/staff-skills/behavioral-interviews.md) <small>`w21-staff-1`</small>
 - [ ] **Communication** · 30 min · Soft skills + weekly review: Self-advocacy without arrogance → [Week 21 drills · day 7](../../tracks/communication/drills/week-21.md#day-7) <small>`w21-comm-7`</small>
 - [ ] **Review** · 60 min · Explain-it-back: your capstone architecture in 5 min to a 'VP' audience; flashcards on LLD patterns → [AI-native architecture: LLMs as system components](../../tracks/architecture/ai-native-architecture.md) <small>`w21-rev-1`</small>
 

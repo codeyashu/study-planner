@@ -20,7 +20,7 @@ last_reviewed: 2026-09-25
     - hybrid RAG with a reranker
     - an eval suite gating CI
     - Langfuse/OTel tracing, guardrails, and model routing with budgets
-3. **Interview-ready.** Scores ≥ 3/4 ("Staff bar") on the [unified rubric](../interviews/rubric.md) in coding, system design, AI system design and behavioral rounds at checkpoint 6.
+3. **Interview-ready.** Scores ≥ 3/4 ("Staff bar") on the [unified rubric](../tracks/staff-skills/interview-prep/rubric.md) in coding, system design, AI system design and behavioral rounds at checkpoint 6.
 4. **Staying current.** Has a sustainable habit of about 20 min/day of reading, backed by a curated digest rather than doomscrolling.
 5. **Communicates at a Staff level.** Measurable gains from the week-0 baseline to week 24 in grammar accuracy, vocabulary range, spoken fluency and business writing; scores a 3/4 or better on the behavioural and communication rubric rows.
 

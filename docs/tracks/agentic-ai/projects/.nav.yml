@@ -1,0 +1,10 @@
+nav:
+  - index.md
+  - capstone.md
+  - p1-structured-extraction-service.md
+  - p2-hybrid-rag-with-ablation.md
+  - p3-mcp-agent-and-failure-analysis.md
+  - p4-llm-gateway-and-guardrails.md
+  - p5-optimize-and-serve.md
+  - p6-distributed-systems-lab.md
+  - rubric.md

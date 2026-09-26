@@ -12,6 +12,23 @@ Interview-grade and production-grade design of LLM-powered systems: RAG, assista
 !!! abstract "At a glance"
     **Goal:** design any "build an LLM-powered X" system in 45 minutes with numbers, evals and safety built in. **Checkpoints:** phase 2 (framework, RAG, AI search), phase 3-4 (assistant, agents, gateway, evals, capacity), phase 5 (serving, coding agent, recsys).
 
+## Reading order
+
+Read top to bottom; each page's *You're done when* line is the exit check before moving on.
+
+1. [AI system design interview framework](framework.md) — P0, ~2 h
+2. [Design an enterprise RAG system](rag-system.md) — P0, ~4 h
+3. [Design a ChatGPT-style assistant](chat-assistant.md) — P0, ~3 h
+4. [Design a multi-agent platform](agent-platform.md) — P0, ~4 h
+5. [Design a multi-tenant LLM gateway](llm-gateway.md) — P0, ~3 h
+6. [Design an LLM inference/serving platform](llm-serving-platform.md) — P1, ~4 h
+7. [Design an LLM evaluation & observability platform](evaluation-platform.md) — P0, ~3 h
+8. [Design an intelligent document processing pipeline](document-processing.md) — P1, ~3 h
+9. [Design AI-powered semantic search](ai-search.md) — P1, ~3 h
+10. [Design a coding agent / code-review bot](coding-agent.md) — P1, ~3 h
+11. [Classic ML system design: recommendation & ranking](recsys-ml-basics.md) — P2, ~4 h
+12. [LLM capacity, latency & cost planning](capacity-cost-planning.md) — P0, ~2 h
+
 ## How AI system design interviews differ
 
 | Classic system design | AI system design (2026) |
@@ -82,6 +99,12 @@ Classic system design foundations: [Interview framework & estimation](../system-
 | [Patterns for Building LLM-based Systems (Eugene Yan)](https://eugeneyan.com/writing/llm-patterns/) | Free pattern catalogue. |
 
 Full curated list with metadata: `data/resources/ai-system-design.yml`.
+
+## Practice for this chapter
+
+These designs are exercised directly by the [Agentic AI capstone](../agentic-ai/projects/index.md) — the gateway, eval platform and RAG topics above are what M2–M4 of that project builds.
+
+Interview prep (25 AI-system-design prompts) lives in [Staff+ → Interview prep](../staff-skills/interview-prep/mock-prompts.md#ai-system-design-25), scored with the [unified rubric](../staff-skills/interview-prep/rubric.md).
 
 ## Conventions used on these pages
 

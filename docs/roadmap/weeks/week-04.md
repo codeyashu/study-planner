@@ -12,7 +12,7 @@ generated: true
     **Build:** Capstone: orchestrator-workers 'draft postmortem' with evaluator-optimizer loop + 10 golden examples
 
 !!! warning "Interview checkpoint: interview-1"
-    Run the full mock loop and score it with the [rubric](../../interviews/rubric.md).
+    Run the full mock loop and score it with the [rubric](../../tracks/staff-skills/interview-prep/rubric.md).
 
 ## By day
 
@@ -62,7 +62,7 @@ generated: true
 - [ ] **Architecture** · 30 min · Write ADR 004 for capstone: structured-output validation strategy (schema-constrained decoding + bounded retry) → [The architect role & trade-off thinking](../../tracks/architecture/architect-role-tradeoffs.md) · [resource](https://adr.github.io) <small>`w04-arch-2`</small>
 - [ ] **Staff+** · 30 min · List 3 candidate 'Staff projects' at work or in the capstone with scope, stakeholders, and why they are Staff-level → [Staff archetypes & operating at Staff+](../../tracks/staff-skills/staff-archetypes.md) · [resource](https://noidea.dog/staff-resources) <small>`w04-staff-1`</small>
 - [ ] **Communication** · 30 min · Soft skills + weekly review: Disagreeing respectfully — checkpoint comm-1: re-record and compare against the baseline rubric → [Week 04 drills · day 7](../../tracks/communication/drills/week-04.md#day-7) <small>`w04-comm-7`</small>
-- [ ] **Review** · 60 min · interview-1: full mock — SD + coding + AI SD + behavioral, score with docs/interviews/rubric.md and log gaps into next week's plan → [Interview framework & back-of-envelope estimation](../../tracks/system-design/framework-and-estimation.md) <small>`w04-rev-1`</small>
+- [ ] **Review** · 60 min · interview-1: full mock — SD + coding + AI SD + behavioral, score with the unified interview rubric and log gaps into next week's plan → [Interview framework & back-of-envelope estimation](../../tracks/system-design/framework-and-estimation.md) <small>`w04-rev-1`</small>
 
 ## By track
 

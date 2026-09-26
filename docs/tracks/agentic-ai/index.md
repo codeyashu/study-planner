@@ -12,6 +12,40 @@ Goal of this track: **ship production agentic systems in 2026** as a Staff/AI ar
 !!! abstract "Capstone: Agentic Ops Copilot"
     A LangGraph orchestrator delegating to Pydantic AI sub-agents, which use MCP tool servers (one Python, one Spring AI), backed by hybrid RAG over runbooks/incidents, with evals in CI, Langfuse tracing, layered guardrails and a LiteLLM gateway. Runs locally with docker-compose + Ollama; deploys to Azure Container Apps + Microsoft Foundry.
 
+## Reading order
+
+Read top to bottom; each page's *You're done when* line is the exit check before moving on.
+
+1. [LLM fundamentals: tokens, transformers, sampling, reasoning models](llm-fundamentals.md) — P0, ~4 h
+2. [Prompting & structured outputs](prompting-structured-outputs.md) — P0, ~3 h
+3. [Context engineering](context-engineering.md) — P0, ~3 h
+4. [Agent & workflow patterns (Building Effective Agents)](agent-patterns.md) — P0, ~3 h
+5. [Tool calling & function design](tool-calling.md) — P0, ~2 h
+6. [RAG fundamentals: chunking, embeddings, retrieval](rag-fundamentals.md) — P0, ~4 h
+7. [Hybrid search & reranking](hybrid-search-reranking.md) — P0, ~3 h
+8. [Vector databases: pgvector, Qdrant & friends](vector-databases.md) — P0, ~3 h
+9. [Advanced RAG: agentic RAG, GraphRAG, LazyGraphRAG](advanced-rag.md) — P1, ~4 h
+10. [Evals I: error analysis, LLM-as-judge, eval-driven development](evals-error-analysis.md) — P0, ~5 h
+11. [Evals II: promptfoo, DeepEval, Ragas, Inspect in CI](eval-tooling.md) — P0, ~3 h
+12. [LLM observability: Langfuse, Phoenix, OTel GenAI semconv](llm-observability.md) — P0, ~3 h
+13. [LangGraph: graphs, state, checkpoints](langgraph.md) — P0, ~6 h
+14. [Durable execution & human-in-the-loop](durable-execution-hitl.md) — P0, ~3 h
+15. [Pydantic AI](pydantic-ai.md) — P0, ~4 h
+16. [DSPy & prompt optimization (GEPA)](dspy.md) — P1, ~4 h
+17. [Vendor agent SDKs: Claude Agent SDK, OpenAI Agents SDK, Google ADK, MS Agent Framework](vendor-agent-sdks.md) — P1, ~4 h
+18. [Model Context Protocol (MCP)](mcp.md) — P0, ~5 h
+19. [A2A & AG-UI protocols](a2a-ag-ui.md) — P1, ~3 h
+20. [Agent memory systems (Mem0, Letta, Zep)](memory-systems.md) — P1, ~3 h
+21. [Multi-agent systems: when, how, and failure modes](multi-agent-systems.md) — P0, ~4 h
+22. [Guardrails & security: OWASP LLM/Agentic Top 10, prompt injection](guardrails-security.md) — P0, ~5 h
+23. [Cost & latency optimization: caching, batching, streaming](cost-latency-optimization.md) — P0, ~3 h
+24. [Model selection, routing & gateways (LiteLLM)](model-routing-gateways.md) — P0, ~3 h
+25. [Inference serving: vLLM, SGLang, Ollama, quantization](inference-serving.md) — P1, ~4 h
+26. [Fine-tuning: LoRA/QLoRA, DPO, GRPO — and when not to](fine-tuning.md) — P1, ~6 h
+27. [Managed platforms: Microsoft Foundry, Bedrock AgentCore](managed-agent-platforms.md) — P1, ~3 h
+28. [AI-assisted development: coding agents, AGENTS.md, skills](ai-assisted-development.md) — P0, ~2 h
+29. [Shipping LLM features to production: the checklist](production-checklist.md) — P0, ~2 h
+
 ## The 2026 stack at a glance
 
 ```mermaid
@@ -128,6 +162,12 @@ Default recommendation for a new Python agent product in Sept 2026: **plain Pyth
 | [DeepLearning.AI: Evaluating AI Agents](https://learn.deeplearning.ai/courses/evaluating-ai-agents/information) | course | Agent evaluation techniques |
 | [Simon Willison's weblog](https://simonwillison.net/) | blog | Daily signal; lethal trifecta and security thinking |
 | [Embrace The Red](https://embracethered.com/blog/) :gem: | blog | Real exploit write-ups against agents |
+
+## Practice for this chapter
+
+The [capstone project](projects/index.md) — *Agentic Ops Copilot* — is built with these topics, milestone by milestone, from week 1 to week 24. Do it alongside the topics above, not after them: each milestone names which topics it needs.
+
+Interview prep for this chapter (AI system design, agent design, and the AI-specific behavioral prompts) lives in [Staff+ → Interview prep](../staff-skills/interview-prep/mock-prompts.md#ai-system-design-25), scored with the [same rubric](../staff-skills/interview-prep/rubric.md) as every other chapter.
 
 ## Lab map: how topics build the capstone
 

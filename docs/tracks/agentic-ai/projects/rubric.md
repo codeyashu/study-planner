@@ -34,7 +34,7 @@ last_reviewed: 2026-09-25
 |---|---|---|---|
 | Everything in one file; LLM calls scattered | Layers exist but leak (framework types in domain, prompts inline) | Hexagonal/ports-and-adapters: domain independent of LLM/vendor SDKs; model aliases; C4 context + container diagrams current | Plus explicit extension points (domain packs, tool manifests), documented quality-attribute trade-offs, a credible "what changes at 10× / 100×" section |
 
-See [hexagonal and clean architecture](../tracks/architecture/hexagonal-clean.md), [documenting architecture](../tracks/architecture/documenting-architecture.md), [AI-native architecture](../tracks/architecture/ai-native-architecture.md).
+See [hexagonal and clean architecture](../../architecture/hexagonal-clean.md), [documenting architecture](../../architecture/documenting-architecture.md), [AI-native architecture](../../architecture/ai-native-architecture.md).
 
 ### 3. Evals
 
@@ -42,7 +42,7 @@ See [hexagonal and clean architecture](../tracks/architecture/hexagonal-clean.md
 |---|---|---|---|
 | Manual spot checks ("looks good") | Golden set exists; one aggregate metric; run by hand | Golden set with coverage of failure categories; component-level metrics (retrieval, generation, tools); LLM judges calibrated against own labels; CI gate on regressions | Plus error-analysis-driven taxonomy, online evals from production traces, feedback loop into dataset, variance/CI reporting, eval cost tracked |
 
-See [evals and error analysis](../tracks/agentic-ai/evals-error-analysis.md), [eval tooling](../tracks/agentic-ai/eval-tooling.md).
+See [evals and error analysis](../evals-error-analysis.md), [eval tooling](../eval-tooling.md).
 
 ### 4. Observability
 
@@ -50,7 +50,7 @@ See [evals and error analysis](../tracks/agentic-ai/evals-error-analysis.md), [e
 |---|---|---|---|
 | Print statements | Structured logs; some LLM call logging | End-to-end traces (OTel + Langfuse) across services, tokens/cost/latency per span, prompt versions tagged, PII redacted | Plus SLOs with error budgets, dashboards that answer "why is it slow/expensive/wrong?", alerting, trace-to-eval workflow |
 
-See [LLM observability](../tracks/agentic-ai/llm-observability.md), [observability and SLOs](../tracks/system-design/observability-slos.md), [observability in Python](../tracks/python/observability-python.md).
+See [LLM observability](../llm-observability.md), [observability and SLOs](../../system-design/observability-slos.md), [observability in Python](../../python/observability-python.md).
 
 ### 5. Security and safety
 
@@ -58,7 +58,7 @@ See [LLM observability](../tracks/agentic-ai/llm-observability.md), [observabili
 |---|---|---|---|
 | No auth; tools can do anything; secrets in env files committed | Auth on API; secrets outside repo; basic input validation | Threat model (OWASP LLM + agentic); least-privilege tools; HITL on writes; tenant isolation; red-team suite with results | Plus red-team in CI with tracked ASR, lethal-trifecta analysis, audit trail, accepted-risk register, supply-chain hygiene (pinned images, SBOM/scan) |
 
-See [guardrails and security](../tracks/agentic-ai/guardrails-security.md), [security: authN/Z](../tracks/system-design/security-authn-authz.md).
+See [guardrails and security](../guardrails-security.md), [security: authN/Z](../../system-design/security-authn-authz.md).
 
 ### 6. Documentation and ADRs
 
@@ -66,7 +66,7 @@ See [guardrails and security](../tracks/agentic-ai/guardrails-security.md), [sec
 |---|---|---|---|
 | No README beyond a title | README with run steps; decisions undocumented | README (problem, diagram, run, evaluate, limits, cost); ADRs for every significant decision with alternatives and consequences; runbook | Plus ADRs cite evidence (eval/benchmark links), superseded ADRs tracked, docs a reviewer can use to onboard in < 30 min |
 
-See [ADRs](../tracks/architecture/adrs.md).
+See [ADRs](../../architecture/adrs.md).
 
 ### 7. Write-up clarity
 
@@ -74,7 +74,7 @@ See [ADRs](../tracks/architecture/adrs.md).
 |---|---|---|---|
 | Diary of what you did | Explains what was built; results without context | Question → method → results table → decision → next steps; readable by a senior peer in 10 min | Publishable: crisp thesis, honest limitations, visuals, one insight a reader could not get elsewhere; you could present it as a 15-min talk |
 
-See [communication with stakeholders](../tracks/staff-skills/communication-stakeholders.md), [design docs and RFCs](../tracks/staff-skills/design-docs-rfcs.md).
+See [communication with stakeholders](../../staff-skills/communication-stakeholders.md), [design docs and RFCs](../../staff-skills/design-docs-rfcs.md).
 
 ## Scorecard template
 

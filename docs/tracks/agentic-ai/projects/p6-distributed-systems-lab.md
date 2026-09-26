@@ -13,17 +13,17 @@ last_reviewed: 2026-09-25
 
 ## Why this project
 
-You are already strong in system design at the whiteboard. What separates Staff from Senior in distributed-systems deep dives is having *felt* the failure modes: a broadcast that works until the network partitions, a counter that double-counts on retry, a log that loses writes under concurrency. Maelstrom (built on Jepsen's checker) turns hand-waving into pass/fail. It is also the best preparation for [consensus](../tracks/system-design/consensus-raft.md) and [consistency models](../tracks/system-design/consistency-models.md) questions.
+You are already strong in system design at the whiteboard. What separates Staff from Senior in distributed-systems deep dives is having *felt* the failure modes: a broadcast that works until the network partitions, a counter that double-counts on retry, a log that loses writes under concurrency. Maelstrom (built on Jepsen's checker) turns hand-waving into pass/fail. It is also the best preparation for [consensus](../../system-design/consensus-raft.md) and [consistency models](../../system-design/consistency-models.md) questions.
 
 ## Skills practised
 
-- [Consistency models, CAP and PACELC](../tracks/system-design/consistency-models.md)
-- [Replication](../tracks/system-design/replication.md), [partitioning](../tracks/system-design/partitioning-sharding.md)
-- [Consensus: Raft, leases, fencing](../tracks/system-design/consensus-raft.md)
-- [Messaging and streaming](../tracks/system-design/messaging-streaming.md) (the Kafka-style log challenge)
-- [Reliability patterns](../tracks/system-design/reliability-patterns.md): retries, idempotency
-- [Concurrency models in Python](../tracks/python/concurrency-models.md) / [asyncio](../tracks/python/asyncio-deep.md)
-- Case study: [distributed key-value store](../tracks/system-design/case-studies/distributed-kv-store.md)
+- [Consistency models, CAP and PACELC](../../system-design/consistency-models.md)
+- [Replication](../../system-design/replication.md), [partitioning](../../system-design/partitioning-sharding.md)
+- [Consensus: Raft, leases, fencing](../../system-design/consensus-raft.md)
+- [Messaging and streaming](../../system-design/messaging-streaming.md) (the Kafka-style log challenge)
+- [Reliability patterns](../../system-design/reliability-patterns.md): retries, idempotency
+- [Concurrency models in Python](../../python/concurrency-models.md) / [asyncio](../../python/asyncio-deep.md)
+- Case study: [distributed key-value store](../../system-design/case-studies/distributed-kv-store.md)
 
 ## Spec
 

@@ -21,12 +21,12 @@ Staff/AI-architect interviews increasingly ask "prompt, optimise, or fine-tune?"
 
 ## Skills practised
 
-- [DSPy](../tracks/agentic-ai/dspy.md): signatures, modules, metrics, MIPROv2, GEPA
-- [Inference serving](../tracks/agentic-ai/inference-serving.md): continuous batching, KV cache, quantisation, throughput vs latency
-- [Fine-tuning](../tracks/agentic-ai/fine-tuning.md): LoRA/QLoRA with TRL or Unsloth, data prep, overfitting checks
-- [Cost and latency optimisation](../tracks/agentic-ai/cost-latency-optimization.md), [capacity and cost planning](../tracks/ai-system-design/capacity-cost-planning.md), [LLM serving platform](../tracks/ai-system-design/llm-serving-platform.md)
-- [Decision making](../tracks/staff-skills/decision-making.md), [design docs and RFCs](../tracks/staff-skills/design-docs-rfcs.md)
-- [Performance profiling](../tracks/python/performance-profiling.md)
+- [DSPy](../dspy.md): signatures, modules, metrics, MIPROv2, GEPA
+- [Inference serving](../inference-serving.md): continuous batching, KV cache, quantisation, throughput vs latency
+- [Fine-tuning](../fine-tuning.md): LoRA/QLoRA with TRL or Unsloth, data prep, overfitting checks
+- [Cost and latency optimisation](../cost-latency-optimization.md), [capacity and cost planning](../../ai-system-design/capacity-cost-planning.md), [LLM serving platform](../../ai-system-design/llm-serving-platform.md)
+- [Decision making](../../staff-skills/decision-making.md), [design docs and RFCs](../../staff-skills/design-docs-rfcs.md)
+- [Performance profiling](../../python/performance-profiling.md)
 
 ## Spec
 

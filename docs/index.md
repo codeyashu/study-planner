@@ -109,21 +109,21 @@ gantt
 
     [:octicons-arrow-right-24: DSA](tracks/dsa/index.md) · [Staff+](tracks/staff-skills/index.md)
 
--   :material-hammer-wrench: **Projects**
+-   :material-hammer-wrench: **The capstone project**
 
     ---
 
-    The *Agentic Ops Copilot* capstone plus six phase projects with rubrics.
+    The *Agentic Ops Copilot* — built as you go through the Agentic AI chapter, six phase projects, all with rubrics.
 
-    [:octicons-arrow-right-24: Projects](projects/index.md)
+    [:octicons-arrow-right-24: Capstone](tracks/agentic-ai/projects/index.md)
 
--   :material-account-voice: **Interviews**
+-   :material-account-voice: **Interview prep**
 
     ---
 
-    Six checkpoints on one rubric, mock prompt banks, AI mock-interviewer prompts.
+    Lives at the end of the Staff+ chapter: six checkpoints on one rubric, mock prompt banks, AI mock-interviewer prompts.
 
-    [:octicons-arrow-right-24: Interviews](interviews/index.md)
+    [:octicons-arrow-right-24: Interview prep](tracks/staff-skills/interview-prep/index.md)
 
 -   :material-newspaper-variant: **Reading & trends**
 

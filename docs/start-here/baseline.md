@@ -5,7 +5,7 @@ last_reviewed: 2026-09-25
 
 # Week 0 baseline (Sat 26 – Sun 27 Sep 2026)
 
-**Purpose:** measure where you really are before you start, so the first weeks skip what you already know and target what you don't. Score everything with the [unified rubric](../interviews/rubric.md), and write the results in `docs/log/baseline.md`.
+**Purpose:** measure where you really are before you start, so the first weeks skip what you already know and target what you don't. Score everything with the [unified rubric](../tracks/staff-skills/interview-prep/rubric.md), and write the results in `docs/log/baseline.md`.
 
 ## 1. System design mock (60 min)
 

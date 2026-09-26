@@ -48,20 +48,20 @@ flowchart LR
 
 1. **Level is the interview.** The loop decides Senior vs Staff. The same technical performance can yield either; scope and influence stories (see [behavioral rubric](rubric.md#5-behavioral-staff-leadership)) decide it.
 2. **System design is ambiguous on purpose.** Interviewers expect you to reframe, prioritise, and discuss organisational rollout and migration, not just draw boxes.
-3. **Written and strategic signals matter.** Some companies request a design doc sample or a strategy write-up review; keep 1–2 sanitised artefacts ready ([design docs and RFCs](../tracks/staff-skills/design-docs-rfcs.md), [technical strategy](../tracks/staff-skills/technical-strategy.md)).
-4. **Leadership without authority** is probed repeatedly: [influence without authority](../tracks/staff-skills/influence-without-authority.md), [architecture reviews](../tracks/staff-skills/architecture-reviews.md).
+3. **Written and strategic signals matter.** Some companies request a design doc sample or a strategy write-up review; keep 1–2 sanitised artefacts ready ([design docs and RFCs](../design-docs-rfcs.md), [technical strategy](../technical-strategy.md)).
+4. **Leadership without authority** is probed repeatedly: [influence without authority](../influence-without-authority.md), [architecture reviews](../architecture-reviews.md).
 5. **Team matching** (esp. at big tech) can take weeks after a "hire" decision; keep other processes warm.
 
 ## AI-era changes (as of Sept 2026)
 
 | Trend | What to expect | How to prepare |
 |---|---|---|
-| **AI system design rounds** | Design a RAG system, agent platform, LLM gateway, evaluation platform; probed on evals, safety, cost | [AI SD framework](../tracks/ai-system-design/framework.md); capstone as concrete evidence; 8+ mocks by week 24 |
-| **Evals and reliability questions** | "How do you know it works? How do you catch regressions?" | [evals and error analysis](../tracks/agentic-ai/evals-error-analysis.md); your P2/P3 reports |
-| **Security of agents** | Prompt injection, excessive agency, data exfiltration | [guardrails and security](../tracks/agentic-ai/guardrails-security.md); P4 threat model |
-| **AI-assisted coding rounds** | Some companies permit or require AI tools in coding rounds and evaluate how you direct, review and verify output; others explicitly ban them | Ask the recruiter. Practise both modes: unassisted DSA and AI-assisted "build a small feature and review generated code critically" ([AI-assisted development](../tracks/agentic-ai/ai-assisted-development.md)) |
+| **AI system design rounds** | Design a RAG system, agent platform, LLM gateway, evaluation platform; probed on evals, safety, cost | [AI SD framework](../../ai-system-design/framework.md); capstone as concrete evidence; 8+ mocks by week 24 |
+| **Evals and reliability questions** | "How do you know it works? How do you catch regressions?" | [evals and error analysis](../../agentic-ai/evals-error-analysis.md); your P2/P3 reports |
+| **Security of agents** | Prompt injection, excessive agency, data exfiltration | [guardrails and security](../../agentic-ai/guardrails-security.md); P4 threat model |
+| **AI-assisted coding rounds** | Some companies permit or require AI tools in coding rounds and evaluate how you direct, review and verify output; others explicitly ban them | Ask the recruiter. Practise both modes: unassisted DSA and AI-assisted "build a small feature and review generated code critically" ([AI-assisted development](../../agentic-ai/ai-assisted-development.md) |
 | **Fewer trivia questions, more judgement** | "When would you not use an agent?" | Have opinions with numbers |
-| **Leadership in the AI era** | Adoption strategy, risk, team skills, measuring productivity honestly | [AI-era leadership](../tracks/staff-skills/ai-era-leadership.md) |
+| **Leadership in the AI era** | Adoption strategy, risk, team skills, measuring productivity honestly | [AI-era leadership](../ai-era-leadership.md) |
 | **Take-home / project-based screens** | Small agent or RAG build with evals within a few hours | Reuse capstone scaffolding; keep a "boilerplate" you can start from quickly |
 
 ## Preparation timeline mapped to the 24 weeks
@@ -112,4 +112,4 @@ New flashcards / drills:
 
 ## Related
 
-[Checkpoints](checkpoints.md) · [Unified rubric](rubric.md) · [Mock prompts](mock-prompts.md) · [AI mock interviewer](ai-mock-interviewer.md) · [Staff archetypes](../tracks/staff-skills/staff-archetypes.md)
+[Checkpoints](checkpoints.md) · [Unified rubric](rubric.md) · [Mock prompts](mock-prompts.md) · [AI mock interviewer](ai-mock-interviewer.md) · [Staff archetypes](../staff-archetypes.md)

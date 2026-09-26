@@ -189,7 +189,7 @@ def render_week(w: dict, phases: dict[int, dict]) -> str:
     ]
     if w.get("checkpoint"):
         lines += ["", f'!!! warning "Interview checkpoint: {w["checkpoint"]}"',
-                  "    Run the full mock loop and score it with the [rubric](../../interviews/rubric.md)."]
+                  "    Run the full mock loop and score it with the [rubric](../../tracks/staff-skills/interview-prep/rubric.md)."]
     lines += ["", "## By day", ""]
     by_date: dict[str, list[dict]] = {}
     for t in w["items"]:
@@ -256,7 +256,11 @@ def build_track_navs() -> None:
             (tdir / "drills").mkdir(exist_ok=True)
             nav.append({"Weekly drills": "drills"})
             dump_yaml(tdir / "drills" / ".nav.yml", {"nav": ["index.md"] + [f"week-{w:02d}.md" for w in range(0, 27)]})
+        if track == "agentic-ai":
+            nav.append({"Capstone project": "projects"})
         nav.append({"Question bank": "questions.md"})
+        if track == "staff-skills":
+            nav.append({"Interview prep": "interview-prep"})
         if track == "communication":
             nav.append({"AI tutor prompts": "ai-tutor-prompts.md"})
         dump_yaml(tdir / ".nav.yml", {"nav": nav})

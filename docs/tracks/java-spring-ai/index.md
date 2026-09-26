@@ -12,6 +12,21 @@ Build AI features on the JVM alongside your Python stack: **Java 25 LTS + Spring
 !!! abstract "Track outcome"
     By the end you can: (1) write modern Java (records, sealed types, pattern matching, virtual threads); (2) ship a Spring AI service with `ChatClient`, advisors, validated structured output, chat memory, RAG on pgvector and tool calling; (3) expose an **MCP tool server** that your Python LangGraph orchestrator uses; (4) make it observable and testable (Micrometer/OTel, Testcontainers, evals in CI); and (5) defend a polyglot architecture decision in an ADR.
 
+## Reading order
+
+Read top to bottom; each page's *You're done when* line is the exit check before moving on.
+
+1. [Modern Java 21→25: records, sealed types, patterns](modern-java.md) — P1, ~3 h
+2. [Virtual threads, structured concurrency & scoped values](virtual-threads-structured-concurrency.md) — P0, ~3 h
+3. [Spring Boot 4 & Spring Framework 7](spring-boot-4.md) — P0, ~3 h
+4. [Spring AI 2.0 fundamentals: ChatClient, advisors, structured output](spring-ai-fundamentals.md) — P0, ~3 h
+5. [RAG with Spring AI & pgvector](spring-ai-rag.md) — P0, ~3 h
+6. [Tool calling & MCP servers in Spring AI](spring-ai-tools-mcp.md) — P0, ~3 h
+7. [Agentic patterns with Spring AI](spring-ai-agents.md) — P1, ~3 h
+8. [Observability & testing: Micrometer, OTel, Testcontainers](observability-testing.md) — P1, ~2 h
+9. [JVM performance, GC & Leyden/AOT](jvm-performance.md) — P2, ~3 h
+10. [Java vs Python for AI: polyglot architecture decisions](polyglot-ai-architecture.md) — P1, ~1 h
+
 ## Topics
 
 | Topic | Priority | Complexity | Phase | Hours |
@@ -72,6 +87,10 @@ As of September 2026. "Java" means Spring AI 2.0 on Boot 4; Python versions are 
 | Best for | Stateless AI features and tool/RAG services beside Java systems | Long-running, stateful, human-in-the-loop agents | Typed, small-to-medium agent services |
 
 **Default split for the capstone:** LangGraph orchestrates; Spring AI provides governed MCP tools and RAG; one shared golden set evaluates both.
+
+## Practice for this chapter
+
+This chapter's practice is concrete: build the Spring AI MCP server that the capstone's Python orchestrator calls, in [capstone milestone M3](../agentic-ai/projects/capstone.md) (weeks 9–12).
 
 ## Key sources
 

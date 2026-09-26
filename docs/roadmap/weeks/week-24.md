@@ -12,7 +12,7 @@ generated: true
     **Build:** Capstone v1.0 shipped: repo, deployed demo, 2 blog posts, ADR set, arc42 doc
 
 !!! warning "Interview checkpoint: interview-6"
-    Run the full mock loop and score it with the [rubric](../../interviews/rubric.md).
+    Run the full mock loop and score it with the [rubric](../../tracks/staff-skills/interview-prep/rubric.md).
 
 ## By day
 
@@ -62,7 +62,7 @@ generated: true
 - [ ] **Architecture** · 30 min · Write ADR 024 for capstone: v2 roadmap decisions (what you'd change and why) → [The architect role & trade-off thinking](../../tracks/architecture/architect-role-tradeoffs.md) · [resource](https://adr.github.io) <small>`w24-arch-2`</small>
 - [ ] **Staff+** · 30 min · Behavioral: 'Why Staff? / Why AI architect?' narrative + 30-60-90 day plan → [Behavioral & Staff interviews: STAR stories bank](../../tracks/staff-skills/behavioral-interviews.md) <small>`w24-staff-1`</small>
 - [ ] **Communication** · 30 min · Soft skills + weekly review: Communication self-assessment (compare with baseline) — checkpoint comm-6: re-record and compare against the baseline rubric → [Week 24 drills · day 7](../../tracks/communication/drills/week-24.md#day-7) <small>`w24-comm-7`</small>
-- [ ] **Review** · 60 min · interview-6: full mock — SD + coding + AI SD + behavioral, score with docs/interviews/rubric.md and log gaps into next week's plan → [Behavioral & Staff interviews: STAR stories bank](../../tracks/staff-skills/behavioral-interviews.md) <small>`w24-rev-1`</small>
+- [ ] **Review** · 60 min · interview-6: full mock — SD + coding + AI SD + behavioral, score with the unified interview rubric and log gaps into next week's plan → [Behavioral & Staff interviews: STAR stories bank](../../tracks/staff-skills/behavioral-interviews.md) <small>`w24-rev-1`</small>
 
 ## By track
 

@@ -8,6 +8,39 @@ last_reviewed: 2026-09-25
 
 # System Design
 
+## Reading order
+
+Read top to bottom; each page's *You're done when* line is the exit check before moving on.
+
+1. [Interview framework & back-of-envelope estimation](framework-and-estimation.md) — P0, ~3 h
+2. [Scalability fundamentals & latency numbers](scalability-fundamentals.md) — P0, ~3 h
+3. [Load balancing & proxies](load-balancing.md) — P0, ~2 h
+4. [Caching strategies](caching.md) — P0, ~4 h
+5. [Databases: SQL vs NoSQL, storage engines](databases-sql-nosql.md) — P0, ~5 h
+6. [Replication](replication.md) — P0, ~3 h
+7. [Partitioning & sharding, consistent hashing](partitioning-sharding.md) — P0, ~3 h
+8. [Consistency models, CAP & PACELC](consistency-models.md) — P0, ~4 h
+9. [Consensus: Raft, leases, fencing](consensus-raft.md) — P1, ~6 h
+10. [Message queues & streaming (Kafka)](messaging-streaming.md) — P0, ~5 h
+11. [API design: REST, gRPC, GraphQL, idempotency, pagination](api-design.md) — P0, ~3 h
+12. [Rate limiting & quotas](rate-limiting.md) — P0, ~3 h
+13. [Search systems & inverted indexes](search-systems.md) — P1, ~3 h
+14. [Blob storage, CDN & edge](storage-cdn.md) — P1, ~2 h
+15. [Reliability: retries, backoff, circuit breakers, bulkheads](reliability-patterns.md) — P0, ~3 h
+16. [Observability, SLOs & error budgets](observability-slos.md) — P0, ~3 h
+17. [Batch & stream data pipelines](data-pipelines.md) — P1, ~3 h
+18. [Multi-region, DR & failover](multi-region-dr.md) — P1, ~3 h
+19. [Security: authN/Z, OAuth2/OIDC, zero trust, multi-tenancy](security-authn-authz.md) — P0, ~3 h
+20. [URL shortener](case-studies/url-shortener.md) — P0, ~2 h *(case study)*
+21. [News feed / timeline](case-studies/news-feed.md) — P0, ~3 h *(case study)*
+22. [Chat / messaging system](case-studies/chat-system.md) — P0, ~3 h *(case study)*
+23. [Notification system](case-studies/notification-system.md) — P0, ~2 h *(case study)*
+24. [Payment system](case-studies/payment-system.md) — P0, ~3 h *(case study)*
+25. [Distributed key-value store](case-studies/distributed-kv-store.md) — P1, ~4 h *(case study)*
+26. [Metrics & monitoring system](case-studies/metrics-monitoring.md) — P1, ~3 h *(case study)*
+27. [Ride hailing / proximity service](case-studies/ride-hailing-proximity.md) — P1, ~3 h *(case study)*
+28. [Distributed job scheduler](case-studies/job-scheduler.md) — P1, ~3 h *(case study)*
+
 ## Goal of the track
 
 You already design systems well. This track upgrades that from "knows the boxes" to **Staff/Principal judgement**: quantify before choosing, state the consistency and failure semantics of every component, pick the simplest architecture that meets an explicit SLO, and explain trade-offs to engineers and executives. It is also the classical foundation under the AI system design track: LLM systems are still distributed systems, with new cost units (tokens), new failure modes (semantic failure, prompt injection, runaway agents) and new bottlenecks (GPU capacity, KV-cache, provider rate limits).
@@ -98,6 +131,12 @@ Suggested weekly rhythm (about 4 h/week on this track): one topic read + lab (2.
 | Observability | OTel GenAI traces, quality SLIs, cost telemetry |
 | Security | Delegated agent tokens, MCP auth, prompt injection and the lethal trifecta |
 | Multi-region | GPU capacity and model availability per region, data residency |
+
+## Practice for this chapter
+
+The [case studies](#case-studies) above are this chapter's practice — do one after every 2–3 topics that feed it, not all at the end.
+
+Interview prep (40 system-design prompts, graded easy → Staff-ambiguous) lives in [Staff+ → Interview prep](../staff-skills/interview-prep/mock-prompts.md#system-design-40), scored with the [unified rubric](../staff-skills/interview-prep/rubric.md).
 
 ## Key books and reading
 

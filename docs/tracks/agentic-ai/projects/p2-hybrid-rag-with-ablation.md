@@ -13,16 +13,16 @@ last_reviewed: 2026-09-25
 
 ## Why this project
 
-"Which chunk size?" and "do we need a reranker?" are the questions every RAG team argues about without data. The Staff move is to build the harness that ends the argument. Your ablation report is also the single best artefact for an AI system design interview on [enterprise RAG](../tracks/ai-system-design/rag-system.md).
+"Which chunk size?" and "do we need a reranker?" are the questions every RAG team argues about without data. The Staff move is to build the harness that ends the argument. Your ablation report is also the single best artefact for an AI system design interview on [enterprise RAG](../../ai-system-design/rag-system.md).
 
 ## Skills practised
 
-- [RAG fundamentals](../tracks/agentic-ai/rag-fundamentals.md), [hybrid search and reranking](../tracks/agentic-ai/hybrid-search-reranking.md), [advanced RAG](../tracks/agentic-ai/advanced-rag.md)
-- [Vector databases](../tracks/agentic-ai/vector-databases.md): HNSW parameters (`m`, `ef_construction`, `ef_search`), filtered search pitfalls
-- [Search systems](../tracks/system-design/search-systems.md): inverted indexes, BM25
-- [Eval tooling](../tracks/agentic-ai/eval-tooling.md) and [evals and error analysis](../tracks/agentic-ai/evals-error-analysis.md)
-- [LLM observability](../tracks/agentic-ai/llm-observability.md): Langfuse traces for retrieval spans
-- [Data tooling](../tracks/python/data-tooling.md): Polars/DuckDB for analysing results
+- [RAG fundamentals](../rag-fundamentals.md), [hybrid search and reranking](../hybrid-search-reranking.md), [advanced RAG](../advanced-rag.md)
+- [Vector databases](../vector-databases.md): HNSW parameters (`m`, `ef_construction`, `ef_search`), filtered search pitfalls
+- [Search systems](../../system-design/search-systems.md): inverted indexes, BM25
+- [Eval tooling](../eval-tooling.md) and [evals and error analysis](../evals-error-analysis.md)
+- [LLM observability](../llm-observability.md): Langfuse traces for retrieval spans
+- [Data tooling](../../python/data-tooling.md): Polars/DuckDB for analysing results
 
 ## Spec
 
@@ -110,7 +110,7 @@ Do **not** run the full cross-product. Use a one-factor-at-a-time sweep from a s
 - Contextual retrieval (LLM-written chunk context) vs cheap heading-path headers: cost vs gain.
 - Compare pgvector against Qdrant on the same data (latency, filtered recall).
 - LazyGraphRAG-style approach for the multi-hop slice only.
-- Port the retriever to Spring AI 2.0 (`VectorStore` + advisors) and verify identical recall. See [Spring AI RAG](../tracks/java-spring-ai/spring-ai-rag.md).
+- Port the retriever to Spring AI 2.0 (`VectorStore` + advisors) and verify identical recall. See [Spring AI RAG](../../java-spring-ai/spring-ai-rag.md).
 
 ## Deliverables
 

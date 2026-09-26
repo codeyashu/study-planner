@@ -10,6 +10,32 @@ last_reviewed: 2026-09-25
 
 Goal: get from "rusty" to solving LeetCode-Medium in 25 minutes and Hard in 40, with clear communication, for FAANG-tier and Staff coding rounds. 21 topics (18 pattern pages, 2 foundations, 1 tracker), about 60 hours over 24 weeks, plus a spaced-repetition re-solve queue.
 
+## Reading order
+
+Read top to bottom; each page's *You're done when* line is the exit check before moving on.
+
+1. [Problem-solving approach & complexity analysis](approach-complexity.md) — P0, ~2 h
+2. [Python idioms for interviews](python-idioms.md) — P0, ~1 h
+3. [Arrays & hashing](arrays-hashing.md) — P0, ~4 h
+4. [Two pointers](two-pointers.md) — P0, ~3 h
+5. [Sliding window](sliding-window.md) — P0, ~3 h
+6. [Stack & monotonic stack](stack.md) — P0, ~3 h
+7. [Binary search (incl. on answer)](binary-search.md) — P0, ~3 h
+8. [Linked list](linked-list.md) — P0, ~3 h
+9. [Trees: DFS, BFS, BST](trees.md) — P0, ~5 h
+10. [Tries](tries.md) — P1, ~2 h
+11. [Heap / priority queue](heap.md) — P0, ~3 h
+12. [Backtracking](backtracking.md) — P0, ~4 h
+13. [Graphs: BFS, DFS, topological sort, union-find](graphs.md) — P0, ~5 h
+14. [Advanced graphs: Dijkstra, MST, Bellman-Ford](advanced-graphs.md) — P1, ~4 h
+15. [Dynamic programming 1-D](dp-1d.md) — P0, ~5 h
+16. [Dynamic programming 2-D](dp-2d.md) — P0, ~5 h
+17. [Greedy](greedy.md) — P0, ~3 h
+18. [Intervals](intervals.md) — P0, ~2 h
+19. [Math, geometry & bit manipulation](math-bits.md) — P1, ~2 h
+20. [Concurrency & low-level design problems (LRU, rate limiter, parking lot)](concurrency-lld.md) — P0, ~4 h
+21. [NeetCode 250 problem tracker](problem-tracker.md) — P0, ~0 h
+
 ## Study method for experienced engineers
 
 You do not need to *learn* what a hash map is. You need three things back: **pattern recognition speed**, **fluency writing correct code without an IDE**, and **communication under a clock**.
@@ -116,6 +142,12 @@ The exact week numbers in the tracker are derived from these phases. Adjust them
 - **Trade-off language:** "hash map is O(n) space; sort is O(1) extra but loses indices; here's when I'd choose each."
 - **Production mapping:** each page lists real-world use cases (rate limiters, LSM compaction, routing, entity resolution) so answers sound like an engineer, not a student.
 - **Communication:** see the scripts in the [question bank](questions.md#interview-communication-scripts).
+
+## Practice for this chapter
+
+The [problem tracker](problem-tracker.md) is this chapter's practice; work it alongside the patterns above, not after finishing them.
+
+Interview prep: 15 low-level-design prompts (concurrency, LRU, rate limiters) live in [Staff+ → Interview prep](../staff-skills/interview-prep/mock-prompts.md#low-level-design-15), scored with the [unified rubric](../staff-skills/interview-prep/rubric.md).
 
 ## Resources summary
 

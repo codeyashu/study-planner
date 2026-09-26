@@ -11,6 +11,23 @@ The non-code half of the goal. Twelve topics, about 25 hours across the 24 weeks
 !!! abstract "How to use this track"
     Each topic ends in a **Staff artifact**: a real document you produce, not a summary you read. By Week 24 you should hold eight artifacts that double as interview material and as working tools in your current org. Read a page (~30 min), do the lab, then use the artifact in real work within a week. An artifact nobody has seen is not finished.
 
+## Reading order
+
+Read top to bottom; each page's *You're done when* line is the exit check before moving on.
+
+1. [Staff archetypes & operating at Staff+](staff-archetypes.md) — P0, ~2 h
+2. [Writing engineering strategy & vision](technical-strategy.md) — P0, ~3 h
+3. [Design docs & RFCs that get approved](design-docs-rfcs.md) — P0, ~2 h
+4. [Influence without authority & alignment](influence-without-authority.md) — P0, ~2 h
+5. [Managing technical debt & quality](technical-debt.md) — P0, ~2 h
+6. [Mentoring, sponsorship & growing engineers](mentoring-sponsorship.md) — P1, ~2 h
+7. [Incident leadership & blameless postmortems](incident-leadership.md) — P1, ~2 h
+8. [Communicating with executives & stakeholders](communication-stakeholders.md) — P0, ~2 h
+9. [Decision-making under ambiguity](decision-making.md) — P0, ~2 h
+10. [Running architecture reviews & guilds](architecture-reviews.md) — P1, ~1 h
+11. [Leading engineering in the AI era: adoption, productivity, risk](ai-era-leadership.md) — P0, ~2 h
+12. [Behavioral & Staff interviews: STAR stories bank](behavioral-interviews.md) — P0, ~3 h
+
 ## The one-paragraph model
 
 At Senior, output is your own designs and code. At Staff+, output is the change in what the organisation ships because you were there: direction (strategy, design docs), alignment (influence, communication, reviews), risk handling (debt, incidents, AI governance) and grown people (mentoring, sponsorship). Coding agents compress the "hands" part of the job in 2026, which raises the value of framing, judgement, evals and alignment: exactly Staff work.
@@ -77,6 +94,12 @@ Bonus artifacts (smaller, feed the eight above): growth plans and 1:1 agenda ([M
 - **Reversibility and evidence** drive decisions; tripwires beat certainty.
 - **Amplifier principle.** AI amplifies the strengths and weaknesses of your engineering system (DORA 2025), so platform, evals and review norms are leadership work.
 - **Give credit, make glue work visible, sponsor others.**
+
+## Practice for this chapter
+
+The [eight Staff artifacts](#the-eight-staff-artifacts) above are this chapter's practice.
+
+**[Interview prep](interview-prep/index.md) lives at the end of this chapter** — it's the same rubric used to score every other track's mock rounds, plus the behavioral/Staff prompt bank and checkpoint schedule for the whole roadmap.
 
 ## Resource list
 

@@ -35,10 +35,10 @@ flowchart LR
 | **Code** | Runs from a clean clone with one command (`uv sync && make up` or `docker compose up`). Typed (`ty`/`mypy` clean), linted (`ruff`), tested (`pytest`), CI green. |
 | **README** | Problem, architecture diagram (Mermaid/C4), how to run, how to evaluate, known limitations, cost to run. |
 | **Write-up** | 800–2000 words, blog-quality: question → method → results table → decision → what you'd do next. Publish at least 2 of these publicly by week 24. |
-| **ADRs** | 1+ per week on the capstone, 2–4 per mini-project, in `docs/adr/NNNN-title.md` using the [ADR practice](../tracks/architecture/adrs.md) (context, decision, alternatives, consequences, status). |
+| **ADRs** | 1+ per week on the capstone, 2–4 per mini-project, in `docs/adr/NNNN-title.md` using the [ADR practice](../../architecture/adrs.md) (context, decision, alternatives, consequences, status). |
 
 !!! tip "Eval-first rule"
-    Before writing the feature, write the eval: a golden set (even 20 examples), a metric, and a threshold. A project without an eval harness scores at most 2 on the rubric's *Evals* dimension, regardless of how good the demo looks. See [evals and error analysis](../tracks/agentic-ai/evals-error-analysis.md).
+    Before writing the feature, write the eval: a golden set (even 20 examples), a metric, and a threshold. A project without an eval harness scores at most 2 on the rubric's *Evals* dimension, regardless of how good the demo looks. See [evals and error analysis](../evals-error-analysis.md).
 
 ## All projects
 

@@ -12,6 +12,30 @@ The track that turns a strong senior engineer into a Staff/Principal architect: 
     **19 topics · ~53 h of core study · Phases 1–5 · Question bank:** [questions.md](questions.md) (60+ graded questions, 16 katas, 25 rapid-fire)
     **Outcome:** you can decompose an ambiguous domain, choose and defend an architecture style, record the decision, evolve it safely, and design AI-enabled systems with clear autonomy and trust boundaries, in interviews and on the job.
 
+## Reading order
+
+Read top to bottom; each page's *You're done when* line is the exit check before moving on.
+
+1. [The architect role & trade-off thinking](architect-role-tradeoffs.md) — P0, ~2 h
+2. [Architecture styles: modular monolith → microservices → event-driven → serverless](architecture-styles.md) — P0, ~4 h
+3. [DDD strategic: subdomains, bounded contexts, context maps](ddd-strategic.md) — P0, ~4 h
+4. [DDD tactical: aggregates, entities, value objects, domain events](ddd-tactical.md) — P0, ~3 h
+5. [Hexagonal / clean architecture, ports & adapters](hexagonal-clean.md) — P0, ~3 h
+6. [CQRS & event sourcing](cqrs-event-sourcing.md) — P1, ~4 h
+7. [Sagas, outbox & distributed transactions](sagas-outbox.md) — P0, ~3 h
+8. [Enterprise integration patterns](integration-patterns.md) — P1, ~3 h
+9. [Coupling, cohesion & modularity (balanced coupling)](coupling-modularity.md) — P0, ~3 h
+10. [Design patterns that still matter (GoF, modern)](design-patterns.md) — P1, ~3 h
+11. [SOLID, refactoring & code quality at scale](solid-refactoring.md) — P1, ~2 h
+12. [C4, arc42 & diagrams as code](documenting-architecture.md) — P0, ~2 h
+13. [Architecture Decision Records](adrs.md) — P0, ~1 h
+14. [Evolutionary architecture & fitness functions](evolutionary-architecture.md) — P1, ~2 h
+15. [Legacy modernization & strangler fig](legacy-modernization.md) — P0, ~3 h
+16. [Team Topologies & Conway's law](team-topologies.md) — P0, ~2 h
+17. [API contracts, versioning & schema evolution](api-contracts-versioning.md) — P1, ~2 h
+18. [Data architecture: lakehouse, data mesh, CDC](data-architecture.md) — P1, ~3 h
+19. [AI-native architecture: LLMs as system components](ai-native-architecture.md) — P0, ~4 h
+
 ## Topic table
 
 | # | Topic | Priority | Complexity | Phase | Hours |
@@ -101,6 +125,12 @@ The curated, machine-readable list lives in `data/resources/architecture.yml`.
 - Python implementation: [Architecture patterns in Python](../python/architecture-patterns-python.md).
 - AI systems: [Agent patterns](../agentic-ai/agent-patterns.md), [Guardrails & security](../agentic-ai/guardrails-security.md), [Multi-agent systems](../agentic-ai/multi-agent-systems.md), [Design a multi-agent platform](../ai-system-design/agent-platform.md).
 - Staff practice: [Design docs & RFCs](../staff-skills/design-docs-rfcs.md), [Technical strategy](../staff-skills/technical-strategy.md), [Architecture reviews](../staff-skills/architecture-reviews.md).
+
+## Practice for this chapter
+
+Practice these patterns on the capstone: write one [ADR](../../log/adr-template.md) per week recording a real decision (repo, sagas, module boundaries...). The [capstone](../agentic-ai/projects/index.md) keeps a backlog of 15 decisions to record this way.
+
+There's no dedicated architecture round in most loops — it's examined inside system-design and Staff prompts. Use [Staff+ → Interview prep](../staff-skills/interview-prep/mock-prompts.md#staff-principal-ambiguous-organisational) for the ambiguous, organisational-scale prompts this track prepares you for.
 
 ## Capstone tie-in
 

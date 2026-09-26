@@ -17,11 +17,11 @@ Every enterprise that ships more than one LLM feature ends up building an AI gat
 
 ## Skills practised
 
-- [Model routing and gateways](../tracks/agentic-ai/model-routing-gateways.md), [cost and latency optimisation](../tracks/agentic-ai/cost-latency-optimization.md)
-- [Guardrails and security](../tracks/agentic-ai/guardrails-security.md)
-- [Rate limiting](../tracks/system-design/rate-limiting.md), [caching](../tracks/system-design/caching.md), [security: authN/Z and multi-tenancy](../tracks/system-design/security-authn-authz.md)
-- [Observability and SLOs](../tracks/system-design/observability-slos.md), [LLM observability](../tracks/agentic-ai/llm-observability.md)
-- AI SD: [LLM gateway](../tracks/ai-system-design/llm-gateway.md), [capacity and cost planning](../tracks/ai-system-design/capacity-cost-planning.md)
+- [Model routing and gateways](../model-routing-gateways.md), [cost and latency optimisation](../cost-latency-optimization.md)
+- [Guardrails and security](../guardrails-security.md)
+- [Rate limiting](../../system-design/rate-limiting.md), [caching](../../system-design/caching.md), [security: authN/Z and multi-tenancy](../../system-design/security-authn-authz.md)
+- [Observability and SLOs](../../system-design/observability-slos.md), [LLM observability](../llm-observability.md)
+- AI SD: [LLM gateway](../../ai-system-design/llm-gateway.md), [capacity and cost planning](../../ai-system-design/capacity-cost-planning.md)
 
 ## Spec
 

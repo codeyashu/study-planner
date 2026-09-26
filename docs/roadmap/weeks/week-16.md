@@ -12,7 +12,7 @@ generated: true
     **Build:** Capstone: C4 + arc42 doc set, observability dashboards, SLOs live
 
 !!! warning "Interview checkpoint: interview-4"
-    Run the full mock loop and score it with the [rubric](../../interviews/rubric.md).
+    Run the full mock loop and score it with the [rubric](../../tracks/staff-skills/interview-prep/rubric.md).
 
 ## By day
 
@@ -62,7 +62,7 @@ generated: true
 - [ ] **Architecture** · 30 min · Write ADR 016 for capstone: ownership model — platform team owns gateway/evals, stream teams own agents → [Team Topologies & Conway's law](../../tracks/architecture/team-topologies.md) · [resource](https://adr.github.io) <small>`w16-arch-2`</small>
 - [ ] **Staff+** · 30 min · Artifact: AI adoption plan for an engineering org — productivity measurement, risk policy, enablement → [Leading engineering in the AI era: adoption, productivity, risk](../../tracks/staff-skills/ai-era-leadership.md) <small>`w16-staff-1`</small>
 - [ ] **Communication** · 30 min · Soft skills + weekly review: Executive presence — checkpoint comm-4: re-record and compare against the baseline rubric → [Week 16 drills · day 7](../../tracks/communication/drills/week-16.md#day-7) <small>`w16-comm-7`</small>
-- [ ] **Review** · 60 min · interview-4: full mock — SD + coding + AI SD + behavioral, score with docs/interviews/rubric.md and log gaps into next week's plan → [Interview framework & back-of-envelope estimation](../../tracks/system-design/framework-and-estimation.md) <small>`w16-rev-1`</small>
+- [ ] **Review** · 60 min · interview-4: full mock — SD + coding + AI SD + behavioral, score with the unified interview rubric and log gaps into next week's plan → [Interview framework & back-of-envelope estimation](../../tracks/system-design/framework-and-estimation.md) <small>`w16-rev-1`</small>
 
 ## By track
 

@@ -151,24 +151,24 @@ stateDiagram-v2
     report --> [*]
 ```
 
-Every node transition is checkpointed to Postgres, so `await_approval` can sit for hours and survive redeploys (see [durable execution and HITL](../tracks/agentic-ai/durable-execution-hitl.md)).
+Every node transition is checkpointed to Postgres, so `await_approval` can sit for hours and survive redeploys (see [durable execution and HITL](../durable-execution-hitl.md).
 
 ## 5. Components
 
 | Component | Tech (as of Sept 2026) | Responsibilities | Key design notes | Learn |
 |---|---|---|---|---|
-| **API gateway** | FastAPI, Pydantic v2, uvicorn, SSE | AuthN (OIDC JWT), tenant resolution, request validation, per-tenant rate limits, streaming, idempotency keys on action endpoints | Hexagonal: routes call application services; no LLM code here | [FastAPI in production](../tracks/python/fastapi-production.md), [API design](../tracks/system-design/api-design.md) |
-| **Orchestrator** | LangGraph 1.x, Postgres checkpointer | Ask and Triage graphs; state schema; interrupts for HITL; retries per node; time-travel debugging | Keep graphs small and explicit (workflow > autonomous agent where possible); node = pure-ish function over typed state | [LangGraph](../tracks/agentic-ai/langgraph.md), [agent patterns](../tracks/agentic-ai/agent-patterns.md) |
-| **Sub-agents** | Pydantic AI (typed outputs, deps injection, `pydantic_evals`) | Extractor, Retriever-QA, Planner, Notification drafter | Each returns a Pydantic model; no free text crosses agent boundaries | [Pydantic AI](../tracks/agentic-ai/pydantic-ai.md), [structured outputs](../tracks/agentic-ai/prompting-structured-outputs.md) |
-| **MCP server: ops-tools (Python)** | MCP Python SDK (FastMCP), Streamable HTTP | `search_documents`, `get_sop`, `create_ticket`, `draft_email` | Tools declare read/write; write tools return a *proposal* id, execution is a separate approved call | [MCP](../tracks/agentic-ai/mcp.md), [tool calling](../tracks/agentic-ai/tool-calling.md) |
-| **MCP server: shipment-tools (Java)** | Spring Boot 4 + Spring AI 2.0 `@McpTool`, MCP Java SDK 2.0 | `get_shipment`, `get_vessel_schedule`, `propose_rebooking` against a mock TMS | Demonstrates polyglot agents; OAuth2 resource server | [Spring AI tools and MCP](../tracks/java-spring-ai/spring-ai-tools-mcp.md), [polyglot AI architecture](../tracks/java-spring-ai/polyglot-ai-architecture.md) |
-| **Hybrid RAG** | Postgres + pgvector (HNSW) + Postgres FTS (or ParadeDB/pg_search BM25), reciprocal rank fusion, cross-encoder reranker (bge-reranker local / Cohere or Foundry-hosted) | Retrieve top-k with tenant + ACL + effective-date filters; rerank; cite | Chunking chosen by P2 ablation, not by gut | [hybrid search and reranking](../tracks/agentic-ai/hybrid-search-reranking.md), [vector databases](../tracks/agentic-ai/vector-databases.md), [advanced RAG](../tracks/agentic-ai/advanced-rag.md) |
-| **Ingestion worker** | Python async worker, Docling/unstructured-style parsers, queue table (`SKIP LOCKED`) or Redis Streams | Parse, chunk, embed, extract, upsert; outbox events | Idempotent by content hash; re-embed on model change via versioned embedding column | [data pipelines](../tracks/system-design/data-pipelines.md), [sagas and outbox](../tracks/architecture/sagas-outbox.md) |
-| **Observability** | Langfuse (self-hosted in compose), OpenTelemetry SDK + Collector, GenAI semantic conventions (Development status as of Jul 2026) | Traces across gateway → graph → tools → LLM; token/cost; prompt versions; user feedback scores | Redact PII before export; sample 100% in dev, tail-sample errors + 10% in prod | [LLM observability](../tracks/agentic-ai/llm-observability.md), [observability and SLOs](../tracks/system-design/observability-slos.md) |
-| **Eval suite** | promptfoo (assertions + red-team), DeepEval (RAG + agent metrics), Ragas (optional), pytest | Offline regression on golden sets; CI gate; nightly larger run; online scores from sampled traces | Judges are calibrated against your own labels before trusted | [eval tooling](../tracks/agentic-ai/eval-tooling.md), [evals and error analysis](../tracks/agentic-ai/evals-error-analysis.md) |
-| **Guardrails** | Input: prompt-injection classifier + allow-listed tools per graph; output: schema validation, citation check, PII (Presidio); policy: tool permission matrix | Block, redact, or route to human | Design against the lethal trifecta: never combine untrusted content + private data + exfiltration channel without a human gate | [guardrails and security](../tracks/agentic-ai/guardrails-security.md) |
-| **LLM gateway** | LiteLLM proxy | Model aliases (`fast`, `smart`, `embed`), fallbacks, retries, per-tenant/per-key budgets, caching, cost logging | App code references aliases only; model swap = config change | [model routing and gateways](../tracks/agentic-ai/model-routing-gateways.md), [cost and latency](../tracks/agentic-ai/cost-latency-optimization.md) |
-| **Memory** | Postgres tables (episodic per case, semantic per tenant) first; evaluate Mem0/Letta in M6 | Case scratchpad, user prefs, tenant facts with provenance + TTL | Memory writes go through the same guardrails (memory poisoning is an OWASP agentic risk) | [memory systems](../tracks/agentic-ai/memory-systems.md), [context engineering](../tracks/agentic-ai/context-engineering.md) |
+| **API gateway** | FastAPI, Pydantic v2, uvicorn, SSE | AuthN (OIDC JWT), tenant resolution, request validation, per-tenant rate limits, streaming, idempotency keys on action endpoints | Hexagonal: routes call application services; no LLM code here | [FastAPI in production](../../python/fastapi-production.md), [API design](../../system-design/api-design.md) |
+| **Orchestrator** | LangGraph 1.x, Postgres checkpointer | Ask and Triage graphs; state schema; interrupts for HITL; retries per node; time-travel debugging | Keep graphs small and explicit (workflow > autonomous agent where possible); node = pure-ish function over typed state | [LangGraph](../langgraph.md), [agent patterns](../agent-patterns.md) |
+| **Sub-agents** | Pydantic AI (typed outputs, deps injection, `pydantic_evals`) | Extractor, Retriever-QA, Planner, Notification drafter | Each returns a Pydantic model; no free text crosses agent boundaries | [Pydantic AI](../pydantic-ai.md), [structured outputs](../prompting-structured-outputs.md) |
+| **MCP server: ops-tools (Python)** | MCP Python SDK (FastMCP), Streamable HTTP | `search_documents`, `get_sop`, `create_ticket`, `draft_email` | Tools declare read/write; write tools return a *proposal* id, execution is a separate approved call | [MCP](../mcp.md), [tool calling](../tool-calling.md) |
+| **MCP server: shipment-tools (Java)** | Spring Boot 4 + Spring AI 2.0 `@McpTool`, MCP Java SDK 2.0 | `get_shipment`, `get_vessel_schedule`, `propose_rebooking` against a mock TMS | Demonstrates polyglot agents; OAuth2 resource server | [Spring AI tools and MCP](../../java-spring-ai/spring-ai-tools-mcp.md), [polyglot AI architecture](../../java-spring-ai/polyglot-ai-architecture.md) |
+| **Hybrid RAG** | Postgres + pgvector (HNSW) + Postgres FTS (or ParadeDB/pg_search BM25), reciprocal rank fusion, cross-encoder reranker (bge-reranker local / Cohere or Foundry-hosted) | Retrieve top-k with tenant + ACL + effective-date filters; rerank; cite | Chunking chosen by P2 ablation, not by gut | [hybrid search and reranking](../hybrid-search-reranking.md), [vector databases](../vector-databases.md), [advanced RAG](../advanced-rag.md) |
+| **Ingestion worker** | Python async worker, Docling/unstructured-style parsers, queue table (`SKIP LOCKED`) or Redis Streams | Parse, chunk, embed, extract, upsert; outbox events | Idempotent by content hash; re-embed on model change via versioned embedding column | [data pipelines](../../system-design/data-pipelines.md), [sagas and outbox](../../architecture/sagas-outbox.md) |
+| **Observability** | Langfuse (self-hosted in compose), OpenTelemetry SDK + Collector, GenAI semantic conventions (Development status as of Jul 2026) | Traces across gateway → graph → tools → LLM; token/cost; prompt versions; user feedback scores | Redact PII before export; sample 100% in dev, tail-sample errors + 10% in prod | [LLM observability](../llm-observability.md), [observability and SLOs](../../system-design/observability-slos.md) |
+| **Eval suite** | promptfoo (assertions + red-team), DeepEval (RAG + agent metrics), Ragas (optional), pytest | Offline regression on golden sets; CI gate; nightly larger run; online scores from sampled traces | Judges are calibrated against your own labels before trusted | [eval tooling](../eval-tooling.md), [evals and error analysis](../evals-error-analysis.md) |
+| **Guardrails** | Input: prompt-injection classifier + allow-listed tools per graph; output: schema validation, citation check, PII (Presidio); policy: tool permission matrix | Block, redact, or route to human | Design against the lethal trifecta: never combine untrusted content + private data + exfiltration channel without a human gate | [guardrails and security](../guardrails-security.md) |
+| **LLM gateway** | LiteLLM proxy | Model aliases (`fast`, `smart`, `embed`), fallbacks, retries, per-tenant/per-key budgets, caching, cost logging | App code references aliases only; model swap = config change | [model routing and gateways](../model-routing-gateways.md), [cost and latency](../cost-latency-optimization.md) |
+| **Memory** | Postgres tables (episodic per case, semantic per tenant) first; evaluate Mem0/Letta in M6 | Case scratchpad, user prefs, tenant facts with provenance + TTL | Memory writes go through the same guardrails (memory poisoning is an OWASP agentic risk) | [memory systems](../memory-systems.md), [context engineering](../context-engineering.md) |
 
 ## 6. Repo layout
 
@@ -268,7 +268,7 @@ volumes: {ollama: {}}
 | Observability | Langfuse Cloud free tier or self-host on ACA; Azure Monitor / Application Insights for infra | Keep one trace ID across both |
 | IaC + CI/CD | Bicep or Terraform in `infra/azure`; GitHub Actions with OIDC federated credentials | No long-lived Azure secrets in GitHub |
 
-**Cost control:** deploy only in M7–M8, tear down with one command, keep the default demo on local Ollama. See [managed agent platforms](../tracks/agentic-ai/managed-agent-platforms.md) and [capacity and cost planning](../tracks/ai-system-design/capacity-cost-planning.md).
+**Cost control:** deploy only in M7–M8, tear down with one command, keep the default demo on local Ollama. See [managed agent platforms](../managed-agent-platforms.md) and [capacity and cost planning](../../ai-system-design/capacity-cost-planning.md).
 
 ## 9. Milestones (weeks 1–24)
 
@@ -281,7 +281,7 @@ volumes: {ollama: {}}
 | **M5 Production hardening** | 13–16 | Guardrails layer, LiteLLM routing/fallbacks/budgets/caching, OAuth on MCP servers, tenancy + RLS, promptfoo red-team in CI, cost dashboard | 0 critical red-team findings; injection ASR < 5%; per-tenant budget enforced (test proves 429 after cap); median cost/Ask <= $0.01 | [P4](p4-llm-gateway-and-guardrails.md) |
 | **M6 Optimise + memory** | 17–20 | DSPy/GEPA-optimised classifier/planner prompts; local serving benchmark; memory (episodic + semantic) with provenance; optional LoRA router | Optimised module beats baseline by a measured margin on held-out set; memory evals (recall of prior-case facts) >= 80%; go/no-go memo merged | [P5](p5-optimize-and-serve.md), [P6](p6-distributed-systems-lab.md) (idempotency, retries) |
 | **M7 Cloud deploy** | 21–22 | Azure Container Apps + Foundry + Postgres Flexible Server via IaC; GitHub OIDC deploy; load test; runbook | One-command deploy + teardown; NFR latency targets met at stated load; monthly cost projection <= $50 | — |
-| **M8 Polish + second domain** | 23–24 | IT-ops domain pack (proves domain-agnosticism); README, C4 docs, demo video, 2 blog posts, all ADRs; final rubric scoring | All NFR targets in §3.2 met or deviations documented in an ADR; second domain works with zero orchestrator code changes; rubric avg >= 3.5 | Interview [checkpoint 6](../interviews/checkpoints.md) |
+| **M8 Polish + second domain** | 23–24 | IT-ops domain pack (proves domain-agnosticism); README, C4 docs, demo video, 2 blog posts, all ADRs; final rubric scoring | All NFR targets in §3.2 met or deviations documented in an ADR; second domain works with zero orchestrator code changes; rubric avg >= 3.5 | Interview [checkpoint 6](../../staff-skills/interview-prep/checkpoints.md) |
 
 ## 10. ADR backlog (15 decisions to record)
 
@@ -303,7 +303,7 @@ volumes: {ollama: {}}
 | 0014 | Memory design | Postgres tables vs Mem0 vs Letta; TTL + provenance policy | wk 19 |
 | 0015 | Hosting: Azure Container Apps + Foundry | ACA vs AKS vs App Service; Foundry Agent Service vs self-orchestrated | wk 21 |
 
-Use [ADRs](../tracks/architecture/adrs.md) and [documenting architecture](../tracks/architecture/documenting-architecture.md). Each ADR must cite the eval or benchmark that justified it where one exists.
+Use [ADRs](../../architecture/adrs.md) and [documenting architecture](../../architecture/documenting-architecture.md). Each ADR must cite the eval or benchmark that justified it where one exists.
 
 ## 11. Evaluation plan
 
@@ -333,17 +333,17 @@ Rules: hard budget in LiteLLM (monthly cap per key), Azure budget alert at 50/80
 
 ## 13. Stretch goals
 
-- **A2A:** expose the triage agent via an A2A v1.0 Agent Card and call a second, independent agent (e.g. a "carrier-liaison" agent) over A2A. See [A2A and AG-UI](../tracks/agentic-ai/a2a-ag-ui.md).
+- **A2A:** expose the triage agent via an A2A v1.0 Agent Card and call a second, independent agent (e.g. a "carrier-liaison" agent) over A2A. See [A2A and AG-UI](../a2a-ag-ui.md).
 - **AG-UI front end:** replace the minimal UI with an AG-UI client (streaming state, tool-call rendering, approval widgets).
-- **DSPy optimisation at scale:** GEPA over the full triage planner with trajectory-level metric. See [DSPy](../tracks/agentic-ai/dspy.md).
-- **Fine-tuned small routing model:** LoRA-tune a 1–3B model to classify exception type / route requests; compare against prompt-only on cost, latency, accuracy. See [fine-tuning](../tracks/agentic-ai/fine-tuning.md).
-- **vLLM serving:** serve the open model with vLLM (cloud GPU for a day) and compare to Ollama for throughput and p95. See [inference serving](../tracks/agentic-ai/inference-serving.md).
+- **DSPy optimisation at scale:** GEPA over the full triage planner with trajectory-level metric. See [DSPy](../dspy.md).
+- **Fine-tuned small routing model:** LoRA-tune a 1–3B model to classify exception type / route requests; compare against prompt-only on cost, latency, accuracy. See [fine-tuning](../fine-tuning.md).
+- **vLLM serving:** serve the open model with vLLM (cloud GPU for a day) and compare to Ollama for throughput and p95. See [inference serving](../inference-serving.md).
 - **GraphRAG:** entity graph over contracts for multi-hop questions ("which customers with SLA tier A ship via port X?").
-- **Event-driven triggers:** exceptions arrive via Kafka/Event Hubs; outbox pattern for action execution. See [messaging and streaming](../tracks/system-design/messaging-streaming.md).
+- **Event-driven triggers:** exceptions arrive via Kafka/Event Hubs; outbox pattern for action execution. See [messaging and streaming](../../system-design/messaging-streaming.md).
 
 ## 14. Related interview practice
 
-The capstone is designed to double as your answer to these prompts: [enterprise RAG](../tracks/ai-system-design/rag-system.md), [multi-agent platform](../tracks/ai-system-design/agent-platform.md), [LLM gateway](../tracks/ai-system-design/llm-gateway.md), [evaluation platform](../tracks/ai-system-design/evaluation-platform.md), [document processing](../tracks/ai-system-design/document-processing.md). In a Staff behavioral round, use its ADRs as "a decision I made with incomplete information" stories.
+The capstone is designed to double as your answer to these prompts: [enterprise RAG](../../ai-system-design/rag-system.md), [multi-agent platform](../../ai-system-design/agent-platform.md), [LLM gateway](../../ai-system-design/llm-gateway.md), [evaluation platform](../../ai-system-design/evaluation-platform.md), [document processing](../../ai-system-design/document-processing.md). In a Staff behavioral round, use its ADRs as "a decision I made with incomplete information" stories.
 
 ## Resources
 

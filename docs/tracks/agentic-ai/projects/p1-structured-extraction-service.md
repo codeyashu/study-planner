@@ -17,13 +17,13 @@ Structured extraction is the most common "boring but valuable" LLM workload in e
 
 ## Skills practised
 
-- [Pydantic v2](../tracks/python/pydantic-v2.md): discriminated unions, validators, `Annotated` constraints, JSON Schema generation
-- [FastAPI in production](../tracks/python/fastapi-production.md): lifespan, dependency injection, background tasks, error model
-- [Prompting and structured outputs](../tracks/agentic-ai/prompting-structured-outputs.md): native JSON-schema mode vs tool-call mode vs prompted JSON; retries on validation errors
-- [Pydantic AI](../tracks/agentic-ai/pydantic-ai.md): typed agents, `output_type`, deps, `pydantic_evals`
-- [Evals and error analysis](../tracks/agentic-ai/evals-error-analysis.md): golden set design, field-level metrics
-- [asyncio](../tracks/python/asyncio-deep.md): bounded concurrency with `TaskGroup` + semaphore for batch extraction
-- [Testing with pytest](../tracks/python/testing-pytest.md), [modern tooling](../tracks/python/modern-tooling.md)
+- [Pydantic v2](../../python/pydantic-v2.md): discriminated unions, validators, `Annotated` constraints, JSON Schema generation
+- [FastAPI in production](../../python/fastapi-production.md): lifespan, dependency injection, background tasks, error model
+- [Prompting and structured outputs](../prompting-structured-outputs.md): native JSON-schema mode vs tool-call mode vs prompted JSON; retries on validation errors
+- [Pydantic AI](../pydantic-ai.md): typed agents, `output_type`, deps, `pydantic_evals`
+- [Evals and error analysis](../evals-error-analysis.md): golden set design, field-level metrics
+- [asyncio](../../python/asyncio-deep.md): bounded concurrency with `TaskGroup` + semaphore for batch extraction
+- [Testing with pytest](../../python/testing-pytest.md), [modern tooling](../../python/modern-tooling.md)
 
 ## Spec
 
@@ -119,7 +119,7 @@ class SlaClause(BaseModel):
 ## Stretch
 
 - Vision path: send page images to a multimodal model vs text-extraction + LLM; compare F1 and cost.
-- Port the extractor to Spring AI 2.0 structured output (`entity()` mapping to a Java record) and compare. See [Spring AI fundamentals](../tracks/java-spring-ai/spring-ai-fundamentals.md).
+- Port the extractor to Spring AI 2.0 structured output (`entity()` mapping to a Java record) and compare. See [Spring AI fundamentals](../../java-spring-ai/spring-ai-fundamentals.md).
 - DSPy signature for the extractor; compare with hand prompt (preview of P5).
 - Active-learning loop: low-confidence fields go to a review queue; corrections append to the golden set.
 

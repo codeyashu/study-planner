@@ -12,6 +12,27 @@ Expert-level, production and AI-engineering-relevant Python for a 15-year engine
 !!! abstract "How to use this track"
     Phase 1 (weeks 1-4) is the core: tooling, data model, typing, Pydantic, asyncio and FastAPI. Phase 2 adds testing, generators, decorators, architecture, packaging and data tooling. Phase 4 adds observability. Phase 5 covers concurrency models, profiling and CPython internals. Do the labs; skim theory you already know and go deep on the *senior nuance* and L3/L4 questions.
 
+## Reading order
+
+Read top to bottom; each page's *You're done when* line is the exit check before moving on.
+
+1. [Modern tooling: uv, ruff, ty, pre-commit](modern-tooling.md) — P0, ~2 h
+2. [Python data model & dunder protocols](data-model.md) — P0, ~3 h
+3. [Advanced typing: generics, Protocols, ParamSpec, TypedDict](typing-advanced.md) — P0, ~3 h
+4. [Pydantic v2 in depth](pydantic-v2.md) — P0, ~3 h
+5. [asyncio in depth: TaskGroups, cancellation, backpressure](asyncio-deep.md) — P0, ~5 h
+6. [Concurrency models: threads, processes, free-threaded 3.14t](concurrency-models.md) — P0, ~4 h
+7. [FastAPI for production](fastapi-production.md) — P0, ~3 h
+8. [Testing: pytest, fixtures, Hypothesis, testcontainers](testing-pytest.md) — P0, ~3 h
+9. [Iterators, generators & context managers](generators-context-managers.md) — P1, ~2 h
+10. [Decorators, descriptors & metaclasses](decorators-descriptors-metaclasses.md) — P1, ~3 h
+11. [Architecture patterns in Python (repository, UoW, message bus)](architecture-patterns-python.md) — P0, ~4 h
+12. [Packaging, project layout & monorepos](packaging-project-structure.md) — P1, ~2 h
+13. [Performance & profiling](performance-profiling.md) — P1, ~3 h
+14. [CPython internals: bytecode, GIL, memory](cpython-internals.md) — P2, ~4 h
+15. [Data tooling: Polars, DuckDB, Arrow](data-tooling.md) — P1, ~2 h
+16. [Observability in Python: structlog, OpenTelemetry](observability-python.md) — P1, ~2 h
+
 ## Topics
 
 | # | Topic | Priority | Complexity | Phase | Hours |
@@ -114,6 +135,10 @@ One small, runnable exercise per day. Time-box to 15 minutes, write the code fro
 | 40 | structlog JSON line with `trace_id` injected from the current OTel span; redact a secret key | [observability-python](observability-python.md) |
 
 Kata coverage for [packaging-project-structure](packaging-project-structure.md) and [performance-profiling](performance-profiling.md) is built into the labs (build and inspect a wheel, py-spy a planted bottleneck). Swap them in for a rep whenever you like.
+
+## Practice for this chapter
+
+Every capstone milestone is written in the Python these topics teach — asyncio, Pydantic v2, typing and testing all show up directly in the [capstone](../agentic-ai/projects/index.md) code. The daily reps below are this chapter's spaced practice; there's no separate Python-only project.
 
 ## Definition of done for the track
 

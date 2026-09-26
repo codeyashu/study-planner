@@ -17,12 +17,12 @@ Agents fail in ways demos never show: wrong tool, right tool with wrong argument
 
 ## Skills practised
 
-- [LangGraph](../tracks/agentic-ai/langgraph.md), [durable execution and HITL](../tracks/agentic-ai/durable-execution-hitl.md)
-- [MCP](../tracks/agentic-ai/mcp.md), [tool calling](../tracks/agentic-ai/tool-calling.md)
-- [Spring AI tools and MCP](../tracks/java-spring-ai/spring-ai-tools-mcp.md), [Spring AI agents](../tracks/java-spring-ai/spring-ai-agents.md), [polyglot AI architecture](../tracks/java-spring-ai/polyglot-ai-architecture.md)
-- [Agent patterns](../tracks/agentic-ai/agent-patterns.md), [multi-agent systems](../tracks/agentic-ai/multi-agent-systems.md), [context engineering](../tracks/agentic-ai/context-engineering.md)
-- [Sagas and outbox](../tracks/architecture/sagas-outbox.md), [reliability patterns](../tracks/system-design/reliability-patterns.md): idempotent side effects
-- [Evals and error analysis](../tracks/agentic-ai/evals-error-analysis.md): trajectory evaluation
+- [LangGraph](../langgraph.md), [durable execution and HITL](../durable-execution-hitl.md)
+- [MCP](../mcp.md), [tool calling](../tool-calling.md)
+- [Spring AI tools and MCP](../../java-spring-ai/spring-ai-tools-mcp.md), [Spring AI agents](../../java-spring-ai/spring-ai-agents.md), [polyglot AI architecture](../../java-spring-ai/polyglot-ai-architecture.md)
+- [Agent patterns](../agent-patterns.md), [multi-agent systems](../multi-agent-systems.md), [context engineering](../context-engineering.md)
+- [Sagas and outbox](../../architecture/sagas-outbox.md), [reliability patterns](../../system-design/reliability-patterns.md): idempotent side effects
+- [Evals and error analysis](../evals-error-analysis.md): trajectory evaluation
 
 ## Spec
 

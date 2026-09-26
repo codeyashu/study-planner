@@ -12,7 +12,7 @@ generated: true
     **Build:** Capstone: A2A/AG-UI spike + Mem0 memory prototype + vendor SDK comparison notes
 
 !!! warning "Interview checkpoint: interview-3"
-    Run the full mock loop and score it with the [rubric](../../interviews/rubric.md).
+    Run the full mock loop and score it with the [rubric](../../tracks/staff-skills/interview-prep/rubric.md).
 
 ## By day
 
@@ -62,7 +62,7 @@ generated: true
 - [ ] **Architecture** · 20 min · Write ADR 012 for capstone: tool schema versioning policy (additive changes, deprecation window) → [API contracts, versioning & schema evolution](../../tracks/architecture/api-contracts-versioning.md) · [resource](https://adr.github.io) <small>`w12-arch-2`</small>
 - [ ] **Staff+** · 20 min · Read an incident-command model; note how you'd lead a Sev-1 involving an AI agent misbehaving → [Incident leadership & blameless postmortems](../../tracks/staff-skills/incident-leadership.md) <small>`w12-staff-1`</small>
 - [ ] **Communication** · 20 min · Soft skills + weekly review: Cross-cultural communication — checkpoint comm-3: re-record and compare against the baseline rubric → [Week 12 drills · day 7](../../tracks/communication/drills/week-12.md#day-7) <small>`w12-comm-7`</small>
-- [ ] **Review** · 40 min · interview-3: full mock — SD + coding + AI SD + behavioral, score with docs/interviews/rubric.md and log gaps into next week's plan → [Interview framework & back-of-envelope estimation](../../tracks/system-design/framework-and-estimation.md) <small>`w12-rev-1`</small>
+- [ ] **Review** · 40 min · interview-3: full mock — SD + coding + AI SD + behavioral, score with the unified interview rubric and log gaps into next week's plan → [Interview framework & back-of-envelope estimation](../../tracks/system-design/framework-and-estimation.md) <small>`w12-rev-1`</small>
 
 ## By track
 
