@@ -1,5 +1,5 @@
 ---
-title: Week 10 — MCP + Pydantic AI sub-agents
+title: "Week 10 — MCP + Pydantic AI sub-agents"
 week: 10
 generated: true
 ---

@@ -1,5 +1,5 @@
 ---
-title: Week 11 — Durable execution, HITL, multi-agent
+title: "Week 11 — Durable execution, HITL, multi-agent"
 week: 11
 generated: true
 ---

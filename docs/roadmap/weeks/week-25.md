@@ -1,5 +1,5 @@
 ---
-title: Week 25 — Buffer I — catch-up + specialization choice
+title: "Week 25 — Buffer I — catch-up + specialization choice"
 week: 25
 generated: true
 ---

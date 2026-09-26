@@ -1,5 +1,5 @@
 ---
-title: Week 22 — Write-ups + STAR bank II
+title: "Week 22 — Write-ups + STAR bank II"
 week: 22
 generated: true
 ---

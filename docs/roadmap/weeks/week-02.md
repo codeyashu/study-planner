@@ -1,5 +1,5 @@
 ---
-title: Week 02 — Tool calling, API design, two pointers
+title: "Week 02 — Tool calling, API design, two pointers"
 week: 2
 generated: true
 ---

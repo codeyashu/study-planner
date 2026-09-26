@@ -1837,7 +1837,7 @@ days:
   weekday: Monday
   day_number: 45
   phase: 2
-  theme: 'Evals I: error analysis + LLM-as-judge'
+  theme: Evals I — error analysis, LLM-as-judge
   tasks:
   - id: w07-sd-1
     track: system-design
@@ -1878,7 +1878,7 @@ days:
   weekday: Tuesday
   day_number: 46
   phase: 2
-  theme: 'Evals I: error analysis + LLM-as-judge'
+  theme: Evals I — error analysis, LLM-as-judge
   tasks:
   - id: w07-ai-1
     track: agentic-ai
@@ -1911,7 +1911,7 @@ days:
   weekday: Wednesday
   day_number: 47
   phase: 2
-  theme: 'Evals I: error analysis + LLM-as-judge'
+  theme: Evals I — error analysis, LLM-as-judge
   tasks:
   - id: w07-dsa-3
     track: dsa
@@ -1952,7 +1952,7 @@ days:
   weekday: Thursday
   day_number: 48
   phase: 2
-  theme: 'Evals I: error analysis + LLM-as-judge'
+  theme: Evals I — error analysis, LLM-as-judge
   tasks:
   - id: w07-ai-2
     track: agentic-ai
@@ -1984,7 +1984,7 @@ days:
   weekday: Friday
   day_number: 49
   phase: 2
-  theme: 'Evals I: error analysis + LLM-as-judge'
+  theme: Evals I — error analysis, LLM-as-judge
   tasks:
   - id: w07-sd-2
     track: system-design
@@ -2025,7 +2025,7 @@ days:
   weekday: Saturday
   day_number: 50
   phase: 2
-  theme: 'Evals I: error analysis + LLM-as-judge'
+  theme: Evals I — error analysis, LLM-as-judge
   tasks:
   - id: w07-ai-3
     track: agentic-ai
@@ -2067,7 +2067,7 @@ days:
   weekday: Sunday
   day_number: 51
   phase: 2
-  theme: 'Evals I: error analysis + LLM-as-judge'
+  theme: Evals I — error analysis, LLM-as-judge
   tasks:
   - id: w07-sd-3
     track: system-design

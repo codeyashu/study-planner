@@ -1,5 +1,5 @@
 ---
-title: Week 09 — LangGraph orchestrator
+title: "Week 09 — LangGraph orchestrator"
 week: 9
 generated: true
 ---

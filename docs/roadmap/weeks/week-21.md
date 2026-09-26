@@ -1,5 +1,5 @@
 ---
-title: Week 21 — Capstone polish + STAR bank I
+title: "Week 21 — Capstone polish + STAR bank I"
 week: 21
 generated: true
 ---

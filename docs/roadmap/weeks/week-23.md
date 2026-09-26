@@ -1,5 +1,5 @@
 ---
-title: Week 23 — Full mock loops
+title: "Week 23 — Full mock loops"
 week: 23
 generated: true
 ---

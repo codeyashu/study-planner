@@ -279,7 +279,7 @@ weeks:
     - {title: 'Light-week retro + flashcards: hybrid search, RRF, rerankers, replication anomalies', topic: hybrid-search-reranking, minutes: 40, kind: review}
 - week: 7
   phase: 2
-  theme: 'Evals I: error analysis + LLM-as-judge'
+  theme: 'Evals I — error analysis, LLM-as-judge'
   light: false
   checkpoint: null
   project: 'Capstone: eval harness — error analysis on 100 traces, failure taxonomy, LLM-as-judge aligned to labels'

@@ -1,5 +1,5 @@
 ---
-title: Week 26 — Buffer II — catch-up + next plan
+title: "Week 26 — Buffer II — catch-up + next plan"
 week: 26
 generated: true
 ---

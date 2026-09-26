@@ -1,5 +1,5 @@
 ---
-title: Week 03 — Context engineering, workflows, sliding window
+title: "Week 03 — Context engineering, workflows, sliding window"
 week: 3
 generated: true
 ---

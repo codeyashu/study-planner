@@ -1,5 +1,5 @@
 ---
-title: Week 19 — Fine-tuning trade-offs, GraphRAG
+title: "Week 19 — Fine-tuning trade-offs, GraphRAG"
 week: 19
 generated: true
 ---

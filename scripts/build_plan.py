@@ -172,9 +172,10 @@ def render_week(w: dict, phases: dict[int, dict]) -> str:
     wk = int(w["week"])
     phase = phases.get(w.get("phase"), {})
     total = sum(t["minutes"] for t in w["items"])
+    title_line = f"Week {wk:02d} — {w.get('theme', '')}"
     lines = [
         "---",
-        f"title: Week {wk:02d} — {w.get('theme', '')}",
+        f'title: "{title_line.replace(chr(34), chr(39))}"',
         f"week: {wk}",
         "generated: true",
         "---",

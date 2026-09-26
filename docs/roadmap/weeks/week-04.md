@@ -1,5 +1,5 @@
 ---
-title: Week 04 — Orchestrator-workers, AI-assisted dev, stack — interview-1
+title: "Week 04 — Orchestrator-workers, AI-assisted dev, stack — interview-1"
 week: 4
 generated: true
 ---

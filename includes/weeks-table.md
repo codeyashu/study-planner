@@ -7,7 +7,7 @@
 | [W04](weeks/week-04.md) | 19 Oct | 1 · Foundations | Orchestrator-workers, AI-assisted dev, stack — interview-1 | Capstone: orchestrator-workers 'draft postmortem' with evaluator-optimizer loop + 10 golden examples | interview-1 |
 | [W05](weeks/week-05.md) | 26 Oct | 2 · RAG + Evals | RAG fundamentals, caching, hexagonal | Capstone: RAG v0 — ingest runbooks/postmortems into pgvector, naive dense retrieval behind a Retriever port |  |
 | [W06](weeks/week-06.md) | 02 Nov | 2 · RAG + Evals | Hybrid search + reranking (light week) *(light)* | Capstone: hybrid retrieval (BM25 + dense + metadata filters) with cross-encoder reranking |  |
-| [W07](weeks/week-07.md) | 09 Nov | 2 · RAG + Evals | Evals I: error analysis + LLM-as-judge | Capstone: eval harness — error analysis on 100 traces, failure taxonomy, LLM-as-judge aligned to labels |  |
+| [W07](weeks/week-07.md) | 09 Nov | 2 · RAG + Evals | Evals I — error analysis, LLM-as-judge | Capstone: eval harness — error analysis on 100 traces, failure taxonomy, LLM-as-judge aligned to labels |  |
 | [W08](weeks/week-08.md) | 16 Nov | 2 · RAG + Evals | Evals II in CI + observability — interview-2 | Capstone: promptfoo/DeepEval/Ragas in CI with thresholds + Langfuse tracing | interview-2 |
 | [W09](weeks/week-09.md) | 23 Nov | 3 · Agents + Protocols | LangGraph orchestrator | Capstone: LangGraph orchestrator (state, nodes, conditional edges, Postgres checkpointer) |  |
 | [W10](weeks/week-10.md) | 30 Nov | 3 · Agents + Protocols | MCP + Pydantic AI sub-agents | Capstone: Python MCP server (runbooks, service status) + Pydantic AI sub-agents inside LangGraph nodes |  |

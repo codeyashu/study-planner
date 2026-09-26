@@ -1,5 +1,5 @@
 ---
-title: Week 14 — Cost, latency, routing
+title: "Week 14 — Cost, latency, routing"
 week: 14
 generated: true
 ---

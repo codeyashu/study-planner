@@ -17,13 +17,13 @@ theme:
       toggle: {icon: material/brightness-auto, name: Switch to light mode}
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: indigo
-      accent: deep orange
+      primary: black
+      accent: amber
       toggle: {icon: material/weather-night, name: Switch to dark mode}
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: indigo
-      accent: deep orange
+      primary: black
+      accent: amber
       toggle: {icon: material/brightness-auto, name: Switch to system preference}
   features:
     - navigation.tabs

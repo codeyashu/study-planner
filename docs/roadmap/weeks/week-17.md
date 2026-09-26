@@ -1,5 +1,5 @@
 ---
-title: Week 17 — DSPy + Raft + free-threaded Python
+title: "Week 17 — DSPy + Raft + free-threaded Python"
 week: 17
 generated: true
 ---

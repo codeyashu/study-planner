@@ -1,5 +1,5 @@
 ---
-title: Week 15 — Managed platforms & production checklist
+title: "Week 15 — Managed platforms & production checklist"
 week: 15
 generated: true
 ---

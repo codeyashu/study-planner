@@ -1,5 +1,5 @@
 ---
-title: Week 16 — Architecture docs & AI-era leadership — interview-4
+title: "Week 16 — Architecture docs & AI-era leadership — interview-4"
 week: 16
 generated: true
 ---

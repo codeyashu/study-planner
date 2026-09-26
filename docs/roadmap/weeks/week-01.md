@@ -1,5 +1,5 @@
 ---
-title: Week 01 — Agent patterns, structured outputs, SD framework
+title: "Week 01 — Agent patterns, structured outputs, SD framework"
 week: 1
 generated: true
 ---

@@ -1,5 +1,5 @@
 ---
-title: Week 06 — Hybrid search + reranking (light week)
+title: "Week 06 — Hybrid search + reranking (light week)"
 week: 6
 generated: true
 ---

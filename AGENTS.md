@@ -182,3 +182,17 @@ uv run python scripts/check_links.py      # link check of resources
 uv run python scripts/export_vocab.py     # drill vocab/idiom tables -> build/vocab.csv (Anki)
 uv run pytest                             # script tests
 ```
+
+## 8. Roadmap page style (added 2026-09-26)
+
+`docs/roadmap/index.md` is the front door and must stay in this shape — dense, track-lettered, operator-manual, not a plain link list:
+
+- **Spine** (3–5 resources that pay off across the *whole* plan) at the top, not per-topic resource sprawl.
+- **Phase 0 setup** as copy-paste shell commands, not prose.
+- **Lettered tracks (A, B, C…)**, each: one `Do:` line, a `Deliverable:`, and a link into the relevant chapter's `#reading-order`. Mark parallel/background tracks explicitly (`parallel to everything`).
+- **🚢 SHIP POINT** callouts at real milestones (something a peer could use), not just at week boundaries.
+- **Menu (choose on merit)** callouts where a real framework/vendor decision exists — link to that chapter's comparison table instead of duplicating it.
+- **P0/P1/P2** and **∥** (can run in the background) markers throughout.
+- Keep [Phases & gates](../docs/roadmap/phases.md) as the detailed, measurable-threshold layer underneath — the spine page narrates it, phases.md proves it.
+
+When the weekly agent (§6.2) touches this page, preserve this shape: tighten prose further, never expand back into a bare table.

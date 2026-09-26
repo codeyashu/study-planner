@@ -1,5 +1,5 @@
 ---
-title: Week 18 — Inference serving (light)
+title: "Week 18 — Inference serving (light)"
 week: 18
 generated: true
 ---

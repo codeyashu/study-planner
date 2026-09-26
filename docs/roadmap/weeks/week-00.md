@@ -1,5 +1,5 @@
 ---
-title: Week 00 — Baseline & environment
+title: "Week 00 — Baseline & environment"
 week: 0
 generated: true
 ---

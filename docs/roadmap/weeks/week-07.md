@@ -1,10 +1,10 @@
 ---
-title: Week 07 — Evals I: error analysis + LLM-as-judge
+title: "Week 07 — Evals I — error analysis, LLM-as-judge"
 week: 7
 generated: true
 ---
 
-# Week 07 — Evals I: error analysis + LLM-as-judge
+# Week 07 — Evals I — error analysis, LLM-as-judge
 
 !!! abstract "At a glance"
     **Phase 2:** RAG + Evals · **Starts:** Mon 09 Nov 2026 · **Planned:** 16h 45m

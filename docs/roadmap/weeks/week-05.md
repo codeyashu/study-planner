@@ -1,5 +1,5 @@
 ---
-title: Week 05 — RAG fundamentals, caching, hexagonal
+title: "Week 05 — RAG fundamentals, caching, hexagonal"
 week: 5
 generated: true
 ---
