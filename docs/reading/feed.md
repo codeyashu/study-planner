@@ -5,11 +5,12 @@ generated: true
 
 # Today's feed
 
-!!! info "38 items from the last 72 h · built Sat 26 Sep 2026 10:48 IST"
+!!! info "32 items from the last 72 h · built Sun 27 Sep 2026 11:05 IST"
     Auto-aggregated from [data/feeds.yml](https://github.com/codeyashu/study-planner/blob/main/data/feeds.yml). Skim titles; open at most 3. The curated picks live in the [digest](../digest/index.md).
 
 ## AI engineering
 
+- [Kākāpō Party](https://simonwillison.net/2026/Sep/26/kakapo-party/) — *Simon Willison* · 27 Sep 05:09
 - [OpenRouter: from Seed to Stripe — with OpenRouter’s Alex Atallah & AMP’s Anjney Midha](https://www.latent.space/p/openrouter) — *Latent Space* · 26 Sep 04:44
 - [Proaction boosts sales 60% and saves 75+ hours with Codex](https://openai.com/index/proaction) — *OpenAI News* · 26 Sep 00:30
 - [Quoting John Gruber](https://simonwillison.net/2026/Sep/25/john-gruber/) — *Simon Willison* · 25 Sep 22:52
@@ -23,46 +24,39 @@ generated: true
 - [datasette 1.0a41](https://simonwillison.net/2026/Sep/24/datasette/) — *Simon Willison* · 25 Sep 00:45
 - [Accelerating vision-language models with LFM2.5-VL-DSpark](https://huggingface.co/blog/LiquidAI/lfm2-5-vl-dspark) — *Hugging Face Blog* · 24 Sep 19:38
 - [Back to Claude](https://www.bensbites.com/p/back-to-claude) — *Ben's Bites* · 24 Sep 18:34
-- [Gemini TTS 🗣️, Claude’s novel enzyme 🧬, Google private memory 🔒](https://tldr.tech/ai/2026-09-24) — *TLDR AI* · 24 Sep 05:30
-- [How to Use NVIDIA Warp and MjWarp to Accelerate Robotics Simulation and Learning Workflows](https://huggingface.co/blog/nvidia/how-to-use-nvidia-warp-and-mjwarp) — *Hugging Face Blog* · 24 Sep 00:11
-- [Gemini 3.8 TTS Playground](https://simonwillison.net/2026/Sep/23/gemini-tts-playground/) — *Simon Willison* · 23 Sep 22:42
-- [Two years of OpenAI Academy](https://openai.com/index/two-years-of-openai-academy) — *OpenAI News* · 23 Sep 21:30
-- [OpenAI extends cyber access to Ukraine for civilian defense](https://openai.com/index/openai-extends-cyber-access-to-ukraine-for-civilian-defense) — *OpenAI News* · 23 Sep 18:30
 
 ## System design
 
+- [EP227: Top 9 Places to Use Jev](https://blog.bytebytego.com/p/ep227-top-9-places-to-use-jev) — *ByteByteGo* · 26 Sep 20:01
 - [LAST CALL FOR ENROLLMENT: Rebuild YouTube with AI](https://blog.bytebytego.com/p/last-call-for-enrollment-rebuild) — *ByteByteGo* · 25 Sep 20:32
-- [The Life of Data: From Creation to Deletion](https://blog.bytebytego.com/p/the-life-of-data-from-creation-to) — *ByteByteGo* · 24 Sep 21:01
 
 ## Architecture
 
+- [Docker Cloud Sandboxes Provide a Consistent Sandbox Abstraction Across Laptop and Cloud](https://www.infoq.com/news/2026/09/docker-cloud-sandboxes/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 26 Sep 22:30
+- [Presentation: Adaptive Recommenders in the Real World: Inference, Evals, and System Design](https://www.infoq.com/presentations/adaptive-recommendation-systems-architecture/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 26 Sep 16:30
+- [Cloudflare Details Its Migration from WordPress to EmDash](https://www.infoq.com/news/2026/09/cloudflare-emdash-migration/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 26 Sep 15:08
 - [Home Made CobbleDB Replaces DynamoDB at Perplexity to Cut Query Latency 5x and Reduce Cloud Storage](https://www.infoq.com/news/2026/09/cobbledb-perplexity/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 25 Sep 19:44
-- [Stateless MCP Removes Session Affinity Requirements for AWS Server Deployments](https://www.infoq.com/news/2026/09/aws-stateless-mcp/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 25 Sep 18:28
-- [Grafana Turns Cypress Test Results Into Persistent Observability Data](https://www.infoq.com/news/2026/09/grafana-cypress-observability/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 25 Sep 17:30
-- [From Agent Authorization to AI Production Evaluation: QCon AI New York 2026](https://www.infoq.com/news/2026/09/qcon-ai-newyork-2026-sessions/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 25 Sep 16:30
 
 ## Python
 
-- [The Real Python Podcast – Episode #312: Navigating AI in Open Source: Insights From Wagtail](https://realpython.com/podcasts/rpp/312/) — *Real Python* · 25 Sep 17:30
-- [Quiz: Jupyter Notebook: An Introduction](https://realpython.com/quizzes/jupyter-notebook-introduction/) — *Real Python* · 25 Sep 17:30
+- [Object-Oriented Programming (OOP) in Python](https://realpython.com/python3-object-oriented-programming/) — *Real Python* · 26 Sep 19:30
+- [Python Inner Functions: What Are They Good For?](https://realpython.com/inner-functions-what-are-they-good-for/) — *Real Python* · 26 Sep 19:30
 
 ## Career & leadership
 
 - [Community wisdom: developer productivity, AI wins, and next events! 💬](https://refactoring.fm/p/community-wisdom-developer-productivity) — *Refactoring (Luca Rossi)* · 25 Sep 17:30
 - [The Pulse: RoR creator sparks new “death of coding by hand” debate](https://newsletter.pragmaticengineer.com/p/the-pulse-end-of-coding-by-hand) — *The Pragmatic Engineer* · 24 Sep 22:14
-- [Design Engineering with Maggie Appleton](https://newsletter.pragmaticengineer.com/p/design-engineering-with-maggie-appleton) — *The Pragmatic Engineer* · 23 Sep 22:37
-- [The Best Ideas from LDX3 and ProductLab 🏆](https://refactoring.fm/p/the-best-ideas-from-ldx3-and-productlab) — *Refactoring (Luca Rossi)* · 23 Sep 12:32
 
 ## News
 
-- [Revealing the details of how OpenAI agents hacked Hugging Face](https://swarmtraces.org/) — *Hacker News (best)* · 26 Sep 02:39
-- [Ollaya – Ollama for open-source, Jev-style decision models](https://ollaya.dev/) — *Hacker News (best)* · 26 Sep 00:03
-- [U.S. appeals court upholds designation of Anthropic as supply chain risk](https://www.cnbc.com/2026/09/25/pentagon-anthropic-ai-risk-appeals-court.html) — *Hacker News (best)* · 25 Sep 20:59
-- [Factorio that you can touch](https://factorio.com/blog/post/fff-447) — *Hacker News (best)* · 25 Sep 19:54
-- [Allow babywearing carriers on planes](https://www.jefftk.com/p/allow-carriers-on-planes) — *Hacker News (best)* · 25 Sep 19:30
-- [First Principles Thinking](https://sunilsadasivan.com/writing/first-principles-thinking/) — *Hacker News (best)* · 25 Sep 19:25
-- [Platform-independent SIMD in Go](https://go.dev/blog/simd-experiment) — *Hacker News (best)* · 25 Sep 17:17
-- [Git-bug: Distributed, offline-first bug tracker embedded in Git](https://github.com/git-bug/git-bug) — *Hacker News (best)* · 25 Sep 17:08
+- [DeepSeek Elastic Compute (DSec)](https://arxiv.org/abs/2609.22978) — *Hacker News (best)* · 26 Sep 23:52
+- [Show HN: Reladraw – A diagram language where you decide where to place things](https://github.com/reladraw/reladraw) — *Hacker News (best)* · 26 Sep 22:40
+- [I'm the mom in that viral Giants clip. Let me tell you about my husband](https://themomoftheyear.substack.com/p/im-the-mom-in-that-viral-giants-clip) — *Hacker News (best)* · 26 Sep 21:42
+- [Breaking Up with Google Play: Why Conversations Is Now Free](https://gultsch.de/posts/breaking-up-with-google-play/) — *Hacker News (best)* · 26 Sep 16:25
+- [Fifteen years later, the Apple Cards origin story](https://lexontech.org/fifteen-years-later-the-apple-cards-origin-story) — *Hacker News (best)* · 26 Sep 14:43
+- [We're gonna need a lot more mathematicians](https://terrytao.wordpress.com/2026/09/24/were-gonna-need-a-lot-more-mathematicians/) — *Hacker News (best)* · 26 Sep 08:16
+- [Jury finds Facebook liable for deceiving users in Cambridge Analytica case](https://www.cbsnews.com/news/facebook-liable-deceiving-users-cambridge-analytica/) — *Hacker News (best)* · 26 Sep 07:06
+- [One Piece of Flock Camera Data Put This Innocent Woman in Jail for 13 Days](https://www.jezebel.com/flock-cameras-data-innocent-woman-arrested-lindsey-isaacs-palm-beach-florida-lawsuit-vehicular-homicide) — *Hacker News (best)* · 26 Sep 06:29
 
 ??? warning "Feeds that failed this run"
 
