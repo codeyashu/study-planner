@@ -5,58 +5,58 @@ generated: true
 
 # Today's feed
 
-!!! info "32 items from the last 72 h · built Sun 27 Sep 2026 11:05 IST"
+!!! info "29 items from the last 72 h · built Mon 28 Sep 2026 11:13 IST"
     Auto-aggregated from [data/feeds.yml](https://github.com/codeyashu/study-planner/blob/main/data/feeds.yml). Skim titles; open at most 3. The curated picks live in the [digest](../digest/index.md).
 
 ## AI engineering
 
+- [Quoting Muse AI Agent](https://simonwillison.net/2026/Sep/28/muse-ai-agent/) — *Simon Willison* · 28 Sep 09:31
+- [2026 in LLMs (so far)](https://simonwillison.net/2026/Sep/27/2026-in-llms-so-far/) — *Simon Willison* · 28 Sep 05:24
+- [S3 Is the Future, S3 Is the Past](https://simonwillison.net/2026/Sep/27/hn-49871741/) — *Simon Willison* · 28 Sep 04:39
+- [Bluesky reply bot checker](https://simonwillison.net/2026/Sep/27/bluesky-bot-check/) — *Simon Willison* · 28 Sep 00:11
 - [Kākāpō Party](https://simonwillison.net/2026/Sep/26/kakapo-party/) — *Simon Willison* · 27 Sep 05:09
 - [OpenRouter: from Seed to Stripe — with OpenRouter’s Alex Atallah & AMP’s Anjney Midha](https://www.latent.space/p/openrouter) — *Latent Space* · 26 Sep 04:44
 - [Proaction boosts sales 60% and saves 75+ hours with Codex](https://openai.com/index/proaction) — *OpenAI News* · 26 Sep 00:30
 - [Quoting John Gruber](https://simonwillison.net/2026/Sep/25/john-gruber/) — *Simon Willison* · 25 Sep 22:52
 - [50 years of tech devices](https://www.bensbites.com/p/50-years-of-tech-devices) — *Ben's Bites* · 25 Sep 19:20
-- [(AINews) The Future of Latent Space](https://www.latent.space/p/ainews-the-future-of-latent-space) — *Latent Space* · 25 Sep 11:07
-- [Northern Gannet, Great Blue Heron, California Brown Pelican](https://simonwillison.net/2026/Sep/25/sighting-403293902/) — *Simon Willison* · 25 Sep 07:37
-- [Runway’s WorldPrompt and the Engineering of Real-Time Worlds](https://www.latent.space/p/runway) — *Latent Space* · 25 Sep 07:00
-- [ChatGPT Pro Max 🤖, Muse realtime avatar 🎭, DeepSeek $1B ARR 💰](https://tldr.tech/ai/2026-09-25) — *TLDR AI* · 25 Sep 05:30
-- [Note on 24th September 2026](https://simonwillison.net/2026/Sep/24/harder/) — *Simon Willison* · 25 Sep 05:01
-- [commit-rewriter 0.2](https://simonwillison.net/2026/Sep/24/commit-rewriter/) — *Simon Willison* · 25 Sep 01:36
-- [datasette 1.0a41](https://simonwillison.net/2026/Sep/24/datasette/) — *Simon Willison* · 25 Sep 00:45
-- [Accelerating vision-language models with LFM2.5-VL-DSpark](https://huggingface.co/blog/LiquidAI/lfm2-5-vl-dspark) — *Hugging Face Blog* · 24 Sep 19:38
-- [Back to Claude](https://www.bensbites.com/p/back-to-claude) — *Ben's Bites* · 24 Sep 18:34
 
 ## System design
 
+- [Spec Driven Development - A Deep Dive](https://newsletter.systemdesign.one/p/spec-driven-development-ai-agents) — *System Design Newsletter (Neo Kim)* · 27 Sep 16:11
 - [EP227: Top 9 Places to Use Jev](https://blog.bytebytego.com/p/ep227-top-9-places-to-use-jev) — *ByteByteGo* · 26 Sep 20:01
 - [LAST CALL FOR ENROLLMENT: Rebuild YouTube with AI](https://blog.bytebytego.com/p/last-call-for-enrollment-rebuild) — *ByteByteGo* · 25 Sep 20:32
 
 ## Architecture
 
-- [Docker Cloud Sandboxes Provide a Consistent Sandbox Abstraction Across Laptop and Cloud](https://www.infoq.com/news/2026/09/docker-cloud-sandboxes/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 26 Sep 22:30
-- [Presentation: Adaptive Recommenders in the Real World: Inference, Evals, and System Design](https://www.infoq.com/presentations/adaptive-recommendation-systems-architecture/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 26 Sep 16:30
-- [Cloudflare Details Its Migration from WordPress to EmDash](https://www.infoq.com/news/2026/09/cloudflare-emdash-migration/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 26 Sep 15:08
-- [Home Made CobbleDB Replaces DynamoDB at Perplexity to Cut Query Latency 5x and Reduce Cloud Storage](https://www.infoq.com/news/2026/09/cobbledb-perplexity/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 25 Sep 19:44
+- [AWS Introduces Foreign Key Constraints in Aurora DSQL](https://www.infoq.com/news/2026/09/aurora-dsql-foreign-keys/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 28 Sep 10:24
+- [Java News Roundup: TornadoVM 7.0, Groovy 6.0, GraalVM, Hibernate, Quarkus, Gradle, Maven](https://www.infoq.com/news/2026/09/java-news-roundup-sep21-2026/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 28 Sep 08:00
+- [Arc Notes Weekly #107: Closing the Loop](https://architecturenotes.co/p/arc-notes-weekly-107-closing-the) — *Architecture Notes* · 28 Sep 03:22
+- [Google Rewrites Critical C Dependencies to Rust Using AI and Differential Fuzzing](https://www.infoq.com/news/2026/09/c-rust-rewrite/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 27 Sep 19:44
+- [Swift 6.4 Brings Subprocess 1.0, Improved Interoperability, Faster Wasm, and More](https://www.infoq.com/news/2026/09/swift-6-4-released/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 27 Sep 19:30
 
 ## Python
 
-- [Object-Oriented Programming (OOP) in Python](https://realpython.com/python3-object-oriented-programming/) — *Real Python* · 26 Sep 19:30
-- [Python Inner Functions: What Are They Good For?](https://realpython.com/inner-functions-what-are-they-good-for/) — *Real Python* · 26 Sep 19:30
+- [How to Copy Objects in Python: Shallow vs Deep Copy Explained](https://realpython.com/python-copy/) — *Real Python* · 27 Sep 19:30
+- [Pipenv: A Guide to the Python Packaging Tool](https://realpython.com/pipenv-guide/) — *Real Python* · 27 Sep 19:30
+
+## Java / Spring
+
+- [Java Weekly, Issue 665](https://www.baeldung.com/java-weekly-665) — *Baeldung Java Weekly* · 27 Sep 18:34
 
 ## Career & leadership
 
 - [Community wisdom: developer productivity, AI wins, and next events! 💬](https://refactoring.fm/p/community-wisdom-developer-productivity) — *Refactoring (Luca Rossi)* · 25 Sep 17:30
-- [The Pulse: RoR creator sparks new “death of coding by hand” debate](https://newsletter.pragmaticengineer.com/p/the-pulse-end-of-coding-by-hand) — *The Pragmatic Engineer* · 24 Sep 22:14
 
 ## News
 
-- [DeepSeek Elastic Compute (DSec)](https://arxiv.org/abs/2609.22978) — *Hacker News (best)* · 26 Sep 23:52
-- [Show HN: Reladraw – A diagram language where you decide where to place things](https://github.com/reladraw/reladraw) — *Hacker News (best)* · 26 Sep 22:40
-- [I'm the mom in that viral Giants clip. Let me tell you about my husband](https://themomoftheyear.substack.com/p/im-the-mom-in-that-viral-giants-clip) — *Hacker News (best)* · 26 Sep 21:42
-- [Breaking Up with Google Play: Why Conversations Is Now Free](https://gultsch.de/posts/breaking-up-with-google-play/) — *Hacker News (best)* · 26 Sep 16:25
-- [Fifteen years later, the Apple Cards origin story](https://lexontech.org/fifteen-years-later-the-apple-cards-origin-story) — *Hacker News (best)* · 26 Sep 14:43
-- [We're gonna need a lot more mathematicians](https://terrytao.wordpress.com/2026/09/24/were-gonna-need-a-lot-more-mathematicians/) — *Hacker News (best)* · 26 Sep 08:16
-- [Jury finds Facebook liable for deceiving users in Cambridge Analytica case](https://www.cbsnews.com/news/facebook-liable-deceiving-users-cambridge-analytica/) — *Hacker News (best)* · 26 Sep 07:06
-- [One Piece of Flock Camera Data Put This Innocent Woman in Jail for 13 Days](https://www.jezebel.com/flock-cameras-data-innocent-woman-arrested-lindsey-isaacs-palm-beach-florida-lawsuit-vehicular-homicide) — *Hacker News (best)* · 26 Sep 06:29
+- [Owed a billion dollars in Nvidia stock](https://colo.to/nvidia-stock-narrative.html) — *Hacker News (best)* · 28 Sep 07:35
+- [When did Google get so weird?](https://sancho.bearblog.dev/google-weird/) — *Hacker News (best)* · 28 Sep 01:42
+- [Show HN: Lofi Cities – Pixel-art city nights with browser-generated lofi](https://loficities.com/) — *Hacker News (best)* · 28 Sep 00:14
+- [SNL Weekend Update: Anthropic CEO Dario Amodei on A.I.'S Threat to Humanity (video)](https://www.youtube.com/watch?v=-Nvne3LzBls) — *Hacker News (best)* · 27 Sep 23:02
+- [Ember-1](https://fireworks.ai/blog/ember-1) — *Hacker News (best)* · 27 Sep 23:01
+- [Don't couple your Go code to GitHub](https://iain.rocks/blog/dont-couple-your-go-code-to-github) — *Hacker News (best)* · 27 Sep 22:20
+- [There are no "rogue" AI agents](https://eoinhiggins.substack.com/p/there-are-no-rogue-ai-agents) — *Hacker News (best)* · 27 Sep 21:49
+- [PostmarketOS is rebranding as Nura](https://nura.eco/blog/2026/09/27/nura-rename/) — *Hacker News (best)* · 27 Sep 21:01
 
 ??? warning "Feeds that failed this run"
 

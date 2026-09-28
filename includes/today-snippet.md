@@ -1,8 +1,8 @@
-**Day 2 · Week 0 — Baseline & environment** · 90 min
+**Day 3 · Week 1 — Agent patterns, structured outputs, SD framework** · 120 min
 
-- [ ] **DSA** · 30 min · Baseline medium (timed 30 min): Longest Substring Without Repeating Characters — use collections/itertools idioms → [Python idioms for interviews](tracks/dsa/python-idioms.md) · [resource](https://neetcode.io) <small>`w00-dsa-2`</small>
-- [ ] **Communication** · 20 min · Vocabulary: Vocabulary level check (60 words) → [Week 00 drills · day 2](tracks/communication/drills/week-00.md#day-2) <small>`w00-comm-2`</small>
-- [ ] **Communication** · 20 min · Writing: Write a 150-word status email (baseline) → [Week 00 drills · day 5](tracks/communication/drills/week-00.md#day-5) <small>`w00-comm-4`</small>
-- [ ] **Communication** · 20 min · Soft skills + weekly review: Communication self-assessment → [Week 00 drills · day 7](tracks/communication/drills/week-00.md#day-7) <small>`w00-comm-6`</small>
+- [ ] **System Design** · 45 min · Hello Interview 'System Design in a Hurry': rebuild your delivery framework (reqs → entities → API → HLD → deep dives) as a one-page checklist → [Interview framework & back-of-envelope estimation](tracks/system-design/framework-and-estimation.md) · [resource](https://www.hellointerview.com/learn/system-design/in-a-hurry/introduction) <small>`w01-sd-1`</small>
+- [ ] **DSA** · 25 min · Contains Duplicate + Valid Anagram (hash set / Counter) → [Arrays & hashing](tracks/dsa/arrays-hashing.md) · [resource](https://neetcode.io) <small>`w01-dsa-1`</small>
+- [ ] **Python** · 20 min · Rep: uv workspace + dependency groups; ruff rule set (I, UP, B, SIM) + ty in pre-commit on capstone → [Modern tooling: uv, ruff, ty, pre-commit](tracks/python/modern-tooling.md) · [resource](https://docs.astral.sh/uv/) <small>`w01-py-1`</small>
+- [ ] **Communication** · 30 min · Grammar: Articles & determiners: a/the/zero → [Week 01 drills · day 1](tracks/communication/drills/week-01.md#day-1) <small>`w01-comm-1`</small>
 
 *8 unfinished task(s) from the last 7 days — see [Today](today.md).*
