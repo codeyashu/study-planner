@@ -5,47 +5,52 @@ generated: true
 
 # Today's feed
 
-!!! info "37 items from the last 72 h · built Tue 29 Sep 2026 11:29 IST"
+!!! info "41 items from the last 72 h · built Wed 30 Sep 2026 11:19 IST"
     Auto-aggregated from [data/feeds.yml](https://github.com/codeyashu/study-planner/blob/main/data/feeds.yml). Skim titles; open at most 3. The curated picks live in the [digest](../digest/index.md).
 
 ## AI engineering
 
-- [Turn Your Agent’s Failures Into a Regression Suite](https://www.decodingai.com/p/transform-agent-traces-into-regression-cases) — *Decoding AI* · 29 Sep 10:32
+- [Quoting Anthropic Frontier Red Team](https://simonwillison.net/2026/Sep/29/anthropic-frontier-red-team/) — *Simon Willison* · 30 Sep 03:50
+- [GPT 6.1 Sol: Near-Astra intelligence for a fifth of the price](https://simonwillison.net/2026/Sep/29/hn-49898129/) — *Simon Willison* · 29 Sep 23:57
+- [OpenAI DevDay 2026 live blog](https://simonwillison.net/2026/Sep/29/openai-devday-2026-live-blog/) — *Simon Willison* · 29 Sep 21:25
+- [NVIDIA Kumo Tabular Sets a New Accuracy-Efficiency Frontier for Tabular Prediction](https://huggingface.co/blog/nvidia/kumo-tabular) — *Hugging Face Blog* · 29 Sep 21:00
+- [Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents](https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source) — *Hugging Face Blog* · 29 Sep 18:37
+- [Sonnet 5.5 is worth a try](https://www.bensbites.com/p/sonnet-55-is-worth-a-try) — *Ben's Bites* · 29 Sep 18:31
+- [Language Models for Text Classification: From Bag-of-Words to Jev](https://magazine.sebastianraschka.com/p/classifier-history-and-jev) — *Ahead of AI (Raschka)* · 29 Sep 16:20
+- [Introducing GPT-6.1 Sol](https://openai.com/index/introducing-gpt-6-1-sol) — *OpenAI News* · 29 Sep 15:30
+- [DevDay 2026 Recap](https://openai.com/index/devday-2026-recap) — *OpenAI News* · 29 Sep 15:30
+- [Will Your Next Change Break Your Agent?](https://www.decodingai.com/p/transform-agent-traces-into-regression-cases) — *Decoding AI* · 29 Sep 10:32
 - [(AINews) AMD buys World Labs for $8.2B, as Atlas solves sparse reconstruction problem for robotics, design and more](https://www.latent.space/p/ainews-amd-buys-world-labs-for-82b) — *Latent Space* · 29 Sep 08:25
 - [(AINews) Opus 5.5 is good at explainer videos](https://www.latent.space/p/ainews-opus-55-is-good-at-explainer) — *Latent Space* · 29 Sep 08:14
 - [Claude Code’s Next Era — Thariq Shihipar, Anthropic](https://www.latent.space/p/thariq) — *Latent Space* · 29 Sep 07:18
+- [Introducing dots](https://openai.com/index/introducing-dots) — *OpenAI News* · 29 Sep 05:30
+- [Claude Sonnet 5.5 🧠, Anthropic IPO leaks 📝, AMD buys World Labs 💰](https://tldr.tech/ai/2026-09-29) — *TLDR AI* · 29 Sep 05:30
 - [Claude Sonnet 5.5](https://simonwillison.net/2026/Sep/28/claude-sonnet-5-5/) — *Simon Willison* · 29 Sep 03:37
 - [Quoting @joedaroo](https://simonwillison.net/2026/Sep/28/joedaroo/) — *Simon Willison* · 29 Sep 00:41
-- [How we will do better for Australia](https://openai.com/index/how-we-will-do-better-for-australia) — *OpenAI News* · 29 Sep 00:30
 - [Holo4: powering generalist computer-use agents](https://huggingface.co/blog/Hcompany/holo4) — *Hugging Face Blog* · 28 Sep 15:14
-- [The Lenfest Institute grows landmark program with expanded OpenAI support](https://openai.com/index/lenfest-ai-collaborative-expansion) — *OpenAI News* · 28 Sep 12:30
 - [Quoting Muse AI Agent](https://simonwillison.net/2026/Sep/28/muse-ai-agent/) — *Simon Willison* · 28 Sep 09:31
-- [Are you a Codex Original?](https://openai.com/form/codex-originals) — *OpenAI News* · 28 Sep 05:30
 - [Muse manifesto 📜, OpenAI training pause 🚨, trading compute 🤝](https://tldr.tech/ai/2026-09-28) — *TLDR AI* · 28 Sep 05:30
-- [2026 in LLMs (so far)](https://simonwillison.net/2026/Sep/27/2026-in-llms-so-far/) — *Simon Willison* · 28 Sep 05:24
-- [S3 Is the Future, S3 Is the Past](https://simonwillison.net/2026/Sep/27/hn-49871741/) — *Simon Willison* · 28 Sep 04:39
-- [Bluesky reply bot checker](https://simonwillison.net/2026/Sep/27/bluesky-bot-check/) — *Simon Willison* · 28 Sep 00:11
 
 ## System design
 
+- [Why Do LLMs Lie?](https://blog.bytebytego.com/p/why-do-llms-lie) — *ByteByteGo* · 29 Sep 21:01
 - [Realtime AI Agent - A Deep Dive](https://newsletter.systemdesign.one/p/event-driven-ai-agent-architecture) — *System Design Newsletter (Neo Kim)* · 28 Sep 21:35
 - [AI Agents Can Think. Now They Can Pay.](https://blog.bytebytego.com/p/ai-agents-can-think-now-they-can) — *ByteByteGo* · 28 Sep 21:01
 - [Small Decisions: Engineering a Leading Model](http://brooker.co.za/blog/2026/09/28/engineering-system-one.html) — *Marc Brooker* · 28 Sep 05:30
 - [Spec Driven Development - A Deep Dive](https://newsletter.systemdesign.one/p/spec-driven-development-ai-agents) — *System Design Newsletter (Neo Kim)* · 27 Sep 16:11
-- [EP227: Top 9 Places to Use Jev](https://blog.bytebytego.com/p/ep227-top-9-places-to-use-jev) — *ByteByteGo* · 26 Sep 20:01
 
 ## Architecture
 
-- [Artifactory Vulnerabilities Under Active Exploitation Enable Authentication Bypass and Admin Access](https://www.infoq.com/news/2026/09/artifactory-vulnerabilities/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 29 Sep 00:30
-- [Radicle Discloses Critical Flaws Exposing Private Repositories in Plain Text](https://www.infoq.com/news/2026/09/radicle-network-vulnerabilities/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 28 Sep 19:44
-- [Meta’s ZGateway Cuts ZippyDB Connections 19x While Handling 1B+ Operations per Second](https://www.infoq.com/news/2026/09/meta-zgateway-zippydb-proxy/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 28 Sep 19:25
-- [Article: Five Ways To Use AI Coding Agents to Improve Your Software Architecture](https://www.infoq.com/articles/ai-agents-improve-software-architecture/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 28 Sep 16:30
+- [Amazon CloudWatch Omni Extends CloudWatch into the Agent Era](https://www.infoq.com/news/2026/09/aws-cloudwatchomni-observability/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 30 Sep 00:30
+- [Cloudflare Adds Configurable HTTP Vary Header Support to Prevent Cache Thrashing](https://www.infoq.com/news/2026/09/cloudflare-http-vary/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 29 Sep 19:44
+- [Kubernetes Teams Get a Safer Way to See Their Own GPU Metrics](https://www.infoq.com/news/2026/09/kubernetes-gpu-metrics/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 29 Sep 17:30
+- [Spring News Roundup: Second Milestone Releases of Boot, Framework, Data, Security, Integration](https://www.infoq.com/news/2026/09/spring-news-roundup-sep21-2026/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 29 Sep 17:30
 - [Arc Notes Weekly #107: Closing the Loop](https://architecturenotes.co/p/arc-notes-weekly-107-closing-the) — *Architecture Notes* · 28 Sep 03:22
 
 ## Python
 
-- [Python 3.15 Preview: Sentinel Values](https://realpython.com/python315-sentinel-values/) — *Real Python* · 28 Sep 19:30
-- [Quiz: Build a Python Turtle Game: Space Invaders Clone](https://realpython.com/quizzes/build-python-turtle-game-space-invaders-clone/) — *Real Python* · 28 Sep 17:30
+- [What's New in Python 3.15](https://realpython.com/courses/whats-new-in-python-315/) — *Real Python* · 29 Sep 19:30
+- [Quiz: How to Use Python: Taking Your First Steps](https://realpython.com/quizzes/first-steps-python/) — *Real Python* · 29 Sep 17:30
 
 ## Java / Spring
 
@@ -53,18 +58,17 @@ generated: true
 
 ## Career & leadership
 
+- [Why has Shopify dropped React Native?](https://newsletter.pragmaticengineer.com/p/shopify-native-mobile) — *The Pragmatic Engineer* · 29 Sep 21:23
 - [Outer loop, gaming tests, and weekly readings! 💡](https://refactoring.fm/p/outer-loop-gaming-tests-and-weekly) — *Refactoring (Luca Rossi)* · 28 Sep 13:53
 
 ## News
 
-- [Jeff – Jev-compatible 0.8B decision models, trained at home, ~30 ms](https://github.com/firelex/jeff) — *Hacker News (best)* · 29 Sep 01:53
-- [World Labs Is Joining AMD](https://www.worldlabs.ai/blog/amd-announcement) — *Hacker News (best)* · 29 Sep 01:48
-- [It's Time to Investigate the AI Labs](https://calnewport.com/its-time-to-investigate-the-ai-labs/) — *Hacker News (best)* · 29 Sep 01:23
-- [So long Google, and thanks for all the nudes](https://lecaro.me/20260921-google-less.html) — *Hacker News (best)* · 28 Sep 23:34
-- [Sonnet 5.5](https://www.anthropic.com/claude-sonnet-5-5) — *Hacker News (best)* · 28 Sep 23:28
-- [Windows 11½](https://definitelynotwindows.com/) — *Hacker News (best)* · 28 Sep 23:21
-- [The problem is not AI code, but not knowing about system architecture or intent](https://www.ssp.sh/brain/the-problem-is-not-the-ai-code-but-nobody-knows-anything-anymore/) — *Hacker News (best)* · 28 Sep 21:41
-- [Pirating the Pirates](https://mubi.com/en/notebook/posts/pirating-the-pirates) — *Hacker News (best)* · 28 Sep 21:24
+- [Livenerf: Has Opus 5.5 been nerfed yet?](https://github.com/ninjahawk/livenerf) — *Hacker News (best)* · 30 Sep 04:06
+- [DraftKings is using AI to behaviorally target chronic gamblers](https://www.eff.org/deeplinks/2026/09/draftkings-using-ai-supercharge-harms-online-behavioral-advertising) — *Hacker News (best)* · 29 Sep 22:00
+- [macOS Golden Gate Is a Buggy Mess](https://www.squareorbits.com/blog/2026/09/macos-golden-gate-is-a-buggy-mess/) — *Hacker News (best)* · 29 Sep 20:02
+- [America.gov](https://america.gov/) — *Hacker News (best)* · 29 Sep 19:34
+- [How Delhi cut electricity loss from 50 to 5 percent](https://spectrum.ieee.org/delhi-electricity-loss) — *Hacker News (best)* · 29 Sep 18:13
+- [US sanctions force The Netherlands off Microsoft and toward alternative NixOS](https://www.tomshardware.com/software/the-netherlands-is-rolling-alternative-nixos-based-software-ecosystem-after-u-s-sanctions-on-icc-took-microsoft-off-the-table-trial-programs-running-now-first-release-expected-at-end-of-2027) — *Hacker News (best)* · 29 Sep 17:14
 
 ??? warning "Feeds that failed this run"
 
