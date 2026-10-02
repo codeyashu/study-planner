@@ -1,7 +1,8 @@
-**Day 6 · Week 1 — Agent patterns, structured outputs, SD framework** · 120 min
+**Day 7 · Week 1 — Agent patterns, structured outputs, SD framework** · 120 min
 
-- [ ] **Agentic AI** · 60 min · LLM fundamentals refresh: tokenisation, temperature/top-p, reasoning vs non-reasoning models — run one prompt on 2 hosted + 1 Ollama model and log tokens, latency, cost → [LLM fundamentals: tokens, transformers, sampling, reasoning models](tracks/agentic-ai/llm-fundamentals.md) · [resource](https://github.com/chiphuyen/aie-book) <small>`w01-ai-2`</small>
-- [ ] **Java/Spring AI** · 30 min · Modern Java 21→25 tour: records, sealed interfaces, pattern matching for switch — model Incident/Severity as sealed hierarchy → [Modern Java 21→25: records, sealed types, patterns](tracks/java-spring-ai/modern-java.md) · [resource](https://openjdk.org/projects/jdk/25/) <small>`w01-java-1`</small>
-- [ ] **Communication** · 30 min · Idioms & phrasal verbs: Workplace basics: touch base, ballpark, on the same page → [Week 01 drills · day 4](tracks/communication/drills/week-01.md#day-4) <small>`w01-comm-4`</small>
+- [ ] **System Design** · 45 min · Latency numbers + back-of-envelope drill: estimate QPS, storage and bandwidth for 3 prompts (URL shortener, chat, LLM triage API) in 15 min each → [Scalability fundamentals & latency numbers](tracks/system-design/scalability-fundamentals.md) <small>`w01-sd-2`</small>
+- [ ] **DSA** · 25 min · Product of Array Except Self (prefix/suffix, O(1) extra space) → [Arrays & hashing](tracks/dsa/arrays-hashing.md) · [resource](https://neetcode.io) <small>`w01-dsa-4`</small>
+- [ ] **Python** · 20 min · Rep: FastAPI lifespan + dependency-injected settings (pydantic-settings) and httpx AsyncClient reuse → [FastAPI for production](tracks/python/fastapi-production.md) <small>`w01-py-3`</small>
+- [ ] **Communication** · 30 min · Writing: Concise emails and subject lines (BLUF) → [Week 01 drills · day 5](tracks/communication/drills/week-01.md#day-5) <small>`w01-comm-5`</small>
 
 *8 unfinished task(s) from the last 7 days — see [Today](today.md).*
