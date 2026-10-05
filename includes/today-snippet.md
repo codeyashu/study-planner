@@ -1,9 +1,8 @@
-**Day 9 · Week 1 — Agent patterns, structured outputs, SD framework** · 195 min
+**Day 10 · Week 2 — Tool calling, API design, two pointers** · 120 min
 
-- [ ] **System Design** · 45 min · Written design: URL shortener at 100M URLs/month — ID generation, KV choice, cache, 301 vs 302, analytics pipeline; 2-page doc → [URL shortener](tracks/system-design/case-studies/url-shortener.md) <small>`w01-sd-3`</small>
-- [ ] **Architecture** · 30 min · Write ADR 001 for capstone: record architecture decisions using MADR template in docs/adr/ → [Architecture Decision Records](tracks/architecture/adrs.md) · [resource](https://adr.github.io) <small>`w01-arch-2`</small>
-- [ ] **Staff+** · 30 min · Read StaffEng archetypes (Tech Lead, Architect, Solver, Right Hand) and note which work you already do → [Staff archetypes & operating at Staff+](tracks/staff-skills/staff-archetypes.md) · [resource](https://staffeng.com/guides/staff-archetypes/) <small>`w01-staff-1`</small>
-- [ ] **Communication** · 30 min · Soft skills + weekly review: Active listening and clarifying questions → [Week 01 drills · day 7](tracks/communication/drills/week-01.md#day-7) <small>`w01-comm-7`</small>
-- [ ] **Review** · 60 min · Flashcards: 15 cards on agent patterns + latency numbers; explain-it-back the 6 BEA patterns in 5 min → [Agent & workflow patterns (Building Effective Agents)](tracks/agentic-ai/agent-patterns.md) <small>`w01-rev-1`</small>
+- [ ] **System Design** · 45 min · API design: idempotency keys, cursor pagination, REST vs gRPC vs GraphQL trade-offs — decide for capstone's external API → [API design: REST, gRPC, GraphQL, idempotency, pagination](tracks/system-design/api-design.md) <small>`w02-sd-1`</small>
+- [ ] **DSA** · 25 min · Valid Sudoku (row/col/box sets) → [Arrays & hashing](tracks/dsa/arrays-hashing.md) · [resource](https://neetcode.io) <small>`w02-dsa-1`</small>
+- [ ] **Python** · 20 min · Rep: typing.Protocol for an LLMClient port; structural vs nominal typing, runtime_checkable caveats → [Advanced typing: generics, Protocols, ParamSpec, TypedDict](tracks/python/typing-advanced.md) · [resource](https://typing.python.org) <small>`w02-py-1`</small>
+- [ ] **Communication** · 30 min · Grammar: Prepositions and collocations → [Week 02 drills · day 1](tracks/communication/drills/week-02.md#day-1) <small>`w02-comm-1`</small>
 
 *8 unfinished task(s) from the last 7 days — see [Today](today.md).*
