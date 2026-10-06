@@ -5,60 +5,58 @@ generated: true
 
 # Today's feed
 
-!!! info "31 items from the last 72 h · built Mon 05 Oct 2026 11:33 IST"
+!!! info "32 items from the last 72 h · built Tue 06 Oct 2026 12:12 IST"
     Auto-aggregated from [data/feeds.yml](https://github.com/codeyashu/study-planner/blob/main/data/feeds.yml). Skim titles; open at most 3. The curated picks live in the [digest](../digest/index.md).
 
 ## AI engineering
 
+- [(AINews) Reflection Beam - 501B-A23B American Open Model](https://www.latent.space/p/ainews-reflection-beam-501b-a23b) — *Latent Space* · 06 Oct 11:58
+- [No Traces, No Problem](https://www.decodingai.com/p/rag-evals-change-prompts) — *Decoding AI* · 06 Oct 10:30
+- [Quoting Felix Rieseberg](https://simonwillison.net/2026/Oct/5/felix-rieseberg/) — *Simon Willison* · 06 Oct 05:26
+- [Our approach to EU text provenance rules](https://openai.com/index/eu-text-provenance) — *OpenAI News* · 05 Oct 20:30
+- [Building advertising for the way people use AI](https://openai.com/index/new-chatgpt-ads-format-and-measurement) — *OpenAI News* · 05 Oct 15:30
+- [Prime Inference 📈, agent population 📈, Claude academy 🎓](https://tldr.tech/ai/2026-10-05) — *TLDR AI* · 05 Oct 05:30
+- [Qwen3.8 27B addition in words](https://simonwillison.net/2026/Oct/4/qwen38-addition-in-words/) — *Simon Willison* · 05 Oct 05:04
 - [We're going to need default hard budget caps on pretty much everything](https://simonwillison.net/2026/Oct/3/default-hard-budget-caps/) — *Simon Willison* · 04 Oct 05:04
 - [The Agent Said It Was Done. The Database Disagreed.](https://huggingface.co/blog/microsoft/thinkingbox) — *Hugging Face Blog* · 04 Oct 04:26
 - [September sponsors-only newsletter](https://simonwillison.net/2026/Oct/3/newsletter/) — *Simon Willison* · 04 Oct 03:30
 - [(AINews) not much happened today](https://www.latent.space/p/ainews-not-much-happened-today-cee) — *Latent Space* · 03 Oct 14:15
-- [Rex's Dino Store](https://simonwillison.net/2026/Oct/2/rex-s-dino-store/) — *Simon Willison* · 03 Oct 04:27
-- [A model guide for the GPT-6 family](https://openai.com/index/practical-guide-building-gpt-6) — *OpenAI News* · 02 Oct 21:45
-- [Open-sourcing AstaBrief, the fast report-generation model in Asta](https://huggingface.co/blog/allenai/astabrief) — *Hugging Face Blog* · 02 Oct 20:49
-- [Inside-Out AI: Rebuilding Airbnb Behind the Scenes and Across the Guest Experience](https://www.latent.space/p/airbnb) — *Latent Space* · 02 Oct 19:34
-- [(AINews) Pi 1.0, Pi Durable, and AIE NYC](https://www.latent.space/p/ainews-pi-10-pi-durable-and-aie-nyc) — *Latent Space* · 02 Oct 12:10
 
 ## System design
 
+- [The LLM Blindspot: Why Models Forget What’s in the Middle of Your Prompt](https://blog.bytebytego.com/p/the-llm-blindspot-why-models-forget) — *ByteByteGo* · 05 Oct 21:00
+- [64 AI Concepts Every Software Engineer Should Know](https://newsletter.systemdesign.one/p/ai-concepts-explained-for-beginners) — *System Design Newsletter (Neo Kim)* · 05 Oct 19:14
 - [Last 3 days: AI Evals, October cohort](https://blog.bytebytego.com/p/new-course-ai-evals-in-practice-starts) — *ByteByteGo* · 04 Oct 21:27
 - [How Vector Database Search Billions of Vectors in Milliseconds](https://newsletter.systemdesign.one/p/hnsw-vector-search-explained) — *System Design Newsletter (Neo Kim)* · 04 Oct 16:45
 - [Strands Decider: Why Not an Encoder?](http://brooker.co.za/blog/2026/10/04/encoders.html) — *Marc Brooker* · 04 Oct 05:30
-- [EP228: How SSH Works](https://blog.bytebytego.com/p/ep228-how-ssh-works) — *ByteByteGo* · 03 Oct 21:00
-- [API design was HARD until I learned these 33 concepts](https://newsletter.systemdesign.one/p/api-concepts-for-software-engineers) — *System Design Newsletter (Neo Kim)* · 03 Oct 17:33
 
 ## Architecture
 
-- [Cloudflare Plans Public Certificate Authority to Issue Quantum-Safe TLS Certificates](https://www.infoq.com/news/2026/10/postquatam-certificates/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 05 Oct 10:35
+- [Flagged by the Machine: How Google Ads Suspended an Open-Source macOS Term as Malicious](https://www.infoq.com/news/2026/10/google-wrong-flagging/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 06 Oct 10:35
+- [Cloudflare Introduces CLI for AI Agents, Sunsetting Wrangler](https://www.infoq.com/news/2026/10/cloudflare-cf-cli/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 06 Oct 10:29
+- [Java News Roundup: JobRunr 9, OpenXava 8, Quarkus, LangChain4j, JNoSQL, Introducing Lathe](https://www.infoq.com/news/2026/10/java-news-roundup-sep28-2026/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 05 Oct 22:30
+- [Akka Tests Spec-Driven AI Delivery Across 65 Open Source Projects](https://www.infoq.com/news/2026/10/ai-spec-driven-delivery/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 05 Oct 19:28
 - [Arc Notes Weekly #108: What’s Worth Building](https://architecturenotes.co/p/arc-notes-weekly-108-whats-worth) — *Architecture Notes* · 05 Oct 00:15
-- [Google's Android Security State Libraries Enable Component-Level Security Verification](https://www.infoq.com/news/2026/10/android-security-state-libs/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 04 Oct 22:30
-- [Pizza Bot: Open-Source Inbox for Background AI Agents](https://www.infoq.com/news/2026/10/pizza-bot-ai-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 04 Oct 12:04
-- [New Archestra's OpenAPPA Saturates Two Major Security Benchmarks with a 0% Attack Success Rate](https://www.infoq.com/news/2026/10/open-APPA-zero-security-breach/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 04 Oct 05:11
 
 ## Python
 
-- [Strings and Character Data in Python](https://realpython.com/python-strings/) — *Real Python* · 04 Oct 19:30
-- [How to Install Python on Your System: A Guide](https://realpython.com/installing-python/) — *Real Python* · 04 Oct 19:30
-
-## Java / Spring
-
-- [Java Weekly, Issue 666](https://www.baeldung.com/java-weekly-666) — *Baeldung Java Weekly* · 02 Oct 17:37
+- [Python 3.15 Gets a Surprise RC3 and Other Python News for October 2026](https://realpython.com/python-news-october-2026/) — *Real Python* · 05 Oct 19:30
+- [Quiz: How to Launch an HTTP Server in One Line of Python Code](https://realpython.com/quizzes/python-http-server/) — *Real Python* · 05 Oct 17:30
 
 ## Career & leadership
 
-- [Refactoring Street Fighter With AI 🕹️ — with Adam Tornhill](https://refactoring.fm/p/refactoring-street-fighter-with-ai) — *Refactoring (Luca Rossi)* · 02 Oct 12:32
+- [High agency, personal growth, and weekly readings! 💡](https://refactoring.fm/p/high-agency-personal-growth-and-weekly) — *Refactoring (Luca Rossi)* · 05 Oct 15:30
 
 ## News
 
-- [Powerless F1 drivers frustrated by Bahrain F1 software glitch](https://www.motorsport.com/f1/news/horrible-totally-unacceptable-powerless-f1-drivers-frustrated-by-bahrain-f1-software-glitch/10861968/) — *Hacker News (best)* · 05 Oct 07:24
-- [Turn off Apple Intelligence on macOS 27 and get its disk space back](https://github.com/omlahore/RemoveMacAI) — *Hacker News (best)* · 05 Oct 01:12
-- [Improper redaction reveals Google Data Center water and electricity usage](https://www.1011now.com/2026/09/30/more-questions-than-answers-about-lincolns-google-data-center-water-electricity-usage/) — *Hacker News (best)* · 05 Oct 01:07
-- [A browser-native classic Visual Basic VB6 IDE](https://wieslawsoltes.github.io/VB6/) — *Hacker News (best)* · 05 Oct 00:19
-- [Car is a smartphone on wheels. Here's who's listening](https://automatictransmission.khoury.northeastern.edu/) — *Hacker News (best)* · 04 Oct 21:13
-- [Run Qwen 3.8 Flash Next (125B) on consumer hardware (RTX 4090) at 100T/s](https://github.com/Niko1221/Strata) — *Hacker News (best)* · 04 Oct 18:21
-- [In Ukraine, distributed renewables foil Russia's assaults](https://energytransition.org/2026/09/in-ukraine-distributed-renewables-foil-russias-assaults/) — *Hacker News (best)* · 04 Oct 14:09
-- [Why don't more developers “use the platform”?](https://nolanlawson.com/2026/10/03/why-dont-more-developers-use-the-platform/) — *Hacker News (best)* · 04 Oct 09:40
+- [Example.com just launched the biggest redesign in decades](https://www.debugbear.com/blog/example-dot-com-redesign-history) — *Hacker News (best)* · 06 Oct 04:25
+- [ChatGPT is adding real cartoonists' signatures to fake New Yorker cartoons](https://www.niemanlab.org/2026/10/chatgpt-is-adding-real-cartoonists-signatures-to-fake-new-yorker-cartoons/) — *Hacker News (best)* · 06 Oct 04:16
+- [Texas city demands $2M for public records on Flock usage](https://arstechnica.com/tech-policy/2026/10/texas-city-demands-2m-for-public-records-on-flock-usage/) — *Hacker News (best)* · 06 Oct 03:35
+- [Find the flattest route between any two points in SF](https://flattensf.com/) — *Hacker News (best)* · 06 Oct 03:10
+- [Opus 5.5 agents discover two room-temperature magnetic semiconductor candidates](https://www.vals.ai/blogs/room-temperature-magnetic-semiconductors) — *Hacker News (best)* · 06 Oct 02:30
+- [Beam: Reflection's 501B open-weight model](https://reflection.ai/blog/introducing-beam) — *Hacker News (best)* · 06 Oct 00:46
+- [Plain text is still one of the best technologies we have](https://deadparrotbbs.com/why-plain-text-is-still-one-of-the-best-technologies-we-have/) — *Hacker News (best)* · 06 Oct 00:24
+- [OpenAI "rogue" agent activities found on Wikimedia projects](https://diff.wikimedia.org/2026/10/05/openai-rogue-agent-activities-found-on-wikimedia-projects/) — *Hacker News (best)* · 05 Oct 23:23
 
 ??? warning "Feeds that failed this run"
 

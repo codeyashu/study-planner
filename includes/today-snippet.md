@@ -1,8 +1,7 @@
-**Day 10 · Week 2 — Tool calling, API design, two pointers** · 120 min
+**Day 11 · Week 2 — Tool calling, API design, two pointers** · 120 min
 
-- [ ] **System Design** · 45 min · API design: idempotency keys, cursor pagination, REST vs gRPC vs GraphQL trade-offs — decide for capstone's external API → [API design: REST, gRPC, GraphQL, idempotency, pagination](tracks/system-design/api-design.md) <small>`w02-sd-1`</small>
-- [ ] **DSA** · 25 min · Valid Sudoku (row/col/box sets) → [Arrays & hashing](tracks/dsa/arrays-hashing.md) · [resource](https://neetcode.io) <small>`w02-dsa-1`</small>
-- [ ] **Python** · 20 min · Rep: typing.Protocol for an LLMClient port; structural vs nominal typing, runtime_checkable caveats → [Advanced typing: generics, Protocols, ParamSpec, TypedDict](tracks/python/typing-advanced.md) · [resource](https://typing.python.org) <small>`w02-py-1`</small>
-- [ ] **Communication** · 30 min · Grammar: Prepositions and collocations → [Week 02 drills · day 1](tracks/communication/drills/week-02.md#day-1) <small>`w02-comm-1`</small>
+- [ ] **Agentic AI** · 60 min · Structured outputs deep dive: constrained decoding vs tool-forcing vs validate-and-retry; measure failure rate on 50 synthetic incident texts → [Prompting & structured outputs](tracks/agentic-ai/prompting-structured-outputs.md) <small>`w02-ai-1`</small>
+- [ ] **DSA** · 30 min · Valid Palindrome + Two Sum II - Input Array Is Sorted → [Two pointers](tracks/dsa/two-pointers.md) · [resource](https://neetcode.io) <small>`w02-dsa-2`</small>
+- [ ] **Communication** · 30 min · Vocabulary: Word nuance: affect/impact/influence, ensure/assure/insure → [Week 02 drills · day 2](tracks/communication/drills/week-02.md#day-2) <small>`w02-comm-2`</small>
 
 *8 unfinished task(s) from the last 7 days — see [Today](today.md).*
