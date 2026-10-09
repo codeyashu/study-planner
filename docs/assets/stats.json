@@ -1,13 +1,13 @@
 {
- "generated": "2026-10-08",
+ "generated": "2026-10-09",
  "start": "2026-09-26",
  "end": "2027-03-28",
  "current_week": 2,
  "total": {
   "planned": 715,
-  "due": 54,
+  "due": 58,
   "done": 0,
-  "behind": 54
+  "behind": 58
  },
  "streak": 0,
  "longest_streak": 0,
@@ -22,14 +22,14 @@
   "system-design": {
    "label": "System Design",
    "planned": 79,
-   "due": 5,
+   "due": 6,
    "done": 0,
    "minutes_done": 0
   },
   "dsa": {
    "label": "DSA",
    "planned": 133,
-   "due": 11,
+   "due": 12,
    "done": 0,
    "minutes_done": 0
   },
@@ -43,7 +43,7 @@
   "python": {
    "label": "Python",
    "planned": 79,
-   "due": 6,
+   "due": 7,
    "done": 0,
    "minutes_done": 0
   },
@@ -64,7 +64,7 @@
   "communication": {
    "label": "Communication",
    "planned": 188,
-   "due": 17,
+   "due": 18,
    "done": 0,
    "minutes_done": 0
   },
