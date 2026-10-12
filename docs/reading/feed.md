@@ -5,7 +5,7 @@ generated: true
 
 # Today's feed
 
-!!! info "35 items from the last 72 h · built Sun 11 Oct 2026 11:41 IST"
+!!! info "31 items from the last 72 h · built Mon 12 Oct 2026 11:49 IST"
     Auto-aggregated from [data/feeds.yml](https://github.com/codeyashu/study-planner/blob/main/data/feeds.yml). Skim titles; open at most 3. The curated picks live in the [digest](../digest/index.md).
 
 ## AI engineering
@@ -25,25 +25,18 @@ generated: true
 - [The Agentic Software Factory Hierarchy of Needs](https://www.decodingai.com/p/the-agentic-software-factory-hierarchy) — *Decoding AI* · 09 Oct 16:31
 - [Sophos cuts threat investigation time by 96% with OpenAI Daybreak](https://openai.com/index/sophos) — *OpenAI News* · 09 Oct 12:30
 - [Asana cuts model costs 76x in browser tests with GPT-6.1 Sol](https://openai.com/index/asana-browser-agent) — *OpenAI News* · 09 Oct 12:30
-- [GPT-6.1 Ultrafast ⚡, Gemini universal agent 🤖, speculative decoding 🧠](https://tldr.tech/ai/2026-10-09) — *TLDR AI* · 09 Oct 05:30
-- [How Oracle turns days of work into minutes with ChatGPT and Codex](https://openai.com/index/oracle) — *OpenAI News* · 08 Oct 21:30
-- [Text is so 2023](https://www.bensbites.com/p/text-is-so-2023) — *Ben's Bites* · 08 Oct 18:30
-
-## System design
-
-- [How Software Boundaries Are The Most Important Skill for Developers](https://blog.bytebytego.com/p/how-software-boundaries-are-the-most) — *ByteByteGo* · 08 Oct 21:01
 
 ## Architecture
 
+- [Context Language Models: Self-Managing Context to Improve Performance and Reduce Compute Costs](https://www.infoq.com/news/2026/10/context-language-models/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 11 Oct 19:30
+- [Foresight AI Brings Gremlin Agents to Reliability Engineering](https://www.infoq.com/news/2026/10/gremlin-foresight-ai/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 11 Oct 14:30
+- [AWS Introduces Enhanced Custom Event Buses for EventBridge](https://www.infoq.com/news/2026/10/aws-enhanced-eventbridge-buses/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 11 Oct 12:05
 - [Cloudflare Traces Turns the Proxy Layer into OpenTelemetry Spans, with New Volume-Based Pricing](https://www.infoq.com/news/2026/10/cloudflare-traces-open-beta/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 10 Oct 12:42
-- [Android Bench 2 Adds Support for Long-Horizon Tasks, Agentic Evaluation, and Continuous Scoring](https://www.infoq.com/news/2026/10/android-bench-2/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 09 Oct 22:30
-- [Shopify Upgrades Checkout Blocks to Polaris Web Components, Cutting Bundle Sizes up to 85%](https://www.infoq.com/news/2026/10/shopify-web-components/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 09 Oct 20:31
-- [Github Migrates Copilot Runtime to Rust with AI-Assisted Rewrite](https://www.infoq.com/news/2026/10/github-copilot-rust-migration/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 09 Oct 19:59
 
 ## Python
 
-- [Namespaces in Python](https://realpython.com/python-namespace/) — *Real Python* · 10 Oct 19:30
-- [Python for Loops: The Pythonic Way](https://realpython.com/python-for-loop/) — *Real Python* · 10 Oct 19:30
+- [Functional Programming in Python: When and How to Use It](https://realpython.com/python-functional-programming/) — *Real Python* · 11 Oct 19:30
+- [What Can I Do With Python?](https://realpython.com/what-can-i-do-with-python/) — *Real Python* · 11 Oct 19:30
 
 ## Java / Spring
 
@@ -51,18 +44,18 @@ generated: true
 
 ## Career & leadership
 
-- [The Pulse: new trend of building “internal vibe-coding apps” at tech companies](https://newsletter.pragmaticengineer.com/p/the-pulse-new-trend-of-building-internal) — *The Pragmatic Engineer* · 08 Oct 22:25
+- [Knowledge capturing, human relationships, and weekly readings! 💡](https://refactoring.fm/p/knowledge-capturing-human-relationships) — *Refactoring (Luca Rossi)* · 12 Oct 11:32
 
 ## News
 
-- [WallHop – 12ft.io is gone, so I built a replacement](https://wallhop.io/) — *Hacker News (best)* · 11 Oct 06:16
-- [A city-building game in which the city would prefer you didn't](https://housing.over.pizza/) — *Hacker News (best)* · 11 Oct 02:01
-- [Bitwarden Dual License Model](https://community.bitwarden.com/t/published-version-update-in-app-stores/102750) — *Hacker News (best)* · 10 Oct 20:02
-- [I would like the value of my home to rise, while my property taxes fall](https://conversableeconomist.com/2026/09/28/i-would-like-the-value-of-my-home-to-rise-while-my-property-taxes-fall/) — *Hacker News (best)* · 10 Oct 18:59
-- [Lobbying is corruption](https://carette.xyz/posts/lobbying_and_corruption/) — *Hacker News (best)* · 10 Oct 18:35
-- [Apple/macOS removed from official Unix registry](https://www.opengroup.org//openbrand/register/) — *Hacker News (best)* · 10 Oct 16:27
-- [Talorys – A self-hosted personal AI agent on Cloudflare's free tier](https://github.com/rociiu/talorys) — *Hacker News (best)* · 10 Oct 16:22
-- [`123456' password used in Danish CPR data breach](https://cphpost.dk/2026-10-10/news/round-up/123456-password-used-in-massive-danish-cpr-data-breach/) — *Hacker News (best)* · 10 Oct 15:21
+- [Fingerprints are the new cookies](https://royfish.dev/fingerprints-are-the-new-cookies) — *Hacker News (best)* · 12 Oct 04:03
+- [Google is illegaly cutting forest to build data centers](https://www.theguardian.com/technology/2026/oct/06/google-datacentres-finland-temporary-halt-environmental-impact-assessment) — *Hacker News (best)* · 12 Oct 04:03
+- [Passkeys are a trap](https://nonfunctional.substack.com/p/passkeys-are-a-trap-do-not-use-them) — *Hacker News (best)* · 12 Oct 03:29
+- [The gap in shared understanding of LLM capability is widening](https://twitter.com/karpathy/status/2109361546505966046) — *Hacker News (best)* · 12 Oct 01:50
+- [Cartographers of North Korea (2019)](https://cartographers-nk.wonyoung.so/) — *Hacker News (best)* · 12 Oct 01:16
+- [So, You’d Like To Sell Your Print Issues Of The Onion?](https://theonion.com/archivehunt/) — *Hacker News (best)* · 12 Oct 01:13
+- [Total Annihilation, rebuilt for modern computers](https://nanolathe.gg) — *Hacker News (best)* · 11 Oct 23:34
+- [NYC's "Click to Cancel" rule is now in effect](https://www.nyc.gov/main/click-to-cancel) — *Hacker News (best)* · 11 Oct 23:31
 
 ??? warning "Feeds that failed this run"
 

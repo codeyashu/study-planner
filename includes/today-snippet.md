@@ -1,9 +1,8 @@
-**Day 16 · Week 2 — Tool calling, API design, two pointers** · 195 min
+**Day 17 · Week 3 — Context engineering, workflows, sliding window** · 120 min
 
-- [ ] **System Design** · 45 min · Written design: estimation write-up — size the capstone for 50 teams, 2k incidents/day, 10 tool calls each (tokens, $/month, QPS, storage) → [Interview framework & back-of-envelope estimation](tracks/system-design/framework-and-estimation.md) <small>`w02-sd-3`</small>
-- [ ] **Architecture** · 30 min · Write ADR 002 for capstone: modular monolith (Python) + separate Spring AI MCP service → [Architecture styles: modular monolith → microservices → event-driven → serverless](tracks/architecture/architecture-styles.md) · [resource](https://adr.github.io) <small>`w02-arch-2`</small>
-- [ ] **Staff+** · 30 min · Artifact: archetype self-assessment — which archetype you target, evidence you have, 3 gaps (docs/log/staff/archetype.md) → [Staff archetypes & operating at Staff+](tracks/staff-skills/staff-archetypes.md) · [resource](https://staffeng.com/guides/staff-archetypes/) <small>`w02-staff-1`</small>
-- [ ] **Communication** · 30 min · Soft skills + weekly review: Giving feedback with SBI (situation-behaviour-impact) → [Week 02 drills · day 7](tracks/communication/drills/week-02.md#day-7) <small>`w02-comm-7`</small>
-- [ ] **Review** · 60 min · Explain-it-back (record 5 min): tool-calling loop design and why tool errors are returned as results; 15 flashcards on API design → [Tool calling & function design](tracks/agentic-ai/tool-calling.md) <small>`w02-rev-1`</small>
+- [ ] **System Design** · 45 min · DDIA 2e ch1-2: reliability, scalability, maintainability — describe load parameters + percentiles for the capstone → [Scalability fundamentals & latency numbers](tracks/system-design/scalability-fundamentals.md) · [resource](https://martin.kleppmann.com/2026/03/24/designing-data-intensive-applications-2e.html) <small>`w03-sd-1`</small>
+- [ ] **DSA** · 25 min · Best Time to Buy and Sell Stock + Longest Substring Without Repeating Characters → [Sliding window](tracks/dsa/sliding-window.md) · [resource](https://neetcode.io) <small>`w03-dsa-1`</small>
+- [ ] **Python** · 20 min · Rep: asyncio.TaskGroup to fan out 5 tool calls; exception propagation via ExceptionGroup/except* → [asyncio in depth: TaskGroups, cancellation, backpressure](tracks/python/asyncio-deep.md) <small>`w03-py-1`</small>
+- [ ] **Communication** · 30 min · Grammar: Present perfect vs past simple, and time expressions → [Week 03 drills · day 1](tracks/communication/drills/week-03.md#day-1) <small>`w03-comm-1`</small>
 
 *8 unfinished task(s) from the last 7 days — see [Today](today.md).*
