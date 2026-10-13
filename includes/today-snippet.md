@@ -1,8 +1,7 @@
-**Day 17 · Week 3 — Context engineering, workflows, sliding window** · 120 min
+**Day 18 · Week 3 — Context engineering, workflows, sliding window** · 120 min
 
-- [ ] **System Design** · 45 min · DDIA 2e ch1-2: reliability, scalability, maintainability — describe load parameters + percentiles for the capstone → [Scalability fundamentals & latency numbers](tracks/system-design/scalability-fundamentals.md) · [resource](https://martin.kleppmann.com/2026/03/24/designing-data-intensive-applications-2e.html) <small>`w03-sd-1`</small>
-- [ ] **DSA** · 25 min · Best Time to Buy and Sell Stock + Longest Substring Without Repeating Characters → [Sliding window](tracks/dsa/sliding-window.md) · [resource](https://neetcode.io) <small>`w03-dsa-1`</small>
-- [ ] **Python** · 20 min · Rep: asyncio.TaskGroup to fan out 5 tool calls; exception propagation via ExceptionGroup/except* → [asyncio in depth: TaskGroups, cancellation, backpressure](tracks/python/asyncio-deep.md) <small>`w03-py-1`</small>
-- [ ] **Communication** · 30 min · Grammar: Present perfect vs past simple, and time expressions → [Week 03 drills · day 1](tracks/communication/drills/week-03.md#day-1) <small>`w03-comm-1`</small>
+- [ ] **Agentic AI** · 60 min · Read Anthropic 'Effective context engineering for AI agents'; write a context budget for the triage agent (system, tools, retrieved docs, history, scratchpad) → [Context engineering](tracks/agentic-ai/context-engineering.md) · [resource](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) <small>`w03-ai-1`</small>
+- [ ] **DSA** · 30 min · Longest Repeating Character Replacement (window validity = len - maxfreq <= k) → [Sliding window](tracks/dsa/sliding-window.md) · [resource](https://neetcode.io) <small>`w03-dsa-2`</small>
+- [ ] **Communication** · 30 min · Vocabulary: Tech-leadership verbs: champion, unblock, de-risk → [Week 03 drills · day 2](tracks/communication/drills/week-03.md#day-2) <small>`w03-comm-2`</small>
 
 *8 unfinished task(s) from the last 7 days — see [Today](today.md).*
