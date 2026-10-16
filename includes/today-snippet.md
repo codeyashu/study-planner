@@ -1,7 +1,8 @@
-**Day 20 · Week 3 — Context engineering, workflows, sliding window** · 120 min
+**Day 21 · Week 3 — Context engineering, workflows, sliding window** · 120 min
 
-- [ ] **Agentic AI** · 60 min · Reasoning models: when extended thinking helps vs hurts; compare a reasoning and a fast model on 20 triage cases (accuracy, latency, cost) → [LLM fundamentals: tokens, transformers, sampling, reasoning models](tracks/agentic-ai/llm-fundamentals.md) <small>`w03-ai-2`</small>
-- [ ] **Java/Spring AI** · 30 min · Spring Boot 4 highlights: API versioning, built-in retry/concurrency limits, JSpecify null-safety — apply @Retryable to an LLM call → [Spring Boot 4 & Spring Framework 7](tracks/java-spring-ai/spring-boot-4.md) <small>`w03-java-1`</small>
-- [ ] **Communication** · 30 min · Idioms & phrasal verbs: Risk and uncertainty: in the pipeline, up in the air → [Week 03 drills · day 4](tracks/communication/drills/week-03.md#day-4) <small>`w03-comm-4`</small>
+- [ ] **System Design** · 45 min · Proxies & gateways: reverse proxy, API gateway, service mesh — where each sits in front of an LLM service → [Load balancing & proxies](tracks/system-design/load-balancing.md) <small>`w03-sd-2`</small>
+- [ ] **DSA** · 25 min · Minimum Window Substring (need/have counters) → [Sliding window](tracks/dsa/sliding-window.md) · [resource](https://neetcode.io) <small>`w03-dsa-4`</small>
+- [ ] **Python** · 20 min · Rep: ParamSpec + Concatenate to type a @retry decorator that preserves signatures → [Advanced typing: generics, Protocols, ParamSpec, TypedDict](tracks/python/typing-advanced.md) · [resource](https://typing.python.org) <small>`w03-py-3`</small>
+- [ ] **Communication** · 30 min · Writing: Meeting notes and action items → [Week 03 drills · day 5](tracks/communication/drills/week-03.md#day-5) <small>`w03-comm-5`</small>
 
 *8 unfinished task(s) from the last 7 days — see [Today](today.md).*
