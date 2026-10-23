@@ -1,7 +1,8 @@
-**Day 27 · Week 4 — Orchestrator-workers, AI-assisted dev, stack — interview-1** · 120 min
+**Day 28 · Week 4 — Orchestrator-workers, AI-assisted dev, stack — interview-1** · 120 min
 
-- [ ] **Agentic AI** · 60 min · Context engineering lab: just-in-time retrieval (tool fetches runbook) vs preloaded context — compare token usage and answer quality on 10 cases → [Context engineering](tracks/agentic-ai/context-engineering.md) · [resource](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) <small>`w04-ai-2`</small>
-- [ ] **Java/Spring AI** · 30 min · Java 25 features: compact source files, flexible constructor bodies, module imports, scoped values (final) — 4 micro-examples → [Modern Java 21→25: records, sealed types, patterns](tracks/java-spring-ai/modern-java.md) · [resource](https://openjdk.org/projects/jdk/25/) <small>`w04-java-1`</small>
-- [ ] **Communication** · 30 min · Idioms & phrasal verbs: Negotiation: meet halfway, off the table → [Week 04 drills · day 4](tracks/communication/drills/week-04.md#day-4) <small>`w04-comm-4`</small>
+- [ ] **System Design** · 45 min · Scalability patterns recap: stateless services, horizontal scaling, queues for load levelling — map to the capstone → [Scalability fundamentals & latency numbers](tracks/system-design/scalability-fundamentals.md) · [resource](https://samwho.dev/blog/) <small>`w04-sd-2`</small>
+- [ ] **DSA** · 25 min · Car Fleet (sort + stack) → [Stack & monotonic stack](tracks/dsa/stack.md) · [resource](https://neetcode.io) <small>`w04-dsa-4`</small>
+- [ ] **Python** · 20 min · Rep: FastAPI StreamingResponse / SSE for token streaming with client-disconnect handling → [FastAPI for production](tracks/python/fastapi-production.md) <small>`w04-py-3`</small>
+- [ ] **Communication** · 30 min · Writing: Editing for concision: cut 30 percent → [Week 04 drills · day 5](tracks/communication/drills/week-04.md#day-5) <small>`w04-comm-5`</small>
 
 *8 unfinished task(s) from the last 7 days — see [Today](today.md).*
