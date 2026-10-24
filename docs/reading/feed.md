@@ -5,51 +5,49 @@ generated: true
 
 # Today's feed
 
-!!! info "42 items from the last 72 h · built Fri 23 Oct 2026 10:41 IST"
+!!! info "40 items from the last 72 h · built Sat 24 Oct 2026 10:24 IST"
     Auto-aggregated from [data/feeds.yml](https://github.com/codeyashu/study-planner/blob/main/data/feeds.yml). Skim titles; open at most 3. The curated picks live in the [digest](../digest/index.md).
 
 ## AI engineering
 
+- [Quick Study](https://simonwillison.net/2026/Oct/23/quick-study-painter/) — *Simon Willison* · 24 Oct 03:05
+- [Introducing Kimi K3.1 Pro](https://simonwillison.net/2026/Oct/23/kimi-k31-pro/) — *Simon Willison* · 24 Oct 01:10
+- [Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)](https://openai.com/index/scaling-storage-one-billion-users-part-two) — *OpenAI News* · 23 Oct 22:30
+- [LitPivot: Developing research ideas through dynamic contextualization within the literature landscape](https://huggingface.co/blog/allenai/litpivot) — *Hugging Face Blog* · 23 Oct 21:45
+- [AI Is Getting Good at Math. Here’s Why.](https://latent.space/p/ai-is-getting-good-at-math/) — *Latent Space* · 23 Oct 20:49
+- [(AINews) Black October](https://latent.space/p/ainews-black-october/) — *Latent Space* · 23 Oct 15:39
+- [Securing our frontier model training environment](https://openai.com/index/securing-our-frontier-model-training-environment) — *OpenAI News* · 23 Oct 15:30
+- [Does Your Model Run on AWS Trainium? Look It Up](https://huggingface.co/blog/torch-neuronx-model-support) — *Hugging Face Blog* · 23 Oct 05:30
+- [OpenAI and Poland’s NASK partner to advance AI safety and security](https://openai.com/index/openai-nask-ai-safety-security-partnership) — *OpenAI News* · 23 Oct 05:30
+- [OpenAI nears $1.25T 💰,  ☁️, 1Password for Agents 🔑, Gemini 3.5 Pro postmortem 🤖](https://tldr.tech/ai/2026-10-23) — *TLDR AI* · 23 Oct 05:30
 - [Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox](https://huggingface.co/blog/microsoft/thinkingbox-training) — *Hugging Face Blog* · 23 Oct 03:54
 - [DE STAAT - FREEDOM (Official Music Video)](https://simonwillison.net/2026/Oct/22/de-staat-freedom/) — *Simon Willison* · 23 Oct 01:12
-- [Build more responsive apps with the Decisions API](https://openai.com/index/decisions-api) — *OpenAI News* · 23 Oct 00:30
 - [Donating Agent Skills to the Agentic AI Foundation](https://simonwillison.net/2026/Oct/22/donating-agent-skills/) — *Simon Willison* · 22 Oct 23:39
-- [Why AI Compute Comes in Rectangles — Erik Bernhardsson, Modal CEO](https://www.latent.space/p/modal-d) — *Latent Space* · 22 Oct 23:10
-- [OlmoEarth v1.3: State-of-the-art embeddings for the whole planet](https://huggingface.co/blog/allenai/olmoearth-v1-3) — *Hugging Face Blog* · 22 Oct 21:41
+- [Why AI Compute Comes in Rectangles — Erik Bernhardsson, Modal CEO](https://latent.space/p/modal-d/) — *Latent Space* · 22 Oct 23:10
 - [Quoting Armin Ronacher](https://simonwillison.net/2026/Oct/22/armin-ronacher/) — *Simon Willison* · 22 Oct 21:04
-- [You are the Team  — Anekha Sokhal, Moshi](https://www.latent.space/p/moshi) — *Latent Space* · 22 Oct 19:33
 - [Claude’s personal agent](https://www.bensbites.com/p/claudes-personal-agent) — *Ben's Bites* · 22 Oct 18:31
-- [Ensemble forecasting with IBM Granite time-series models](https://huggingface.co/blog/ibm-research/granite-timeseries-ensemble-r1) — *Hugging Face Blog* · 22 Oct 13:21
-- [(AINews) OpenAI’s Patch the Planet program is 1 of 2 parties to discover PHP2Shell vulnerabilities in core PHP affecting 70% of the web, using GPT-5.6 Sol; coordinated response over 2 months](https://www.latent.space/p/ainews-openais-patch-the-planet-program) — *Latent Space* · 22 Oct 13:12
-- [What FDE means at OpenAI](https://openai.com/index/forward-deployed-engineering-means) — *OpenAI News* · 22 Oct 11:30
-- [Uber brings ChatGPT Work to all employees with OpenAI](https://openai.com/index/uber-chatgpt-work-rollout) — *OpenAI News* · 22 Oct 05:30
 - [Claude Duet 🤖, Anthropic API changes 👨‍💻, Recursive’s local model 💻](https://tldr.tech/ai/2026-10-22) — *TLDR AI* · 22 Oct 05:30
 - [Today's PHP Security Release, and How We're Strengthening PHP Security](https://simonwillison.net/2026/Oct/21/php-security-release/) — *Simon Willison* · 22 Oct 00:11
-- [Panache — RTS Belle Époque pour mobile](https://simonwillison.net/2026/Oct/21/panache/) — *Simon Willison* · 21 Oct 21:55
-- [DeepSeek DeepInfer 🐋, PyTorch on TPUs ⚡, Ramp’s agent framework 👨‍💻](https://tldr.tech/ai/2026-10-21) — *TLDR AI* · 21 Oct 05:30
-- [eMudhra Intermediate CA Compromise](https://simonwillison.net/2026/Oct/20/emudhra-certificates/) — *Simon Willison* · 21 Oct 05:20
-- [Latest open artifacts (#25): DeepSeek V4.1 Flash 1017, American-made models, and new regulatory controls in the US & China](https://www.interconnects.ai/p/latest-open-artifacts-25-deepseek) — *Interconnects* · 20 Oct 22:34
-- [How I built my ‘everything’ app](https://www.bensbites.com/p/how-i-built-my-everything-app) — *Ben's Bites* · 20 Oct 18:32
-- [How To Use Decision Models for Evals](https://hamel.dev/blog/posts/decision-model-evals/) — *Hamel Husain* · 20 Oct 12:30
 
 ## System design
 
+- [11 Networking Concepts Explained in 11 Minutes](https://newsletter.systemdesign.one/p/computer-networking-fundamentals-for-software-engineers) — *System Design Newsletter (Neo Kim)* · 23 Oct 21:36
+- [Animations for System Builders: Metastability and Lost Writes](http://brooker.co.za/blog/2026/10/23/animations.html) — *Marc Brooker* · 23 Oct 05:30
 - [Why Distributed Systems Prefer Independence over Coordination](https://blog.bytebytego.com/p/why-distributed-systems-prefer-independence) — *ByteByteGo* · 22 Oct 21:00
 - [The 80/20 of AI Concepts](https://newsletter.systemdesign.one/p/advanced-ai-concepts-software-engineers) — *System Design Newsletter (Neo Kim)* · 22 Oct 19:33
 - [LLM Prompt Caching Versus Semantic Caching](https://blog.bytebytego.com/p/llm-prompt-caching-versus-semantic) — *ByteByteGo* · 21 Oct 21:01
-- [64 AI Engineering Concepts, Clearly Explained](https://newsletter.systemdesign.one/p/advanced-ai-concepts-explained) — *System Design Newsletter (Neo Kim)* · 20 Oct 18:57
 
 ## Architecture
 
-- [Study Finds AI-generated Code Fails to Boost Productivity Due to Downstream Bottlenecks](https://www.infoq.com/news/2026/10/jellyfish-ai-productivity/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 22 Oct 19:30
-- [Presentation: Actors for Agents: Patterns for Production AI](https://www.infoq.com/presentations/actors-for-production-ai-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 22 Oct 16:30
-- [Vercel Labs Open-Sources fx: A Zig Coding Agent Designed to Be Embedded](https://www.infoq.com/news/2026/10/vercel-zig-fx-agent/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 22 Oct 15:03
-- [Article: AI Changes the Data Interface, Not the Query Engine](https://www.infoq.com/articles/ai-changes-data-interface/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 22 Oct 14:30
+- [CSIRO Uses Serverless Architecture to Query 100x More Genomic Variants on AWS](https://www.infoq.com/news/2026/10/csiro-serverless-genomic-variant/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 23 Oct 20:00
+- [AWS Introduces Lambda Web Functions for Node.js Applications](https://www.infoq.com/news/2026/10/aws-lambda-web-functions/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 23 Oct 18:19
+- [Cloudflare Brings On-Demand CPU and Memory Profiling to Production Workers](https://www.infoq.com/news/2026/10/cloudflare-cpu-memory-profiling/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 23 Oct 17:30
+- [Article: Multi-Cloud FinOps: An Engineering Framework for Cross-Cloud Cost Optimization](https://www.infoq.com/articles/multi-cloud-finops-cost-optimization/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 23 Oct 16:30
 
 ## Python
 
-- [Python itertools By Example](https://realpython.com/python-itertools/) — *Real Python* · 22 Oct 19:30
-- [Pygame: A Primer on Game Programming in Python](https://realpython.com/pygame-a-primer/) — *Real Python* · 22 Oct 19:30
+- [Python's F-String for String Interpolation and Formatting](https://realpython.com/python-f-strings/) — *Real Python* · 23 Oct 19:30
+- [Get Started With Django: Build a Portfolio App](https://realpython.com/get-started-with-django-1/) — *Real Python* · 23 Oct 19:30
 
 ## Career & leadership
 
@@ -59,14 +57,14 @@ generated: true
 
 ## News
 
-- [Jared Kushner Hacked Phone Reveals Secret Negotiations, Millions in Transactions](https://www.vanityfair.com/story/jared-kushner-hacked-phone-secret-negotiations) — *Hacker News (best)* · 23 Oct 02:54
-- [OpenShell – A safe, private runtime for fleets of autonomous AI agents](https://github.com/NVIDIA/OpenShell) — *Hacker News (best)* · 22 Oct 23:14
-- [Google cleared 300 hectares of Finnish forest](https://www.techspot.com/news/114100-google-cleared-300-hectares-finnish-forest-data-center.html) — *Hacker News (best)* · 22 Oct 21:02
-- [Run full iOS 16.5 firmware on Android Devices](https://github.com/oosexgang/hackios-xnu-kernel) — *Hacker News (best)* · 22 Oct 20:56
-- [Quad9 (DNS Resolver) to Exit France](https://quad9.net/news/blog/au-revoir-france/) — *Hacker News (best)* · 22 Oct 20:02
-- [What’s getting pwned right now](https://pwn.watch/) — *Hacker News (best)* · 22 Oct 19:38
-- [eMudhra to exit global SSL/TLS certificate business](https://emudhra.com/en/press-release/emudhra-to-exit-global-ssl-tls-certificate-business) — *Hacker News (best)* · 22 Oct 19:03
-- [Woman charged with computer fraud due to scam CashApp account being in her name](https://www.404media.co/amanda-smith-opened-a-cashapp-in-her-name-she-faces-years-in-prison-cashapp-fraud/) — *Hacker News (best)* · 22 Oct 18:41
+- [Now Google says it might use your Gmail and Google Photos data to target ads](https://www.theverge.com/tech/1017600/google-personal-intelligence-privacy-policy-ads-update) — *Hacker News (best)* · 24 Oct 01:04
+- [Dessa: the most authentic full-duplex speech model ever built](https://block.xyz/dessa) — *Hacker News (best)* · 24 Oct 00:39
+- [Kimi K3.1 Pro and K3.1 Pro Highspeed](https://www.kimi.ai/blog/kimi-k3-1-pro) — *Hacker News (best)* · 23 Oct 22:29
+- [Today, we hacked what we'd set out to hack: the iPhone](https://blog.calif.io/p/iphone) — *Hacker News (best)* · 23 Oct 21:51
+- [Investor-owned utilities charge 23% more for electricity than public providers](https://www.kadoa.com/energy-prices/insights/investor-owned-utilities) — *Hacker News (best)* · 23 Oct 19:11
+- [Your Phone Is About to Stop Being Yours: 70 Days Until Lockdown](https://keepandroidopen.org/?) — *Hacker News (best)* · 23 Oct 18:49
+- [Apple Music 404 Not Found](https://music.apple.com/this-url-doesnt-exist) — *Hacker News (best)* · 23 Oct 17:58
+- [Swedish government offices to ban ChatGPT and Claude](https://www.sverigesradio.se/artikel/chat-gpt-och-claude-forbjuder-regeringskansliet) — *Hacker News (best)* · 23 Oct 17:09
 
 ??? warning "Feeds that failed this run"
 
