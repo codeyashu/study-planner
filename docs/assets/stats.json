@@ -1,13 +1,13 @@
 {
- "generated": "2026-10-26",
+ "generated": "2026-10-27",
  "start": "2026-09-26",
  "end": "2027-03-28",
  "current_week": 5,
  "total": {
   "planned": 715,
-  "due": 125,
+  "due": 128,
   "done": 0,
-  "behind": 125
+  "behind": 128
  },
  "streak": 0,
  "longest_streak": 0,
@@ -15,7 +15,7 @@
   "agentic-ai": {
    "label": "Agentic AI",
    "planned": 79,
-   "due": 13,
+   "due": 14,
    "done": 0,
    "minutes_done": 0
   },
@@ -29,7 +29,7 @@
   "dsa": {
    "label": "DSA",
    "planned": 133,
-   "due": 24,
+   "due": 25,
    "done": 0,
    "minutes_done": 0
   },
@@ -64,7 +64,7 @@
   "communication": {
    "label": "Communication",
    "planned": 188,
-   "due": 35,
+   "due": 36,
    "done": 0,
    "minutes_done": 0
   },
