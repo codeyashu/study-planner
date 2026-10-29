@@ -1,13 +1,13 @@
 {
- "generated": "2026-10-28",
+ "generated": "2026-10-29",
  "start": "2026-09-26",
  "end": "2027-03-28",
  "current_week": 5,
  "total": {
   "planned": 715,
-  "due": 132,
+  "due": 135,
   "done": 0,
-  "behind": 132
+  "behind": 135
  },
  "streak": 0,
  "longest_streak": 0,
@@ -15,7 +15,7 @@
   "agentic-ai": {
    "label": "Agentic AI",
    "planned": 79,
-   "due": 14,
+   "due": 15,
    "done": 0,
    "minutes_done": 0
   },
@@ -50,7 +50,7 @@
   "java-spring-ai": {
    "label": "Java/Spring AI",
    "planned": 52,
-   "due": 8,
+   "due": 9,
    "done": 0,
    "minutes_done": 0
   },
@@ -64,7 +64,7 @@
   "communication": {
    "label": "Communication",
    "planned": 188,
-   "due": 37,
+   "due": 38,
    "done": 0,
    "minutes_done": 0
   },
