@@ -5,61 +5,59 @@ generated: true
 
 # Today's feed
 
-!!! info "32 items from the last 72 h · built Mon 02 Nov 2026 12:07 IST"
+!!! info "33 items from the last 72 h · built Tue 03 Nov 2026 12:36 IST"
     Auto-aggregated from [data/feeds.yml](https://github.com/codeyashu/study-planner/blob/main/data/feeds.yml). Skim titles; open at most 3. The curated picks live in the [digest](../digest/index.md).
 
 ## AI engineering
 
+- [Harness Engineering Roadmap: Claude Code From First Principles](https://www.decodingai.com/p/claude-code-from-scratch-harness-engineering-roadmap) — *Decoding AI* · 03 Nov 11:31
+- [(AINews) LLMs can read & write neural network weights: "Weight Space Programming" cuts Autoresearch out of the RSI loop](https://latent.space/p/ainews-llms-can-read-write-neural-network-weights-weight-space-programming-cuts-autoresearch-out-of/) — *Latent Space* · 03 Nov 11:05
+- [I discovered a sound that leaks your exact location (and it's everywhere) - YouTube](https://simonwillison.net/2026/Nov/3/a-sound-that-leaks-your-exact-location/) — *Simon Willison* · 03 Nov 11:02
+- [October sponsors-only newsletter](https://simonwillison.net/2026/Nov/3/october-newsletter/) — *Simon Willison* · 03 Nov 10:58
+- [llm 0.37](https://simonwillison.net/2026/Nov/2/llm/) — *Simon Willison* · 03 Nov 05:19
+- [Building AI for Lawyers - Jacob Lauritzen, CTO of Legora](https://latent.space/p/building-ai-for-lawyers-jacob-lauritzen-cto-of-legora/) — *Latent Space* · 03 Nov 04:31
+- [Building Legal Agents When You Can't See the Data - Jacob Lauritzen, CTO of Legora](https://latent.space/p/building_legal_agents_when_you_can_t_see_the_data_-_jacob_lauritzen_cto_of_legora/) — *Latent Space* · 03 Nov 04:24
+- [Rewarding defenders with bigger bug bounties](https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties) — *OpenAI News* · 02 Nov 23:30
+- [Preparing our next security sprint to harden OpenAI](https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai) — *OpenAI News* · 02 Nov 23:30
+- [Scaling Git at OpenAI](https://openai.com/index/scaling-git-at-openai) — *OpenAI News* · 02 Nov 21:00
+- [The U.S. Census Bureau and “Super Intelligence”](https://simonwillison.net/2026/Nov/2/census-bureau-super-intelligence/) — *Simon Willison* · 02 Nov 19:01
+- [DeepSeek super agent 🤖, GPT-6 Rosalind 🧬, Google orbital compute 🛰️](https://tldr.tech/ai/2026-11-02) — *TLDR AI* · 02 Nov 05:30
 - [If in doubt, delete the uv.lock file](https://simonwillison.net/2026/Nov/1/delete-uv-lock-first/) — *Simon Willison* · 02 Nov 04:54
 - [Quoting Kyle Kingsbury](https://simonwillison.net/2026/Nov/1/kyle-kingsbury/) — *Simon Willison* · 01 Nov 22:19
-- [How We Took Over ChatGPT Accounts](https://simonwillison.net/2026/Oct/31/how-we-took-over-chatgpt-accounts/) — *Simon Willison* · 01 Nov 04:45
-- [datasette-llm 0.1a9](https://simonwillison.net/2026/Oct/31/datasette-llm/) — *Simon Willison* · 01 Nov 03:40
-- [Agents Prompt People: Using Agents for Long-Horizon Financial Work](https://latent.space/p/arca/) — *Latent Space* · 31 Oct 21:35
 - [Building a Support Chatbot on Amazon Bedrock](https://www.decodingai.com/p/agentic-rag-vs-single-search-amazon-bedrock) — *Decoding AI* · 31 Oct 17:33
-- [(AINews) Google admits AI Mode hurts Search revenue; -15% $500B drop worst since 2004 IPO. AI Bear Market coming?](https://latent.space/p/ainews-google-admits-ai-mode-hurts-search-revenue-15-500b-drop-worst-since-2004-ipo-ai-bear-market-c/) — *Latent Space* · 31 Oct 10:30
-- [dbreunig/nesformer](https://simonwillison.net/2026/Oct/30/nesformer/) — *Simon Willison* · 31 Oct 03:29
-- [nemotron-halloween](https://huggingface.co/blog/nvidia/nemotron-halloween) — *Hugging Face Blog* · 30 Oct 23:27
-- [Was I wrong about open models & cyber risks?](https://www.interconnects.ai/p/was-i-wrong-about-open-models-and) — *Interconnects* · 30 Oct 23:06
-- [Making it easier for websites to express AI training preferences](https://openai.com/index/helping-websites-express-ai-training-preferences) — *OpenAI News* · 30 Oct 15:00
-- [Community safety report and new protections for teens](https://openai.com/index/community-safety-report-and-new-protections-for-teens) — *OpenAI News* · 30 Oct 14:30
-- [(AINews) Building AIE CODE: The top Coding Agent Conference](https://latent.space/p/ainews-building-aie-code-the-top-coding-agent-conference/) — *Latent Space* · 30 Oct 13:54
 
 ## System design
 
+- [How Nvidia's New Nemotron Model Works](https://blog.bytebytego.com/p/how-nvidias-new-nemotron-model-works) — *ByteByteGo* · 02 Nov 22:01
 - [How to Cut Your Claude Code Token Usage](https://newsletter.systemdesign.one/p/claude-code-token-usage) — *System Design Newsletter (Neo Kim)* · 31 Oct 21:30
 - [EP231: AI Terms You Need to Know](https://blog.bytebytego.com/p/ep231-ai-terms-you-need-to-know) — *ByteByteGo* · 31 Oct 21:01
 
 ## Architecture
 
-- [AWS Capacity Largely Sold Out Through 2027, With On Demand Headroom Reserved](https://www.infoq.com/news/2026/11/aws-capacity-sold-out/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 01 Nov 13:33
-- [File Mover Express: AWS Releases Open-Source Tool for S3 File Transfers](https://www.infoq.com/news/2026/11/aws-s3-file-transfer/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 01 Nov 12:02
-- [Cloudflare’s Post-Quantum GeoKey Manager Enters Closed Beta Without Attribute-Based Encryption](https://www.infoq.com/news/2026/10/cf-pq-geokey-manager/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 01 Nov 01:26
-- [OpenBSD 8.0 Brings Expanded Hardware Support, Security Enhancements, and Virtualization Improvements](https://www.infoq.com/news/2026/10/openbsd-8-released/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 31 Oct 22:30
+- [Google and Meta Open-source TorchTPU to Bring Native PyTorch Support to Google TPUs](https://www.infoq.com/news/2026/11/torchtpu-native-pythorch-tpu/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 02 Nov 22:30
+- [Java News Roundup: TornadoVM 8.0, JNoSQL, Endive, JReleaser, JBang, LangChain4j, Quarkus Almanac](https://www.infoq.com/news/2026/11/java-news-roundup-oct26-2026/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 02 Nov 22:30
+- [Uber Builds MCP Gateway to Govern Access to 800+ Servers and 5,000+ AI Agent Tools](https://www.infoq.com/news/2026/11/uber-mcp-gateway-ai-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 02 Nov 19:23
+- [Article: Systemic Approach to Memory, Knowledge, and Context in Agentic AI Architectures](https://www.infoq.com/articles/agentic-ai-context-memory-knowledge/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 02 Nov 16:30
 
 ## Python
 
-- [Operator and Function Overloading in Custom Python Classes](https://realpython.com/operator-function-overloading/) — *Real Python* · 01 Nov 19:30
-- [Documenting Python Code: A Complete Guide](https://realpython.com/documenting-python-code/) — *Real Python* · 01 Nov 19:30
-
-## Java / Spring
-
-- [Java Weekly, Issue 669](https://www.baeldung.com/java-weekly-669) — *Baeldung Java Weekly* · 30 Oct 21:46
+- [Python 3.15 Ships and Other Python News for November 2026](https://realpython.com/python-news-november-2026/) — *Real Python* · 02 Nov 19:30
+- [Quiz: Advanced Git Tips for Python Developers](https://realpython.com/quizzes/advanced-git-for-pythonistas/) — *Real Python* · 02 Nov 17:30
 
 ## Career & leadership
 
-- [The Pulse: Anthropic kills the coding interview](https://newsletter.pragmaticengineer.com/p/the-pulse-anthropic-kills-the-coding) — *The Pragmatic Engineer* · 30 Oct 22:07
-- [Building Your Software Factory 🏭 — with Benedikt Stemmildt](https://refactoring.fm/p/building-your-software-factory-with) — *Refactoring (Luca Rossi)* · 30 Oct 13:32
+- [Process migrations, shared skills, and weekly readings! 💡](https://refactoring.fm/p/process-migrations-shared-skills) — *Refactoring (Luca Rossi)* · 02 Nov 14:40
 
 ## News
 
-- [U.S. workers took home their smallest share of capital since at least 1947](https://fortune.com/article/why-did-us-workers-just-take-home-smallest-share-of-capital-since-1947-lowest-ever-recorded/) — *Hacker News (best)* · 02 Nov 04:50
-- [AI delivers 'zero financial payoff' to most companies, Apollo economist says](https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/) — *Hacker News (best)* · 02 Nov 03:40
-- [Ask HN: Which TV do you recommend for privacy?](https://news.ycombinator.com/item?id=50328896) — *Hacker News (best)* · 02 Nov 01:05
-- [Mathematics has changed. Let's act like it](https://terrytao.wordpress.com/2026/11/01/mathematics-has-changed-lets-act-like-it/) — *Hacker News (best)* · 01 Nov 23:58
-- [Patrick Stewart taught us what good men do with power](https://www.vox.com/politics/508526/patrick-stewart-jean-luc-picard-star-trek-liberalism) — *Hacker News (best)* · 01 Nov 22:58
-- [Show HN: HackerBooks – HackerTube, but for books mentioned on HN](https://hackerbooks.org) — *Hacker News (best)* · 01 Nov 21:28
-- [Police chief unplugs cameras after Flock ignores contract cancellation](https://www.thedrive.com/news/my-city-canceled-flocks-contract-flock-ignored-it-so-the-police-chief-unplugged-the-cameras) — *Hacker News (best)* · 01 Nov 20:06
-- [Lenovo's 'encrypted' fingerprint USB is just an unencrypted SD card in a case](https://www.reddit.com/r/technology/comments/1xl2pr3/lenovos_encrypted_fingerprint_usb_drive_is_just/) — *Hacker News (best)* · 01 Nov 20:04
+- [The SEC Should Block Anthropic's IPO to Protect the Public](https://www.techpolicy.press/the-sec-should-block-anthropics-ipo-to-protect-the-public/) — *Hacker News (best)* · 03 Nov 04:00
+- [BYD sold more EVs last month than the US did all quarter](https://electrek.co/2026/11/02/byd-sold-more-evs-last-month-than-the-us-did-all-quarter/) — *Hacker News (best)* · 03 Nov 03:08
+- [Ubuntu still has not released patch for Linux 0day RCE in almost 3 weeks](https://freenode.net/article/ubuntu-lts-kernels-still-unfixed-for-critical-cve-2026-98432) — *Hacker News (best)* · 03 Nov 00:09
+- [Astra can read and write weights to improve Qwen](https://rikiyat.github.io/blog/weight-space-programming/) — *Hacker News (best)* · 02 Nov 23:51
+- [Show HN: Subvocal – Talk to your computer without making noise](https://news.ycombinator.com/item?id=50340088) — *Hacker News (best)* · 02 Nov 22:46
+- [Anthropic's internal AI use, at retail prices, now exceeds its employee pay](https://www.businessinsider.com/anthropic-claude-internal-ai-use-exceeds-employee-pay-tokens-2026-11) — *Hacker News (best)* · 02 Nov 22:10
+- [US boy names that became girl names and vice versa](https://namedaisy.com/blog/boy-names-that-became-girl-names) — *Hacker News (best)* · 02 Nov 22:04
+- [Show HN: Warsaw in voxels – An interactive 3D map of the city centre](https://p.migdal.pl/warsaw-vibe-voxel/) — *Hacker News (best)* · 02 Nov 21:55
 
 ??? warning "Feeds that failed this run"
 
