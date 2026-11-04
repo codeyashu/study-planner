@@ -5,59 +5,63 @@ generated: true
 
 # Today's feed
 
-!!! info "33 items from the last 72 h · built Tue 03 Nov 2026 12:36 IST"
+!!! info "37 items from the last 72 h · built Wed 04 Nov 2026 12:21 IST"
     Auto-aggregated from [data/feeds.yml](https://github.com/codeyashu/study-planner/blob/main/data/feeds.yml). Skim titles; open at most 3. The curated picks live in the [digest](../digest/index.md).
 
 ## AI engineering
 
+- [StateBench: Testing how language models track state changes over long documents](https://huggingface.co/blog/allenai/statebench) — *Hugging Face Blog* · 03 Nov 22:45
+- [Palette: teaching a small model to build decks in your design language](https://huggingface.co/blog/ibm-research/palette-deck-building) — *Hugging Face Blog* · 03 Nov 22:05
+- [Qwen 3.8 27B on my laptop can interpret model weights, too](https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/) — *Simon Willison* · 03 Nov 21:59
+- [Finding my thing](https://www.bensbites.com/p/if-you-feel-behind-right-now-dont) — *Ben's Bites* · 03 Nov 19:33
+- [Accelerating engineering for the physical world](https://openai.com/index/accelerating-engineering-for-the-physical-world) — *OpenAI News* · 03 Nov 17:30
+- [How Cisco defends at machine speed with OpenAI](https://openai.com/index/cisco-cyber) — *OpenAI News* · 03 Nov 13:30
+- [Heimstaden is changing residential real estate management with AI](https://openai.com/index/heimstaden) — *OpenAI News* · 03 Nov 13:30
 - [Harness Engineering Roadmap: Claude Code From First Principles](https://www.decodingai.com/p/claude-code-from-scratch-harness-engineering-roadmap) — *Decoding AI* · 03 Nov 11:31
 - [(AINews) LLMs can read & write neural network weights: "Weight Space Programming" cuts Autoresearch out of the RSI loop](https://latent.space/p/ainews-llms-can-read-write-neural-network-weights-weight-space-programming-cuts-autoresearch-out-of/) — *Latent Space* · 03 Nov 11:05
 - [I discovered a sound that leaks your exact location (and it's everywhere) - YouTube](https://simonwillison.net/2026/Nov/3/a-sound-that-leaks-your-exact-location/) — *Simon Willison* · 03 Nov 11:02
 - [October sponsors-only newsletter](https://simonwillison.net/2026/Nov/3/october-newsletter/) — *Simon Willison* · 03 Nov 10:58
+- [CWE-bench v2: More coverage, quality, and transparency](https://huggingface.co/blog/cwe-bench) — *Hugging Face Blog* · 03 Nov 05:30
+- [Claude Message Threads 🧵, Astra 6.2 spotted 👀, Anthropic nears RSI 🔄](https://tldr.tech/ai/2026-11-03) — *TLDR AI* · 03 Nov 05:30
 - [llm 0.37](https://simonwillison.net/2026/Nov/2/llm/) — *Simon Willison* · 03 Nov 05:19
 - [Building AI for Lawyers - Jacob Lauritzen, CTO of Legora](https://latent.space/p/building-ai-for-lawyers-jacob-lauritzen-cto-of-legora/) — *Latent Space* · 03 Nov 04:31
 - [Building Legal Agents When You Can't See the Data - Jacob Lauritzen, CTO of Legora](https://latent.space/p/building_legal_agents_when_you_can_t_see_the_data_-_jacob_lauritzen_cto_of_legora/) — *Latent Space* · 03 Nov 04:24
-- [Rewarding defenders with bigger bug bounties](https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties) — *OpenAI News* · 02 Nov 23:30
-- [Preparing our next security sprint to harden OpenAI](https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai) — *OpenAI News* · 02 Nov 23:30
-- [Scaling Git at OpenAI](https://openai.com/index/scaling-git-at-openai) — *OpenAI News* · 02 Nov 21:00
 - [The U.S. Census Bureau and “Super Intelligence”](https://simonwillison.net/2026/Nov/2/census-bureau-super-intelligence/) — *Simon Willison* · 02 Nov 19:01
 - [DeepSeek super agent 🤖, GPT-6 Rosalind 🧬, Google orbital compute 🛰️](https://tldr.tech/ai/2026-11-02) — *TLDR AI* · 02 Nov 05:30
 - [If in doubt, delete the uv.lock file](https://simonwillison.net/2026/Nov/1/delete-uv-lock-first/) — *Simon Willison* · 02 Nov 04:54
-- [Quoting Kyle Kingsbury](https://simonwillison.net/2026/Nov/1/kyle-kingsbury/) — *Simon Willison* · 01 Nov 22:19
-- [Building a Support Chatbot on Amazon Bedrock](https://www.decodingai.com/p/agentic-rag-vs-single-search-amazon-bedrock) — *Decoding AI* · 31 Oct 17:33
 
 ## System design
 
+- [How Netflix Uses AI Agents for Performance Engineering](https://blog.bytebytego.com/p/how-netflix-uses-ai-agents-for-performance) — *ByteByteGo* · 03 Nov 22:01
+- [How LLM Inference Works](https://newsletter.systemdesign.one/p/how-llm-inference-works) — *System Design Newsletter (Neo Kim)* · 03 Nov 17:11
 - [How Nvidia's New Nemotron Model Works](https://blog.bytebytego.com/p/how-nvidias-new-nemotron-model-works) — *ByteByteGo* · 02 Nov 22:01
-- [How to Cut Your Claude Code Token Usage](https://newsletter.systemdesign.one/p/claude-code-token-usage) — *System Design Newsletter (Neo Kim)* · 31 Oct 21:30
-- [EP231: AI Terms You Need to Know](https://blog.bytebytego.com/p/ep231-ai-terms-you-need-to-know) — *ByteByteGo* · 31 Oct 21:01
 
 ## Architecture
 
-- [Google and Meta Open-source TorchTPU to Bring Native PyTorch Support to Google TPUs](https://www.infoq.com/news/2026/11/torchtpu-native-pythorch-tpu/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 02 Nov 22:30
-- [Java News Roundup: TornadoVM 8.0, JNoSQL, Endive, JReleaser, JBang, LangChain4j, Quarkus Almanac](https://www.infoq.com/news/2026/11/java-news-roundup-oct26-2026/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 02 Nov 22:30
-- [Uber Builds MCP Gateway to Govern Access to 800+ Servers and 5,000+ AI Agent Tools](https://www.infoq.com/news/2026/11/uber-mcp-gateway-ai-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 02 Nov 19:23
-- [Article: Systemic Approach to Memory, Knowledge, and Context in Agentic AI Architectures](https://www.infoq.com/articles/agentic-ai-context-memory-knowledge/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 02 Nov 16:30
+- [Google Launches LiteRT Tensor API for Building, Customizing, and Optimizing ML Models for On-Device](https://www.infoq.com/news/2026/11/litert-tensor-api/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 04 Nov 00:30
+- [Vitest 5: Prioritises Performance with a Shared Vite Server, Trace View, and Stricter Test Defaults](https://www.infoq.com/news/2026/11/vite-5-release/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 03 Nov 22:17
+- [LinkedIn Uses OpenTelemetry to Trace the Member Journey from Tap to Backend](https://www.infoq.com/news/2026/11/linkedin-opentelemetry-journey/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 03 Nov 17:30
+- [Presentation: Beyond the Harness: Canvas for AI Agents](https://www.infoq.com/presentations/canvas-ai-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 03 Nov 16:30
 
 ## Python
 
-- [Python 3.15 Ships and Other Python News for November 2026](https://realpython.com/python-news-november-2026/) — *Real Python* · 02 Nov 19:30
-- [Quiz: Advanced Git Tips for Python Developers](https://realpython.com/quizzes/advanced-git-for-pythonistas/) — *Real Python* · 02 Nov 17:30
+- [Converting Documents to Markdown With MarkItDown](https://realpython.com/courses/converting-documents-markdown-markitdown/) — *Real Python* · 03 Nov 19:30
+- [Quiz: How to Use Claude Code Skills for Better Python Docstrings](https://realpython.com/quizzes/claude-code-skills/) — *Real Python* · 03 Nov 17:30
 
 ## Career & leadership
 
+- [How software engineering is changing: a tale of two eras](https://newsletter.pragmaticengineer.com/p/how-software-engineering-is-changing) — *The Pragmatic Engineer* · 03 Nov 22:28
 - [Process migrations, shared skills, and weekly readings! 💡](https://refactoring.fm/p/process-migrations-shared-skills) — *Refactoring (Luca Rossi)* · 02 Nov 14:40
 
 ## News
 
-- [The SEC Should Block Anthropic's IPO to Protect the Public](https://www.techpolicy.press/the-sec-should-block-anthropics-ipo-to-protect-the-public/) — *Hacker News (best)* · 03 Nov 04:00
-- [BYD sold more EVs last month than the US did all quarter](https://electrek.co/2026/11/02/byd-sold-more-evs-last-month-than-the-us-did-all-quarter/) — *Hacker News (best)* · 03 Nov 03:08
-- [Ubuntu still has not released patch for Linux 0day RCE in almost 3 weeks](https://freenode.net/article/ubuntu-lts-kernels-still-unfixed-for-critical-cve-2026-98432) — *Hacker News (best)* · 03 Nov 00:09
-- [Astra can read and write weights to improve Qwen](https://rikiyat.github.io/blog/weight-space-programming/) — *Hacker News (best)* · 02 Nov 23:51
-- [Show HN: Subvocal – Talk to your computer without making noise](https://news.ycombinator.com/item?id=50340088) — *Hacker News (best)* · 02 Nov 22:46
-- [Anthropic's internal AI use, at retail prices, now exceeds its employee pay](https://www.businessinsider.com/anthropic-claude-internal-ai-use-exceeds-employee-pay-tokens-2026-11) — *Hacker News (best)* · 02 Nov 22:10
-- [US boy names that became girl names and vice versa](https://namedaisy.com/blog/boy-names-that-became-girl-names) — *Hacker News (best)* · 02 Nov 22:04
-- [Show HN: Warsaw in voxels – An interactive 3D map of the city centre](https://p.migdal.pl/warsaw-vibe-voxel/) — *Hacker News (best)* · 02 Nov 21:55
+- [The Little Book of Generative AI Foundations: An Intuitive Mathematical Primer](https://arxiv.org/abs/2605.29713) — *Hacker News (best)* · 04 Nov 03:10
+- [Safari introduces Adaptive Dark Mode in 27.3](https://webkit.org/blog/18541/introducing-adaptive-dark-mode/) — *Hacker News (best)* · 04 Nov 03:09
+- [US tech giants' hidden AI debt swells 90% to $3.2T in 6 months](https://asia.nikkei.com/business/technology/artificial-intelligence/us-tech-giants-hidden-ai-debt-swells-90-to-3.2tn-in-6-months) — *Hacker News (best)* · 04 Nov 02:56
+- [Postman silently auto-installs AI plugins and attempts to share all API data](https://github.com/postmanlabs/postman-app-support/issues/14370) — *Hacker News (best)* · 03 Nov 22:52
+- [Stringman, an $800 open-source room scale gripper robot](https://neufangled.com/) — *Hacker News (best)* · 03 Nov 22:17
+- [Kalshi and its co-founders face felony charges for violating Utah gambling laws](https://arstechnica.com/tech-policy/2026/10/trump-admin-sues-utah-to-save-kalshi-from-the-states-total-ban-on-gambling/) — *Hacker News (best)* · 03 Nov 20:59
+- [Google will turn off search for schools that reject AI](https://www.nytimes.com/2026/11/03/us/google-search-schools-restrict-ai.html) — *Hacker News (best)* · 03 Nov 20:55
 
 ??? warning "Feeds that failed this run"
 
