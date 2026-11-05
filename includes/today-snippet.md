@@ -1,8 +1,7 @@
-**Day 40 · Week 6 — Hybrid search + reranking (light week)** · 80 min
+**Day 41 · Week 6 — Hybrid search + reranking (light week)** · 80 min
 
-- [ ] **DSA** · 15 min · Linked List Cycle (Floyd) → [Linked list](tracks/dsa/linked-list.md) · [resource](https://neetcode.io) <small>`w06-dsa-3`</small>
-- [ ] **Architecture** · 30 min · DDD strategic: subdomains (core/supporting/generic), bounded contexts, context map for the ops domain (Learning DDD, Khononov) → [DDD strategic: subdomains, bounded contexts, context maps](tracks/architecture/ddd-strategic.md) <small>`w06-arch-1`</small>
-- [ ] **Python** · 15 min · Rep: Unit of Work context manager wrapping a Postgres transaction → [Architecture patterns in Python (repository, UoW, message bus)](tracks/python/architecture-patterns-python.md) · [resource](https://www.cosmicpython.com/) <small>`w06-py-2`</small>
-- [ ] **Communication** · 20 min · Speaking drill: Shadowing practice 1 → [Week 06 drills · day 3](tracks/communication/drills/week-06.md#day-3) <small>`w06-comm-3`</small>
+- [ ] **Agentic AI** · 40 min · Rerankers: bi-encoder vs cross-encoder vs LLM reranking — read Pinecone series and pick one for the capstone → [Hybrid search & reranking](tracks/agentic-ai/hybrid-search-reranking.md) · [resource](https://www.pinecone.io/learn/series/rag/rerankers/) <small>`w06-ai-2`</small>
+- [ ] **Java/Spring AI** · 20 min · Spring AI RetrievalAugmentationAdvisor / QuestionAnswerAdvisor with filter expressions → [RAG with Spring AI & pgvector](tracks/java-spring-ai/spring-ai-rag.md) <small>`w06-java-1`</small>
+- [ ] **Communication** · 20 min · Idioms & phrasal verbs: Phrasal verbs in meetings: bring up, follow up, wrap up → [Week 06 drills · day 4](tracks/communication/drills/week-06.md#day-4) <small>`w06-comm-4`</small>
 
 *8 unfinished task(s) from the last 7 days — see [Today](today.md).*
