@@ -1,8 +1,8 @@
-**Day 42 · Week 6 — Hybrid search + reranking (light week)** · 75 min
+**Day 43 · Week 6 — Hybrid search + reranking (light week)** · 135 min
 
-- [ ] **System Design** · 30 min · Replication: single-leader, multi-leader, leaderless; replication lag anomalies (read-your-writes, monotonic reads) → [Replication](tracks/system-design/replication.md) · [resource](https://martin.kleppmann.com/2026/03/24/designing-data-intensive-applications-2e.html) <small>`w06-sd-2`</small>
-- [ ] **DSA** · 15 min · Reorder List → [Linked list](tracks/dsa/linked-list.md) · [resource](https://neetcode.io) <small>`w06-dsa-4`</small>
-- [ ] **Python** · 10 min · Rep: src layout + pyproject entry points; build a wheel with uv build → [Packaging, project layout & monorepos](tracks/python/packaging-project-structure.md) · [resource](https://docs.astral.sh/uv/) <small>`w06-py-3`</small>
-- [ ] **Communication** · 20 min · Writing: Tightening paragraphs → [Week 06 drills · day 5](tracks/communication/drills/week-06.md#day-5) <small>`w06-comm-5`</small>
+- [ ] **Agentic AI** · 75 min · Capstone build: add Postgres full-text (or pg_search) BM25 leg + RRF fusion + cross-encoder rerank; compare hit rate@5 vs dense-only on 30 queries → [Hybrid search & reranking](tracks/agentic-ai/hybrid-search-reranking.md) <small>`w06-ai-3`</small>
+- [ ] **DSA** · 20 min · Remove Nth Node From End of List → [Linked list](tracks/dsa/linked-list.md) · [resource](https://neetcode.io) <small>`w06-dsa-5`</small>
+- [ ] **Java/Spring AI** · 20 min · Spring Boot 4 + Testcontainers dev services for pgvector in local runs → [Spring Boot 4 & Spring Framework 7](tracks/java-spring-ai/spring-boot-4.md) <small>`w06-java-2`</small>
+- [ ] **Communication** · 20 min · Record & shadow: Shadowing practice 1 → [Week 06 drills · day 6](tracks/communication/drills/week-06.md#day-6) <small>`w06-comm-6`</small>
 
 *8 unfinished task(s) from the last 7 days — see [Today](today.md).*
