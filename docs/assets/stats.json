@@ -1,13 +1,13 @@
 {
- "generated": "2026-11-07",
+ "generated": "2026-11-08",
  "start": "2026-09-26",
  "end": "2027-03-28",
  "current_week": 6,
  "total": {
   "planned": 715,
-  "due": 170,
+  "due": 175,
   "done": 0,
-  "behind": 170
+  "behind": 175
  },
  "streak": 0,
  "longest_streak": 0,
@@ -22,7 +22,7 @@
   "system-design": {
    "label": "System Design",
    "planned": 79,
-   "due": 18,
+   "due": 19,
    "done": 0,
    "minutes_done": 0
   },
@@ -36,7 +36,7 @@
   "architecture": {
    "label": "Architecture",
    "planned": 52,
-   "due": 11,
+   "due": 12,
    "done": 0,
    "minutes_done": 0
   },
@@ -57,21 +57,21 @@
   "staff-skills": {
    "label": "Staff+",
    "planned": 26,
-   "due": 5,
+   "due": 6,
    "done": 0,
    "minutes_done": 0
   },
   "communication": {
    "label": "Communication",
    "planned": 188,
-   "due": 47,
+   "due": 48,
    "done": 0,
    "minutes_done": 0
   },
   "review": {
    "label": "Review",
    "planned": 27,
-   "due": 6,
+   "due": 7,
    "done": 0,
    "minutes_done": 0
   }
