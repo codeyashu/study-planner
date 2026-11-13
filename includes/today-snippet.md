@@ -1,7 +1,8 @@
-**Day 48 · Week 7 — Evals I — error analysis, LLM-as-judge** · 120 min
+**Day 49 · Week 7 — Evals I — error analysis, LLM-as-judge** · 120 min
 
-- [ ] **Agentic AI** · 60 min · LLM-as-judge: binary pass/fail judges, measure judge TPR/TNR against 40 hand labels; iterate judge prompt → [Evals I: error analysis, LLM-as-judge, eval-driven development](tracks/agentic-ai/evals-error-analysis.md) · [resource](https://hamel.dev/blog/posts/evals-faq/) <small>`w07-ai-2`</small>
-- [ ] **Java/Spring AI** · 30 min · Spring AI evaluation: RelevancyEvaluator / FactCheckingEvaluator on the Java RAG path → [RAG with Spring AI & pgvector](tracks/java-spring-ai/spring-ai-rag.md) <small>`w07-java-1`</small>
-- [ ] **Communication** · 30 min · Idioms & phrasal verbs: Teamwork: pull your weight, have each other's back → [Week 07 drills · day 4](tracks/communication/drills/week-07.md#day-4) <small>`w07-comm-4`</small>
+- [ ] **System Design** · 45 min · Consistency models map: linearisable, sequential, causal, eventual; CAP vs PACELC — use Jepsen consistency pages → [Consistency models, CAP & PACELC](tracks/system-design/consistency-models.md) · [resource](https://jepsen.io/analyses) <small>`w07-sd-2`</small>
+- [ ] **DSA** · 25 min · Merge K Sorted Lists → [Linked list](tracks/dsa/linked-list.md) · [resource](https://neetcode.io) <small>`w07-dsa-4`</small>
+- [ ] **Python** · 20 min · Rep: testcontainers-python spinning pgvector for integration tests → [Testing: pytest, fixtures, Hypothesis, testcontainers](tracks/python/testing-pytest.md) <small>`w07-py-3`</small>
+- [ ] **Communication** · 30 min · Writing: Technical explanations with analogies → [Week 07 drills · day 5](tracks/communication/drills/week-07.md#day-5) <small>`w07-comm-5`</small>
 
 *8 unfinished task(s) from the last 7 days — see [Today](today.md).*
