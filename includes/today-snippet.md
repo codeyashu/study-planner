@@ -1,8 +1,8 @@
-**Day 49 · Week 7 — Evals I — error analysis, LLM-as-judge** · 120 min
+**Day 50 · Week 7 — Evals I — error analysis, LLM-as-judge** · 210 min
 
-- [ ] **System Design** · 45 min · Consistency models map: linearisable, sequential, causal, eventual; CAP vs PACELC — use Jepsen consistency pages → [Consistency models, CAP & PACELC](tracks/system-design/consistency-models.md) · [resource](https://jepsen.io/analyses) <small>`w07-sd-2`</small>
-- [ ] **DSA** · 25 min · Merge K Sorted Lists → [Linked list](tracks/dsa/linked-list.md) · [resource](https://neetcode.io) <small>`w07-dsa-4`</small>
-- [ ] **Python** · 20 min · Rep: testcontainers-python spinning pgvector for integration tests → [Testing: pytest, fixtures, Hypothesis, testcontainers](tracks/python/testing-pytest.md) <small>`w07-py-3`</small>
-- [ ] **Communication** · 30 min · Writing: Technical explanations with analogies → [Week 07 drills · day 5](tracks/communication/drills/week-07.md#day-5) <small>`w07-comm-5`</small>
+- [ ] **Agentic AI** · 120 min · Capstone build: eval harness (pytest-style) with golden set, retrieval metrics (recall@k, MRR) + generation judge; run on RAG v0 vs hybrid → [Evals I: error analysis, LLM-as-judge, eval-driven development](tracks/agentic-ai/evals-error-analysis.md) · [resource](https://applied-llms.org/) <small>`w07-ai-3`</small>
+- [ ] **DSA** · 30 min · Reverse Nodes in k-Group → [Linked list](tracks/dsa/linked-list.md) · [resource](https://neetcode.io) <small>`w07-dsa-5`</small>
+- [ ] **Java/Spring AI** · 30 min · Testcontainers (pgvector) integration test for the Spring AI RAG endpoint with a fixed 10-query assertion set → [RAG with Spring AI & pgvector](tracks/java-spring-ai/spring-ai-rag.md) <small>`w07-java-2`</small>
+- [ ] **Communication** · 30 min · Record & shadow: Explaining technical ideas to non-technical people → [Week 07 drills · day 6](tracks/communication/drills/week-07.md#day-6) <small>`w07-comm-6`</small>
 
 *8 unfinished task(s) from the last 7 days — see [Today](today.md).*
