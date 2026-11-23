@@ -5,67 +5,49 @@ generated: true
 
 # Today's feed
 
-!!! info "37 items from the last 72 h · built Sun 22 Nov 2026 12:46 IST"
+!!! info "26 items from the last 72 h · built Mon 23 Nov 2026 13:29 IST"
     Auto-aggregated from [data/feeds.yml](https://github.com/codeyashu/study-planner/blob/main/data/feeds.yml). Skim titles; open at most 3. The curated picks live in the [digest](../digest/index.md).
 
 ## AI engineering
 
+- [Select Styling Specimens](https://simonwillison.net/2026/Nov/22/select-styling/) — *Simon Willison* · 23 Nov 01:15
+- [How Public Evals Work, Where They Break, and What Should Change](https://eugeneyan.com/writing/public-evals) — *Eugene Yan* · 22 Nov 05:30
+- [Perplexity and Intelligence](https://openai.com/index/perplexity-and-intelligence) — *OpenAI News* · 22 Nov 05:30
 - [Muru](https://simonwillison.net/2026/Nov/21/muru/) — *Simon Willison* · 22 Nov 05:26
 - [(AINews) Riemann Hypothesis proved...twice independently](https://latent.space/p/ainews-riemann-hypothesis-proved-twice-independently/) — *Latent Space* · 21 Nov 10:32
 - [The War Against Slop and an Emerging Weapon to Fight it: Formal Verification](https://latent.space/p/formal-verification/) — *Latent Space* · 21 Nov 02:48
 - [Quoting Ravi Vakil](https://simonwillison.net/2026/Nov/20/ravi-vakil/) — *Simon Willison* · 21 Nov 00:51
 - [Quoting Levent Alpöge](https://simonwillison.net/2026/Nov/20/levent-alpoge/) — *Simon Willison* · 20 Nov 22:00
 - [Combatting adversarial distillation](https://openai.com/index/combatting-adversarial-distillation) — *OpenAI News* · 20 Nov 15:30
-- [(AINews) Anthropic successfully completes largest IPO in history, valued at $1.5T](https://latent.space/p/ainews-anthropic-successfully-completes-largest-ipo-in-history-valued-at-1-5t/) — *Latent Space* · 20 Nov 12:42
-- [llm-gemini 0.38.1](https://simonwillison.net/2026/Nov/20/llm-gemini/) — *Simon Willison* · 20 Nov 08:31
-- [Token fraud is here and it’s BAD (YouTube)](https://simonwillison.net/2026/Nov/20/token-fraud-is-here-and-its-bad/) — *Simon Willison* · 20 Nov 08:19
-- [Welcome Inkling 2 Mini, Cutting-edge Performance for your Local Setup](https://huggingface.co/blog/inkling2mini) — *Hugging Face Blog* · 20 Nov 05:30
-- [Introducing harness adapters: adapt your favorite model to your harness to improve performance and cost](https://huggingface.co/blog/harness-adapters-at-scale) — *Hugging Face Blog* · 20 Nov 05:30
-- [Hebbia sees improvements in financial research with GPT-6 Astra](https://openai.com/business/customer-stories/hebbia) — *OpenAI News* · 20 Nov 05:30
-- [Can AI help scientists identify promising drug candidates?](https://openai.com/index/introducing-medchembench) — *OpenAI News* · 20 Nov 05:30
-- [Gemini tool retrieval 🔧, Stripe evals methods 👨‍💻, agent swarms 🐝](https://tldr.tech/ai/2026-11-20) — *TLDR AI* · 20 Nov 05:30
-- [PostgreSQL 19 Released](https://simonwillison.net/2026/Nov/19/postgresql-19/) — *Simon Willison* · 20 Nov 02:13
-- [My wife thinks AI is a person](https://www.bensbites.com/p/my-wife-thinks-ai-is-a-person) — *Ben's Bites* · 19 Nov 19:38
-- [Ship Agent Changes Safely in 5 Steps](https://www.decodingai.com/p/ship-agent-changes-safely) — *Decoding AI* · 19 Nov 17:32
 
 ## System design
 
 - [EP234: Docker vs Kubernetes](https://blog.bytebytego.com/p/ep234-docker-vs-kubernetes) — *ByteByteGo* · 21 Nov 22:01
 - [Top 13 Microservices Interview Questions Answered](https://newsletter.systemdesign.one/p/microservices-interview-questions) — *System Design Newsletter (Neo Kim)* · 20 Nov 17:32
-- [The Invisible Systems: What Happens Between Services](https://blog.bytebytego.com/p/the-invisible-systems-what-happens) — *ByteByteGo* · 19 Nov 22:00
-- [How GraphRAG Works - A Deep Dive](https://newsletter.systemdesign.one/p/graph-retrieval-augmented-generation) — *System Design Newsletter (Neo Kim)* · 19 Nov 18:10
 
 ## Architecture
 
+- [QCon San Francisco 2026: The Harness Is the New Operating System](https://www.infoq.com/news/2026/11/harness-new-operating-system/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 23 Nov 04:14
+- [PostgreSQL 19 Released with Online Table Repacking and Query Planning Controls](https://www.infoq.com/news/2026/11/postgresql-19-released/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 22 Nov 18:24
+- [Claude Code Has Been Leaking Secrets through its "Don't Ask Again" Feature](https://www.infoq.com/news/2026/11/claude-code-leaking-secrets/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 22 Nov 16:30
 - [Google Announces Agent Compute Engine for Secure AI Agent Execution](https://www.infoq.com/news/2026/11/google-agent-compute-engine/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 22 Nov 12:00
-- [AWS Lambda Now Runs GPU Inference with 48 Concurrent Invocations Sharing One Model per GPU](https://www.infoq.com/news/2026/11/aws-lambda-gpu-managed-instances/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 22 Nov 11:57
-- [Grafana 13.3 Adds Shared Dashboard Variables and Notebooks](https://www.infoq.com/news/2026/11/grafana-13-3-shared-variables/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 21 Nov 20:00
-- [QCon San Francisco 2026: Scaling Tech by Aligning Humans](https://www.infoq.com/news/2026/11/scalling-tech-humans/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 21 Nov 19:00
 
 ## Python
 
+- [DaisyRose 27B Draws a Python Reading a Book](https://realpython.com/ai-benchmark-daisyrose-27b/) — *Real Python* · 22 Nov 19:30
 - [Gemini 4 Neon Draws a Python Reading a Book](https://realpython.com/ai-benchmark-gemini-4-neon/) — *Real Python* · 21 Nov 19:30
-- [Inkling 2 Mini Draws a Python Reading a Book](https://realpython.com/ai-benchmark-inkling-2-mini/) — *Real Python* · 21 Nov 19:30
 
 ## Java / Spring
 
 - [Java Weekly, Issue 672](https://www.baeldung.com/java-weekly-672) — *Baeldung Java Weekly* · 21 Nov 03:01
 
-## Career & leadership
-
-- [The Pulse: Is Amazon’s writing culture collapsing because of AI?](https://newsletter.pragmaticengineer.com/p/the-pulse-is-amazons-writing-culture) — *The Pragmatic Engineer* · 19 Nov 22:38
-
 ## News
 
-- [Inkling-2-Mini in 5.4 GB Memory](https://github.com/ShinMegamiBoson/lookatmyquant) — *Hacker News (best)* · 21 Nov 23:32
-- [Lean verification of the Riemann Hypothesis](https://leanprover-community.github.io/blog/posts/riemann-hypothesis/) — *Hacker News (best)* · 21 Nov 20:06
-- [Detonating a pile of lead azide](https://www.science.org/content/blog-post/detonating-huge-pile-lead-azide-really) — *Hacker News (best)* · 21 Nov 18:53
-- [My monitor was cutting my download speed by 75%](https://blog.tymscar.com/posts/studiodisplayethernet/) — *Hacker News (best)* · 21 Nov 16:06
-- [GnuPG Security Advisory for GPGME](https://lists.gnupg.org/pipermail/gnupg-announce/2026q4/000517.html) — *Hacker News (best)* · 21 Nov 14:02
-- [Backblaze Notice at Collection and Privacy Policy](https://www.backblaze.com/company/policy/privacy) — *Hacker News (best)* · 21 Nov 08:53
-- [Ask HN: I have been unemployed for 2y. 15 years of experience, US. What to do?](https://news.ycombinator.com/item?id=50583761) — *Hacker News (best)* · 21 Nov 04:48
-- [NINLIVE: The Nine Inch Nails live archive](https://ninlive.com/) — *Hacker News (best)* · 21 Nov 04:00
-
-??? warning "Feeds that failed this run"
-
-    - **Import AI** — `HTTPError: 403 Client Error: Forbidden for url: https://importai.substack.com/feed`
+- [XNU Linux: Full OS X GUI Userspace on Linux](https://github.com/AFK-surf/xnulinux) — *Hacker News (best)* · 23 Nov 09:19
+- [Free alternative TV network built from the Internet Archive's forgotten videos](https://spelunkr.tv) — *Hacker News (best)* · 23 Nov 06:43
+- [Progress map for the Lean formalization of Alessandro Masullo's manuscript](https://claude.ai/artifact/CtQyX8qfYAF822bgHJHHE3) — *Hacker News (best)* · 23 Nov 04:42
+- [GL.iNet Security Notice 2026-11-20](https://www.gl-inet.com/en-us/blogs/blog/glinet-security-notice-2026-11-20) — *Hacker News (best)* · 23 Nov 04:36
+- [A Beginner's Guide to Local AI with Inkling, Qwen, and Unsloth](https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth) — *Hacker News (best)* · 23 Nov 02:31
+- [A miniature San Francisco with live buses, planes and boats](https://smallsf.com/) — *Hacker News (best)* · 23 Nov 02:03
+- [What Happened to Silicon Valley?](https://www.oreilly.com/radar/what-happened-to-silicon-valley/) — *Hacker News (best)* · 23 Nov 00:50
+- [The Birds of GTA 6: A Field Guide to Vice City and Leonida's Wildlife](https://www.audubon.org/magazine/birds-of-gta-6-field-guide-vice-city-wildlife) — *Hacker News (best)* · 23 Nov 00:40
