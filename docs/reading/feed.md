@@ -5,49 +5,59 @@ generated: true
 
 # Today's feed
 
-!!! info "26 items from the last 72 h · built Mon 23 Nov 2026 13:29 IST"
+!!! info "32 items from the last 72 h · built Tue 24 Nov 2026 15:44 IST"
     Auto-aggregated from [data/feeds.yml](https://github.com/codeyashu/study-planner/blob/main/data/feeds.yml). Skim titles; open at most 3. The curated picks live in the [digest](../digest/index.md).
 
 ## AI engineering
 
+- [Inngest vs. LangChain: I Built the Same Long-Running Agent Twice](https://www.decodingai.com/p/inngest-vs-langchain-durable-agent-stack) — *Decoding AI* · 24 Nov 11:31
+- [datasette-charts 0.2a0](https://simonwillison.net/2026/Nov/24/datasette-charts/) — *Simon Willison* · 24 Nov 09:54
+- [(AINews) Jensen Is Back! and OpenAI Shows Its Pretraining Curve, joined by Microsoft](https://latent.space/p/ainews-jensen-is-back-and-openai-shows-its-pretraining-curve-joined-by-microsoft/) — *Latent Space* · 24 Nov 09:44
+- [datasette-agent 0.7a1](https://simonwillison.net/2026/Nov/24/datasette-agent/) — *Simon Willison* · 24 Nov 09:15
+- [GLM-5.4: Toward Generalized Coding with Our First Loop Transformer](https://simonwillison.net/2026/Nov/23/glm-54/) — *Simon Willison* · 24 Nov 05:10
+- [Ladybird's first alpha release](https://simonwillison.net/2026/Nov/23/ladybird/) — *Simon Willison* · 24 Nov 03:16
+- [OpenAI and Cisco introduce Shirudo](https://openai.com/index/introducing-shirudo) — *OpenAI News* · 24 Nov 02:50
+- [RoboTrack: Point tracking for real-world robotic manipulation](https://huggingface.co/blog/allenai/robotrack) — *Hugging Face Blog* · 23 Nov 22:50
+- [Connected intelligence for in-house legal](https://openai.com/business/learn/connected-intelligence-for-in-house-legal) — *OpenAI News* · 23 Nov 13:30
+- [Richpanel helps companies automate 50% of support in 30 days](https://openai.com/business/customer-stories/richpanel-ai-customer-support) — *OpenAI News* · 23 Nov 13:30
+- [datasette-charts 0.1a0](https://simonwillison.net/2026/Nov/23/datasette-charts/) — *Simon Willison* · 23 Nov 06:07
+- [How to build and maintain an agentic evaluation](https://huggingface.co/blog/agentic-evals) — *Hugging Face Blog* · 23 Nov 05:30
+- [OpenAI publishes progress 🧠, Inkling 2 Mini 💧, Riemann proof 📐](https://tldr.tech/ai/2026-11-23) — *TLDR AI* · 23 Nov 05:30
 - [Select Styling Specimens](https://simonwillison.net/2026/Nov/22/select-styling/) — *Simon Willison* · 23 Nov 01:15
-- [How Public Evals Work, Where They Break, and What Should Change](https://eugeneyan.com/writing/public-evals) — *Eugene Yan* · 22 Nov 05:30
-- [Perplexity and Intelligence](https://openai.com/index/perplexity-and-intelligence) — *OpenAI News* · 22 Nov 05:30
-- [Muru](https://simonwillison.net/2026/Nov/21/muru/) — *Simon Willison* · 22 Nov 05:26
-- [(AINews) Riemann Hypothesis proved...twice independently](https://latent.space/p/ainews-riemann-hypothesis-proved-twice-independently/) — *Latent Space* · 21 Nov 10:32
-- [The War Against Slop and an Emerging Weapon to Fight it: Formal Verification](https://latent.space/p/formal-verification/) — *Latent Space* · 21 Nov 02:48
-- [Quoting Ravi Vakil](https://simonwillison.net/2026/Nov/20/ravi-vakil/) — *Simon Willison* · 21 Nov 00:51
-- [Quoting Levent Alpöge](https://simonwillison.net/2026/Nov/20/levent-alpoge/) — *Simon Willison* · 20 Nov 22:00
-- [Combatting adversarial distillation](https://openai.com/index/combatting-adversarial-distillation) — *OpenAI News* · 20 Nov 15:30
+- [Lessons from 12 Evals: Where They Break and What to Measure Instead](https://eugeneyan.com/writing/public-evals) — *Eugene Yan* · 22 Nov 05:30
 
 ## System design
 
+- [DoorDash Dispatch: Building a Lightning-Fast Delivery System](https://blog.bytebytego.com/p/doordash-dispatch-building-a-lightning) — *ByteByteGo* · 23 Nov 22:01
 - [EP234: Docker vs Kubernetes](https://blog.bytebytego.com/p/ep234-docker-vs-kubernetes) — *ByteByteGo* · 21 Nov 22:01
-- [Top 13 Microservices Interview Questions Answered](https://newsletter.systemdesign.one/p/microservices-interview-questions) — *System Design Newsletter (Neo Kim)* · 20 Nov 17:32
 
 ## Architecture
 
-- [QCon San Francisco 2026: The Harness Is the New Operating System](https://www.infoq.com/news/2026/11/harness-new-operating-system/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 23 Nov 04:14
-- [PostgreSQL 19 Released with Online Table Repacking and Query Planning Controls](https://www.infoq.com/news/2026/11/postgresql-19-released/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 22 Nov 18:24
-- [Claude Code Has Been Leaking Secrets through its "Don't Ask Again" Feature](https://www.infoq.com/news/2026/11/claude-code-leaking-secrets/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 22 Nov 16:30
-- [Google Announces Agent Compute Engine for Secure AI Agent Execution](https://www.infoq.com/news/2026/11/google-agent-compute-engine/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 22 Nov 12:00
+- [Article: Engineering Around Non-Determinism: Evals, Grounding, and Release Gates for AI-Drafted Suspicious Reports](https://www.infoq.com/articles/llm-agent-architecture-evals-grounding/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 24 Nov 15:00
+- [QCon San Francisco 2026: Lessons from Building a $100M Product in Six Weeks at OpenAI](https://www.infoq.com/news/2026/11/qcon-sf-openai-lessons/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 24 Nov 12:02
+- [QCon San Francisco 2026: Securing AI Agents in Production](https://www.infoq.com/news/2026/11/qcon-ai-agent-security/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 24 Nov 01:30
+- [How LinkedIn Built a View-Agnostic Analytics System for Modern iOS UI Architectures](https://www.infoq.com/news/2026/11/linkedin-view-agnostic-analytics/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) — *InfoQ* · 23 Nov 23:30
 
 ## Python
 
-- [DaisyRose 27B Draws a Python Reading a Book](https://realpython.com/ai-benchmark-daisyrose-27b/) — *Real Python* · 22 Nov 19:30
-- [Gemini 4 Neon Draws a Python Reading a Book](https://realpython.com/ai-benchmark-gemini-4-neon/) — *Real Python* · 21 Nov 19:30
+- [LangChain Tutorial: From Prompts to RAG and AI Agents](https://realpython.com/langchain-tutorial/) — *Real Python* · 23 Nov 19:30
+- [Quiz: LangChain Tutorial: From Prompts to RAG and AI Agents](https://realpython.com/quizzes/langchain-tutorial/) — *Real Python* · 23 Nov 17:30
 
-## Java / Spring
+## Career & leadership
 
-- [Java Weekly, Issue 672](https://www.baeldung.com/java-weekly-672) — *Baeldung Java Weekly* · 21 Nov 03:01
+- [Backlogs, naming things, and readings!](https://refactoring.fm/p/backlogs-naming-things-and-readings) — *Refactoring (Luca Rossi)* · 23 Nov 16:33
 
 ## News
 
-- [XNU Linux: Full OS X GUI Userspace on Linux](https://github.com/AFK-surf/xnulinux) — *Hacker News (best)* · 23 Nov 09:19
-- [Free alternative TV network built from the Internet Archive's forgotten videos](https://spelunkr.tv) — *Hacker News (best)* · 23 Nov 06:43
-- [Progress map for the Lean formalization of Alessandro Masullo's manuscript](https://claude.ai/artifact/CtQyX8qfYAF822bgHJHHE3) — *Hacker News (best)* · 23 Nov 04:42
-- [GL.iNet Security Notice 2026-11-20](https://www.gl-inet.com/en-us/blogs/blog/glinet-security-notice-2026-11-20) — *Hacker News (best)* · 23 Nov 04:36
-- [A Beginner's Guide to Local AI with Inkling, Qwen, and Unsloth](https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth) — *Hacker News (best)* · 23 Nov 02:31
-- [A miniature San Francisco with live buses, planes and boats](https://smallsf.com/) — *Hacker News (best)* · 23 Nov 02:03
-- [What Happened to Silicon Valley?](https://www.oreilly.com/radar/what-happened-to-silicon-valley/) — *Hacker News (best)* · 23 Nov 00:50
-- [The Birds of GTA 6: A Field Guide to Vice City and Leonida's Wildlife](https://www.audubon.org/magazine/birds-of-gta-6-field-guide-vice-city-wildlife) — *Hacker News (best)* · 23 Nov 00:40
+- [New York Bans Subscription and Post-Purchase Fees on Cars](https://www.governor.ny.gov/news/money-your-pockets-governor-hochul-signs-bill-restricting-exploitative-vehicle-subscription) — *Hacker News (best)* · 24 Nov 07:57
+- [Huang's Return Is the Biggest National Security Scandal in U.S. History](https://foreignpolicy.com/2026/11/23/jensen-huang-nvidia-return-ceo-national-security-scandal/) — *Hacker News (best)* · 24 Nov 04:41
+- [Stalwart is now a drop-in replacement for Microsoft Exchange](https://stalw.art/blog/microsoft-exchange-replacement/) — *Hacker News (best)* · 24 Nov 04:02
+- [VP ≠ VNP over Every Field](https://github.com/anthropics/formal-math/tree/main/vp-vnp) — *Hacker News (best)* · 24 Nov 03:39
+- [Per Arm's request, this site will be discontinued on 4 December 2026 :(](https://arm.jonpalmisc.com/) — *Hacker News (best)* · 24 Nov 00:47
+- [Apple removed my open-source app from EU App Stores after 9 years](https://github.com/glushchenko/fsnotes/discussions/2056) — *Hacker News (best)* · 24 Nov 00:18
+- [Kagi Mail (public beta)](https://blog.kagi.com/kagi-mail-public-beta) — *Hacker News (best)* · 23 Nov 22:47
+- ["Dario is hyping the dangers so OSS models are illegal and he stays in control"](https://twitter.com/ylecun/status/2124550037912920090) — *Hacker News (best)* · 23 Nov 22:37
+
+??? warning "Feeds that failed this run"
+
+    - **Import AI** — `HTTPError: 403 Client Error: Forbidden for url: https://importai.substack.com/feed`
