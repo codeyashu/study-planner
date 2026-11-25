@@ -1,13 +1,13 @@
 {
- "generated": "2026-11-24",
+ "generated": "2026-11-25",
  "start": "2026-09-26",
  "end": "2027-03-28",
  "current_week": 9,
  "total": {
   "planned": 715,
-  "due": 236,
+  "due": 240,
   "done": 0,
-  "behind": 236
+  "behind": 240
  },
  "streak": 0,
  "longest_streak": 0,
@@ -29,21 +29,21 @@
   "dsa": {
    "label": "DSA",
    "planned": 133,
-   "due": 45,
+   "due": 46,
    "done": 0,
    "minutes_done": 0
   },
   "architecture": {
    "label": "Architecture",
    "planned": 52,
-   "due": 16,
+   "due": 17,
    "done": 0,
    "minutes_done": 0
   },
   "python": {
    "label": "Python",
    "planned": 79,
-   "due": 26,
+   "due": 27,
    "done": 0,
    "minutes_done": 0
   },
@@ -64,7 +64,7 @@
   "communication": {
    "label": "Communication",
    "planned": 188,
-   "due": 64,
+   "due": 65,
    "done": 0,
    "minutes_done": 0
   },
