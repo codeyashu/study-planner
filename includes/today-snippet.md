@@ -1,8 +1,7 @@
-**Day 61 · Week 9 — LangGraph orchestrator** · 120 min
+**Day 62 · Week 9 — LangGraph orchestrator** · 120 min
 
-- [ ] **DSA** · 25 min · Construct Binary Tree from Preorder and Inorder Traversal → [Trees: DFS, BFS, BST](tracks/dsa/trees.md) · [resource](https://neetcode.io) <small>`w09-dsa-3`</small>
-- [ ] **Architecture** · 45 min · Sagas (orchestration vs choreography) + transactional outbox — microservices.io patterns → [Sagas, outbox & distributed transactions](tracks/architecture/sagas-outbox.md) · [resource](https://microservices.io) <small>`w09-arch-1`</small>
-- [ ] **Python** · 20 min · Rep: Pydantic TypeAdapter + model_validate_json performance on large tool payloads → [Pydantic v2 in depth](tracks/python/pydantic-v2.md) <small>`w09-py-2`</small>
-- [ ] **Communication** · 30 min · Speaking drill: Question intonation and turn-taking → [Week 09 drills · day 3](tracks/communication/drills/week-09.md#day-3) <small>`w09-comm-3`</small>
+- [ ] **Agentic AI** · 60 min · LangGraph 1.x deep dive: persistence, threads, time travel, streaming modes; rebuild the triage router as a graph → [LangGraph: graphs, state, checkpoints](tracks/agentic-ai/langgraph.md) · [resource](https://academy.langchain.com/courses/intro-to-langgraph) <small>`w09-ai-2`</small>
+- [ ] **Java/Spring AI** · 30 min · Spring AI tool calling: @Tool methods, ToolCallback, returnDirect — expose service-status as a tool → [Tool calling & MCP servers in Spring AI](tracks/java-spring-ai/spring-ai-tools-mcp.md) · [resource](https://spring.io/blog/2026/06/12/spring-ai-2-0-0-GA-available-now/) <small>`w09-java-1`</small>
+- [ ] **Communication** · 30 min · Idioms & phrasal verbs: Project phrasal verbs: roll out, scale up, sign off → [Week 09 drills · day 4](tracks/communication/drills/week-09.md#day-4) <small>`w09-comm-4`</small>
 
 *8 unfinished task(s) from the last 7 days — see [Today](today.md).*
